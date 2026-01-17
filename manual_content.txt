@@ -1,0 +1,643 @@
+Fiscal Year 20
+FY 2020 Service Area Competition (SAC) and Renewal of Designation (RD) Program Analysis and Recommendations (PAR) Guiding Principles
+Standard Operating Procedures (SOP) for Health Center Program Awardee Competing Continuation and Look-alike Renewal of Designation Application Reviews
+Released 8/8/2019 Updated Apprendix B on 8/29/2019
+U. S. Department of Health and Human Services Health Resources and Services Administration Bureau of Primary Health Care
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+Contents
+OVERVIEW
+3
+COMPLETING THE SAC OR RD PAR
+8
+COMPLIANCE ANALYSIS
+9
+CLINICAL PERFORMANCE
+15
+RECOMMENDATIONS
+16
+STANDARD REVIEW CHECKLIST AND PAR COMPLETION
+22
+APPENDIX A: COMPLIANCE ANALYSIS GUIDANCE
+25
+CHAPTER 3: NEEDS ASSESSMENT
+27
+CHAPTER 9: SLIDING FEE DISCOUNT PROGRAM
+28
+CHAPTER 11: KEY MANAGEMENT STAFF
+30
+CHAPTER 12: CONTRACTS AND SUBAWARDS
+31
+CHAPTER 14: COLLABORATIVE RELATIONSHIPS
+33
+CHAPTER 16: BILLING AND COLLECTIONS
+34
+CHAPTER 17 : BUDGET
+35
+CHAPTER 19: BOARD AUTHORITY
+36
+CHAPTER 20: BOARD COMPOSITION
+39
+APPENDIX B: SAC AND RD HOLD QUEUES
+43
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+Overview
+The Service Area Competition (SAC) application is a competitive request for federal financial assistance under the Health Center Program to support comprehensive primary health care services for an announced underserved area or population in fiscal year (FY) 2020.1 For a list of all announced FY 2020 service areas and target populations, see the Service Area Announcement Table (SAAT). There are three types of possible SAC
+applicants:
+· Competing Continuation - A current Health Center Program award recipient whose project period ends anytime between December 31, 2019 and May 31, 2020 and seeks to continue serving its current service area.
+. New - A health center not currently funded through the Health Center Program that seeks to serve an announced service area through the proposal of one or more permanent service delivery sites.
+· Competing Supplement - A current Health Center Program award recipient that seeks to serve an announced service area, in addition to its current service area, through the proposal of one or more new permanent delivery sites.
+Similarly, the purpose of the Health Center Program look-alike Renewal of Designation (RD) application is to improve the health of the nation's underserved communities and vulnerable populations by assuring continued access to comprehensive, culturally competent, quality primary health care services in an area already served by the look- alike organization.2 Eligible applicants are current look-alike organizations with designation periods ending between December 31, 2019 and May 31, 2020.
+The SAC/RD Program Analysis and Recommendations (PAR) is the Bureau of Primary Health Care's (BPHC) standardized and comprehensive programmatic tool used for reviewing SAC/Competing Continuation and RD applications submitted for continued funding/designation for an announced service area for a new project or designation period under the Health Center Program. The PAR review tool is used across all Health Services Offices (HSOs) and their Divisions; updated annually, with updates explained through the annual PAR briefing, to reflect any applicable changes to the program monitoring approach; and aligned with any changes made to the SAC Notice of Funding Opportunity (NOFO) and the RD Application Instructions for the fiscal year.
+1 The Health Center Program is authorized by section 330 of the Public Health Service (PHS) Act, as amended (42 U.S.C. 254b). This includes Community Health Centers (CHC - section 330 (e)), Migrant Health Centers (MHC - section 330 (g)), Health Care for the Homeless (HCH - section 330 (h)), and /or Public Housing Primary Care (PHPC - section 330 (i)). 2 Look-alikes were established to maximize access to care for medically underserved populations and communities by allowing entities that do not receive Health Center Program funding to become Federally Qualified Health Centers (FQHCs) by operating and providing services consistent with health centers funded under the Health Center Program.
+3
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+Summary of SAC NOFO Changes:
+. Project Narrative questions, forms, and attachments that will be assessed for determining compliance with Health Center Program requirements have been updated and are noted with a bolded, underlined asterisk (*). Applicants are directed to the SAC Compliance Assessment Guide on the SAC Technical
+Assistance website for the specific Compliance Manual chapters and elements that relate to these items rather than the applicable element reference being provided within the NOFO.
+. Instructions for Program-Specific Forms and Attachment 12: Operational Plan are now available at the SAC Technical Assistance website.
+· Service areas where the current award recipient is in a one-year project period are highlighted in the Service Area Announcement Table. Service areas where the current award recipient is in a second consecutive one-year project period are in jeopardy of having a gap in Health Center Program funding and services if HRSA does not receive an eligible and fundable application.
+. Form 1C: Documents on File was updated. Refer to the SAC Technical Assistance website for details.
+· A question on maintaining continuity of services during disasters and emergencies in the Project Narrative: RESOURCES/CAPABILITIES section replaced Form 10: Emergency Preparedness.
+· The project director (PD)/chief executive officer (CEO) must be a direct employee of the health center, as described in Attachment 4: Position Descriptions for Key Management Staff and on Form 2: Staffing Profile.
+. A new Clinical Performance Measure, Statin Therapy for the Prevention and Treatment of Cardiovascular Disease, replaced Coronary Artery Disease (CAD): Lipid Therapy. Refer to the SAC Technical Assistance website for details.
+For details on updates and changes to eligibility criteria, forms, and attachments in the FY 2020 SAC NOFO, visit the SAC Technical Assistance website.
+Summary of RD Application Changes: Overall, the RD application instructions have been revised to align with all applicable areas of the SAC NOFO. For more information, visit the RD Technical Assistance page.
+Summary of PAR Review Changes: BPHC staff will review 22 Health Center Program requirement elements to determine compliance using information in the application that was identified in the NOFO/RD Application Instructions with a bold, underlined asterisk (*).3
+3 Note that 20 elements, rather than 22 elements, will be reviewed for look-alikes.
+4 :unselected: :unselected: :unselected: :unselected: :unselected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+SAC and RD PAR Purpose: The SAC PAR and the RD PAR have an overall prospective focus that examines the applicant's proposed scope of project, plans, and budget for the entire forthcoming anticipated three-year project or designation period. The SAC and RD PARs also provide decision-makers with historical context and a baseline for the goals and budget proposed for the entire project or designation period and of which progress will be assessed through subsequent annual Budget Period Progress Report (BPR) and Annual Certification (AC) submissions.
+In the SAC and RD PAR the BPHC Reviewer:
+· Assesses and determines whether the applicant has demonstrated compliance with Health Center Program requirements.
+o Recommends when non-compliance is identified and applies appropriate condition(s) to the award/designation that will require the health center to address any findings of non-compliance. :unselected: o If applicable, for eligible applicants, reviews and approves a waiver of the patient majority governance requirement.
+· Reviews information on the applicant's self-identified contributing and restricting factors for the diabetes control performance measure and categorizes these into pre-defined areas that will inform BPHC's individual and one-to-many technical assistance efforts.
+· Provides a clear rationale and record for funding/designation decisions (approve/disapprove) including recommendations on project/designation period length consistent with the applicant's compliance status and statutory requirements.
+. Identifies and documents, if applicable, any additional information related to the PAR review.
+As part of HRSA's required review of risk posed by applicants for this program as described in 45 CFR § 75.205 (HHS Review of Risk Posed by Applicants) and in accordance with HRSA's Health Center Program oversight policies, when selecting applications for funding and, if applicable, determining project/designation period length, HRSA will consider additional factors. These factors include, but are not limited to, past performance, including unsuccessful Progressive Action condition resolution and current compliance with Health Center Program requirements and regulations, and the results of HRSA's assessment of the financial stability of the applicant organization (Not Applicable to Look-alikes). HRSA reserves the right to conduct on-site visits and/or use the current compliance status to inform final funding/designation decisions.
+SAC and RD PAR System and Process: The SAC and RD PAR reviews are completed within the PAR module, which is a component of the Bureau of Primary Health Care's Health Center Management Information System (BHCMIS), a sub-component of the HRSA Electronic Handbooks (EHB) system. The PAR module allows BPHC Reviewers to
+5 :unselected: :selected: :selected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+perform this program-specific pre-funding/pre-designation review within the HRSA EHB and facilitates additional levels of review and approval by the non-default BPHC PQC and PAO. The PAR is integrated completely and seamlessly with the HRSA standard pre- funding review checklist (required for all HRSA grant programs). For more information, please review the SAC/RD PAR Quick Reference Guide.
+Role of the SAC and RD PAR within Health Center Program Oversight: The programmatic review of SAC and RD applications by BPHC staff through the PAR is one of three key points across a three-year or one-year project/designation period when compliance with program requirements is comprehensively assessed by BPHC (see Chapter 2: Health Center Program Oversight in the Compliance Manual and the Progressive Action SOP).
+Project/Designation Period Start SAC/RD Compliance Assessment
+At 12 months BPR/AC
+Progress/Performance Update
+At 14-18 months
+OSV
+Compliance Assessment
+At 24 months BPR/AC Progress/Performance Update
+Project/Designation Period End/36 months SAC/RD Compliance Assessment
+Compliance assistance and support on diabetes controlperformance measure occurs throughout the project/designation period
+FIGURE 1 BPHC HEALTH CENTER PROGRAM OVERSIGHT APPROACH - THREE-YEAR PROJECT/DESIGNATION PERIOD CYCLE
+Project/Designation Period Start SAC/RD Compliance Assessment
+At 2-4 months OSV
+Compliance Assessment
+Project/Designation Period End/12 months SAC/RD Compliance Assessment
+Compliance assistance and support on diabetes controlperformance measure occurs throughout the project/designation period
+FIGURE 2 BPHC HEALTH CENTER PROGRAM OVERSIGHT APPROACH - ONE-YEAR PROJECT/DESIGNATION PERIOD CYCLE
+6
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+BPHC is further supported by and coordinates with HRSA's Office of Federal Assistance Management (OFAM) on additional aspects of Health Center Program monitoring and oversight related to budget and financial assessments for awardees (Not Applicable to Look-alikes):
+. The OFAM Division of Grants Management Operations (DGMO) Grants Management Specialists (GMS) review the federal portion of budgets included in both the SAC application and BPR submission to assure the proposed use of federal grant funds complies with all applicable requirements or limitations described in grants regulations (45 CFR 75) and/or law. This step also involves reviewing the budget within the application to ensure it is reasonable, allowable, and allocable, and complies with applicable statute.
+· OFAM's Division of Financial Integrity (DFI) also reviews applicants recommended for funding through an objective financial assessment. DFI evaluates the financial management capability of applicants based on information from several sources. 4
+· To maintain and increase the integrity of HRSA programs post-award, OFAM's DFI also:5
+o Reviews and resolves Single Audit findings by working with the GMS and the non-Federal entity to ensure corrective actions are taken to prevent future audit findings. :unselected: o Monitors the timeliness of Single Audit submissions and follows up on late audits. :unselected: o Conducts special grant reviews to assist Project Officers and GMS in reviewing potential misuses of grant funds and/or instances of non- compliance with program or grant terms and conditions.
+4 These sources include: 1) Single Audit reports; 2) IRS Form 990; 3) eligibility and delinquent federal debt through the System for Award Management (SAM); and 4) other sources such as Payment Management System (PMS), NEAR Alerts, and other DFI internal databases, and public information on the organization. 5 Additionally, DFI acts as liaison between HRSA and the Office of Inspector General (OIG) for OIG audits and investigations, and responds to OIG Hotline complaints. DFI's liaison activities provide HRSA with increased awareness of OIG activities involving HRSA Federal award recipients (grantees) and additional monitoring resources.
+7 :unselected: :unselected: :unselected: :unselected: :selected: :selected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP Completing the SAC or RD PAR
+BPHC Reviewers Are Reminded of the Following
+The SAC/RD PAR is always conducted by a HRSA reviewer that is not the health center's designated Project Officer.
+The SAC/RD PAR review is to be based on information included in the SAC/RD application itself or other readily available information linked from within the PAR module (i.e., DFI Financial Assessment, Uniform Data System (UDS)). The SAC/RD application is the primary source of information used to complete the SAC/RD PAR review.
+Although EHB provides links within the PAR module to additional information such as Operational Site Visit (OSV) reports, the PAR Compliance Analysis is based on the material submitted within the SAC or RD application and if applicable, any additional material submitted via the Correspondence Request function. The OSV represents a determination of compliance at a distinct point in time while the SAC or RD application represents another point in time. Although the OSV report may be helpful in determining the reason for the placement of any unresolved conditions, it should not, however, be used to determine compliance during a SAC or RD PAR review.
+Continuing in FY 2020 is the expectation for the BPHC Reviewer to communicate with certain applicants via the PAR module regarding any elements that the BPHC Reviewer has found to be non-compliant based on the review of the SAC/RD application. The health center will have a total of 14 calendar days to respond to the BPHC Reviewer's Correspondence Request. If the application still does not demonstrate compliance after that 14-day period (i.e., either did not respond or submitted documentation that does not demonstrate compliance), the BPHC Reviewer will apply the applicable condition(s) and place the health center on a one- year project/designation period.
+BPHC Reviewers are encouraged to review the Completeness & Eligibility (C&E) review, which is available once the SAC application appears in the BPHC Reviewer's EHB queue, and take note of any concerns documented by BPHC's Office of Policy and Program Development (OPPD). OPPD also reviews patient targets to determine if any funding reductions are necessary. The BPHC Reviewer performs a completeness review for RD applications; no eligibility review is conducted.
+. In the event of a head-to-head service area competition, no PAR review can begin on a SAC application until the competitor with the highest Objective
+8
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+Review Committee (ORC) score is determined. Therefore, ONLY the highest scoring application may be reviewed. OPPD will notify the HSO of the highest scoring application and when the SAC application can moved to the BPHC Reviewer's queue for the PAR review after the ORC score is finalized. In the case of a head-to-head competition, the HSO may only move the application to the BPHC Reviewer's queue after receiving notice from OPPD.
+o If there is a decision to deviate from the ORC rank order based on the PAR of the highest scoring application revealing major non-compliance issues or a DFI review revealing major concerns, the next highest scoring application will be placed in the BPHC Reviewer's EHB queue.
+o :unselected: BPHC Reviewers may begin a SAC PAR review for applicants that did NOT face a competitor but were still reviewed by an ORC (i.e., SAC or Service Area Competition - Additional Area (SAC-AA) competition where the applicant for the service area is not the current awardee) before the ORC results are available. However, finalization of the PAR should not occur until after the final ORC score and summary is received.
+. During the SAC PAR review, in order to ensure the integrity of the competitive process, BPHC will NOT communicate with a certain subset of applicants using the Correspondence Request feature, specifically:
+o New applicant organizations that have never received a Health Center Program grant award; :unselected: o Competing Supplement applicants (i.e., applicants competing for another organization's service area); and :unselected: o Competing Continuation applicants that have a competitor for their service area.
+1. Compliance Analysis
+Overview: The "Compliance Analysis" section of the SAC and RD PAR modules are aligned with the instructions used for the SAC and RD application narrative and references relevant forms and attachments included in the SAC NOFO and RD Application Instructions for the applicable fiscal year.
+The FY 2020 SAC NOFO/RD Application Instructions specified the items that HRSA will use from the Project Narrative, forms, and attachments in its assessment of compliance; these were noted with a bolded, underlined asterisk (*). Other items in the application contribute to HRSA having a full picture of the proposed project and are assessed for compliance, as appropriate, through other oversight processes (e.g., site visits, audit reviews) or on timelines that do not align with the SAC/RD application. The SAC Compliance Assessment Guide and Appendix A list the specific Compliance Manual elements that will be assessed during the PAR review. BPHC Reviewers are to use ONLY those sections of the application with a bold, underlined asterisk (*) per the NOFO/RD Application Instructions to determine compliance.
+9 :unselected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+In the PAR, the BPHC Reviewer is required to assess whether the health center has demonstrated compliance with 22 of the 93 compliance elements found in the Health Center Program Compliance Manual.6 These 22 elements were selected for review via the SAC/RD application because they are areas that are most appropriate to assess through a (paper) application review process. (Note that the Operational Site Visit includes a comprehensive assessment of almost all compliance elements.)
+There are three compliance determination options when completing the compliance analysis in FY 2020 that BPHC Reviewers may use:
+. Yes, Organization demonstrates compliance based on the PAR review
+. No, Organization does not demonstrate compliance based on the PAR review
+· No, Organization does not demonstrate compliance due to a progressive action condition identified from the last budget period
+For each of the 22 elements in the PAR, the BPHC Reviewer is asked to assess whether the health center has demonstrated compliance. Analysis and clear documentation comments are required for all options.
+. If compliance is demonstrated, the BPHC Reviewer selects "Yes, Organization demonstrates compliance based on the PAR review" and documents how they made this determination of compliance.
+. If compliance is not demonstrated, the BPHC Reviewer selects "No, Organization does not demonstrate compliance based on the PAR review" and documents how they made the determination of non-compliance. The PAR module will then automatically add the corresponding condition(s).
+. If any of these elements have already been identified as non-compliant and are being tracked through an active unresolved progressive action condition, the third option above will be selected by default and the BPHC Reviewer will provide brief comments regarding information contained in the application pertaining to the element.
+. If information from a Correspondence Request was used to make the final compliance determination, the BPHC Reviewer must specifically discuss this in the comments.
+Specific prompts are provided within the PAR module's "Compliance Analysis" under the "Suggested Resources" subtitle with electronic links to the referenced sections of the SAC/RD application and/or other resources that may be useful for the BPHC Reviewer to consult (e.g., SOPs).
+6 Note that the elements g and h under Chapter 12: Contracts and Subawards are not applicable to look- alikes.
+10 :unselected: :unselected: :selected: :unselected: :unselected: :unselected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+The SAC/RD PAR Compliance Analysis Guidance included in this document in Appendix A serves as the primary consolidated resource for BPHC Reviewers in completing their compliance analysis of the Health Center Program requirement elements in the SAC or RD PAR.
+Completing the Compliance Analysis: In general, the analysis for each of the Health Center Program requirements should proceed along the following guidelines.
+Step 1: Review and follow the related guidance in Appendix A for completing the compliance analysis for each of the 22 elements.
+Step 2: Within 14 calendar days of receipt of the application, the BPHC Reviewer MUST complete an initial compliance assessment of ALL 22 compliance elements.
+. If the BPHC Reviewer has questions about the program requirement element, compliance, or notes inconsistencies in the application, they should consult with the non-default PQC/Team Lead.
+· Any elements marked as "No, Organization does not demonstrate compliance based on the PAR review" will then require the BPHC Reviewer (with the assistance of the EHB PAR feature "Correspondence Request") to send a Correspondence Request to the SAC/RD applicant. The BPHC Reviewer MUST consult with the non-default PQC/Team Lead PRIOR to initiating the Correspondence Request to confirm that the element(s) are non-compliant.
+. The Correspondence Request will list the elements that have been found to be non-compliant and will instruct the applicant to respond within 14 calendar days with additional documentation that demonstrates compliance.
+o The BPHC Reviewer must complete the Details text box with the specific reason each element was found to be non-compliant. If sending a
+subsequent Correspondence Request, the reviewer must use the Details text box to clarify why the request is being returned.
+o The Correspondence Request feature will allow multiple back-and-forth communications between the health center and the BPHC Reviewer during the 14-day period. All correspondence related to the PAR review MUST be completed using the Correspondence Request function. :unselected: o Within 24 hours of sending the Correspondence Request, the BPHC Reviewer must phone the applicant's Authorizing Official (or the Project Director/designated contact if the Authorizing Official is not available) to convey the following information. (In the event that none of these parties are available, the BPHC Reviewer may leave a message.)
+" Identify yourself as the HRSA/BPHC staff person conducting the application review.
+" Request the health center check its EHB account for an email from HRSA ("Correspondence Request") and inform the health center
+11 :unselected: :unselected: :unselected: :selected: :selected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+that it is urgent that they respond to this request timely as it concerns the SAC (or RD) application.
+" Remind the health center that its response is due by 11:59 ET on <state the due date of the Correspondence Request>. (IF LEAVING A PHONE MESSAGE, THE BPHC REVIEWER ENDS HERE AND PROVIDES THEIR CALL-BACK NUMBER. When the health center returns the call, the BPHC Reviewer continues by addressing the following steps with the health center.)
+" For each element that was included in the Correspondence Request, state the specific reason WHY each of these element(s) was found to be non-compliant (e.g., "Your Form 6A indicated there were no patient board members and your organization does not have/is not eligible for a patient majority waiver"). NOTE: The BPHC Reviewer is NOT expected to provide specific guidance as to HOW the health center must fix this issue but rather, they must explain WHAT the deficiency is.
+Refer the health center to the Health Center Program Compliance Manual and Progressive Action Conditions Library for additional information.
+" Advise the health center that it may respond with narrative and attachments to address the non-compliance areas and that its response must be received via the Correspondence Request submission in EHB. Any information shared over the phone or via other means outside of the submission module will not be considered in the final compliance assessment.
+" Remind the health center that one or more conditions from the SAC/RD application review will result in a one-year project/designation period and that since its application is still under review by HRSA, funding/designation decisions are not final at this time.
+" Close the call by providing the health center with your phone number in case the health center has any further questions about these compliance elements. :unselected: o Phone calls, emails, and any other forms of communication by applicants with the default Project Officer regarding information for the SAC/RD PAR Compliance Analysis are NOT permitted. :unselected: The BPHC Reviewer must note under "Additional Reviewer Comments" on the "Recommendations" page the date of each call with the health center, the name and title of the person spoken with, and any deviations from these standard communication instructions (e.g., inability to leave a message, discussion with a contact person other than the Authorizing Official or Project Director, etc.)
+12 :unselected: :selected: :selected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+. If the applicant does not respond within the total of 14 calendar days or does not provide a complete or responsive submission, the BPHC Reviewer will mark the element as "compliance not demonstrated" and a new condition will be applied to the FY 2020 SAC/RD Notice of Award/Notice of Look-alike Designation (NoA/NLD). The health center will also receive a one-year project/designation period.
+. The BPHC Reviewer will not send a Correspondence Request for "carryover conditions" that are active unresolved conditions from the prior project/designation period. Rather, the default Project Officer is expected to continue to work with the health center and support the resolution of such conditions, if possible prior to the SAC/RD award/designation.
+If the SAC/RD applicant has requested a new or continued waiver of the patient majority Board Composition requirement, the BPHC Reviewer will not complete a separate "Governance Waivers" section of the PAR.7 Rather, the BPHC Reviewer will review and approve/disapprove any requests for new or continuing waivers of the patient majority governance requirement within the Compliance Analysis section as part of their review of Board Composition, Element e: Waiver Requests. If the SAC/RD applicant is ineligible for or did not request a waiver, this element will be automatically defaulted to "Not Applicable" in the PAR review.
+Step 3: Once the BPHC Reviewer has completed Steps 1 through 2 above, they must select one of two compliance status options ("Yes" or "No") and provide a clear and complete analysis and justification in response to the standard prompting questions for whichever option is selected. If a Correspondence Request was sent for an element, the BPHC Reviewer must document under that specific compliance element whether or not the Correspondence Request resulted in the compliance element being marked compliant or not.
+NOTE: If the BPHC Reviewer is still in the process of assessing compliance (e.g., still reviewing the application's content, awaiting the response to a Correspondence Request, conferring with internal subject matter experts, etc.), the BPHC Reviewer should select/keep the review on the defaulted "Review in Progress" button and select a final compliance status option ("Yes" or "No") once the review is completed.
+7 Those applicants solely requesting targeted funding or designation to serve migratory and seasonal agricultural workers (section 330(g)), people experiencing homelessness (330(h)), and/or residents of public housing (section 330(i)), and that are NOT requesting funding to serve general community members (section 330(e). This section of the SAC or RD PAR will note if the health center requested a waiver in their SAC or RD application via Form 6B.
+13 :unselected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+OPTION 1 of 3: BPHC REVIEWER DETERMINES "YES" - COMPLIANCE IS DEMONSTRATED: The BPHC Reviewer selects "Yes, Organization demonstrates compliance based on the PAR review" and enters comments documenting how they made this determination of compliance by briefly listing which portion(s) of the application provided the information necessary to demonstrate compliance with this requirement (e.g., section and page numbers of the Project Narrative, Form number, Attachment number, etc.) As an example, "BPHC Reviewer's review of pages xx - xx of the project narrative on governance and Attachment 2: Bylaws finds that the health center is compliant with element b. Required Board Composition."
+OPTION 2 of 3: BPHC REVIEWER DETERMINES "NO" - COMPLIANCE IS NOT DEMONSTRATED: The BPHC Reviewer selects "No, Organization does not demonstrate compliance" and enters comments documenting how they made this determination of non-compliance in the manner discussed below.
+When the BPHC Reviewer selects "No" the BPHC Reviewer MUST address the following points:
+· State the specific reason(s) for the organization's non-compliance, documenting how the BPHC Reviewer made this determination of non-compliance.
+. Briefly list which portion(s) of the application and if applicable, the Correspondence Request, provided the information necessary to identify non- compliance with this requirement (e.g., section and page numbers of the Program Narrative, Form number, Attachment number, etc.).
+o As an example, "BPHC Reviewer's review of project narrative pages xx - xx on governance, Attachment 2: Bylaws, and additional information submitted through the Correspondence Request feature finds that the health center is not compliant with element b. Required Board Composition. The health center's Bylaws do not address the required elements of the Board being comprised of a patient majority nor do they describe the relevant expertise and skills of non-patient Board members."
+If "No" is selected, the PAR module will then automatically add the corresponding condition.
+OPTION 3 of 3: If the health center has an active unresolved condition that is still in the Progressive Action process at the time of the PAR review, please note the following:
+. The requirement will already be defaulted to "No."
+. Note that the Compliance Analysis will NOT recognize active unresolved "legacy" conditions as these older conditions do not correspond directly to the element-level requirements. If the health center has active legacy conditions, these will not impact the Compliance Analysis but WILL count as a Health Center Program requirement condition and result in the awarding of a one-year project/designation period. The BPHC Reviewer can see if any legacy conditions
+14 :selected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+are active by reviewing the "Legacy Compliance Snapshot" available within the PAR module.
+When responding to the prompting questions when "No" is defaulted due to an active unresolved Progressive Action condition, the information provided should include the latest actions and/or updates to date taken related to the health center's efforts to resolve the condition. This information is readily available by clicking on the "Comprehensive Action History (CAH)" for the active condition.
+As an example, "Condition is at the 60-day phase. Since the placement of the condition, POM Notes and the condition's Comprehensive Action History indicate the PO met with the health center three times and sent three EHB emails to the health center reminding them of the due date and offered guidance by phone with a Senior Advisor. As of October 21, 2019, HRSA has not received a response from the health center."
+General Compliance Analysis Reminders: Do not restate what is in the health center's application and/or Correspondence Request submission but do summarize your analysis (and if applicable, analysis from discussions with other BPHC subject matter experts who may have provided input) so that it is clear why compliance was or was not demonstrated and what specific aspects of the element were not met (i.e., all versus some aspects).
+2. Clinical Performance
+The diabetes control clinical performance measure will be automatically pre-selected in the SAC/RD PAR and BPHC Reviewers do not need to provide any narrative to complete the Clinical Performance Measure Analysis section of the PAR. In addition, the Financial Performance Measure Analysis section has been removed from the SAC/RD PAR. In completing this portion of the SAC PAR, the BPHC Reviewer will:
+1. Review a list of categories and definitions used to identify shared characteristics across the health center's self-identified Contributing and Restricting Factors.
+2. Separately review the Contributing Factors and the Restricting Factors the health center has listed in its Clinical Performance Measures Form for the diabetes control performance measure.
+3. The reviewer will then select:
+a. ALL applicable categories that are reflected in the health center's Contributing Factor(s) narrative text.
+b. ALL applicable categories that are reflected in the health center's Restricting Factor(s) narrative text.
+c. If the health center's Contributing (or Restricting) Factor(s) include characteristics not reflected by the categories available, select "Other" and summarize the missing characteristic(s).
+15
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+3. Recommendations
+Overview: In the "Recommendations" section of the Program Specific Checklist/PAR tab for the SAC and RD PAR, the BPHC Reviewer recommends overall approval of the application and recommends the project/designation period length. Application approval and project/designation period length determining factors detailed in this section of the SAC and RD PAR Guiding Principles are consistent with current policy on maintaining compliance with Health Center Program requirements and align with the criteria included in the FY2020 SAC NOFO and the RD Application Instructions. These application approval and project/designation period length criteria apply to HRSA reviews of SAC, RD, and SAC-AA applications.
+Step 1: Recommending Overall Application Approval or Disapproval: In the "Recommendations" section of the Program Specific Checklist for the SAC and RD PAR, the BPHC Reviewer recommends overall approval or disapproval of the application. The following section provides the criteria that must be met if a SAC or RD application is to be recommended for disapproval.
+KEY POINTS IF DISAPPROVAL IS ANTICIPATED
+If a BPHC Reviewer anticipates that the SAC or RD PAR analysis will result in a recommendation to disapprove funding or designation for the subsequent project/designation period based on the criteria below, they MUST alert the non- default PQC/Team Lead and other members of their Senior Management Team and request concurrence PRIOR to finalizing their PAR review.
+In all cases, if a final decision is made to disapprove the SAC application for funding or the RD application for designation, the BPHC Reviewer must continue to consult with the non-default PQC/Team Lead and other members of their Senior Management Team on the appropriate next steps and the process for working with OPPD to initiate a SAC-AA. (A SAC- AA is Not Applicable to Look-alikes)
+For FY 2020, a SAC competing continuation application or an RD application will be disapproved and a new project/designation period will NOT be awarded to the applicant in any of the following circumstances, consistent with current policy on Health Center Program requirements oversight:
+. History of Consecutive One-Year Project Periods: Based on HRSA's review of the FY 2020 SAC application, the Competing Continuation applicant will have met the criteria for a one-year project period and has already had two or more consecutive one-year project periods in the preceding fiscal years (i.e., a one -
+16
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+year project period was awarded in Fiscal Years 2018 and 2019 and now the health center has met the criteria for a third consecutive one-year project period in FY 2020). In such cases, the application will not be funded and the service area will be re-competed if no other eligible, fundable applications were received.8
+Similarly, if a look-alike has had two consecutive one-year designation periods and meets the criteria for a third consecutive one-year designation period, the applicant will not be designated. Look-alikes whose designation periods have not been renewed may reapply for look-alike designation through the Initial Designation application process at any time.9
+As a reminder, project/designation period length history is available within the "Recommendations" section of the PAR module.
+. Material Failure to Comply with Conditions of Award/Designation: At the time of HRSA's review of the SAC or RD application, the Competing Continuation or Renewal of Designation applicant has already reached the end of the Progressive Action timeline for one or more Progressive Action conditions in the current budget or certification period (i.e., health center either defaulted on the final 30- day condition by submitting no response by the submission deadline or did not submit an acceptable response by the submission deadline).
+In such cases, the health center would already have been notified through a formal written letter under DGMO's signature (or for look-alikes, from BPHC) of its failure to comply with the terms and conditions of the award or designation
+and if applicable, communicating a decision to shorten its current project or designation period through the termination of all or part of the Federal award/designation before the current project/designation period end date.
+o If the funded health center has less than six months remaining in its project period at the time the decision is made to discontinue funding, it will generally be allowed to complete its existing project period and a SAC-AA will be held to re-compete the service area; :unselected: o If the funded health center has more than six months remaining in the project period, an enforcement action will be taken to terminate the health center's award PRIOR to the project period end date and a SAC-AA
+8 Section 330(e)(4) of the PHS Act states that "Not more than two grants may be made under subparagraph (B) of paragraph (1) for the same entity." While such organizations may apply for future Health Center Program funding under 45 CFR 75.205(c)(3), HRSA may consider factors, including an applicant's history of performance if it has been a prior recipient of Federal awards or designation when making competitive awards. These factors include, but are not limited to, unsuccessful Progressive Action condition resolution and current compliance with Health Center Program requirements and regulations. 9 See http://www.bphc.hrsa.gov/programopportunities/lookalike/index.html for more information on the Health Center Program look-alike application process.
+17 :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+will be held to re-compete the service area. This is an appealable enforcement action by HRSA.
+In both of the cases above, a SAC-AA will be announced in order to maximize competition for the service area. HRSA also reserves the right to conduct on-site verification of compliance prior to any final funding decision. Thus, in cases where a health center that has been identified and notified by HRSA of material non-compliance with program requirements applies for a SAC-AA for continued funding, a final funding decision will not be finalized until a site visit is concluded, if applicable.
+· Ineligible or Late Application: The health center submitted an entirely incomplete application (as determined by the OPPD C&E review of the SAC or by the BPHC Reviewer of the RD) or did not submit the SAC or RD application by the deadline. This is expected to be rare and such circumstances will be monitored by OPPD for funded health centers and will result in a SAC-AA to re-compete the service area if no other eligible, fundable applications were received. If a look- alike has failed to submit its RD application by the deadline, the BPHC Reviewer must consult with the non-default Senior Management Team regarding next steps.
+Step 2: Determining Project/Designation Period Length: If the overall SAC or RD application is recommended for approval, a recommendation on project/designation period length must be provided by the BPHC Reviewer. Project/designation period length options are three-year and one-year. Project/designation period length is based on an assessment of a health center's compliance with program requirements.10
+Project/designation period length will be determined as follows:11
+. If an applicant has one or more Health Center Program requirement conditions at the time of the SAC/RD award/designation, based on either unresolved prior conditions or due to new conditions applied based on the review of the health
+10 Section 330(e)(1)(B) of the PHS Act (42 U.S.C. 254b(e)(1)(B)). In addition, a health center that fails to demonstrate compliance with all Health Center Program requirements, including those in Section 330(k)(3) of the PHS Act, must submit, within 120 days of grant funding/designation, an implementation plan for compliance for HRSA approval. Additional information related to this implementation plan will be included in the applicable Notices of Funding Opportunity and Look-Alike Renewal of Designation application instructions.
+11 As part of HRSA's required review of risk posed by applicants for this program, as described in 45 CFR § 75.205 (HHS Review of Risk Posed by Applicants), when selecting applications for funding and, if applicable, determining project period length, HRSA will consider additional factors. These factors include, but are not limited to, past performance, including unsuccessful Progressive Action condition resolution and current compliance with Health Center Program requirements and regulations, and the results of HRSA's assessment of the financial stability of the applicant organization. HRSA reserves the right to conduct on-site visits and/or use the current compliance status to inform final funding decisions.
+18
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+center's SAC/RD application, it will be awarded a one-year project or designation period.
+· All New awardees (first time Health Center Program grantees) will also receive a one-year project period, regardless of the number of conditions placed on the award. This is because HRSA has not yet had an opportunity to assess their compliance status in full.
+. If a Competing Continuation or Renewal of Designation applicant is fully compliant based on the SAC/RD application review and also does not have any unresolved conditions related to Health Center Program requirements at the time of their SAC/RD application, it will be awarded a three- year project/designation period.
+NOTE: (Not Applicable to Look-alikes) If the BPHC Reviewer is completing a PAR review for a Competing Supplement application (Type 3 award), the BPHC Reviewer MUST select "N/A" for the "Project Period Length" recommendation as the competing supplemental funding will be rolled into the awardee's current project period.
+19 :unselected: :unselected: :unselected: :unselected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+SAC and RD Hold Queues
+For Competing Continuation/Renewal of Designation applicants with active unresolved conditions but no new conditions added via the PAR review, the non-default PQC is required to move the SAC or RD PAR to the HSO SAC or RD Hold queue (both queues are shared by both HSOs) after it has been reviewed and returned to the non-default PQC by the non-default PAO.
+. The SAC PAR review will remain in the HSO SAC Hold queue for no more than 35 days prior to the end of the project period.
+. The RD PAR review will remain in the HSO RD Hold queue for no more than 10 days prior to the end of the designation period.
+Once this date passes, a Division Senior Advisor with PAO rights will make a FINAL project/designation period length determination in the PAR based on the applicant's compliance status at that time and move the SAC PAR review to OPPD for the funding memo, which will then move to OFAM for the issuance of the NoA. For look-alikes, the RD PAR review will move to the PQC-D for preparation of the NLD. Note these two possible scenarios:
+. The BPHC Reviewer recommended a one-year project/designation period for a health center that had unresolved conditions at the time of the PAR review but the submissions have been accepted and those conditions have been lifted based on the Project Officer's and PQC's review and approval. The health center now has no areas of non-compliance; therefore, the Division Senior Advisor/PAO will recommend a three-year project/designation period and move the PAR review to OPPD or the PQC-D, as applicable.
+. The health center does not resolve the active conditions during the time the PAR is in the SAC or RD Hold queue; therefore, the Division Senior Advisor with PAO rights will recommend a one-year project/designation period and move the PAR review to OPPD or the PQC-D, as applicable.
+Please see Appendix B for detailed information about SAC/RD Holds, which includes the hard deadlines for submitting these PAR reviews to OPPD or the PQC-D for preparation of the funding memo or NLD.
+In all cases (three- or one-year project/designation period length recommendations), once the BPHC Reviewer has selected a recommended "Project/Designation Period Length" in the "Recommendations" section of the PAR/Program Specific Checklist based on the criteria above, they MUST enter a brief explanation for this recommendation in the "Comments" text field. For example: "Three-year project period is recommended. Applicant has no active unresolved conditions and no areas of non-compliance were identified in the review of this application."
+20
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+. The non-default PQC and PAO must ensure that they agree with the BPHC Reviewer's recommendation on project/designation period length PRIOR to moving the PAR review forward to the next role. If the non-default PQC or PAO does not agree with the decision, they must use the "Change Request" option to send the previous PAR review for revision.
+o If the SAC/RD PAR review is moved forward to the non-default PAO without such changes, the BPHC Reviewer's original recommendation for project period length will be populated on the NoA/NLD.
+· If a one-year project/designation period is recommended, the HSO must begin planning for an Operational Site Visit to the health center once the NoA/NLD is
+issued. Review the One Year Project/Designation Period SOP and the Operational
+Site Visit SOP for further details on planning the site visit and the Project Officer's responsibilities and expected actions for engaging and monitoring health centers with one-year project/designation periods.
+Please note:
+. The PAR module will automatically add the standard (three- or one-year) project or designation period length-related term based on the BPHC Reviewer's recommendation if the BPHC Reviewer approves the application for funding or designation. This term will also be accessible/populated in the "Terms" section of the "Standard Review Checklist". If a one-year project/designation period is recommended, the system will also automatically add the 120-day "Compliance Achievement Plan" condition (required by the amended language in section 330(e)(1)(B) of the Health Center Program statute) to the award/designation. (The default Project Officer, not the BPHC Reviewer, will be responsible for reviewing that condition submission.)
+. The BPHC Reviewer will also be asked to confirm the overall SAC or RD application recommendation (approve/disapprove) in the "Program Office Recommendation" section of the "HRSA Standard Review Checklist" tab.
+Required use of "Additional Reviewer Comment" box:
+At the bottom of the Recommendations form, the BPHC Reviewer has an open "Additional Reviewer Comment" box where they must, if applicable, briefly document any additional information related to the PAR review. This information must include any instances where information in the project narrative not required to be assessed to determine compliance (not marked with a bold, underlined asterisk (*) in the NOFO/RD Application Instructions) contradicts or does not support a required form or attachment (marked with a bold, underlined asterisk (*) used to determine compliance).
+21 :unselected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+BPHC Reviewers are also reminded that for those PAR reviews that entailed a Correspondence Request, they must note under "Additional Reviewer Comments" the date of each call with the health center, the name and title of the person spoken with, and any deviations from the standard communication instructions noted on pages 11 and 12 (e.g., inability to leave a message, discussion with a contact person other than the Authoring Official or Project Director, etc.)
+4. Standard Review Checklist and PAR Completion
+Once all sections of the SAC/RD PAR "Program Specific Checklist" (second tab) have been marked as complete (Compliance Analysis, Clinical Performance, and Recommendations) the BPHC Reviewer must also complete the "HRSA Standard Review Checklist" (first tab). Within the "HRSA Standard Review Checklist", the BPHC Reviewer will briefly respond to the four questions (three for look-alikes) for SAC applicants and also review and document the OFAM Financial Assessment risk level (not applicable for look-alikes).
+Completing the HRSA Standard Review List: Unlike the BPR and AC PAR reviews, the "HRSA Standard Review Checklist" tab and the standard questions that appear on this page do not require detailed comments because the BPHC Reviewer's analysis and supporting justification for funding/designation decisions and project/designation period length are already documented in the various sections of the SAC or RD PAR "Program Specific Review Checklist" tab (i.e., "Compliance Analysis" and
+"Recommendations" sections). However, BPHC Reviewers must assure that their brief summary analysis in the "Standard Review Checklist" is consistent with their analysis and justification included in the "Recommendations" section of the PAR "Program Specific Checklist." See specific instructions for completing Questions 1, 2, and 3 in the SAC or RD HRSA "Standard Review Checklist" in Figure 3.12
+12 The fourth question, ("For Competing Grants, do you concur with the ORC committee report?") is not reflected in Figure 3.
+22
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+X Standard Review Checklist
+X Program Specific Checklist
+1. Is the application complete? :unselected: [X] Yes [] No
+BPHC Reviewer should select "Yes" since the application has been through the Completeness and Eligibility Review completed by OPPD's Expansion Branch or for look-alikes by the BPHC Reviewer. Comments are not necessary.
+2. Does the application reflect the program goals? :unselected: [X] Yes [ ] No [] N/A :unselected:
+BPHC Reviewer should select "Yes" if application is recommended for approval and state "see SAC/RD PAR Recommendation section for details or any specific concerns." in the comments box.
+3. Are there any areas of concern: programmatic, budgetary, objective review (if applicable) or other?
+[X] Yes [] No
+Select "Yes" or "No" as appropriate and cut and paste analysis in the comments box from what BPHC Reviewer has written in the SAC/RD PAR Program Specific Checklist Recommendations section to ensure consistency. For SAC PARs, the BPHC Reviewer must also include a statement acknowledging the DFI risk level status here and note any impact on the funding decision. [Not Applicable to Look-alikes]
+FIGURE 3. ENSURING CONSISTENT COMPLETION OF HRSA STANDARD REVIEW CHECKLIST IN THE SAC/RD PAR
+Utilization of OFAM Financial Assessment Risk Level in SAC PAR Review and Coordination with OFAM: (Not Applicable to Look-alikes) OFAM's DFI reviews applications recommended for funding through an objective financial assessment (see sample in Figure 4). Once DFI has completed this financial assessment, DFI makes a risk level recommendation, which reflects the entity's financial risk and its effect on program performance and federal/HRSA grant funds. (See related DFI Financial Assessment resources "Financial Assessments and Risk Levels: Roles and Responsibilities in Pre- Award and Post-Award" document for details.).
+DFI Funding Risk Level Information
+Funding Risk Level:
+Minimal Risk
+Justification:
+After reviewing Heartland Community Health Clinic, Inc. financial documents for the FY ended 2012, DFI recommends funding this entity.
+Summary of Financial Data:
+The 2012 A-133 had unqualified opinions on the financial statements and federal programs. There were no significant deficiencies and one material weakness reported. There were no audit findings on federal programs. Although the material weakness typically indicates an above average problem with a grantee's internal controls, after taken into consideration, they did not warrant a restriction in funding. The grantee has strong liquidity and sufficient reserves. The grantee has operated with decreasing net assets and has had positive cash flow from operations. The grantee has no long term debt.
+FIGURE 4 SAMPLE DFI FINANCIAL ASSESSMENT RISK LEVEL
+The BPHC Reviewer MUST review the "DFI Financial Assessment Risk Level" as part of their SAC PAR review and MUST then document their review of the "Financial Assessment Risk Level" in Question 3 of the "HRSA Standard Review Checklist", specifically noting any impact the risk level may have on the funding decision for the applicant. For example:
+. "The DFI Financial Assessment Risk Level is currently "minimal risk," thus there is no impact on the SAC application funding decision and no risk mitigation needed."
+23 :selected: :selected: :selected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+. "The DFI Financial Assessment Risk Level is "high risk." DFI convened a meeting of BPHC, DGMO, and DFI staff to discuss this organization's risk level on September 17, 2019. As a result of this meeting, BPHC will continue to fund the organization for a three-year project period due to no active conditions or areas of non- compliance noted in the SAC PAR but the GMS will place the organization on restricted drawdown due to its poor financial status noted in the DFI Financial Assessment."
+A link to the health center's OFAM DFI Financial Assessment is available in the PAR in the "Resources" tab. Note that BPHC Reviewers can contact Randy Alley, Financial Assessments Team Lead at DFI, at (206) 615-2620 or ralley@hrsa.gov if they have any questions or need clarification about the Financial Assessment risk level or findings in the Financial Assessment.
+Once both the "HRSA Standard Review Checklist" and "Program Specific Review Checklist"/PAR are complete, the BPHC Reviewer then forwards their completed SAC/RD PAR review to the non-default PQC/Team Lead for review and approval. Once approved, the PQC will then forward the SAC/RD PAR review to the non-default PAO for final review and approval.
+24
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+Appendix A: Compliance Analysis Guidance
+Appendix Purpose and Overview: This appendix provides consolidated guidance to BPHC Reviewers regarding the 22 elements assessed within the SAC and the 20 elements assessed within the RD application to determine whether a health center/applicant has demonstrated compliance with the applicable Health Center Program requirement. This appendix is structured to accompany the completion of the SAC/RD PAR "Compliance Analysis" and provides:
+. The chapter and title of the applicable Health Center Program requirement including the related statutory and regulatory citations.
+. The elements the health center was expected to demonstrate compliance with through their SAC/RD application either through narrative responses to specific SAC NOFO/RD Application Instruction questions and/or through a related form or attachment.
+· The specific sections of the application to review (those marked with a bold, underlined asterisk (*) in the SAC NOFO/RD Application Instructions) are noted in the italicized subheading(s).
+Overview of BPHC Reviewer Analysis and Assessment of Compliance:
+· Each program requirement assessed through the SAC/RD PAR module "Compliance Analysis" section includes prompting questions and specific resources for that element (e.g., For Needs Assessment Element a., Review Attachment X, Question # in Need). BPHC Reviewers are required to review ALL of these available resources included in the PAR module for each program requirement element and complete their assessment in response to the applicable prompting questions (i.e., the questions provided in the module when the BPHC Reviewer selects "Yes, Organization demonstrates compliance" or "No, Organization does not demonstrate compliance") based on the review and analysis points noted within this SOP.
+. BPHC Reviewers are to use ONLY those sections of the application with a bold, underlined asterisk (*) per the SAC NOFO/RD Application Instructions to determine compliance.
+. The SAC/RD PAR compliance analysis is to be based on information included in the SAC/RD application and any additional information submitted through the Correspondence Request feature, if applicable.
+. Based on the guidance provided within this Appendix, BPHC Reviewers should provide a clear and concise analytical response rather than restating or copying what is stated in the SAC/RD application.
+. The BPHC Reviewer's analysis should note if it included consultation with any BPHC subject matter experts including Senior Advisors or Team Leaders. Subject matter experts should be referenced by role rather than by name.
+25
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+. If completing a SAC PAR for a New applicant or a Competing Supplement applicant, these applicants are still expected to demonstrate compliance with all assessed program requirement elements at the time of the application with the exception of the following areas, which would be assessed post-award, as applicable:
+o Within 120 days of the Notice of Award, each proposed site must be operational with providers available at each site to begin providing services to the proposed population/community. :unselected: o Within one year of the Notice of Award, all providers must be hired and all sites must be operational for the targeted number of hours.
+Example of BPHC Reviewer Documentation of Compliance Analysis: After a thorough analysis of the required items, if the BPHC Reviewer determines that the health center's application demonstrates compliance, the BPHC Reviewer briefly lists which portion(s) of the application provided the information necessary to demonstrate compliance with this element.
+"BPHC Reviewer's review of pages xx - xx of the project narrative on governance and Attachment 2: Bylaws finds that the health center is compliant with element b. Required Board Composition."
+If after that thorough analysis of the required items, the BPHC Reviewer determines that the health center's application does not demonstrate compliance, the BPHC Reviewer documents the specific reason(s) for the organization's non-compliance.
+"BPHC Reviewer's review of project narrative pages xx - xx on governance, Attachment 2: Bylaws, and additional information submitted through the Correspondence Request feature finds that the health center is not compliant with element b. Required Board Composition. The health center's Bylaws do not address the required elements of the Board being comprised of a patient majority nor do they describe the relevant expertise and skills of non-patient Board members.
+26 :selected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+Chapter 3: Needs Assessment
+Authority: Section 330(k)(2) and Section 330(k)(3)(J) of the PHS Act; and 42 CFR 51c.104(b)(2-3), 42 CFR 51c.303(k), 42 CFR 56.104(b)(2), 42 CFR 56.104(b)(4), and 42 CFR 56.303(k)
+Element b - Update of Needs Assessment
+The health center completes or updates a needs assessment of the current or proposed population at least once every three years, 13 for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data14 for the service area and, if applicable, special populations and addresses the following:
+Factors associated with access to care and health care utilization (for example, geography, transportation, occupation, transience, unemployment, income level, educational attainment); :unselected: The most significant causes of morbidity and mortality (for example, diabetes, cardiovascular disease, cancer, low birth weight, behavioral health) as well as any associated health disparities; and :unselected: Any other unique health care needs or characteristics that impact health status or access to, or utilization of, primary care (for example, social factors, the physical environment, cultural/ethnic factors, language needs, housing status).
+Section of the Application to review Project Narrative - Need section, items 2a - c
+Items 2a - c within the Application
+Describe your process for assessing the needs of the service area/target population, including:
+a) How often you conduct or update the needs assessment.
+13 Compliance may be demonstrated based on the information included in a Service Area Competition (SAC) or a Renewal of Designation (RD) application. Note that in the case of a Notice of Funding Opportunity for a New Access Point or Expanded Services grant, HRSA may specify application-specific requirements for demonstrating an applicant has consulted with the appropriate agencies and providers consistent with Section 330(k)(2)(D) of the Public Health Service Act. Such application-specific requirements may require a completed or updated needs assessment more recent than that which was provided in an applicant's SAC or RD application. 14 In cases where data are not available for the specific service area or special population, health centers may use extrapolation techniques to make valid estimates using data available for related areas and population groups. Extrapolation is the process of using data that describes one population to estimate data for a comparable population, based on one or more common differentiating demographic characteristics. Where data are not directly available and extrapolation is not feasible, health centers should use the best available data describing the area or population to be served.
+27 :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+b) How you use the results to inform and improve service delivery.
+c) Using the most recently available data (cite data sources where applicable), for the service area and, if applicable, for each special population (MHC, HCH, PHPC) identified in the SAAT, address the following:
+. Factors associated with access to care and health care utilization (e.g., geography, transportation, occupation, transience, unemployment, income level, educational attainment).
+. Most significant causes of morbidity and mortality (e.g., diabetes, cardiovascular disease, cancer, low birth weight, substance use disorder) as well as any associated health disparities.
+. Any other unique health care needs or characteristics that impact health status or access to, or utilization of, primary care (e.g., social risk factors, the physical environment, cultural/ethnic factors, language needs, housing status).
+Chapter 9: Sliding Fee Discount Program
+Authority: Section 330(k)(3)(G) of the PHS Act; 42 CFR 51c.303(f), 42 CFR 51c.303(g), 42 CFR 51c.303(u), 42 CFR 56.303(f), 42 CFR 56.303(g), and 42 CFR 56.303(u)
+Element b - Sliding Fee Discount Program Policies
+The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas: :unselected: o Definitions of income15 and family; :unselected: Assessment of all patients for sliding fee discount eligibility based only on income and family size, including methods for making such assessments; :unselected: o The manner in which the health center's sliding fee discount schedule(s) (SFDS(s)) will be structured in order to ensure that patient charges are adjusted based on ability to pay; and
+o Only applicable to health centers that choose to have a nominal charge for patients at or below 100 percent of the FPG: The setting of a flat nominal charge(s) at a level that would be nominal from the perspective of the patient (for example, based on input from patient board members, patient surveys, advisory committees, or a review of co-pay amount(s) associated with Medicare and Medicaid for patients with comparable incomes) and would not reflect the actual cost of the service being provided. 16
+15 Income is defined as earnings over a given period of time used to support an individual/household unit based on a set of criteria of inclusions and exclusions. Income is distinguished from assets, as assets are a fixed economic resource while income is comprised of earnings. 16 Nominal charges are not "minimum fees," "minimum charges," or "co-pays."
+28 :selected: :unselected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+Section of the Application to review Project Narrative - Response section, items 5a - d
+Items 5a - d within the Application
+Describe how the sliding fee discount program (SFDP) policies apply uniformly to all patients and address the following:
+a) Definitions of income and family.
+b) Assessment of all patients for sliding fee discount eligibility based only on income and family size, including methods for making such assessments.
+c) Manner in which the sliding fee discount schedule(s) (SFDS) is structured in order to ensure that patient charges are adjusted based on ability to pay (consistent with Attachment 10: Sliding Fee Discount Schedule).
+d) If you have a nominal charge for patients with incomes at or below 100 percent of the Federal Poverty Guidelines (FPG), whether the nominal charge: (1) is flat, (2) is set at a level that is nominal from the perspective of the patient, and (3) does not reflect the actual cost of the service being provided. State if you do not have nominal charges.
+Element c - Sliding Fee for Column I Services
+For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:
+o A full discount is provided for individuals and families with annual incomes at or below 100 percent of the current FPG, unless a health center elects to have a nominal charge, which would be less than the fee paid by a patient in the first sliding fee discount pay class above 100 percent of the FPG. :unselected: o Partial discounts are provided for individuals and families with incomes above 100 percent of the current FPG and at or below 200 percent of the current FPG, and those discounts adjust based on gradations in income levels and include at least three discount pay classes. 17 :unselected: o No discounts are provided to individuals and families with annual incomes above 200 percent of the current FPG. 18
+17 For example, a SFDS with discount pay classes of 101 percent to 125 percent of the FPG, 126 percent to 150 percent of the FPG, 151 percent to 175 percent of the FPG, 176 percent to 200 percent of the FPG, and over 200 percent of the FPG would have four discount pay classes between 101 percent and 200 percent of the FPG. 18 See Chapter 16: Billing and Collections, if the health center has access to other grants or subsidies that support patient care.
+29 :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+Section of the Application to review Attachment 10: Sliding Fee Discount Schedule(s) 19
+Element e - Incorporation of Current Federal Poverty Guidelines The health center's SFDS(s) has incorporated the most recent FPG.
+Section of the Application to review Attachment 10: Sliding Fee Discount Schedule(s)
+Chapter 11: Key Management Staff
+Authority: Section 330(k)(3)(I)(i) of the PHS Act; 42 CFR 51c.104(b)(4), 42 CFR 51c.303(p), 42 CFR 56.104(b)(5), and 42 CFR 56.303(p); and 45 CFR 75.308(c)(1)(ii)(iii)
+Element b - Documentation of Key Management Staff Positions
+The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).
+Section of the Application to review Attachment 4: Position Descriptions for Key Management Staff
+Element d - CEO Responsibilities The health center's Project Director/CEO is directly employed by the health center,20 reports to the health center's governing board21 and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.
+Sections of the Application to review Project Narrative - Resources/Capabilities section, item 3b Form 2: Staffing Profile Attachment 3: Project Organizational Chart Attachment 4: Position Descriptions for Key Management Staff
+19 For look-alikes, the attachment is Attachment 9: Sliding Fee Discount Schedule(s).
+20 Public agency health centers utilizing a co-applicant structure would demonstrate compliance with the statutory requirement for direct employment of the Project Director/CEO by demonstrating that the public agency, as the Health Center Program awardee/designee of record, directly employs the Project Director/CEO. Refer to related requirements in Chapter 19: Board Authority regarding public agencies with co-applicants. 21 Refer to related requirements in Chapter 19: Board Authority regarding the selection and dismissal of the Project Director/CEO by the health center board as part of its oversight responsibilities for the Health Center Program project.
+30
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+Item 3b within the Application
+Describe the key management team (e.g., project director (PD)/chief executive officer (CEO), clinical director (CD), chief financial officer (CFO), chief information officer (CIO), chief operating officer (COO)), including:
+b) Responsibilities of the CEO for and reporting to the governing board and overseeing other key management staff in carrying out the day-to-day activities of the proposed project.
+Chapter 12: Contracts and Subawards
+Authority: Section 330(k)(3)(I) and Section 330(q) of the PHS Act; 42 CFR 51c.113, 42 CFR 56.114, 42 CFR 51c.303(t), and 42 CFR 56.303(t); 45 CFR Part 75 Subpart D; and Section 1861(aa)(4)(A)(ii) and Section 1905(l)(2)(B)(ii) of the Social Security Act
+Element e - HRSA Approval for Contracting Substantive Programmatic Work If the health center has arrangements with a contractor to perform substantive programmatic work,22 the health center requested and received prior approval from HRSA as documented by: :unselected: o An approved competing continuation/renewal of designation application or other competitive application, which included such an arrangement; or :unselected: o An approved post-award request for such arrangements submitted within the project period (for example, change in scope).
+Section of the Application to review Form 8: Health Center Agreements
+NOTE: Select "N/A" if Form 8 indicates that the applicant does not contract for substantive programmatic work.
+Element f - Required Contract Provisions
+The health center's contracts that support the HRSA-approved scope of project include provisions that address the following: :unselected: The specific activities or services to be performed or goods to be provided;
+o Mechanisms for the health center to monitor contractor performance; and :unselected: o Requirements for the contractor to provide data necessary to meet the recipient's applicable Federal financial and programmatic reporting
+22 For the purposes of the Health Center Program, contracting for substantive programmatic work does not include the acquisition of supplies, material, equipment, or general support services. However, it does apply to contracting for the: Project Director/CEO; entire key management team; majority of health care providers with a single entity. Substantive programmatic work may be further defined within HRSA Notices of Funding Opportunity (NOFOs) and applications.
+31 :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+requirements, as well as provisions addressing record retention and access, audit, and property management. 23
+Section of the Application to review Form 8: Health Center Agreements
+Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)
+If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by: :unselected: o An approved competing continuation/renewal of designation application or other competitive application, which included the subrecipient arrangement; or :unselected: o An approved post-award request for such subrecipient arrangements submitted within the project period (for example, change in scope).
+Section of the Application to review Form 8: Health Center Agreements
+NOTE: Select "N/A" if Form 8 indicates that the applicant does not have any subawards.
+Element h - Subaward Agreement (Not Applicable for Look-alikes)
+The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:
+o The specific portion of the HRSA-approved scope of project to be performed by the subrecipient;
+o The applicability of all Health Center Program requirements to the subrecipient; :unselected: o The applicability to the subrecipient of any distinct statutory, regulatory, and policy requirements of other Federal programs associated with their HRSA- approved scope of project;24 :unselected: o Mechanisms for the health center to monitor subrecipient compliance and performance; :unselected: o Requirements for the subrecipient to provide data necessary to meet the health center's applicable Federal financial and programmatic reporting requirements,
+23 For further guidance on these requirements, see the HHS Grants Policy Statement, at https://www.hrsa.gov/grants/hhsgrantspolicy.pdf.
+24 Subrecipients are generally eligible to receive FQHC payment rates under Medicaid and Medicare, 340B Drug Pricing, and Federal Tort Claims Act (FTCA) coverage. However, such benefits are not automatically conferred and may require additional actions and approvals (for example, submission and approval of a subrecipient FTCA deeming application).
+32 :unselected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+as well as provisions addressing record retention and access, audit, and property management;25 and
+o Requirements that all costs paid for by the Federal subaward are allowable consistent with Federal Cost Principles. 26
+Section of the Application to review Form 8: Health Center Agreements
+NOTE: Select "N/A" if Form 8 indicates that the applicant does not have any subawards.
+Chapter 14: Collaborative Relationships
+Authority: Section 330(k)(3)(B) of the PHS Act; and 42 CFR 51c.303(n), 42 CFR 56.303(n), and 42 CFR 51c.305(h)
+Element a - Coordination and Integration of Activities
+The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support: :unselected: o Reductions in the non-urgent use of hospital emergency departments; :unselected: o Continuity of care across community providers; and :unselected: Access to other health or community services that impact the patient population.
+Sections of the Application to review
+Project Narrative - Collaboration section, items 1a - c Attachment 9: Collaboration Documentation27
+Items 1a - c within the Application
+Describe efforts to collaborate with other providers or programs in the service area (consistent with Attachment 1: Service Area Map and Table), including local hospitals, specialty providers, and social service organizations (including those that serve special populations) to provide access to services not available through the health center, to support:
+a) Continuity of care across community providers.
+b) Access to other health or community services that impact the patient population. c) A reduction in the non-urgent use of hospital emergency departments.
+25 For further guidance on these requirements, see the HHS Grants Policy Statement, at http://www.hrsa.gov/grants/hhsgrantspolicy.pdf. 26 See 45 CFR 75 Subpart E: Cost Principles. 27 For look-alikes, this attachment is Attachment 8: Collaboration Documentation.
+33 :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+Element b - Collaboration with Other Primary Care Providers
+The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).
+Sections of the Application to review Project Narrative - Collaboration section, item 2 Attachment 9: Collaboration Documentation
+Item 2 within the Application
+Describe and document in Attachment 9: Collaboration Documentation efforts to coordinate and integrate your activities with other federally-funded, as well as state and local health services delivery projects and programs serving similar patient populations in the service area (consistent with Attachment 1: Service Area Map and Table) (at a minimum, this would include establishing and maintaining relationships with other Health Center Program award recipients and look-alikes).
+If you do not provide documentation of collaboration with one or more of the Health Center Program award recipients and look-alikes in Attachment 9: Collaboration Documentation, explain why and provide documentation of the request.
+Chapter 16: Billing and Collections
+Authority: Section 330(k)(3)(E), (F), and (G) of the PHS Act; and 42 CFR 51c.303(e), (f), and (g) and 42 CFR 56.303(e), (f), and (g)
+Element c - Participation in Insurance Programs The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.
+Sections of the Application to review
+Project Narrative - Resources/Capabilities section, item 5b
+Item 5b within the Application
+Describe how you conduct billing and collections, including: b) Participating in Medicare, Medicaid, Children's Health Insurance Program (CHIP), and, as appropriate, other public and private assistance programs or insurance, as applicable (consistent with Form 3: Income Analysis).
+34
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+Element h - Policies or Procedures for Waiving or Reducing Fees The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.
+Sections of the Application to review Project Narrative - Resources/Capabilities section, item 5a
+Item 5a within the Application Describe how you conduct billing and collections, including: a) How board-approved policies and operating procedures include specific circumstances for when you will waive or reduce fees or payments required due to a patient's inability to pay.
+Chapter 17: Budget
+Authority: Section 330(e)(5)(A) and Section 330(k)(3)(I)(i) of the PHS Act; and 45 CFR 75.308(a) and 45 CFR 75 Subpart E
+PLEASE NOTE
+Reminder - DGMO vs. BPHC Roles/Responsibilities To Avoid Duplication of Effort In Budget Review: (Not Applicable to Look-Alikes) DGMO will continue to assume responsibility for reviewing the Federal portion of SAC application budgets for compliance with salary cap limitations (i.e., federal section 330 grant funds may not be used to pay the salary of an individual at a rate in excess of $192,300) as well as for compliance with Cost Principles and any line item detail needs. If necessary, based on this review, DGMO/GMS will issue its "HCB Revised Budget" condition and will resume full responsibility for reviewing the submission to this DGMO- recommended condition. BPHC Reviewers are only to recommend a condition if the budget does not demonstrate compliance with element a. Annual Budgeting for Scope of Project and/or element b. Revenue Sources.
+Element a - Budgeting for Scope of Project The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a "total budget,"28,29 that
+28 A health center's "total budget" includes the Health Center Program Federal award funds and all other sources of revenue in support of the health center scope of project.
+29 Any aspects of the requirement that relate to the use of Health Center Program Federal award funds are not applicable to look-alikes.
+35
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.
+Sections of the Application to review SF-424A30 Budget Narrative Form 2: Staffing Profile
+Element b - Revenue Sources
+In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically: :unselected: o Fees, premiums, and third-party reimbursements and payments that are generated from the delivery of services; :unselected: o Revenues from state, local, or other Federal grants (for example, Ryan White, Healthy Start) or contracts; :unselected: o Private support or income generated from contributions; and :unselected: o Any other funding expected to be received for purposes of supporting the Health Center Program project.
+Sections of the Application to review
+SF-424A
+Budget Narrative
+Form 2: Staffing Profile
+Form 3: Income Analysis
+Chapter 19: Board Authority
+Authority: Section 330(k)(3)(H) of the PHS Act; 42 CFR 51c.303(i), 42 CFR 56.303(i), 42 CFR 51c.304(d), and 42 CFR 56.304(d); and 45 CFR 75.507(b)(2)
+NOTE: Health Center Program governance requirements do not apply to health centers operated by Indian tribes, tribal groups, or Indian organizations under the Indian Self-Determination Act or urban Indian organizations under the Indian Health Care Improvement Act. BPHC Reviewers will therefore mark these requirements as ("Yes") compliant in the PAR "Compliance Analysis" section and state that the applicant is a health center operated by an Indian tribe or tribal, Indian, or urban Indian group.
+30 For look-alikes, the budget is Form 3A: Look-Alike Budget Information.
+36
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+Element a - Maintenance of Board Authority Over Health Center Project
+The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:
+o The organizational structure and documents do not allow for any other individual, entity or committee (including, but not limited to, an executive committee authorized by the board) to reserve approval authority or have veto power over the health center board with regard to the required authorities and functions;31 :unselected: o In cases where a health center collaborates with other entities in fulfilling the health center's HRSA-approved scope of project, such collaboration or agreements with the other entities do not restrict or infringe upon the health center board's required authorities and functions; and
+o For public agencies with a co-applicant board, 32 the health center has a co- applicant agreement that delegates the required authorities and functions to the co-applicant board and delineates the roles and responsibilities of the public agency and the co-applicant in carrying out the Health Center Program project.
+Sections of the Application to review Project Narrative - Governance section, items 3a - c Form 8: Health Center Agreements Attachment 2: Bylaws Attachment 3: Project Organizational Chart Attachment 6: Co-Applicant Agreement Attachment 8: Articles of Incorporation (new applicants only)
+Items 3a - c within the Application
+Referencing specific sections in Attachments 2: Bylaws, 6: Co-Applicant Agreement, 8: Articles of Incorporation (new applicants only), and Form 8: Health Center Agreements, describe how your governing board maintains authority and oversight over the proposed project. Specifically address the following: a) No individual, entity, or committee (including, but not limited to, an executive committee authorized by the board and consistent with Attachment 3: Project
+31 This does not preclude an executive committee from taking actions on behalf of the board in emergencies, on which the full board will subsequently vote. 32 Public agencies are permitted to utilize a co-applicant governance structure for the purposes of meeting Health Center Program governance requirements. Public centers may be structured in one of two ways to meet the program requirements: 1) the public agency independently meets all the Health Center Program governance requirements based on the existing structure and vested authorities of the public agency's governing board; or 2) together, the public agency and the co-applicant meet all Health Center Program requirements.
+37 :unselected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+Organizational Chart) reserves or has approval/veto power over the board with regard to the required authorities and functions. b) Collaboration or agreements with other entities do not restrict or infringe upon the board's required authorities and functions.
+c) Public agency applicants with a co-applicant board: Attachment 6: Co-Applicant Agreement delegates the required authorities and functions to the co-applicant board and delineates the respective roles and responsibilities of the public agency and the co- applicant in carrying out the project.
+Element b - Required Authorities and Responsibilities
+The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:
+o Holding monthly meetings; :unselected: Approving the selection (and termination or dismissal, as appropriate) of the health center's Project Director/CEO; :unselected: o Approving the annual Health Center Program project budget and applications; :unselected: Approving health center services and the location and hours of operation of health center sites; :unselected: o Evaluating the performance of the health center; :unselected: Establishing or adopting policy33 related to the operations of the health center; and :unselected: Assuring the health center operates in compliance with applicable Federal, State, and local laws and regulations.
+Sections of the Application to review
+Project Narrative - Governance section, items 2a - g Attachment 2: Bylaws Attachment 6: Co-Applicant Agreement
+Items 2a - g within the Application
+Describe where in Attachment 2: Bylaws and, if applicable, Attachment 6: Co-Applicant Agreement you document the following board authority requirements:
+a) Holding monthly meetings.
+b) Approving the selection (and dismissal or termination) of the project director/CEO.
+c) Approving the annual Health Center Program project budget and applications.
+d) Approving proposed services, sites, and hours of operation.
+e) Evaluating the performance of the health center.
+f) Establishing or adopting policy related to the operations of the health center.
+33 The governing board of a health center is generally responsible for establishing and/or approving policies that govern health center operations, while the health center's staff is generally responsible for implementing and ensuring adherence to these policies (including through operating procedures).
+38 :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+g) Assuring the health center operates in compliance with applicable federal, state, and local laws and regulations.
+Chapter 20: Board Composition
+Authority: Section 330(k)(3)(H) of the PHS Act; and 42 CFR 51c.304 and 42 CFR 56.304
+NOTE: Health Center Program governance requirements do not apply to health centers operated by Indian tribes, tribal groups, or Indian organizations under the Indian Self-Determination Act or urban Indian organizations under the Indian Health Care Improvement Act. BPHC Reviewers will therefore mark these requirements as ("Yes") compliant in the PAR "Compliance Analysis" section and state that the applicant is a health center operated by an Indian tribe or tribal, Indian, or urban Indian group.
+Element a - Board Member Selection and Removal Process
+The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, 34 including a majority of the non-patient board members. 35
+Sections of the Application to review Attachment 2: Bylaws
+Element b - Required Board Composition
+The health center has bylaws or other relevant documents that require the board to be composed as follows:
+o Board size is at least 9 and no more than 25 members, 36 with either a specific number or a range of board members prescribed; :unselected: At least 51 percent of board members are patients served by the health center. For the purposes of board composition, a patient is an individual who has received at least one service in the past 24 months that generated a health center visit, where both the service and the site where the service was received are within the HRSA-approved scope of project;
+34 An outside entity may only remove a board member who has been selected by that entity as an organizational representative to the governing board.
+35 For example, if the health center has an agreement with another organization, the agreement does not permit that organization to select either the chair or a majority of the health center board. 36 For the purposes of the Health Center Program, the term "board member" refers only to voting members of the board.
+39 :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP :unselected: o Patient members of the board, as a group, represent the individuals who are served by the health center in terms of demographic factors, such as race, ethnicity, and gender; :unselected: o Non-patient members are representative of the community served by the health center or the health center's service area; :unselected: o Non-patient members are selected to provide relevant expertise and skills such as:
+· Community affairs;
+" Local government;
+· Finance and banking;
+· Legal affairs;
+" Trade unions and other commercial and industrial concerns; and
+· Social services; :unselected: o No more than one-half of non-patient board members derive more than 10 percent of their annual income from the health care industry; and :unselected: o Health center employees, 37,38 and immediate family members (i.e., spouses, children, parents, or siblings through blood, adoption, or marriage) of employees may not be health center board members.
+Sections of the Application to review
+Project Narrative - Governance section, items 1a - g Attachment 2: Bylaws Attachment 6: Co-applicant Agreement
+Items 1a - g within the Application39
+Describe where in Attachment 2: Bylaws and, if applicable, Attachment 6: Co-Applicant Agreement you document the following board composition requirements: a) Board size is at least 9 and no more than 25 members, with either a specific number or range of board members prescribed.22
+b) At least 51 percent of voting board members are patients served by the health center. 23, 24, 25
+c) Patient members of the board, as a group, represent the individuals served by the health center in terms of demographic factors (e.g., gender, race, ethnicity).26 d) Non-patient members are representative of the community served by the health center or the health center's service area.
+37 For the purposes of health center board composition, an employee of the health center would include an individual who would be considered a "common-law employee" or "statutory employee" according to the Internal Revenue Service criteria, as well as an individual who would be considered an employee for state or local law purposes.
+38 In the case of public agencies with co-applicant boards, this includes employees or immediate family members of both the co-applicant organization and the public agency component (for example, department, division, or sub-agency) in which the Health Center Program project is located. 39 Please refer to page 17 of the SAC NOFO for the text of footnotes 22 - 28 in the body of this item.
+40
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+e) Non-patient members are selected to provide relevant expertise and skills (e.g., community affairs, local government, finance and banking, legal affairs, trade unions and other commercial and industrial concerns, social services). f) No more than one-half of non-patient board members may earn more than 10 percent of their annual income from the health care industry. g) Health center employees and immediate family members (i.e., spouses, children, parents, or siblings through blood, adoption, or marriage) of employees may not be health center board members. 27, 28
+Element c - Current Board Composition
+The health center has documentation that the board is composed of: :unselected: At least 9 and no more than 25 members; :unselected: A patient40 majority (at least 51 percent); :unselected: Patient board members, as a group, represent the individuals who are served by the health center in terms of demographic factors, such as race, ethnicity, and gender, consistent with the demographics reported in the health center's Uniform Data System (UDS) report;41 :unselected: o Representative(s) from or for each of the special population(s)42 for those health centers that receive any award/designation under one or more of the special populations section 330 subparts, 330(g), (h), and/or (i); and
+o As applicable, non-patient board members: :unselected: " Who are representative of the community in which the health center is located, either by living or working in the community, or by having a demonstrable connection to the community;
+With relevant skills and expertise in areas such as community affairs, local government, finance and banking, legal affairs, trade unions, other commercial and industrial concerns, or social services within the community; and
+. Of whom no more than 50 percent earn more than 10 percent of their annual income from the health care industry.43
+40 A legal guardian of a patient who is a dependent child or adult, a person who has legal authority to make health care decisions on behalf of a patient, or a legal sponsor of an immigrant patient may also be considered a patient of the health center for purposes of board representation. Students who are health center patients may participate as board members subject to state laws applicable to such non-profit board members.
+41 For health centers that have not yet made a Uniform Data System (UDS) report, this would be assessed based on demographic data included in the health center's application. 42 Representation could include advocates for the health center's section 330 (g), (h), or (i) patient population (for example, those who have personally experienced being a member of, have expertise about, or work closely with the current special population). Such advocate board members would count as "patient" board members only if they meet the patient definition set forth in this section. 43 For example, in a 9-member board with 5 patient board members, there could be 4 non-patient board members. In this case, no more than 2 non-patient board members could earn more than 10 percent of their income from the health care industry.
+41 :selected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020 Competing Continuation and Renewal of Designation Application Review SOP
+Sections of the Application to review Form 6A: Current Board Member Characteristics
+Element e - Waiver Requests
+In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:
+o "Good cause" that justifies the need for the waiver by documenting:
+" The unique characteristics of the population (homeless, migratory or seasonal agricultural worker, and/or public housing patient population) or service area that create an undue hardship in recruiting a patient majority; and
+" Its attempt(s) to recruit a majority of special population board members within the past three years; and
+o Strategies that will ensure patient participation and input in the direction and ongoing governance of the organization by addressing the following elements:
+" Collection and documentation of input from the special population(s);
+" Communication of special population input directly to the health center governing board; and
+" Incorporation of special population input into key areas, including but not limited to: selecting health center services;44 setting hours of operation of health center sites;45 defining budget priorities;46 evaluating the organization's progress in meeting goals, including patient satisfaction;47 and assessing the effectiveness of the sliding fee discount program. 48
+Sections of the Application to review Form 6B: Request for Waiver of Board Member Requirements
+NOTE: For applicants that are not eligible for a waiver of the patient majority or that have chosen not to request such a waiver, the following option will be automatically selected: Not Applicable, Organization is not eligible for or has not requested a waiver of the patient majority board composition requirement.
+44 See Chapter 4: Required and Additional Health Services for more information on providing services within the HRSA-approved scope of project.
+45 See Chapter 6: Accessible Locations and Hours of Operation for more information on health center service sites and hours of operation. 46 See Chapter 17: Budget for more information on the Health Center Program project budget. 47 See Chapter 19: Board Authority for more information on the health center board's required authorities. 48 See Chapter 9: Sliding Fee Discount Program for more information on requirements for health center sliding fee discount programs.
+42 :unselected: :unselected: :selected: :selected: :selected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+Appendix B: SAC and RD Hold Queues
+For Competing Continuation and Renewal of Designation applicants with active unresolved conditions but no new conditions added via the PAR review, the PQC is required to send the SAC/RD PAR to the HSO SAC or RD Hold Queue (shared by both HSOs) after it has been reviewed and returned by the PAO. Those SAC/RD PARs that meet this criteria will route through the following EHB roles:
+PO
+Per the traditional SAC/RD PAR review, the PO moves the PAR to the PQC
+PQC
+Per the traditional
+SAC/RD PAR review, the PQC moves the PAR to the PAO
+FIGURE 5: PART 1 OF SAC/RD PAR HOLD PROCESS WORKFLOW
+PAO
+If the SAC/RD PAR contains active, unresolved conditions but NO NEW conditions, the PAO returns the SAC/RD PAR to the PQC
+PQC
+The PQC sends the SAC/RD PAR with active,
+unresolved
+conditions
+(once reviewed and returned by
+the PAO) to
+the HSO SAC
+or RD Hold
+Queue
+HSO
+SAC or
+RD Hold
+Queue
+(for DSA PAO approval)
+To ensure consistency with the processing of SAC or RD Holds, each of the HSO Division Senior Advisors (DSA) will be responsible for processing the HSO SAC and RD Hold queues for an assigned SAC and RD cohort.
+43
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+SAC/RD Hold Scenario 1: If health center still has active conditions
+No changes to the PAR needed
+DSA moves SAC PAR to OPPD for one-year project period or DSA moves RD PAR to PQC-D for one-year designation period
+FIGURE 6: PART 2 OF SAC/RD HOLD PROCESS WORKFLOW
+SAC/RD Hold Scenario 2: If health center no longer has active conditions
+DSA makes the following updates to the PAR: ·Correct error message because "No, Organization does not demonstrate compliance due to a progressive action condition identified from the last budget period" is no longer accurate · Update compliance determinations at the element level from "No" to "Yes" ·Change one-year project/designation period recommendation to a three-year project/desingation period recommendation
+DSA moves SAC PAR to OPPD with updated three-year project period or RD PAR to PQC-D with updated three-year designation period
+On the morning of the SAC Holds due to OPPD or RD Holds due to PQC-D dates (see the FY 2020 PAR and LAL Review Schedule and Figures 7 and 8 below), the assigned DSA (with PAO rights) will review each of the PARs in the HSO SAC and RD Hold queues. For each PAR, the DSA will review the Legacy Compliance Snapshot and the Compliance Snapshot to determine the applicant's current compliance status, and then process the SAC and RD PARs in the respective Hold queues in accordance with the following guidance:
+. If the health center still has active conditions: The DSA makes no changes to the PAR and moves the SAC PAR to OPPD or the RD PAR to the PQC-D with the existing one-year project period recommendation.
+. If the health center no longer has active conditions: The determination of "No, Organization does not demonstrate compliance due to a progressive action condition identified from the last budget period" will have an error message, which indicates that the related condition has been resolved.
+o For each element that had previously defaulted to "No", the DSA marks the element as "Yes, Organization demonstrates compliance based on
+44 :selected: :selected: :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+the PAR review" and updates the existing comments by adding the following sentence "The condition for this element, which was in place prior to this application review, has been addressed." The BPHC Reviewer's previous comments should not be deleted.
+o The DSA then changes the recommendation from a one-year project/designation period to a three-year project/designation period, updating the comments in that box with the following sentence "Conditions that were placed prior to this application review have been resolved." and moves the SAC PAR to OPPD or the RD PAR to the PQC-D.
+. Upon processing all of the PARs in the HSO SAC Hold Queue, the DSA emails OPPD at BPHCfundinginternal@hrsa.gov (with a copy to BPHCONHS@hrsa.gov and the HSO ODs and OSAs) that the HSO SAC Hold Queue has been processed (i.e., SAC Hold PARs have moved to OPPD). The subject line of the email should indicate "SAC Hold, HRSA-20-XXX".
+8/29/2019 Updated both tables with the names of DSAs for each cohort of SACs and RDs.
+01-Jan-20
+SAC HRSA-20-015
+Process on 11/26/2019 - Pat Johnson
+01-Feb-20
+SAC HRSA-20-016
+Process on 12/27/2019 - Kim Willard-Jelks
+01-Mar-20
+SAC HRSA-20-017
+Process on 1/25/2020 - Renee Bergen
+01-Apr-20
+SAC HRSA-20-018
+Process on 2/25/2020 - Scott Henderson
+01-May-20
+SAC HRSA-20-019
+Process on 3/26/2019 - Dana Sampson
+01-Jun-20
+SAC HRSA-20-020
+Process on 4/26/2019 - Erin Gardner
+FIGURE 7: SAC HOLD PROCESS DATE BY COHORT
+. Upon processing all of the PARs in the HSO RD Hold Queue, the DSA emails the respective HSO PQC-D (with a copy to BPHCONHS@hrsa.gov and the HSO ODs and OSAs) that the HSO RD Hold Queue has been processed (i.e., RD Hold PARS have moved to the PQC-D). The subject line of the email should indicate "RD Hold, <Month> 1, 2020 Starts".
+45 :unselected:
+SAC AND RD PAR GUIDING PRINCIPLES - FISCAL YEAR 2020
+Competing Continuation and Renewal of Designation Application Review SOP
+01-Jan-20 Process on 12/20/2019 - Pat Johnson
+01-Feb-20
+Process on 1/21/2020 - Kim Willard-Jelks 01-Mar-20
+Process on 2/19/2020 - Renee Bergen 01-Apr-20 Process on 3/20/2020 - Scott Henderson
+01-May-20
+Process on 4/20/2019 - Dana Sampson 01-Jun-20
+Process on 5/21/2019 - Erin Gardner
+FIGURE 8: RD HOLD PROCESS DATE BY COHORT
+46

@@ -137,9 +137,9 @@ input[type="file"] {
 }
 
 .status.processing {
-  background: #422006;
-  color: #fbbf24;
-  border: 1px solid #78350f;
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #475569;
 }
 
 .status.success {

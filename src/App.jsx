@@ -11,15 +11,15 @@ const AZURE_OPENAI_KEY = ''
 const AZURE_OPENAI_DEPLOYMENT = ''  // Your deployment name
 
 const SECTIONS = [
-  //'Needs Assessment',
-   //'Sliding Fee Discount Program',
-   //'Key Management Staff',
-   //'Contracts and Subawards',
-  // 'Collaborative Relationships',
-  // 'Billing and Collections',
+  'Needs Assessment',
+   'Sliding Fee Discount Program',
+   'Key Management Staff',
+   'Contracts and Subawards',
+  'Collaborative Relationships',
+  'Billing and Collections',
    'Budget',
-  // 'Board Authority',
-  // 'Board Composition'
+   'Board Authority',
+   'Board Composition'
 ]
 
 function App() {
@@ -340,6 +340,26 @@ ${content}`
     }
   }
 
+  // Helper function to retry API calls with exponential backoff
+  const retryWithBackoff = async (fn, maxRetries = 3, initialDelay = 20000) => {
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+      try {
+        return await fn()
+      } catch (error) {
+        const isRateLimitError = error.response?.data?.error?.code === 'RateLimitReached'
+        
+        if (isRateLimitError && attempt < maxRetries - 1) {
+          const delay = initialDelay * Math.pow(2, attempt) // Exponential backoff: 20s, 40s, 80s
+          console.log(`Rate limit hit. Retrying in ${delay/1000} seconds... (Attempt ${attempt + 1}/${maxRetries})`)
+          setStatus(`⚠️ Rate limit reached. Retrying in ${delay/1000} seconds... (Attempt ${attempt + 1}/${maxRetries})`)
+          await new Promise(resolve => setTimeout(resolve, delay))
+        } else {
+          throw error
+        }
+      }
+    }
+  }
+
   // Azure OpenAI - Validate compliance
   const validateCompliance = async (section, rules, applicationContent) => {
     // Find the chapter that matches this section
@@ -401,11 +421,12 @@ STEP 3 - EVALUATE EVIDENCE STRICTLY (ZERO TOLERANCE FOR HALLUCINATION):
 - Only mark COMPLIANT if you find CLEAR, EXPLICIT proof that fully satisfies the requirement
 - If evidence is unclear, partial, ambiguous, or incomplete, mark NON_COMPLIANT
 - If no evidence is found, mark NON_COMPLIANT and state it is missing
+- If the application content is insufficient to make a determination, mark CANNOT_BE_DETERMINED
 - ABSOLUTELY FORBIDDEN: Do NOT guess, assume, infer, or make up any information
 - ABSOLUTELY FORBIDDEN: Do NOT use general knowledge about what health centers "typically" do
 - ABSOLUTELY FORBIDDEN: Do NOT mark compliant without direct, explicit proof from the application text
 - REQUIRED: Every piece of evidence must be a direct quote from the application with exact page number
-- REQUIRED: If you cannot provide a direct quote and page number, mark as NON_COMPLIANT
+- REQUIRED: If you cannot provide a direct quote and page number, mark as NON_COMPLIANT or CANNOT_BE_DETERMINED
 
 STEP 4 - VALIDATE EACH "MUST ADDRESS" ITEM:
 ${element.requirementDetails && element.requirementDetails.length > 0 ? `
@@ -451,7 +472,7 @@ APPLICATION CONTENT (Full document with page numbers and content types):
 ${applicationContent}
 
 Return JSON: {
-  "status": "COMPLIANT" or "NON_COMPLIANT",
+  "status": "COMPLIANT" or "NON_COMPLIANT" or "CANNOT_BE_DETERMINED",
   "whatWasChecked": "Brief statement of what requirement was validated (1-2 sentences max)",
   "evidence": "1-3 KEY direct quotes in 'quotation marks' that prove compliance, or 'Not found'. Keep it concise - only the most relevant evidence.",
   "evidenceLocation": "Page number only (e.g., 'Page 93' or 'Not found')",
@@ -565,8 +586,15 @@ Return JSON: {
         const section = SECTIONS[i]
         setStatus(`Analyzing ${section} (${i + 1}/${SECTIONS.length})...`)
         
-        const result = await validateCompliance(section, manualRules, content)
+        // Use retry logic for validation
+        const result = await retryWithBackoff(() => validateCompliance(section, manualRules, content))
         sectionResults[section] = result
+        
+        // Add delay between API calls to avoid rate limits (except after last section)
+        if (i < SECTIONS.length - 1) {
+          setStatus(`⏳ Waiting 20 seconds to avoid rate limits... (${i + 1}/${SECTIONS.length} completed)`)
+          await new Promise(resolve => setTimeout(resolve, 20000)) // 20 second delay
+        }
       }
       
       setResults(sectionResults)
@@ -691,13 +719,37 @@ Return JSON: {
                   The following compliance chapters were extracted from the HRSA Compliance Manual and will be used to validate applications:
                 </p>
                 
-                {manualRules.map((chapter, chapterIdx) => (
+                {manualRules.map((chapter, chapterIdx) => {
+                  const uploadChapterKey = `upload-chapter-${chapterIdx}`
+                  const isUploadChapterExpanded = expandedDetails[uploadChapterKey] || false
+                  
+                  return (
                   <div key={chapterIdx} className="section" style={{ marginBottom: '30px', border: '1px solid #334155', borderRadius: '8px', padding: '20px', background: '#1e293b' }}>
-                    <h3 style={{ color: '#3b82f6', marginBottom: '15px' }}>
-                      📋 {chapter.chapter || chapter.section}
-                    </h3>
+                    <button
+                      onClick={() => setExpandedDetails(prev => ({...prev, [uploadChapterKey]: !isUploadChapterExpanded}))}
+                      style={{
+                        width: '100%',
+                        padding: '15px 20px',
+                        background: '#0f172a',
+                        border: '1px solid #475569',
+                        borderRadius: '10px',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        transition: 'all 0.3s',
+                        marginBottom: isUploadChapterExpanded ? '15px' : '0'
+                      }}
+                    >
+                      <h3 style={{ color: '#e0e7ff', margin: '0', fontSize: '1.2rem', fontWeight: '600' }}>
+                        📋 {chapter.chapter || chapter.section}
+                      </h3>
+                      <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: isUploadChapterExpanded ? 'rotate(180deg)' : 'rotate(0deg)', color: '#93c5fd' }}>
+                        ▼
+                      </span>
+                    </button>
                     
-                    {chapter.authority && (
+                    {isUploadChapterExpanded && chapter.authority && (
                       <div style={{ marginBottom: '20px', padding: '12px', background: '#0f172a', borderRadius: '6px', border: '1px solid #334155' }}>
                         <strong style={{ color: '#f1f5f9' }}>📜 Authority:</strong>
                         <p style={{ margin: '5px 0 0 0', fontSize: '0.9rem', color: '#cbd5e1' }}>
@@ -706,7 +758,7 @@ Return JSON: {
                       </div>
                     )}
                     
-                    {chapter.elements && chapter.elements.length > 0 && (
+                    {isUploadChapterExpanded && chapter.elements && chapter.elements.length > 0 && (
                       <div>
                         <h4 style={{ marginBottom: '15px', color: '#94a3b8' }}>
                           Elements ({chapter.elements.length} requirements):
@@ -767,7 +819,8 @@ Return JSON: {
                       </div>
                     )}
                   </div>
-                ))}
+                  )
+                })}
               </div>
             )}
           </div>
@@ -852,10 +905,10 @@ Return JSON: {
                       transition: 'all 0.3s'
                     }}
                   >
-                    <h3 style={{ color: '#3b82f6', margin: '0', fontSize: '1.4rem', fontWeight: '600' }}>
+                    <h3 style={{ color: '#e0e7ff', margin: '0', fontSize: '1.4rem', fontWeight: '600' }}>
                       📋 {chapter.chapter || chapter.section}
                     </h3>
-                    <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: isChapterExpanded ? 'rotate(180deg)' : 'rotate(0deg)', color: '#3b82f6' }}>
+                    <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: isChapterExpanded ? 'rotate(180deg)' : 'rotate(0deg)', color: '#93c5fd' }}>
                       ▼
                     </span>
                   </button>

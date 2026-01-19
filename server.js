@@ -211,6 +211,37 @@ app.delete('/api/cache/clear-all', async (req, res) => {
   }
 })
 
+// Save manual review content to file for analysis
+app.post('/api/save-manual-review', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const { content, filename } = req.body
+    
+    if (!content) {
+      return res.status(400).json({ success: false, error: 'Missing content' })
+    }
+    
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
+    const sanitizedFilename = (filename || 'manual-review').replace(/[^a-zA-Z0-9.-]/g, '_')
+    const outputFilename = `manual-review-${timestamp}-${sanitizedFilename}.txt`
+    const outputPath = path.join(DATA_DIR, outputFilename)
+    
+    await fs.writeFile(outputPath, content, 'utf-8')
+    console.log(`✅ Saved manual review content to: ${outputPath}`)
+    console.log(`📊 Content length: ${content.length} characters`)
+    
+    res.json({ 
+      success: true, 
+      message: 'Manual review content saved successfully',
+      filepath: outputPath,
+      filename: outputFilename
+    })
+  } catch (error) {
+    console.error('Error saving manual review:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
 app.listen(PORT, () => {
   console.log(`✅ Backend server running on http://localhost:${PORT}`)
   console.log(`📁 Data directory: ${DATA_DIR}`)

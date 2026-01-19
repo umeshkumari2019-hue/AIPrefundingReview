@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import * as XLSX from 'xlsx'
 
 // Azure Document Intelligence configuration
 const AZURE_DOC_ENDPOINT = ''
@@ -8,7 +9,7 @@ const AZURE_DOC_KEY = ''
 // Azure OpenAI configuration
 const AZURE_OPENAI_ENDPOINT = ''
 const AZURE_OPENAI_KEY = ''
-const AZURE_OPENAI_DEPLOYMENT = 'gpt-4'  // Your deployment name
+const AZURE_OPENAI_DEPLOYMENT = ''  // Your deployment name
 
 // Backend server configuration
 const BACKEND_URL = 'http://localhost:3001'
@@ -44,6 +45,10 @@ function App() {
   const [speechStatus, setSpeechStatus] = useState({}) // Track speech status for each item
   const [cachedApplications, setCachedApplications] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
+  const [manualReviewFile, setManualReviewFile] = useState(null)
+  const [manualReviewContent, setManualReviewContent] = useState('')
+  const [manualReviewParsed, setManualReviewParsed] = useState([])
+  const [showComparison, setShowComparison] = useState(false)
 
   // Load saved compliance rules from JSON file on mount
   useEffect(() => {
@@ -259,6 +264,224 @@ function App() {
     } catch (error) {
       console.error('Error saving rules to file:', error)
       alert('Could not save rules. Make sure the backend server is running (npm run server)')
+    }
+  }
+
+  // Parse manual review content using OpenAI
+  const parseManualReviewWithAI = async (content) => {
+    setStatus('🤖 Analyzing manual review with AI...')
+    
+    try {
+      const response = await axios.post(
+        `${AZURE_OPENAI_ENDPOINT}/openai/deployments/${AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=2024-02-15-preview`,
+        {
+          messages: [
+            {
+              role: 'system',
+              content: 'You are an expert at parsing HRSA compliance review documents. Extract structured data from manual review content. For each element found, return: section name (e.g., "Sliding Fee Discount Program", "Key Management Staff"), element letter, element name, compliance status (Yes/No/Not Applicable), and reviewer comments. IMPORTANT: Each element belongs to a specific section - make sure to correctly identify which section each element belongs to. Return as JSON array.'
+            },
+            {
+              role: 'user',
+              content: `Parse this manual review content and extract all compliance elements with their section context:\n\n${content.substring(0, 50000)}\n\nReturn JSON array with format: [{"section": "Sliding Fee Discount Program", "letter": "b", "name": "Sliding Fee Discount Program Policies", "status": "Yes", "comments": "Compliance was demonstrated..."}]\n\nMake sure each element includes the correct section name it belongs to.`
+            }
+          ],
+          temperature: 0.1,
+          max_tokens: 4000
+        },
+        {
+          headers: {
+            'api-key': AZURE_OPENAI_KEY,
+            'Content-Type': 'application/json'
+          }
+        }
+      )
+      
+      const aiResponse = response.data.choices[0].message.content
+      // Parse JSON from AI response
+      const jsonMatch = aiResponse.match(/\[[\s\S]*\]/)
+      if (jsonMatch) {
+        return JSON.parse(jsonMatch[0])
+      }
+      return []
+    } catch (error) {
+      console.error('Error parsing manual review with AI:', error)
+      return []
+    }
+  }
+
+  // Export comparison report to Excel
+  const exportComparisonToExcel = () => {
+    if (!results || !manualRules) {
+      alert('No comparison data available to export')
+      return
+    }
+
+    const exportData = []
+    
+    // Add header row
+    exportData.push([
+      'Section',
+      'Element',
+      'AI Analysis - Status',
+      'AI Analysis - Evidence',
+      'AI Analysis - Reasoning',
+      'Manual Review - Status',
+      'Manual Review - Comments',
+      'Match Status'
+    ])
+
+    // Iterate through sections and elements
+    SECTIONS.forEach(section => {
+      const result = results[section]
+      const chapter = manualRules.find(ch => {
+        if (ch.section === section) return true
+        const chapterName = ch.chapter.split(':')[1]?.trim()
+        return chapterName === section
+      })
+
+      if (!result || !chapter) return
+
+      chapter.elements.forEach((element, elemIdx) => {
+        const validationResult = [...(result.compliantItems || []), ...(result.nonCompliantItems || [])]
+          .find(item => {
+            if (!item.element || !element.element) return false
+            if (item.element === element.element) return true
+            const normalizeText = (text) => text.toLowerCase().replace(/\s+/g, ' ').trim()
+            return normalizeText(item.element) === normalizeText(element.element)
+          })
+
+        if (!validationResult) return
+
+        const isCompliant = result.compliantItems?.some(item => {
+          if (!item.element || !element.element) return false
+          if (item.element === element.element) return true
+          const normalizeText = (text) => text.toLowerCase().replace(/\s+/g, ' ').trim()
+          return normalizeText(item.element) === normalizeText(element.element)
+        })
+
+        // Get manual review data
+        const elementName = element.element || `Element ${elemIdx + 1}`
+        const elementMatch = elementName.match(/Element\s+([a-z])/i)
+        const elementLetter = elementMatch?.[1]?.toLowerCase()
+
+        let manualStatus = 'Not Found'
+        let manualComments = 'Element not found in manual review'
+        let matchStatus = 'No Match'
+
+        if (elementLetter && manualReviewParsed && manualReviewParsed.length > 0) {
+          const parsedElement = manualReviewParsed.find(item => {
+            const letterMatches = item.letter?.toLowerCase() === elementLetter
+            const itemSection = item.section?.toLowerCase() || ''
+            const currentSection = section.toLowerCase()
+            
+            if (letterMatches && itemSection.includes(currentSection)) return true
+            
+            if (letterMatches) {
+              const sectionWords = currentSection.split(/\s+/)
+              return sectionWords.some(word => word.length > 3 && itemSection.includes(word))
+            }
+            
+            return false
+          })
+
+          if (parsedElement) {
+            const status = parsedElement.status?.toLowerCase()
+            if (status?.includes('yes')) {
+              manualStatus = 'COMPLIANCE (Yes)'
+            } else if (status?.includes('not applicable') || status?.includes('n/a')) {
+              manualStatus = 'NOT APPLICABLE'
+            } else if (status?.includes('no')) {
+              manualStatus = 'NON-COMPLIANCE (No)'
+            }
+            manualComments = parsedElement.comments || ''
+
+            // Determine match status
+            const aiCompliant = isCompliant
+            const manualCompliant = status?.includes('yes')
+            
+            if (aiCompliant === manualCompliant) {
+              matchStatus = '✓ Match'
+            } else {
+              matchStatus = '✗ Mismatch'
+            }
+          }
+        }
+
+        // Add row to export data
+        exportData.push([
+          section,
+          elementName,
+          isCompliant ? 'COMPLIANCE' : 'NON-COMPLIANCE',
+          validationResult.evidence || '',
+          validationResult.reasoning || '',
+          manualStatus,
+          manualComments,
+          matchStatus
+        ])
+      })
+    })
+
+    // Create worksheet and workbook
+    const ws = XLSX.utils.aoa_to_sheet(exportData)
+    
+    // Set column widths
+    ws['!cols'] = [
+      { wch: 30 }, // Section
+      { wch: 50 }, // Element
+      { wch: 20 }, // AI Status
+      { wch: 60 }, // AI Evidence
+      { wch: 60 }, // AI Reasoning
+      { wch: 25 }, // Manual Status
+      { wch: 60 }, // Manual Comments
+      { wch: 15 }  // Match Status
+    ]
+
+    const wb = XLSX.utils.book_new()
+    XLSX.utils.book_append_sheet(wb, ws, 'Comparison Report')
+
+    // Generate filename with timestamp
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-').substring(0, 19)
+    const filename = `Compliance_Comparison_${applicationName || 'Report'}_${timestamp}.xlsx`
+
+    // Download file
+    XLSX.writeFile(wb, filename)
+  }
+
+  // Handle manual review PDF upload
+  const handleManualReviewUpload = async () => {
+    if (!manualReviewFile) return
+    
+    setProcessing(true)
+    setStatus('Extracting text from manual review PDF...')
+    
+    try {
+      const content = await extractTextFromPDF(manualReviewFile)
+      setManualReviewContent(content)
+      
+      // Save manual review content to local file for analysis
+      try {
+        await axios.post(`${BACKEND_URL}/api/save-manual-review`, {
+          content: content,
+          filename: manualReviewFile.name
+        })
+        console.log('✅ Manual review content saved to local file for analysis')
+      } catch (saveError) {
+        console.warn('Could not save manual review to file:', saveError.message)
+      }
+      
+      // Parse manual review with AI to extract structured data
+      const parsedElements = await parseManualReviewWithAI(content)
+      console.log('🤖 AI parsed elements:', parsedElements)
+      
+      // Store parsed elements for comparison
+      setManualReviewParsed(parsedElements)
+      
+      setShowComparison(true)
+      setStatus('✅ Manual review loaded and analyzed successfully!')
+    } catch (error) {
+      setStatus(`❌ Error: ${error.message}`)
+    } finally {
+      setProcessing(false)
     }
   }
 
@@ -899,6 +1122,13 @@ Return JSON: {
             disabled={!results}
           >
             3. View Results
+          </button>
+          <button 
+            className={`tab ${activeTab === 'compare' ? 'active' : ''}`}
+            onClick={() => setActiveTab('compare')}
+            disabled={!results}
+          >
+            🔍 Compare with Manual
           </button>
         </div>
 
@@ -2010,6 +2240,546 @@ Return JSON: {
                 </div>
               )
             })}
+          </div>
+        )}
+
+        {activeTab === 'compare' && (
+          <div>
+            <h2 style={{ color: '#f1f5f9', marginBottom: '20px' }}>🔍 Compare AI Analysis with Manual Review</h2>
+            
+            {!showComparison ? (
+              <div>
+                <p style={{ color: '#cbd5e1', marginBottom: '20px', fontSize: '0.95rem' }}>
+                  Upload a manual review PDF to compare it side-by-side with the AI analysis results.
+                  The application number should be in the filename.
+                </p>
+                
+                <div 
+                  className="upload-section"
+                  onDragOver={handleDragOver}
+                  onDragLeave={handleDragLeave}
+                  onDrop={(e) => handleDrop(e, setManualReviewFile)}
+                  onClick={() => document.getElementById('manual-review-input').click()}
+                  style={{ marginBottom: '20px' }}
+                >
+                  <div className="upload-icon">📄</div>
+                  <h3>{manualReviewFile ? manualReviewFile.name : 'Drop Manual Review PDF here or click to upload'}</h3>
+                  <p>Manual Review Document PDF</p>
+                  <input 
+                    id="manual-review-input"
+                    type="file" 
+                    accept=".pdf"
+                    onChange={(e) => setManualReviewFile(e.target.files[0])}
+                  />
+                </div>
+                
+                <button 
+                  className="btn" 
+                  onClick={handleManualReviewUpload}
+                  disabled={!manualReviewFile || processing}
+                >
+                  {processing ? 'Processing...' : 'Load Manual Review'}
+                </button>
+              </div>
+            ) : (
+              <div>
+                <div style={{ 
+                  display: 'flex', 
+                  justifyContent: 'space-between', 
+                  alignItems: 'center',
+                  marginBottom: '20px',
+                  padding: '15px',
+                  background: '#1e293b',
+                  borderRadius: '8px',
+                  border: '1px solid #475569'
+                }}>
+                  <div>
+                    <h3 style={{ color: '#f1f5f9', margin: '0 0 5px 0' }}>
+                      📊 Comparison View
+                    </h3>
+                    <p style={{ color: '#94a3b8', margin: 0, fontSize: '0.9rem' }}>
+                      Application: {applicationName}
+                    </p>
+                  </div>
+                  <div style={{ display: 'flex', gap: '10px' }}>
+                    <button
+                      onClick={exportComparisonToExcel}
+                      style={{
+                        padding: '8px 16px',
+                        background: '#10b981',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '6px',
+                        cursor: 'pointer',
+                        fontSize: '0.9rem',
+                        fontWeight: '600',
+                        transition: 'all 0.3s'
+                      }}
+                      onMouseEnter={(e) => e.target.style.background = '#059669'}
+                      onMouseLeave={(e) => e.target.style.background = '#10b981'}
+                    >
+                      📊 Export to Excel
+                    </button>
+                    <button
+                      onClick={() => {
+                        setShowComparison(false)
+                        setManualReviewFile(null)
+                        setManualReviewContent('')
+                        setManualReviewParsed([])
+                      }}
+                      style={{
+                        padding: '8px 16px',
+                        background: '#ef4444',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '6px',
+                        cursor: 'pointer',
+                        fontSize: '0.9rem',
+                        fontWeight: '600'
+                      }}
+                    >
+                      🔄 Upload Different Review
+                    </button>
+                  </div>
+                </div>
+
+                {/* Element-by-element comparison */}
+                <div style={{ marginBottom: '30px' }}>
+                  {(() => {
+                    console.log('🔍 COMPARISON DEBUG:')
+                    console.log('manualRules:', manualRules)
+                    console.log('results:', results)
+                    console.log('SECTIONS:', SECTIONS)
+                    console.log('manualReviewContent length:', manualReviewContent?.length)
+                    
+                    if (!manualRules) {
+                      console.log('❌ No manual rules found')
+                      return (
+                        <div style={{
+                          padding: '40px',
+                          textAlign: 'center',
+                          background: '#1e293b',
+                          borderRadius: '12px',
+                          border: '2px solid #f59e0b'
+                        }}>
+                          <div style={{ fontSize: '3rem', marginBottom: '15px' }}>⚠️</div>
+                          <h3 style={{ color: '#f59e0b', marginBottom: '10px' }}>Manual Rules Not Loaded</h3>
+                          <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>
+                            Please upload and process the compliance manual first in the "1. Upload Manual" tab.
+                          </p>
+                        </div>
+                      )
+                    }
+                    
+                    if (!results) {
+                      console.log('❌ No results found')
+                      return (
+                        <div style={{
+                          padding: '40px',
+                          textAlign: 'center',
+                          background: '#1e293b',
+                          borderRadius: '12px',
+                          border: '2px solid #f59e0b'
+                        }}>
+                          <div style={{ fontSize: '3rem', marginBottom: '15px' }}>⚠️</div>
+                          <h3 style={{ color: '#f59e0b', marginBottom: '10px' }}>No Analysis Results</h3>
+                          <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>
+                            Please analyze an application first in the "2. Analyze Application" tab.
+                          </p>
+                        </div>
+                      )
+                    }
+                    
+                    console.log('✅ Both manualRules and results exist, rendering sections...')
+                    
+                    return SECTIONS.map((section, sectionIdx) => {
+                      const result = results[section]
+                      console.log(`Section ${sectionIdx}: ${section}`, 'result:', result)
+                      
+                      if (!result) {
+                        console.log(`  ⚠️ No result for section: ${section}`)
+                        return null
+                      }
+                      
+                      // Match chapter - handle "Chapter X: Name" vs "Name" format
+                      const chapter = manualRules?.find(ch => {
+                        // Try exact match first
+                        if (ch.chapter === section) return true
+                        // Try section field match
+                        if (ch.section === section) return true
+                        // Try matching after "Chapter X: " prefix
+                        if (ch.chapter?.includes(': ') && ch.chapter.split(': ')[1] === section) return true
+                        return false
+                      })
+                      console.log(`  Chapter found:`, chapter)
+                      
+                      if (!chapter || !chapter.elements) {
+                        console.log(`  ⚠️ No chapter or elements for: ${section}`)
+                        return null
+                      }
+                      
+                      console.log(`  ✅ Rendering ${chapter.elements.length} elements for: ${section}`)
+                    
+                    return (
+                      <div key={sectionIdx} style={{
+                        marginBottom: '30px',
+                        background: '#1e293b',
+                        borderRadius: '12px',
+                        border: '2px solid #475569',
+                        overflow: 'hidden'
+                      }}>
+                        {/* Chapter Header */}
+                        <div style={{
+                          padding: '15px 20px',
+                          background: '#0f172a',
+                          borderBottom: '2px solid #475569'
+                        }}>
+                          <h3 style={{
+                            margin: 0,
+                            color: '#f1f5f9',
+                            fontSize: '1.1rem',
+                            fontWeight: '600'
+                          }}>
+                            {section}
+                          </h3>
+                        </div>
+
+                        {/* Elements Comparison */}
+                        <div style={{ padding: '20px' }}>
+                          {chapter.elements.map((element, elemIdx) => {
+                            // Find validation result for this element
+                            const validationResult = [...(result.compliantItems || []), ...(result.nonCompliantItems || [])]
+                              .find(item => {
+                                if (!item.element || !element.element) return false
+                                if (item.element === element.element) return true
+                                if (item.element.includes(element.element.substring(0, 20))) return true
+                                if (element.element.includes(item.element.substring(0, 20))) return true
+                                const normalizeText = (text) => text.toLowerCase().replace(/\s+/g, ' ').trim()
+                                if (normalizeText(item.element) === normalizeText(element.element)) return true
+                                return false
+                              })
+                            
+                            if (!validationResult) return null
+                            
+                            const isCompliant = result.compliantItems?.some(item => {
+                              if (!item.element || !element.element) return false
+                              if (item.element === element.element) return true
+                              if (item.element.includes(element.element.substring(0, 20))) return true
+                              if (element.element.includes(item.element.substring(0, 20))) return true
+                              const normalizeText = (text) => text.toLowerCase().replace(/\s+/g, ' ').trim()
+                              if (normalizeText(item.element) === normalizeText(element.element)) return true
+                              return false
+                            })
+                            
+                            // Search for this element in AI-parsed manual review data
+                            const elementName = element.element || `Element ${elemIdx + 1}`
+                            
+                            let foundInManual = false
+                            let manualExcerpt = ''
+                            let manualComplianceStatus = null
+                            let manualComments = ''
+                            let selectedOptionFull = ''
+                            
+                            // Extract element letter from element name
+                            const elementMatch = elementName.match(/Element\s+([a-z])/i)
+                            const elementLetter = elementMatch?.[1]?.toLowerCase()
+                            
+                            if (elementLetter && manualReviewParsed && manualReviewParsed.length > 0) {
+                              // Find element in AI-parsed data matching BOTH section and letter
+                              const parsedElement = manualReviewParsed.find(item => {
+                                const letterMatches = item.letter?.toLowerCase() === elementLetter
+                                
+                                // Check if section names match (allowing for variations)
+                                const itemSection = item.section?.toLowerCase() || ''
+                                const currentSection = section.toLowerCase()
+                                
+                                // Try exact match first
+                                if (letterMatches && itemSection.includes(currentSection)) {
+                                  return true
+                                }
+                                
+                                // Try partial match (e.g., "Contracts" matches "Contracts and Subawards")
+                                if (letterMatches) {
+                                  const sectionWords = currentSection.split(/\s+/)
+                                  const matches = sectionWords.some(word => 
+                                    word.length > 3 && itemSection.includes(word)
+                                  )
+                                  if (matches) return true
+                                }
+                                
+                                return false
+                              })
+                              
+                              if (parsedElement) {
+                                foundInManual = true
+                                
+                                // Map status from AI response
+                                const status = parsedElement.status?.toLowerCase()
+                                if (status?.includes('yes')) {
+                                  manualComplianceStatus = 'compliance'
+                                  selectedOptionFull = 'Yes, Organization demonstrates compliance based on the PAR review'
+                                } else if (status?.includes('not applicable') || status?.includes('n/a')) {
+                                  manualComplianceStatus = 'not-applicable'
+                                  selectedOptionFull = 'Not Applicable'
+                                } else if (status?.includes('no')) {
+                                  manualComplianceStatus = 'non-compliance'
+                                  selectedOptionFull = 'No, Organization does not demonstrate compliance based on the PAR review'
+                                }
+                                
+                                // Get comments from AI response
+                                manualComments = parsedElement.comments || ''
+                              }
+                            }
+                            
+                            return (
+                              <div key={elemIdx} style={{
+                                marginBottom: '20px',
+                                border: `2px solid ${isCompliant ? '#10b981' : '#ef4444'}`,
+                                borderRadius: '8px',
+                                overflow: 'hidden'
+                              }}>
+                                {/* Element Header */}
+                                <div style={{
+                                  padding: '12px 15px',
+                                  background: isCompliant ? '#064e3b' : '#7f1d1d',
+                                  borderBottom: `1px solid ${isCompliant ? '#10b981' : '#ef4444'}`
+                                }}>
+                                  <div style={{
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    alignItems: 'center'
+                                  }}>
+                                    <strong style={{ color: '#f1f5f9', fontSize: '0.95rem' }}>
+                                      {elementName}
+                                    </strong>
+                                    <span style={{
+                                      padding: '4px 12px',
+                                      background: isCompliant ? '#10b981' : '#ef4444',
+                                      color: 'white',
+                                      borderRadius: '4px',
+                                      fontSize: '0.8rem',
+                                      fontWeight: '600'
+                                    }}>
+                                      {isCompliant ? '✅ COMPLIANCE' : '❌ NON COMPLIANCE'}
+                                    </span>
+                                  </div>
+                                </div>
+
+                                {/* Side-by-side comparison */}
+                                <div style={{
+                                  display: 'grid',
+                                  gridTemplateColumns: '1fr 1fr',
+                                  gap: '0'
+                                }}>
+                                  {/* AI Analysis */}
+                                  <div style={{
+                                    padding: '15px',
+                                    background: '#0f172a',
+                                    borderRight: '1px solid #475569'
+                                  }}>
+                                    <div style={{
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                      gap: '8px',
+                                      marginBottom: '10px'
+                                    }}>
+                                      <span style={{ fontSize: '1.2rem' }}>🤖</span>
+                                      <strong style={{ color: '#3b82f6', fontSize: '0.9rem' }}>
+                                        AI Analysis
+                                      </strong>
+                                    </div>
+                                    <p style={{
+                                      margin: '0 0 10px 0',
+                                      color: '#cbd5e1',
+                                      fontSize: '0.85rem',
+                                      lineHeight: '1.5'
+                                    }}>
+                                      {element.requirementText}
+                                    </p>
+                                    {validationResult.evidence && (
+                                      <div style={{
+                                        marginTop: '10px',
+                                        padding: '10px',
+                                        background: '#1e293b',
+                                        borderRadius: '6px',
+                                        border: '1px solid #334155'
+                                      }}>
+                                        <div style={{
+                                          fontSize: '0.8rem',
+                                          color: '#94a3b8',
+                                          marginBottom: '5px',
+                                          fontWeight: '600'
+                                        }}>
+                                          Evidence:
+                                        </div>
+                                        <div style={{
+                                          fontSize: '0.8rem',
+                                          color: '#e2e8f0',
+                                          lineHeight: '1.5'
+                                        }}>
+                                          {validationResult.evidence.substring(0, 200)}
+                                          {validationResult.evidence.length > 200 ? '...' : ''}
+                                        </div>
+                                      </div>
+                                    )}
+                                  </div>
+
+                                  {/* Manual Review */}
+                                  <div style={{
+                                    padding: '15px',
+                                    background: '#0f172a'
+                                  }}>
+                                    <div style={{
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                      gap: '8px',
+                                      marginBottom: '10px'
+                                    }}>
+                                      <span style={{ fontSize: '1.2rem' }}>👤</span>
+                                      <strong style={{ color: '#10b981', fontSize: '0.9rem' }}>
+                                        Manual Review
+                                      </strong>
+                                    </div>
+                                    
+                                    {foundInManual ? (
+                                      <div>
+                                        {/* Manual Compliance Status */}
+                                        {manualComplianceStatus && (
+                                          <div style={{
+                                            padding: '8px 12px',
+                                            background: manualComplianceStatus === 'compliance' ? '#064e3b' : 
+                                                       manualComplianceStatus === 'non-compliance' ? '#7f1d1d' : '#78350f',
+                                            borderRadius: '6px',
+                                            border: `1px solid ${manualComplianceStatus === 'compliance' ? '#10b981' : 
+                                                                 manualComplianceStatus === 'non-compliance' ? '#ef4444' : '#f59e0b'}`,
+                                            marginBottom: '10px'
+                                          }}>
+                                            <div style={{
+                                              fontSize: '0.8rem',
+                                              color: manualComplianceStatus === 'compliance' ? '#10b981' : 
+                                                     manualComplianceStatus === 'non-compliance' ? '#ef4444' : '#f59e0b',
+                                              fontWeight: '600',
+                                              display: 'flex',
+                                              alignItems: 'center',
+                                              gap: '6px'
+                                            }}>
+                                              {manualComplianceStatus === 'compliance' ? (
+                                                <>
+                                                  <span>✅</span>
+                                                  <span>Manual Review: COMPLIANCE (Yes)</span>
+                                                </>
+                                              ) : manualComplianceStatus === 'non-compliance' ? (
+                                                <>
+                                                  <span>❌</span>
+                                                  <span>Manual Review: NON-COMPLIANCE (No)</span>
+                                                </>
+                                              ) : (
+                                                <>
+                                                  <span>⚪</span>
+                                                  <span>Manual Review: NOT APPLICABLE</span>
+                                                </>
+                                              )}
+                                            </div>
+                                          </div>
+                                        )}
+                                        
+                                        {/* Manual Comments */}
+                                        {manualComments && (
+                                          <div style={{
+                                            padding: '10px',
+                                            background: '#1e293b',
+                                            borderRadius: '6px',
+                                            border: '1px solid #475569',
+                                            marginBottom: '10px'
+                                          }}>
+                                            <div style={{
+                                              fontSize: '0.75rem',
+                                              color: '#94a3b8',
+                                              marginBottom: '5px',
+                                              fontWeight: '600',
+                                              textTransform: 'uppercase'
+                                            }}>
+                                              Comments:
+                                            </div>
+                                            <div style={{
+                                              fontSize: '0.8rem',
+                                              color: '#e2e8f0',
+                                              lineHeight: '1.5',
+                                              fontStyle: 'italic'
+                                            }}>
+                                              {manualComments}
+                                            </div>
+                                          </div>
+                                        )}
+                                        
+                                        {/* Selected Option */}
+                                        {selectedOptionFull && (
+                                          <div style={{
+                                            padding: '10px',
+                                            background: '#1e293b',
+                                            borderRadius: '6px',
+                                            border: '1px solid #10b981'
+                                          }}>
+                                            <div style={{
+                                              fontSize: '0.75rem',
+                                              color: '#10b981',
+                                              marginBottom: '5px',
+                                              fontWeight: '600',
+                                              textTransform: 'uppercase'
+                                            }}>
+                                              Selected Option:
+                                            </div>
+                                            <div style={{
+                                              fontSize: '0.8rem',
+                                              color: '#cbd5e1',
+                                              lineHeight: '1.5'
+                                            }}>
+                                              {selectedOptionFull}
+                                            </div>
+                                          </div>
+                                        )}
+                                      </div>
+                                    ) : (
+                                      <div style={{
+                                        padding: '10px',
+                                        background: '#1e293b',
+                                        borderRadius: '6px',
+                                        border: '1px solid #f59e0b'
+                                      }}>
+                                        <div style={{
+                                          fontSize: '0.8rem',
+                                          color: '#f59e0b',
+                                          fontWeight: '600',
+                                          display: 'flex',
+                                          alignItems: 'center',
+                                          gap: '6px'
+                                        }}>
+                                          <span>⚠️</span>
+                                          <span>Not Found in Manual Review</span>
+                                        </div>
+                                        <div style={{
+                                          fontSize: '0.75rem',
+                                          color: '#94a3b8',
+                                          marginTop: '5px',
+                                          fontStyle: 'italic'
+                                        }}>
+                                          This element was analyzed by AI but not found in the manual review document.
+                                        </div>
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    )
+                    })
+                  })()}
+                </div>
+              </div>
+            )}
           </div>
         )}
 

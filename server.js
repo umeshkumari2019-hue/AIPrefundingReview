@@ -4,15 +4,27 @@ import fs from 'fs/promises'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import crypto from 'crypto'
+import dotenv from 'dotenv'
+
+// Load environment variables
+dotenv.config({ path: '.env.server' })
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const app = express()
-const PORT = 3001
+const PORT = process.env.PORT || 3001
+
+// CORS configuration
+const allowedOrigins = process.env.ALLOWED_ORIGINS 
+  ? process.env.ALLOWED_ORIGINS.split(',')
+  : ['http://localhost:5173', 'http://localhost:3000']
 
 // Middleware
-app.use(cors())
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}))
 app.use(express.json({ limit: '50mb' }))
 
 // Data directory
@@ -144,12 +156,13 @@ app.post('/api/hash', async (req, res) => {
   }
 })
 
-// List all cached analyses
+// List all cached analyses (excluding manual review caches)
 app.get('/api/cache/list', async (req, res) => {
   try {
     await ensureDataDir()
     const files = await fs.readdir(CACHE_DIR)
-    const cacheFiles = files.filter(f => f.endsWith('.json'))
+    // Filter out manual review cache files - only show application analysis caches
+    const cacheFiles = files.filter(f => f.endsWith('.json') && !f.startsWith('manual-review-'))
     
     const cacheList = await Promise.all(
       cacheFiles.map(async (file) => {
@@ -207,6 +220,95 @@ app.delete('/api/cache/clear-all', async (req, res) => {
     res.json({ success: true, message: `Cleared ${cacheFiles.length} cache files` })
   } catch (error) {
     console.error('Error clearing all caches:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+// Check if manual review cache exists
+app.post('/api/manual-review/check-cache', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const { filename } = req.body
+    
+    if (!filename) {
+      return res.status(400).json({ success: false, error: 'Missing filename' })
+    }
+    
+    // Generate cache key from filename
+    const cacheKey = crypto.createHash('sha256').update(filename).digest('hex')
+    const cacheFile = path.join(CACHE_DIR, `manual-review-${cacheKey}.json`)
+    
+    try {
+      await fs.access(cacheFile)
+      console.log(`✅ Manual review cache found for: ${filename}`)
+      res.json({ success: true, exists: true, cacheKey })
+    } catch {
+      console.log(`❌ No manual review cache for: ${filename}`)
+      res.json({ success: true, exists: false, cacheKey })
+    }
+  } catch (error) {
+    console.error('Error checking manual review cache:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+// Load cached manual review data
+app.post('/api/manual-review/load-cache', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const { cacheKey } = req.body
+    
+    if (!cacheKey) {
+      return res.status(400).json({ success: false, error: 'Missing cacheKey' })
+    }
+    
+    const cacheFile = path.join(CACHE_DIR, `manual-review-${cacheKey}.json`)
+    const data = await fs.readFile(cacheFile, 'utf-8')
+    const parsedData = JSON.parse(data)
+    
+    console.log(`✅ Loaded manual review cache: ${cacheKey}`)
+    res.json({ 
+      success: true, 
+      data: parsedData.parsedElements,
+      filename: parsedData.filename,
+      cachedAt: parsedData.cachedAt
+    })
+  } catch (error) {
+    console.error('Error loading manual review cache:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+// Save manual review parsed data to cache
+app.post('/api/manual-review/save-cache', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const { filename, parsedElements } = req.body
+    
+    if (!filename || !parsedElements) {
+      return res.status(400).json({ success: false, error: 'Missing filename or parsedElements' })
+    }
+    
+    // Generate cache key from filename
+    const cacheKey = crypto.createHash('sha256').update(filename).digest('hex')
+    const cacheFile = path.join(CACHE_DIR, `manual-review-${cacheKey}.json`)
+    
+    const cacheData = {
+      filename,
+      parsedElements,
+      cachedAt: new Date().toISOString()
+    }
+    
+    await fs.writeFile(cacheFile, JSON.stringify(cacheData, null, 2), 'utf-8')
+    console.log(`✅ Saved manual review cache: ${filename} (${cacheKey})`)
+    
+    res.json({ 
+      success: true, 
+      message: 'Manual review cache saved successfully',
+      cacheKey
+    })
+  } catch (error) {
+    console.error('Error saving manual review cache:', error)
     res.status(500).json({ success: false, error: error.message })
   }
 })

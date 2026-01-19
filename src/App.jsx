@@ -3,16 +3,16 @@ import axios from 'axios'
 import * as XLSX from 'xlsx'
 
 // Azure Document Intelligence configuration
-const AZURE_DOC_ENDPOINT = ''
-const AZURE_DOC_KEY = ''
+const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT || ''
+const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || ''
 
 // Azure OpenAI configuration
-const AZURE_OPENAI_ENDPOINT = ''
-const AZURE_OPENAI_KEY = ''
-const AZURE_OPENAI_DEPLOYMENT = ''  // Your deployment name
+const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || ''
+const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || ''
+const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || ''
 
 // Backend server configuration
-const BACKEND_URL = 'http://localhost:3001'
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001'
 
 const SECTIONS = [
   'Needs Assessment',
@@ -458,26 +458,62 @@ function App() {
       const content = await extractTextFromPDF(manualReviewFile)
       setManualReviewContent(content)
       
-      // Save manual review content to local file for analysis
-      try {
-        await axios.post(`${BACKEND_URL}/api/save-manual-review`, {
-          content: content,
-          filename: manualReviewFile.name
-        })
-        console.log('✅ Manual review content saved to local file for analysis')
-      } catch (saveError) {
-        console.warn('Could not save manual review to file:', saveError.message)
-      }
+      // Check if manual review cache exists
+      setStatus('🔍 Checking cache...')
+      const cacheCheckResponse = await axios.post(`${BACKEND_URL}/api/manual-review/check-cache`, {
+        filename: manualReviewFile.name
+      })
       
-      // Parse manual review with AI to extract structured data
-      const parsedElements = await parseManualReviewWithAI(content)
-      console.log('🤖 AI parsed elements:', parsedElements)
+      let parsedElements = []
+      
+      if (cacheCheckResponse.data.exists) {
+        // Load from cache
+        setStatus('📦 Loading from cache...')
+        console.log('✅ Manual review cache found, loading...')
+        
+        const cacheLoadResponse = await axios.post(`${BACKEND_URL}/api/manual-review/load-cache`, {
+          cacheKey: cacheCheckResponse.data.cacheKey
+        })
+        
+        parsedElements = cacheLoadResponse.data.data
+        console.log('✅ Loaded manual review from cache:', parsedElements.length, 'elements')
+        setStatus('✅ Manual review loaded from cache!')
+      } else {
+        // No cache, parse with AI
+        console.log('❌ No cache found, parsing with AI...')
+        
+        // Save manual review content to local file for analysis
+        try {
+          await axios.post(`${BACKEND_URL}/api/save-manual-review`, {
+            content: content,
+            filename: manualReviewFile.name
+          })
+          console.log('✅ Manual review content saved to local file for analysis')
+        } catch (saveError) {
+          console.warn('Could not save manual review to file:', saveError.message)
+        }
+        
+        // Parse manual review with AI to extract structured data
+        parsedElements = await parseManualReviewWithAI(content)
+        console.log('🤖 AI parsed elements:', parsedElements)
+        
+        // Save to cache
+        try {
+          await axios.post(`${BACKEND_URL}/api/manual-review/save-cache`, {
+            filename: manualReviewFile.name,
+            parsedElements: parsedElements
+          })
+          console.log('✅ Manual review cache saved')
+        } catch (cacheError) {
+          console.warn('Could not save manual review cache:', cacheError.message)
+        }
+        
+        setStatus('✅ Manual review loaded and analyzed successfully!')
+      }
       
       // Store parsed elements for comparison
       setManualReviewParsed(parsedElements)
-      
       setShowComparison(true)
-      setStatus('✅ Manual review loaded and analyzed successfully!')
     } catch (error) {
       setStatus(`❌ Error: ${error.message}`)
     } finally {

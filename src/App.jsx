@@ -8,7 +8,10 @@ const AZURE_DOC_KEY = ''
 // Azure OpenAI configuration
 const AZURE_OPENAI_ENDPOINT = ''
 const AZURE_OPENAI_KEY = ''
-const AZURE_OPENAI_DEPLOYMENT = ''  // Your deployment name
+const AZURE_OPENAI_DEPLOYMENT = 'gpt-4'  // Your deployment name
+
+// Backend server configuration
+const BACKEND_URL = 'http://localhost:3001'
 
 const SECTIONS = [
   'Needs Assessment',
@@ -23,7 +26,7 @@ const SECTIONS = [
 ]
 
 function App() {
-  const [activeTab, setActiveTab] = useState('upload')
+  const [activeTab, setActiveTab] = useState('dashboard')
   const [manualFile, setManualFile] = useState(null)
   const [applicationFile, setApplicationFile] = useState(null)
   const [applicationName, setApplicationName] = useState('')
@@ -32,15 +35,173 @@ function App() {
   const [results, setResults] = useState(null)
   const [manualRules, setManualRules] = useState(null)
   const [expandedDetails, setExpandedDetails] = useState({})
+  const [cacheStatus, setCacheStatus] = useState('')
+  const [applicationFileHash, setApplicationFileHash] = useState(null)
+  const [manualVersion, setManualVersion] = useState('v1.0')
+  const [navigationMode, setNavigationMode] = useState(null) // 'compliance' or 'non-compliance'
+  const [currentItemIndex, setCurrentItemIndex] = useState(0)
+  const [highlightedItemId, setHighlightedItemId] = useState(null)
+  const [speechStatus, setSpeechStatus] = useState({}) // Track speech status for each item
+  const [cachedApplications, setCachedApplications] = useState([])
+  const [searchQuery, setSearchQuery] = useState('')
 
   // Load saved compliance rules from JSON file on mount
   useEffect(() => {
     loadSavedRules()
+    loadCachedApplications()
   }, [])
+
+  // Keyboard navigation for Enter key
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.key === 'Enter' && navigationMode && activeTab === 'results') {
+        navigateToNextItem()
+      }
+    }
+    
+    window.addEventListener('keydown', handleKeyPress)
+    return () => window.removeEventListener('keydown', handleKeyPress)
+  }, [navigationMode, currentItemIndex, activeTab, results])
+
+  // Navigation functions
+  const getAllItemsOfType = (type) => {
+    const items = []
+    if (!results) return items
+    
+    SECTIONS.forEach(section => {
+      const result = results[section]
+      if (result) {
+        const itemList = type === 'compliance' ? result.compliantItems : result.nonCompliantItems
+        if (itemList) {
+          itemList.forEach((item, idx) => {
+            items.push({
+              section,
+              item,
+              index: idx,
+              id: `${section}-${type}-${idx}`
+            })
+          })
+        }
+      }
+    })
+    return items
+  }
+
+  const handleSummaryCardClick = (type) => {
+    setNavigationMode(type)
+    setCurrentItemIndex(0)
+    const items = getAllItemsOfType(type)
+    if (items.length > 0) {
+      scrollToItem(items[0])
+    }
+  }
+
+  const navigateToNextItem = () => {
+    if (!navigationMode) return
+    
+    const items = getAllItemsOfType(navigationMode)
+    if (items.length === 0) return
+    
+    const nextIndex = (currentItemIndex + 1) % items.length
+    setCurrentItemIndex(nextIndex)
+    scrollToItem(items[nextIndex])
+  }
+
+  const scrollToItem = (itemData) => {
+    if (!itemData) return
+    
+    setHighlightedItemId(itemData.id)
+    
+    // Expand the chapter first
+    const chapterKey = `chapter-${itemData.section}`
+    setExpandedDetails(prev => ({...prev, [chapterKey]: true}))
+    
+    // Wait for render, then scroll
+    setTimeout(() => {
+      const element = document.getElementById(itemData.id)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }
+    }, 100)
+    
+    // Remove highlight after 3 seconds
+    setTimeout(() => {
+      setHighlightedItemId(null)
+    }, 3000)
+  }
+
+  // Generate hash for file content
+  const generateFileHash = async (file) => {
+    try {
+      const arrayBuffer = await file.arrayBuffer()
+      const uint8Array = new Uint8Array(arrayBuffer)
+      
+      // Convert to base64 in chunks to avoid stack overflow
+      let base64 = ''
+      const chunkSize = 8192 // Process 8KB at a time
+      for (let i = 0; i < uint8Array.length; i += chunkSize) {
+        const chunk = uint8Array.slice(i, i + chunkSize)
+        base64 += String.fromCharCode.apply(null, chunk)
+      }
+      const base64Encoded = btoa(base64)
+      
+      const response = await axios.post(`${BACKEND_URL}/api/hash`, { content: base64Encoded })
+      return response.data.hash
+    } catch (error) {
+      console.error('Error generating file hash:', error)
+      return null
+    }
+  }
+
+  // Check cache for existing analysis
+  const checkCache = async (fileHash, manualVer) => {
+    try {
+      const response = await axios.post(`${BACKEND_URL}/api/cache/load`, {
+        fileHash,
+        manualVersion: manualVer
+      })
+      
+      if (response.data.success) {
+        return response.data.data
+      }
+      return null
+    } catch (error) {
+      console.error('Error checking cache:', error)
+      return null
+    }
+  }
+
+  // Save analysis to cache
+  const saveToCache = async (fileHash, manualVer, data) => {
+    try {
+      await axios.post(`${BACKEND_URL}/api/cache/save`, {
+        fileHash,
+        manualVersion: manualVer,
+        data
+      })
+      console.log('✅ Analysis saved to cache')
+    } catch (error) {
+      console.error('Error saving to cache:', error)
+    }
+  }
+
+  // Clear all caches
+  const clearAllCaches = async () => {
+    try {
+      const response = await axios.delete(`${BACKEND_URL}/api/cache/clear-all`)
+      if (response.data.success) {
+        setCacheStatus('🗑️ All caches cleared')
+        setTimeout(() => setCacheStatus(''), 3000)
+      }
+    } catch (error) {
+      console.error('Error clearing caches:', error)
+      setCacheStatus('❌ Error clearing caches')
+    }
+  }
 
   const loadSavedRules = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/api/load-rules')
+      const response = await axios.get(`${BACKEND_URL}/api/load-rules`)
       if (response.data.success) {
         setManualRules(response.data.rules)
         setStatus('✅ Loaded saved compliance rules from file')
@@ -48,6 +209,44 @@ function App() {
       }
     } catch (error) {
       console.log('No saved rules found or backend not running')
+    }
+  }
+
+  const loadCachedApplications = async () => {
+    try {
+      const response = await axios.get(`${BACKEND_URL}/api/cache/list`)
+      if (response.data.success) {
+        // Sort by timestamp descending (most recent first) and take top 5
+        const sortedCaches = response.data.caches.sort((a, b) => 
+          new Date(b.timestamp) - new Date(a.timestamp)
+        ).slice(0, 5)
+        setCachedApplications(sortedCaches)
+        console.log('Loaded top 5 cached applications:', sortedCaches.length)
+      }
+    } catch (error) {
+      console.error('Error loading cached applications:', error)
+    }
+  }
+
+  const viewCachedApplication = async (cacheKey) => {
+    try {
+      const cache = cachedApplications.find(c => c.cacheKey === cacheKey)
+      if (!cache) return
+      
+      const response = await axios.post(`${BACKEND_URL}/api/cache/load`, {
+        fileHash: cache.fileHash,
+        manualVersion: cache.manualVersion
+      })
+      
+      if (response.data.success) {
+        const cacheData = response.data.data
+        setApplicationName(cacheData.applicationName)
+        setResults(cacheData.results)
+        setActiveTab('results')
+      }
+    } catch (error) {
+      console.error('Error loading cached application:', error)
+      alert('Failed to load application')
     }
   }
 
@@ -574,9 +773,34 @@ Return JSON: {
     if (!applicationFile || !manualRules) return
 
     setProcessing(true)
-    setStatus('Extracting text from application...')
+    setStatus('Generating file hash...')
 
     try {
+      // Generate hash for the application file
+      const fileHash = await generateFileHash(applicationFile)
+      setApplicationFileHash(fileHash)
+      
+      if (!fileHash) {
+        throw new Error('Failed to generate file hash')
+      }
+      
+      // Check cache first
+      setStatus('🔍 Checking cache for previous analysis...')
+      const cachedData = await checkCache(fileHash, manualVersion)
+      
+      if (cachedData) {
+        // Cache hit! Load results from cache
+        setCacheStatus(`✅ Loaded from cache (analyzed on ${new Date(cachedData.timestamp).toLocaleString()})`)
+        setResults(cachedData.results)
+        setStatus(`✅ Analysis loaded from cache! (Original analysis: ${new Date(cachedData.timestamp).toLocaleString()})`)
+        setActiveTab('results')
+        setProcessing(false)
+        return
+      }
+      
+      // Cache miss - proceed with full analysis
+      setCacheStatus('🔄 No cache found - running full analysis...')
+      setStatus('Extracting text from application...')
       const content = await extractTextFromPDF(applicationFile)
       setStatus('Analyzing compliance for each section...')
       
@@ -597,11 +821,21 @@ Return JSON: {
         }
       }
       
+      // Save results to cache
+      setStatus('💾 Saving results to cache...')
+      await saveToCache(fileHash, manualVersion, {
+        applicationName,
+        extractedContent: content,
+        results: sectionResults
+      })
+      
       setResults(sectionResults)
+      setCacheStatus('✅ Analysis complete and cached!')
       setStatus('✅ Analysis complete!')
       setActiveTab('results')
     } catch (error) {
       setStatus(`❌ Error: ${error.message}`)
+      setCacheStatus('')
     } finally {
       setProcessing(false)
     }
@@ -641,6 +875,12 @@ Return JSON: {
       <div className="card">
         <div className="tabs">
           <button 
+            className={`tab ${activeTab === 'dashboard' ? 'active' : ''}`}
+            onClick={() => setActiveTab('dashboard')}
+          >
+            📊 Dashboard
+          </button>
+          <button 
             className={`tab ${activeTab === 'upload' ? 'active' : ''}`}
             onClick={() => setActiveTab('upload')}
           >
@@ -661,6 +901,163 @@ Return JSON: {
             3. View Results
           </button>
         </div>
+
+        {activeTab === 'dashboard' && (
+          <div>
+            <h2 style={{ color: '#f1f5f9', marginBottom: '20px' }}>📊 Dashboard - Analyzed Applications</h2>
+            
+            {/* Search Bar */}
+            <div style={{ marginBottom: '30px' }}>
+              <input
+                type="text"
+                placeholder="🔍 Search by application name..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                style={{
+                  width: '100%',
+                  padding: '12px 20px',
+                  fontSize: '1rem',
+                  background: '#1e293b',
+                  border: '2px solid #475569',
+                  borderRadius: '8px',
+                  color: '#f1f5f9',
+                  outline: 'none'
+                }}
+                onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
+                onBlur={(e) => e.target.style.borderColor = '#475569'}
+              />
+            </div>
+
+            {/* Applications Grid */}
+            {cachedApplications.length === 0 ? (
+              <div style={{
+                textAlign: 'center',
+                padding: '60px 20px',
+                background: '#1e293b',
+                borderRadius: '12px',
+                border: '2px dashed #475569'
+              }}>
+                <div style={{ fontSize: '4rem', marginBottom: '20px' }}>📂</div>
+                <h3 style={{ color: '#94a3b8', marginBottom: '10px' }}>No Analyzed Applications Yet</h3>
+                <p style={{ color: '#64748b', fontSize: '0.9rem' }}>
+                  Upload and analyze your first application to see it here
+                </p>
+              </div>
+            ) : (
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                gap: '20px'
+              }}>
+                {cachedApplications
+                  .filter(app => 
+                    !searchQuery || 
+                    app.applicationName?.toLowerCase().includes(searchQuery.toLowerCase())
+                  )
+                  .map((app, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        background: '#1e293b',
+                        border: '2px solid #334155',
+                        borderRadius: '12px',
+                        padding: '20px',
+                        transition: 'all 0.3s',
+                        cursor: 'pointer'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.borderColor = '#3b82f6'
+                        e.currentTarget.style.transform = 'translateY(-5px)'
+                        e.currentTarget.style.boxShadow = '0 10px 25px rgba(59, 130, 246, 0.2)'
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.borderColor = '#334155'
+                        e.currentTarget.style.transform = 'translateY(0)'
+                        e.currentTarget.style.boxShadow = 'none'
+                      }}
+                    >
+                      <div style={{ marginBottom: '15px' }}>
+                        <div style={{ fontSize: '2rem', marginBottom: '10px' }}>📄</div>
+                        <h3 style={{
+                          color: '#f1f5f9',
+                          fontSize: '1.1rem',
+                          marginBottom: '8px',
+                          fontWeight: '600',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap'
+                        }}>
+                          {app.applicationName || 'Unnamed Application'}
+                        </h3>
+                        <p style={{
+                          color: '#94a3b8',
+                          fontSize: '0.85rem',
+                          marginBottom: '5px'
+                        }}>
+                          📅 {new Date(app.timestamp).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric',
+                            hour: '2-digit',
+                            minute: '2-digit'
+                          })}
+                        </p>
+                        <p style={{
+                          color: '#64748b',
+                          fontSize: '0.8rem',
+                          fontFamily: 'monospace'
+                        }}>
+                          🔑 {app.cacheKey.substring(0, 12)}...
+                        </p>
+                      </div>
+                      
+                      <button
+                        onClick={() => viewCachedApplication(app.cacheKey)}
+                        style={{
+                          width: '100%',
+                          padding: '10px 16px',
+                          background: '#3b82f6',
+                          color: 'white',
+                          border: 'none',
+                          borderRadius: '6px',
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          cursor: 'pointer',
+                          transition: 'all 0.3s'
+                        }}
+                        onMouseEnter={(e) => e.target.style.background = '#2563eb'}
+                        onMouseLeave={(e) => e.target.style.background = '#3b82f6'}
+                      >
+                        👁️ View Results
+                      </button>
+                    </div>
+                  ))}
+              </div>
+            )}
+
+            {/* No Search Results */}
+            {cachedApplications.length > 0 && 
+             searchQuery && 
+             cachedApplications.filter(app => 
+               app.applicationName?.toLowerCase().includes(searchQuery.toLowerCase())
+             ).length === 0 && (
+              <div style={{
+                textAlign: 'center',
+                padding: '40px 20px',
+                background: '#1e293b',
+                borderRadius: '12px',
+                border: '2px solid #475569',
+                marginTop: '20px'
+              }}>
+                <div style={{ fontSize: '3rem', marginBottom: '15px' }}>🔍</div>
+                <h3 style={{ color: '#94a3b8', marginBottom: '8px' }}>No Results Found</h3>
+                <p style={{ color: '#64748b', fontSize: '0.9rem' }}>
+                  No applications match "{searchQuery}"
+                </p>
+              </div>
+            )}
+          </div>
+        )}
 
         {activeTab === 'upload' && (
           <div>
@@ -870,12 +1267,160 @@ Return JSON: {
             >
               {processing ? 'Analyzing...' : 'Analyze Compliance'}
             </button>
+            
+            {cacheStatus && (
+              <div style={{ marginTop: '20px', padding: '12px', background: '#1e293b', border: '1px solid #475569', borderRadius: '8px', color: '#93c5fd', textAlign: 'center' }}>
+                {cacheStatus}
+              </div>
+            )}
+            
+            <div style={{ marginTop: '20px', display: 'flex', gap: '10px', alignItems: 'center' }}>
+              <button 
+                onClick={clearAllCaches}
+                style={{
+                  padding: '10px 20px',
+                  background: '#7f1d1d',
+                  color: '#fca5a5',
+                  border: '1px solid #991b1b',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                  fontSize: '0.9rem',
+                  fontWeight: '500'
+                }}
+              >
+                🗑️ Clear All Cached Analyses
+              </button>
+              <span style={{ fontSize: '0.85rem', color: '#94a3b8' }}>
+                Clear cached results to force re-analysis
+              </span>
+            </div>
           </div>
         )}
 
         {activeTab === 'results' && results && (
           <div className="results">
             <h2 style={{ marginBottom: '30px', color: '#f1f5f9' }}>📊 Compliance Results: {applicationName}</h2>
+            
+            {/* Summary Statistics */}
+            {(() => {
+              let totalCompliant = 0
+              let totalNonCompliant = 0
+              
+              SECTIONS.forEach(section => {
+                const result = results[section]
+                if (result) {
+                  totalCompliant += result.compliantItems?.length || 0
+                  totalNonCompliant += result.nonCompliantItems?.length || 0
+                }
+              })
+              
+              const totalItems = totalCompliant + totalNonCompliant
+              const complianceRate = totalItems > 0 ? ((totalCompliant / totalItems) * 100).toFixed(1) : 0
+              
+              return (
+                <div style={{ 
+                  display: 'grid', 
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+                  gap: '20px', 
+                  marginBottom: '40px' 
+                }}>
+                  {/* Total Items */}
+                  <div style={{ 
+                    background: '#1e293b', 
+                    border: '2px solid #475569', 
+                    borderRadius: '12px', 
+                    padding: '20px', 
+                    textAlign: 'center' 
+                  }}>
+                    <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#93c5fd', marginBottom: '8px' }}>
+                      {totalItems}
+                    </div>
+                    <div style={{ fontSize: '0.9rem', color: '#cbd5e1', fontWeight: '500' }}>
+                      Total Requirements
+                    </div>
+                  </div>
+                  
+                  {/* Compliant Items */}
+                  <div 
+                    onClick={() => handleSummaryCardClick('compliance')}
+                    style={{ 
+                      background: '#064e3b', 
+                      border: '2px solid #10b981', 
+                      borderRadius: '12px', 
+                      padding: '20px', 
+                      textAlign: 'center',
+                      cursor: 'pointer',
+                      transition: 'transform 0.2s, box-shadow 0.2s'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-5px)'
+                      e.currentTarget.style.boxShadow = '0 10px 25px rgba(16, 185, 129, 0.3)'
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)'
+                      e.currentTarget.style.boxShadow = 'none'
+                    }}
+                  >
+                    <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#34d399', marginBottom: '8px' }}>
+                      {totalCompliant}
+                    </div>
+                    <div style={{ fontSize: '0.9rem', color: '#d1fae5', fontWeight: '500' }}>
+                      ✅ Compliance
+                    </div>
+                  </div>
+                  
+                  {/* Non-Compliant Items */}
+                  <div 
+                    onClick={() => handleSummaryCardClick('non-compliance')}
+                    style={{ 
+                      background: '#7f1d1d', 
+                      border: '2px solid #ef4444', 
+                      borderRadius: '12px', 
+                      padding: '20px', 
+                      textAlign: 'center',
+                      cursor: 'pointer',
+                      transition: 'transform 0.2s, box-shadow 0.2s'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-5px)'
+                      e.currentTarget.style.boxShadow = '0 10px 25px rgba(239, 68, 68, 0.3)'
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)'
+                      e.currentTarget.style.boxShadow = 'none'
+                    }}
+                  >
+                    <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#fca5a5', marginBottom: '8px' }}>
+                      {totalNonCompliant}
+                    </div>
+                    <div style={{ fontSize: '0.9rem', color: '#fecaca', fontWeight: '500' }}>
+                      ❌ Non Compliance
+                    </div>
+                  </div>
+                  
+                  {/* Compliance Rate */}
+                  <div style={{ 
+                    background: '#1e293b', 
+                    border: `2px solid ${complianceRate >= 80 ? '#10b981' : complianceRate >= 50 ? '#f59e0b' : '#ef4444'}`, 
+                    borderRadius: '12px', 
+                    padding: '20px', 
+                    textAlign: 'center' 
+                  }}>
+                    <div style={{ 
+                      fontSize: '2.5rem', 
+                      fontWeight: 'bold', 
+                      color: complianceRate >= 80 ? '#34d399' : complianceRate >= 50 ? '#fbbf24' : '#fca5a5',
+                      marginBottom: '8px' 
+                    }}>
+                      {complianceRate}%
+                    </div>
+                    <div style={{ fontSize: '0.9rem', color: '#cbd5e1', fontWeight: '500' }}>
+                      Compliance Rate
+                    </div>
+                  </div>
+                </div>
+              )
+            })()}
             
             {SECTIONS.map(section => {
               const result = results[section]
@@ -951,15 +1496,25 @@ Return JSON: {
                     const detailKey = `${section}-${elemIdx}`
                     const showDetails = expandedDetails[detailKey] || false
                     
+                    // Generate unique ID for navigation
+                    const itemType = isCompliant ? 'compliance' : 'non-compliance'
+                    const itemId = `${section}-${itemType}-${elemIdx}`
+                    const isHighlighted = highlightedItemId === itemId
+                    
                     return (
-                      <div key={elemIdx} style={{ 
-                        marginTop: elemIdx === 0 ? '20px' : '0',
-                        marginBottom: '20px', 
-                        border: `2px solid ${isCompliant ? '#10b981' : '#ef4444'}`,
-                        borderRadius: '10px',
-                        padding: '20px',
-                        background: '#0f172a'
-                      }}>
+                      <div 
+                        key={elemIdx}
+                        id={itemId}
+                        style={{ 
+                          marginTop: elemIdx === 0 ? '20px' : '0',
+                          marginBottom: '20px', 
+                          border: `2px solid ${isCompliant ? '#10b981' : '#ef4444'}`,
+                          borderRadius: '10px',
+                          padding: '20px',
+                          background: isHighlighted ? '#1e3a5f' : '#0f172a',
+                          boxShadow: isHighlighted ? '0 0 20px rgba(59, 130, 246, 0.5)' : 'none',
+                          transition: 'all 0.3s ease'
+                        }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '15px' }}>
                           <div style={{ flex: 1 }}>
                             <strong style={{ color: '#f1f5f9', fontSize: '1.1rem', display: 'block', marginBottom: '8px' }}>
@@ -980,7 +1535,7 @@ Return JSON: {
                               fontSize: '0.9rem',
                               whiteSpace: 'nowrap'
                             }}>
-                              {isCompliant ? '✅ COMPLIANT' : '❌ NON-COMPLIANT'}
+                              {isCompliant ? '✅ COMPLIANCE' : '❌ NON COMPLIANCE'}
                             </span>
                           </div>
                         </div>
@@ -1357,30 +1912,85 @@ Return JSON: {
                                   <span style={{ fontSize: '1.2rem' }}>💡</span>
                                   <span>Reasoning:</span>
                                 </strong>
-                                <button
-                                  onClick={() => {
-                                    navigator.clipboard.writeText(validationResult.reasoning).then(() => {
-                                      alert('✅ Reasoning copied to clipboard!')
-                                    }).catch(() => {
-                                      alert('❌ Failed to copy')
-                                    })
-                                  }}
-                                  style={{
-                                    padding: '6px 12px',
-                                    background: '#3b82f6',
-                                    color: 'white',
-                                    border: 'none',
-                                    borderRadius: '4px',
-                                    cursor: 'pointer',
-                                    fontSize: '0.8rem',
-                                    fontWeight: '600',
-                                    transition: 'all 0.3s'
-                                  }}
-                                  onMouseEnter={(e) => e.target.style.background = '#2563eb'}
-                                  onMouseLeave={(e) => e.target.style.background = '#3b82f6'}
-                                >
-                                  📋 Copy
-                                </button>
+                                <div style={{ display: 'flex', gap: '8px' }}>
+                                  {(() => {
+                                    const speechKey = `${section}-${elemIdx}`
+                                    const isPlaying = speechStatus[speechKey] || false
+                                    
+                                    return (
+                                      <button
+                                        onClick={() => {
+                                          if (isPlaying) {
+                                            // Pause current speech
+                                            window.speechSynthesis.pause()
+                                            setSpeechStatus(prev => ({...prev, [speechKey]: false}))
+                                          } else {
+                                            // Always cancel any existing speech first
+                                            window.speechSynthesis.cancel()
+                                            
+                                            // Reset ALL speech status states (all sections become green/read)
+                                            setSpeechStatus({})
+                                            
+                                            // Wait for cancel to complete, then start new speech
+                                            setTimeout(() => {
+                                              const utterance = new SpeechSynthesisUtterance(validationResult.reasoning)
+                                              utterance.rate = 0.9
+                                              utterance.pitch = 1
+                                              utterance.volume = 1
+                                              
+                                              // Update status when speech ends
+                                              utterance.onend = () => {
+                                                setSpeechStatus(prev => ({...prev, [speechKey]: false}))
+                                              }
+                                              
+                                              window.speechSynthesis.speak(utterance)
+                                              setSpeechStatus({[speechKey]: true}) // Only this section is playing
+                                            }, 100)
+                                          }
+                                        }}
+                                        style={{
+                                          padding: '6px 12px',
+                                          background: isPlaying ? '#f59e0b' : '#10b981',
+                                          color: 'white',
+                                          border: 'none',
+                                          borderRadius: '4px',
+                                          cursor: 'pointer',
+                                          fontSize: '0.8rem',
+                                          fontWeight: '600',
+                                          transition: 'all 0.3s'
+                                        }}
+                                        onMouseEnter={(e) => e.target.style.background = isPlaying ? '#d97706' : '#059669'}
+                                        onMouseLeave={(e) => e.target.style.background = isPlaying ? '#f59e0b' : '#10b981'}
+                                      >
+                                        {isPlaying ? '⏸️ Pause' : '▶️ Read'}
+                                      </button>
+                                    )
+                                  })()}
+                                  <button
+                                    onClick={() => {
+                                      navigator.clipboard.writeText(validationResult.reasoning).then(() => {
+                                        alert('✅ Reasoning copied to clipboard!')
+                                      }).catch(() => {
+                                        alert('❌ Failed to copy')
+                                      })
+                                    }}
+                                    style={{
+                                      padding: '6px 12px',
+                                      background: '#3b82f6',
+                                      color: 'white',
+                                      border: 'none',
+                                      borderRadius: '4px',
+                                      cursor: 'pointer',
+                                      fontSize: '0.8rem',
+                                      fontWeight: '600',
+                                      transition: 'all 0.3s'
+                                    }}
+                                    onMouseEnter={(e) => e.target.style.background = '#2563eb'}
+                                    onMouseLeave={(e) => e.target.style.background = '#3b82f6'}
+                                  >
+                                    📋 Copy
+                                  </button>
+                                </div>
                               </div>
                               <p style={{ 
                                 margin: '0',

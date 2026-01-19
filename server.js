@@ -3,6 +3,7 @@ import cors from 'cors'
 import fs from 'fs/promises'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import crypto from 'crypto'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -17,6 +18,7 @@ app.use(express.json({ limit: '50mb' }))
 // Data directory
 const DATA_DIR = path.join(__dirname, 'data')
 const RULES_FILE = path.join(DATA_DIR, 'compliance-rules.json')
+const CACHE_DIR = path.join(DATA_DIR, 'cache')
 
 // Ensure data directory exists
 async function ensureDataDir() {
@@ -25,6 +27,17 @@ async function ensureDataDir() {
   } catch {
     await fs.mkdir(DATA_DIR, { recursive: true })
   }
+  // Also ensure cache directory exists
+  try {
+    await fs.access(CACHE_DIR)
+  } catch {
+    await fs.mkdir(CACHE_DIR, { recursive: true })
+  }
+}
+
+// Generate hash for file content
+function generateHash(content) {
+  return crypto.createHash('md5').update(content).digest('hex')
 }
 
 // Save compliance rules
@@ -59,7 +72,147 @@ app.get('/api/load-rules', async (req, res) => {
   }
 })
 
+// Save analysis cache
+app.post('/api/cache/save', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const { fileHash, manualVersion, data } = req.body
+    
+    if (!fileHash || !manualVersion || !data) {
+      return res.status(400).json({ success: false, error: 'Missing required fields' })
+    }
+    
+    const cacheKey = `${fileHash}_${manualVersion}`
+    const cacheFile = path.join(CACHE_DIR, `${cacheKey}.json`)
+    
+    const cacheData = {
+      fileHash,
+      manualVersion,
+      timestamp: new Date().toISOString(),
+      ...data
+    }
+    
+    await fs.writeFile(cacheFile, JSON.stringify(cacheData, null, 2))
+    console.log(`✅ Cached analysis results: ${cacheKey}`)
+    res.json({ success: true, message: 'Cache saved successfully', cacheKey })
+  } catch (error) {
+    console.error('Error saving cache:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+// Load analysis cache
+app.post('/api/cache/load', async (req, res) => {
+  try {
+    const { fileHash, manualVersion } = req.body
+    
+    if (!fileHash || !manualVersion) {
+      return res.status(400).json({ success: false, error: 'Missing required fields' })
+    }
+    
+    const cacheKey = `${fileHash}_${manualVersion}`
+    const cacheFile = path.join(CACHE_DIR, `${cacheKey}.json`)
+    
+    const data = await fs.readFile(cacheFile, 'utf-8')
+    const cacheData = JSON.parse(data)
+    console.log(`✅ Loaded cached analysis: ${cacheKey} (from ${cacheData.timestamp})`)
+    res.json({ success: true, data: cacheData, cacheKey })
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      res.json({ success: false, message: 'Cache not found' })
+    } else {
+      console.error('Error loading cache:', error)
+      res.status(500).json({ success: false, error: error.message })
+    }
+  }
+})
+
+// Generate hash for file content
+app.post('/api/hash', async (req, res) => {
+  try {
+    const { content } = req.body
+    
+    if (!content) {
+      return res.status(400).json({ success: false, error: 'Missing content' })
+    }
+    
+    const hash = generateHash(content)
+    res.json({ success: true, hash })
+  } catch (error) {
+    console.error('Error generating hash:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+// List all cached analyses
+app.get('/api/cache/list', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const files = await fs.readdir(CACHE_DIR)
+    const cacheFiles = files.filter(f => f.endsWith('.json'))
+    
+    const cacheList = await Promise.all(
+      cacheFiles.map(async (file) => {
+        const filePath = path.join(CACHE_DIR, file)
+        const data = await fs.readFile(filePath, 'utf-8')
+        const cacheData = JSON.parse(data)
+        return {
+          cacheKey: file.replace('.json', ''),
+          applicationName: cacheData.applicationName,
+          timestamp: cacheData.timestamp,
+          fileHash: cacheData.fileHash,
+          manualVersion: cacheData.manualVersion
+        }
+      })
+    )
+    
+    res.json({ success: true, caches: cacheList })
+  } catch (error) {
+    console.error('Error listing caches:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+// Clear specific cache
+app.delete('/api/cache/clear/:cacheKey', async (req, res) => {
+  try {
+    const { cacheKey } = req.params
+    const cacheFile = path.join(CACHE_DIR, `${cacheKey}.json`)
+    
+    await fs.unlink(cacheFile)
+    console.log(`✅ Cleared cache: ${cacheKey}`)
+    res.json({ success: true, message: 'Cache cleared successfully' })
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      res.status(404).json({ success: false, error: 'Cache not found' })
+    } else {
+      console.error('Error clearing cache:', error)
+      res.status(500).json({ success: false, error: error.message })
+    }
+  }
+})
+
+// Clear all caches
+app.delete('/api/cache/clear-all', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const files = await fs.readdir(CACHE_DIR)
+    const cacheFiles = files.filter(f => f.endsWith('.json'))
+    
+    await Promise.all(
+      cacheFiles.map(file => fs.unlink(path.join(CACHE_DIR, file)))
+    )
+    
+    console.log(`✅ Cleared ${cacheFiles.length} cache files`)
+    res.json({ success: true, message: `Cleared ${cacheFiles.length} cache files` })
+  } catch (error) {
+    console.error('Error clearing all caches:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
 app.listen(PORT, () => {
   console.log(`✅ Backend server running on http://localhost:${PORT}`)
   console.log(`📁 Data directory: ${DATA_DIR}`)
+  console.log(`📦 Cache directory: ${CACHE_DIR}`)
 })

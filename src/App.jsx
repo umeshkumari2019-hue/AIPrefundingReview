@@ -5,16 +5,16 @@ import { Document, Paragraph, TextRun, HeadingLevel, AlignmentType, Packer, Tabl
 import { saveAs } from 'file-saver'
 
 // Azure Document Intelligence configuration
-const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT || ''
-const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || ''
+const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT || 'https://eastus.api.cognitive.microsoft.com/'
+const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || '4584da939fd449f7aeb19db68a39b054'
 
 // Azure OpenAI configuration
-const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || ''
-const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || ''
-const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || ''
+const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || 'https://dmiai.openai.azure.com/'
+const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || 'cd596bdc8c5a42b99eced7a2e872f7fd'
+const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || 'gpt-4'
 
 // Backend server configuration
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || ''
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001'
 
 const SECTIONS = [
  'Needs Assessment',

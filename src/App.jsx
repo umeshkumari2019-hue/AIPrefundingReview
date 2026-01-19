@@ -51,6 +51,7 @@ function App() {
   const [manualReviewContent, setManualReviewContent] = useState('')
   const [manualReviewParsed, setManualReviewParsed] = useState([])
   const [showComparison, setShowComparison] = useState(false)
+  const [expandedEvidence, setExpandedEvidence] = useState({})
 
   // Load saved compliance rules from JSON file on mount
   useEffect(() => {
@@ -532,9 +533,9 @@ function App() {
     exportData.push([
       'Section',
       'Element',
-      'AI Analysis - Status',
-      'AI Analysis - Evidence',
-      'AI Analysis - Reasoning',
+      'Agent Analysis - Status',
+      'Agent Analysis - Evidence',
+      'Agent Analysis - Reasoning',
       'Manual Review - Status',
       'Manual Review - Comments',
       'Match Status'
@@ -1385,7 +1386,14 @@ Return JSON: {
   return (
     <div className="container">
       <div className="header">
-        <h1>📋 HRSA Compliance System</h1>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', marginBottom: '10px' }}>
+          <img 
+            src="/image/HRSA_Logo.png" 
+            alt="HRSA Logo" 
+            style={{ height: '80px', width: 'auto' }}
+          />
+          <h1 style={{ margin: 0 }}>📋 HRSA Compliance System</h1>
+        </div>
         <p>AI-Powered Document Intelligence for Health Center Compliance</p>
       </div>
 
@@ -1587,7 +1595,7 @@ Return JSON: {
           <div>
             {!manualRules ? (
               <>
-                <h2>Upload HRSA Compliance Manual</h2>
+                <h2 style={{ color: '#f1f5f9' }}>Upload HRSA Compliance Manual</h2>
                 <div 
                   className="upload-section"
                   onDragOver={handleDragOver}
@@ -2005,7 +2013,7 @@ Return JSON: {
               if (!result) return null
 
               // Find the chapter from manualRules
-              const chapter = manualRules.find(r => r.section === section || section.includes(r.section) || r.section.includes(section))
+              const chapter = manualRules?.find(r => r.section === section || section.includes(r.section) || r.section.includes(section))
               if (!chapter) return null
 
               const chapterKey = `chapter-${section}`
@@ -2077,9 +2085,26 @@ Return JSON: {
                     // Check if this is a NOT_APPLICABLE status
                     const isNotApplicable = validationResult && validationResult.status === 'NOT_APPLICABLE'
                     
-                    // Generate unique ID for navigation
+                    // Generate unique ID for navigation - use index from the correct array
                     const itemType = isNotApplicable ? 'not-applicable' : (isCompliant ? 'compliance' : 'non-compliance')
-                    const itemId = `${section}-${itemType}-${elemIdx}`
+                    let itemIndex = 0
+                    if (isNotApplicable) {
+                      itemIndex = result.notApplicableItems.findIndex(item => {
+                        const normalizeText = (text) => text.toLowerCase().replace(/\s+/g, ' ').trim()
+                        return normalizeText(item.element) === normalizeText(element.element)
+                      })
+                    } else if (isCompliant) {
+                      itemIndex = result.compliantItems.findIndex(item => {
+                        const normalizeText = (text) => text.toLowerCase().replace(/\s+/g, ' ').trim()
+                        return normalizeText(item.element) === normalizeText(element.element)
+                      })
+                    } else {
+                      itemIndex = result.nonCompliantItems.findIndex(item => {
+                        const normalizeText = (text) => text.toLowerCase().replace(/\s+/g, ' ').trim()
+                        return normalizeText(item.element) === normalizeText(element.element)
+                      })
+                    }
+                    const itemId = `${section}-${itemType}-${itemIndex}`
                     const isHighlighted = highlightedItemId === itemId
                     
                     // Determine border and badge colors
@@ -2722,7 +2747,7 @@ Return JSON: {
 
         {activeTab === 'compare' && (
           <div>
-            <h2 style={{ color: '#f1f5f9', marginBottom: '20px' }}>🔍 Compare AI Analysis with Manual Review</h2>
+            <h2 style={{ color: '#f1f5f9', marginBottom: '20px' }}>🔍 Compare Agent Analysis with Manual Review</h2>
             
             {!showComparison ? (
               <div>
@@ -3080,7 +3105,7 @@ Return JSON: {
                                   gridTemplateColumns: '1fr 1fr',
                                   gap: '0'
                                 }}>
-                                  {/* AI Analysis */}
+                                  {/* Agent Analysis */}
                                   <div style={{
                                     padding: '15px',
                                     background: '#0f172a',
@@ -3094,7 +3119,7 @@ Return JSON: {
                                     }}>
                                       <span style={{ fontSize: '1.2rem' }}>🤖</span>
                                       <strong style={{ color: '#3b82f6', fontSize: '0.9rem' }}>
-                                        AI Analysis
+                                        Agent Analysis
                                       </strong>
                                     </div>
                                     <p style={{
@@ -3126,8 +3151,43 @@ Return JSON: {
                                           color: '#e2e8f0',
                                           lineHeight: '1.5'
                                         }}>
-                                          {validationResult.evidence.substring(0, 200)}
-                                          {validationResult.evidence.length > 200 ? '...' : ''}
+                                          {(() => {
+                                            const evidenceKey = `${section}-${elemIdx}-evidence`
+                                            const isExpanded = expandedEvidence[evidenceKey]
+                                            const shouldTruncate = validationResult.evidence.length > 200
+                                            
+                                            return (
+                                              <>
+                                                {isExpanded || !shouldTruncate 
+                                                  ? validationResult.evidence 
+                                                  : validationResult.evidence.substring(0, 200) + '...'}
+                                                {shouldTruncate && (
+                                                  <button
+                                                    onClick={() => setExpandedEvidence(prev => ({
+                                                      ...prev,
+                                                      [evidenceKey]: !prev[evidenceKey]
+                                                    }))}
+                                                    style={{
+                                                      marginLeft: '8px',
+                                                      padding: '4px 8px',
+                                                      background: '#3b82f6',
+                                                      color: 'white',
+                                                      border: 'none',
+                                                      borderRadius: '4px',
+                                                      cursor: 'pointer',
+                                                      fontSize: '0.75rem',
+                                                      fontWeight: '600',
+                                                      transition: 'background 0.2s'
+                                                    }}
+                                                    onMouseEnter={(e) => e.target.style.background = '#2563eb'}
+                                                    onMouseLeave={(e) => e.target.style.background = '#3b82f6'}
+                                                  >
+                                                    {isExpanded ? '📖 Read Less' : '📖 Read More'}
+                                                  </button>
+                                                )}
+                                              </>
+                                            )
+                                          })()}
                                         </div>
                                       </div>
                                     )}
@@ -3298,6 +3358,18 @@ Return JSON: {
             {status}
           </div>
         )}
+      </div>
+
+      {/* Copyright Footer */}
+      <div style={{
+        textAlign: 'center',
+        padding: '20px',
+        color: '#64748b',
+        fontSize: '0.85rem',
+        borderTop: '1px solid #334155',
+        marginTop: '40px'
+      }}>
+        © {new Date().getFullYear()} DMI (Digital Management, LLC). All rights reserved.
       </div>
     </div>
   )

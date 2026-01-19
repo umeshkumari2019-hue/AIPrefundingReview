@@ -16,7 +16,7 @@
         "applicationItems": [
           "a) How often you conduct or update the needs assessment.",
           "b) How you use the results to inform and improve service delivery.",
-          "c) Using the most recently available data (cite data sources where applicable), for the service area and, if applicable, for each special population (MHC, HCH, PHPC) identified in the SAAT, address the following: Factors associated with access to care and health care utilization; Most significant causes of morbidity and mortality; Any other unique health care needs or characteristics that impact health status or access to, or utilization of, primary care."
+          "c) Using the most recently available data (cite data sources where applicable), for the service area and, if applicable, for each special population (MHC, HCH, PHPC) identified in the SAAT, address the following: Factors associated with access to care and health care utilization (e.g., geography, transportation, occupation, transience, unemployment, income level, educational attainment). Most significant causes of morbidity and mortality (e.g., diabetes, cardiovascular disease, cancer, low birth weight, substance use disorder) as well as any associated health disparities. Any other unique health care needs or characteristics that impact health status or access to, or utilization of, primary care (e.g., social risk factors, the physical environment, cultural/ethnic factors, language needs, housing status)."
         ],
         "footnotes": "13 Compliance may be demonstrated based on the information included in a Service Area Competition (SAC) or a Renewal of Designation (RD) application. Note that in the case of a Notice of Funding Opportunity for a New Access Point or Expanded Services grant, HRSA may specify application-specific requirements for demonstrating an applicant has consulted with the appropriate agencies and providers consistent with Section 330(k)(2)(D) of the Public Health Service Act. Such application-specific requirements may require a completed or updated needs assessment more recent than that which was provided in an applicant's SAC or RD application. 14 In cases where data are not available for the specific service area or special population, health centers may use extrapolation techniques to make valid estimates using data available for related areas and population groups. Extrapolation is the process of using data that describes one population to estimate data for a comparable population, based on one or more common differentiating demographic characteristics. Where data are not directly available and extrapolation is not feasible, health centers should use the best available data describing the area or population to be served."
       }
@@ -34,7 +34,7 @@
           "Definitions of income and family;",
           "Assessment of all patients for sliding fee discount eligibility based only on income and family size, including methods for making such assessments;",
           "The manner in which the health center's sliding fee discount schedule(s) (SFDS(s)) will be structured in order to ensure that patient charges are adjusted based on ability to pay;",
-          "Only applicable to health centers that choose to have a nominal charge for patients at or below 100 percent of the FPG: The setting of a flat nominal charge(s) at a level that would be nominal from the perspective of the patient and would not reflect the actual cost of the service being provided."
+          "Only applicable to health centers that choose to have a nominal charge for patients at or below 100 percent of the FPG: The setting of a flat nominal charge(s) at a level that would be nominal from the perspective of the patient (for example, based on input from patient board members, patient surveys, advisory committees, or a review of co-pay amount(s) associated with Medicare and Medicaid for patients with comparable incomes) and would not reflect the actual cost of the service being provided."
         ],
         "applicationSection": "Project Narrative - Response section, items 5a - d",
         "applicationItems": [
@@ -63,7 +63,7 @@
         "requirementDetails": [],
         "applicationSection": "Attachment 10: Sliding Fee Discount Schedule(s)",
         "applicationItems": [],
-        "footnotes": ""
+        "footnotes": "19 For look-alikes, the attachment is Attachment 9: Sliding Fee Discount Schedule(s)."
       }
     ]
   },
@@ -101,12 +101,12 @@
         "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
         "requirementText": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
         "requirementDetails": [
-          "An approved competing continuation/renewal of designation application or other competitive application, which included such an arrangement;",
+          "An approved competing continuation/renewal of designation application or other competitive application, which included such an arrangement; or",
           "An approved post-award request for such arrangements submitted within the project period (for example, change in scope)."
         ],
         "applicationSection": "Form 8: Health Center Agreements",
         "applicationItems": [],
-        "footnotes": "22 For the purposes of the Health Center Program, contracting for substantive programmatic work does not include the acquisition of supplies, material, equipment, or general support services. However, it does apply to contracting for the: Project Director/CEO; entire key management team; majority of health care providers with a single entity. Substantive programmatic work may be further defined within HRSA Notices of Funding Opportunity (NOFOs) and applications."
+        "footnotes": "NOTE: Select 'N/A' if Form 8 indicates that the applicant does not contract for substantive programmatic work. 22 For the purposes of the Health Center Program, contracting for substantive programmatic work does not include the acquisition of supplies, material, equipment, or general support services. However, it does apply to contracting for the: Project Director/CEO; entire key management team; majority of health care providers with a single entity. Substantive programmatic work may be further defined within HRSA Notices of Funding Opportunity (NOFOs) and applications."
       },
       {
         "element": "Element f - Required Contract Provisions",
@@ -124,12 +124,12 @@
         "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
         "requirementText": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
         "requirementDetails": [
-          "An approved competing continuation/renewal of designation application or other competitive application, which included the subrecipient arrangement;",
+          "An approved competing continuation/renewal of designation application or other competitive application, which included the subrecipient arrangement; or",
           "An approved post-award request for such subrecipient arrangements submitted within the project period (for example, change in scope)."
         ],
         "applicationSection": "Form 8: Health Center Agreements",
         "applicationItems": [],
-        "footnotes": ""
+        "footnotes": "NOTE: Select 'N/A' if Form 8 indicates that the applicant does not have any subawards."
       },
       {
         "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
@@ -144,7 +144,7 @@
         ],
         "applicationSection": "Form 8: Health Center Agreements",
         "applicationItems": [],
-        "footnotes": "25 For further guidance on these requirements, see the HHS Grants Policy Statement, at http://www.hrsa.gov/grants/hhsgrantspolicy.pdf. 26 See 45 CFR 75 Subpart E: Cost Principles."
+        "footnotes": "NOTE: Select 'N/A' if Form 8 indicates that the applicant does not have any subawards. 24 Subrecipients are generally eligible to receive FQHC payment rates under Medicaid and Medicare, 340B Drug Pricing, and Federal Tort Claims Act (FTCA) coverage. However, such benefits are not automatically conferred and may require additional actions and approvals (for example, submission and approval of a subrecipient FTCA deeming application). 25 For further guidance on these requirements, see the HHS Grants Policy Statement, at http://www.hrsa.gov/grants/hhsgrantspolicy.pdf. 26 See 45 CFR 75 Subpart E: Cost Principles."
       }
     ]
   },
@@ -175,8 +175,7 @@
         "requirementDetails": [],
         "applicationSection": "Project Narrative - Collaboration section, item 2; Attachment 9: Collaboration Documentation",
         "applicationItems": [
-          "Describe and document in Attachment 9: Collaboration Documentation efforts to coordinate and integrate your activities with other federally-funded, as well as state and local health services delivery projects and programs serving similar patient populations in the service area (consistent with Attachment 1: Service Area Map and Table) (at a minimum, this would include establishing and maintaining relationships with other Health Center Program award recipients and look-alikes).",
-          "If you do not provide documentation of collaboration with one or more of the Health Center Program award recipients and look-alikes in Attachment 9: Collaboration Documentation, explain why and provide documentation of the request."
+          "Describe and document in Attachment 9: Collaboration Documentation efforts to coordinate and integrate your activities with other federally-funded, as well as state and local health services delivery projects and programs serving similar patient populations in the service area (consistent with Attachment 1: Service Area Map and Table) (at a minimum, this would include establishing and maintaining relationships with other Health Center Program award recipients and look-alikes). If you do not provide documentation of collaboration with one or more of the Health Center Program award recipients and look-alikes in Attachment 9: Collaboration Documentation, explain why and provide documentation of the request."
         ],
         "footnotes": ""
       }
@@ -305,7 +304,7 @@
           "At least 51 percent of board members are patients served by the health center. For the purposes of board composition, a patient is an individual who has received at least one service in the past 24 months that generated a health center visit, where both the service and the site where the service was received are within the HRSA-approved scope of project;",
           "Patient members of the board, as a group, represent the individuals who are served by the health center in terms of demographic factors, such as race, ethnicity, and gender;",
           "Non-patient members are representative of the community served by the health center or the health center's service area;",
-          "Non-patient members are selected to provide relevant expertise and skills such as: community affairs; local government; finance and banking; legal affairs; trade unions and other commercial and industrial concerns; and social services;",
+          "Non-patient members are selected to provide relevant expertise and skills such as: Community affairs; Local government; Finance and banking; Legal affairs; Trade unions and other commercial and industrial concerns; Social services;",
           "No more than one-half of non-patient board members derive more than 10 percent of their annual income from the health care industry;",
           "Health center employees, and immediate family members (i.e., spouses, children, parents, or siblings through blood, adoption, or marriage) of employees may not be health center board members."
         ],
@@ -329,7 +328,7 @@
           "A patient majority (at least 51 percent);",
           "Patient board members, as a group, represent the individuals who are served by the health center in terms of demographic factors, such as race, ethnicity, and gender, consistent with the demographics reported in the health center's Uniform Data System (UDS) report;",
           "Representative(s) from or for each of the special population(s) for those health centers that receive any award/designation under one or more of the special populations section 330 subparts, 330(g), (h), and/or (i);",
-          "As applicable, non-patient board members: Who are representative of the community in which the health center is located, either by living or working in the community, or by having a demonstrable connection to the community; With relevant skills and expertise in areas such as community affairs, local government, finance and banking, legal affairs, trade unions, other commercial and industrial concerns, or social services within the community; Of whom no more than 50 percent earn more than 10 percent of their annual income from the health care industry."
+          "As applicable, non-patient board members: Who are representative of the community in which the health center is located, either by living or working in the community, or by having a demonstrable connection to the community; With relevant skills and expertise in areas such as community affairs, local government, finance and banking, legal affairs, trade unions, other commercial and industrial concerns, or social services within the community; and Of whom no more than 50 percent earn more than 10 percent of their annual income from the health care industry."
         ],
         "applicationSection": "Form 6A: Current Board Member Characteristics",
         "applicationItems": [],
@@ -339,12 +338,12 @@
         "element": "Element e - Waiver Requests",
         "requirementText": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
         "requirementDetails": [
-          "\"Good cause\" that justifies the need for the waiver by documenting: The unique characteristics of the population (homeless, migratory or seasonal agricultural worker, and/or public housing patient population) or service area that create an undue hardship in recruiting a patient majority; Its attempt(s) to recruit a majority of special population board members within the past three years;",
-          "Strategies that will ensure patient participation and input in the direction and ongoing governance of the organization by addressing the following elements: Collection and documentation of input from the special population(s); Communication of special population input directly to the health center governing board; Incorporation of special population input into key areas, including but not limited to: selecting health center services; setting hours of operation of health center sites; defining budget priorities; evaluating the organization's progress in meeting goals, including patient satisfaction; and assessing the effectiveness of the sliding fee discount program."
+          "\"Good cause\" that justifies the need for the waiver by documenting: The unique characteristics of the population (homeless, migratory or seasonal agricultural worker, and/or public housing patient population) or service area that create an undue hardship in recruiting a patient majority; and Its attempt(s) to recruit a majority of special population board members within the past three years;",
+          "Strategies that will ensure patient participation and input in the direction and ongoing governance of the organization by addressing the following elements: Collection and documentation of input from the special population(s); Communication of special population input directly to the health center governing board; and Incorporation of special population input into key areas, including but not limited to: selecting health center services; setting hours of operation of health center sites; defining budget priorities; evaluating the organization's progress in meeting goals, including patient satisfaction; and assessing the effectiveness of the sliding fee discount program."
         ],
         "applicationSection": "Form 6B: Request for Waiver of Board Member Requirements",
         "applicationItems": [],
-        "footnotes": "44 See Chapter 4: Required and Additional Health Services for more information on providing services within the HRSA-approved scope of project. 45 See Chapter 6: Accessible Locations and Hours of Operation for more information on health center service sites and hours of operation. 46 See Chapter 17: Budget for more information on the Health Center Program project budget. 47 See Chapter 19: Board Authority for more information on the health center board's required authorities. 48 See Chapter 9: Sliding Fee Discount Program for more information on requirements for health center sliding fee discount programs."
+        "footnotes": "NOTE: For applicants that are not eligible for a waiver of the patient majority or that have chosen not to request such a waiver, the following option will be automatically selected: Not Applicable, Organization is not eligible for or has not requested a waiver of the patient majority board composition requirement. 44 See Chapter 4: Required and Additional Health Services for more information on providing services within the HRSA-approved scope of project. 45 See Chapter 6: Accessible Locations and Hours of Operation for more information on health center service sites and hours of operation. 46 See Chapter 17: Budget for more information on the Health Center Program project budget. 47 See Chapter 19: Board Authority for more information on the health center board's required authorities. 48 See Chapter 9: Sliding Fee Discount Program for more information on requirements for health center sliding fee discount programs."
       }
     ]
   }

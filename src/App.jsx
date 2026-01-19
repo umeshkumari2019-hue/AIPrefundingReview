@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import * as XLSX from 'xlsx'
+import { Document, Paragraph, TextRun, HeadingLevel, AlignmentType, Packer, Table, TableCell, TableRow, WidthType, BorderStyle } from 'docx'
+import { saveAs } from 'file-saver'
 
 // Azure Document Intelligence configuration
 const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT || ''
@@ -12,10 +14,10 @@ const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || ''
 const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || ''
 
 // Backend server configuration
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001'
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || ''
 
 const SECTIONS = [
-  'Needs Assessment',
+ 'Needs Assessment',
    'Sliding Fee Discount Program',
    'Key Management Staff',
    'Contracts and Subawards',
@@ -76,7 +78,15 @@ function App() {
     SECTIONS.forEach(section => {
       const result = results[section]
       if (result) {
-        const itemList = type === 'compliance' ? result.compliantItems : result.nonCompliantItems
+        let itemList
+        if (type === 'compliance') {
+          itemList = result.compliantItems
+        } else if (type === 'non-compliance') {
+          itemList = result.nonCompliantItems
+        } else if (type === 'not-applicable') {
+          itemList = result.notApplicableItems
+        }
+        
         if (itemList) {
           itemList.forEach((item, idx) => {
             items.push({
@@ -306,6 +316,206 @@ function App() {
     } catch (error) {
       console.error('Error parsing manual review with AI:', error)
       return []
+    }
+  }
+
+  // Export results to Word
+  const exportResultsToWord = async () => {
+    if (!results) {
+      alert('No results available to export')
+      return
+    }
+
+    try {
+      const sections = []
+
+      // Title
+      sections.push(
+        new Paragraph({
+          text: `HRSA Compliance Analysis Report`,
+          heading: HeadingLevel.TITLE,
+          alignment: AlignmentType.CENTER,
+          spacing: { after: 200 }
+        })
+      )
+
+      sections.push(
+        new Paragraph({
+          text: `Application: ${applicationName || 'Unknown'}`,
+          heading: HeadingLevel.HEADING_2,
+          alignment: AlignmentType.CENTER,
+          spacing: { after: 400 }
+        })
+      )
+
+      // Summary Statistics
+      let totalCompliant = 0
+      let totalNonCompliant = 0
+      let totalNotApplicable = 0
+      
+      SECTIONS.forEach(section => {
+        const result = results[section]
+        if (result) {
+          totalCompliant += result.compliantItems?.length || 0
+          totalNonCompliant += result.nonCompliantItems?.length || 0
+          totalNotApplicable += result.notApplicableItems?.length || 0
+        }
+      })
+      
+      const totalItems = totalCompliant + totalNonCompliant + totalNotApplicable
+
+      sections.push(
+        new Paragraph({
+          text: 'Summary Statistics',
+          heading: HeadingLevel.HEADING_1,
+          spacing: { before: 200, after: 200 }
+        })
+      )
+
+      sections.push(
+        new Paragraph({
+          children: [
+            new TextRun({ text: `Total Requirements: `, bold: true }),
+            new TextRun({ text: `${totalItems}` })
+          ],
+          spacing: { after: 100 }
+        })
+      )
+
+      sections.push(
+        new Paragraph({
+          children: [
+            new TextRun({ text: `✅ Compliant: `, bold: true }),
+            new TextRun({ text: `${totalCompliant}` })
+          ],
+          spacing: { after: 100 }
+        })
+      )
+
+      sections.push(
+        new Paragraph({
+          children: [
+            new TextRun({ text: `❌ Non-Compliant: `, bold: true }),
+            new TextRun({ text: `${totalNonCompliant}` })
+          ],
+          spacing: { after: 100 }
+        })
+      )
+
+      sections.push(
+        new Paragraph({
+          children: [
+            new TextRun({ text: `⊘ Not Applicable: `, bold: true }),
+            new TextRun({ text: `${totalNotApplicable}` })
+          ],
+          spacing: { after: 400 }
+        })
+      )
+
+      // Detailed Results by Section
+      SECTIONS.forEach(section => {
+        const result = results[section]
+        if (!result) return
+
+        const allItems = [
+          ...(result.compliantItems || []).map(item => ({ ...item, type: 'COMPLIANT' })),
+          ...(result.nonCompliantItems || []).map(item => ({ ...item, type: 'NON_COMPLIANT' })),
+          ...(result.notApplicableItems || []).map(item => ({ ...item, type: 'NOT_APPLICABLE' }))
+        ]
+
+        if (allItems.length === 0) return
+
+        sections.push(
+          new Paragraph({
+            text: section,
+            heading: HeadingLevel.HEADING_1,
+            spacing: { before: 400, after: 200 }
+          })
+        )
+
+        allItems.forEach((item, idx) => {
+          const statusText = item.type === 'COMPLIANT' ? '✅ COMPLIANT' : 
+                           item.type === 'NOT_APPLICABLE' ? '⊘ NOT APPLICABLE' : 
+                           '❌ NON-COMPLIANT'
+
+          sections.push(
+            new Paragraph({
+              text: `${item.element}`,
+              heading: HeadingLevel.HEADING_2,
+              spacing: { before: 300, after: 100 }
+            })
+          )
+
+          sections.push(
+            new Paragraph({
+              children: [
+                new TextRun({ text: `Status: `, bold: true }),
+                new TextRun({ text: statusText })
+              ],
+              spacing: { after: 100 }
+            })
+          )
+
+          sections.push(
+            new Paragraph({
+              children: [
+                new TextRun({ text: `Requirement: `, bold: true }),
+                new TextRun({ text: item.requirement || 'Not specified' })
+              ],
+              spacing: { after: 100 }
+            })
+          )
+
+          sections.push(
+            new Paragraph({
+              children: [
+                new TextRun({ text: `Evidence: `, bold: true }),
+                new TextRun({ text: item.evidence || 'No evidence found' })
+              ],
+              spacing: { after: 100 }
+            })
+          )
+
+          sections.push(
+            new Paragraph({
+              children: [
+                new TextRun({ text: `Evidence Location: `, bold: true }),
+                new TextRun({ text: item.evidenceLocation || 'Not specified' })
+              ],
+              spacing: { after: 100 }
+            })
+          )
+
+          sections.push(
+            new Paragraph({
+              children: [
+                new TextRun({ text: `Reasoning: `, bold: true }),
+                new TextRun({ text: item.reasoning || 'Not specified' })
+              ],
+              spacing: { after: 200 }
+            })
+          )
+        })
+      })
+
+      // Create document
+      const doc = new Document({
+        sections: [{
+          properties: {},
+          children: sections
+        }]
+      })
+
+      // Generate and download
+      const blob = await Packer.toBlob(doc)
+      const timestamp = new Date().toISOString().replace(/[:.]/g, '-').substring(0, 19)
+      const filename = `Compliance_Report_${applicationName || 'Report'}_${timestamp}.docx`
+      saveAs(blob, filename)
+
+      alert('✅ Word document exported successfully!')
+    } catch (error) {
+      console.error('Error exporting to Word:', error)
+      alert('❌ Failed to export to Word: ' + error.message)
     }
   }
 
@@ -726,7 +936,8 @@ Items 2a - c within the Application
 Describe your process for assessing the needs...
 a) How often you conduct or update the needs assessment.
 b) How you use the results to inform and improve service delivery.
-c) Using the most recently available data..."
+c) Using the most recently available data...
+NOTE: Select 'N/A' if Form 8 indicates that the applicant does not have any subawards."
 
 Extract into this JSON structure (ONE object per chapter with ALL elements grouped inside):
 {
@@ -742,7 +953,7 @@ Extract into this JSON structure (ONE object per chapter with ALL elements group
           "requirementDetails": ["First bullet point", "Second bullet point", "Third bullet point"],
           "applicationSection": "Project Narrative - Need section, items 2a - c",
           "applicationItems": ["a) Item text", "b) Item text", "c) Item text"],
-          "footnotes": "Any footnote text with numbers like 13, 14"
+          "footnotes": "Any footnote text with numbers like 13, 14, OR any NOTE text that appears after the Application Section"
         }
       ]
     }
@@ -758,6 +969,7 @@ CRITICAL:
 - Extract bullet points marked with :unselected: or bullet symbols
 - Extract "Section of the Application to review"
 - Extract "Items" with letters a), b), c)
+- IMPORTANT: Extract any "NOTE:" text that appears after the Application Section - this is critical guidance
 - Include any numbered footnotes (13, 14, etc.)
 
 IMPORTANT: Search through the ENTIRE document below. All chapters may be spread throughout the document. Make sure to extract ALL chapters listed above.
@@ -828,11 +1040,12 @@ ${content}`
     })
     
     if (!chapter || !chapter.elements) {
-      return { compliant: [], nonCompliant: [] }
+      return { compliantItems: [], nonCompliantItems: [], notApplicableItems: [] }
     }
     
     const compliantItems = []
     const nonCompliantItems = []
+    const notApplicableItems = []
 
     // Validate each element within the chapter
     for (const element of chapter.elements) {
@@ -850,8 +1063,21 @@ SPECIFIC ITEMS THAT MUST BE ADDRESSED:
 ${element.requirementDetails.map((detail, i) => `${i + 1}. ${detail}`).join('\n')}
 ` : ''}
 
-NOTE: The compliance manual suggests checking "${element.applicationSection || 'various sections'}" - but this is only a HINT for humans. 
-DO NOT limit your search to those sections. Search the ENTIRE application document for evidence.
+${element.applicationSection ? `
+APPLICATION SECTION TO REVIEW:
+${element.applicationSection}
+NOTE: This is a HINT for where to look, but you should search the ENTIRE application document for evidence.
+` : ''}
+
+${element.applicationItems && element.applicationItems.length > 0 ? `
+SPECIFIC ITEMS TO CHECK IN APPLICATION:
+${element.applicationItems.map((item, i) => `${i + 1}. ${item}`).join('\n')}
+` : ''}
+
+${element.footnotes ? `
+IMPORTANT NOTES AND GUIDANCE:
+${element.footnotes}
+` : ''}
 
 CRITICAL VALIDATION INSTRUCTIONS:
 
@@ -876,13 +1102,25 @@ STEP 2 - SEARCH THE ENTIRE APPLICATION:
 - Evidence can appear ANYWHERE in the document - check all pages
 
 STEP 3 - EVALUATE EVIDENCE STRICTLY (ZERO TOLERANCE FOR HALLUCINATION):
-- Only mark COMPLIANT if you find CLEAR, EXPLICIT proof that fully satisfies the requirement
+
+🚨 FIRST PRIORITY - CHECK FOR N/A CONDITIONS:
+- BEFORE evaluating compliance, read the "IMPORTANT NOTES AND GUIDANCE" section above
+- If the NOTES contain text like "Select 'N/A' if..." or "NOTE: Select 'N/A' if...", this is a N/A CONDITION
+- Check if the N/A condition applies to this application:
+  * Example: NOTE says "Select 'N/A' if Form 8 indicates no subawards" → Check Form 8 for Q2 answer
+  * If Form 8 shows Q2='NO' or '0' contracts/subawards → N/A condition is MET
+  * If N/A condition is MET → IMMEDIATELY return status: "NOT_APPLICABLE" (do NOT evaluate for compliance)
+  * In reasoning, state: "Not Applicable - [explain why N/A condition is met based on NOTE]"
+- CRITICAL: If you determine the requirement is "not applicable" in your reasoning, you MUST set status to "NOT_APPLICABLE", NOT "NON_COMPLIANT"
+
+AFTER checking N/A conditions, evaluate compliance:
+- Only mark COMPLIANT if you find CLEAR, EXPLICIT proof that fully satisfies the requirement (NOT for N/A cases)
 - If evidence is unclear, partial, ambiguous, or incomplete, mark NON_COMPLIANT
-- If no evidence is found, mark NON_COMPLIANT and state it is missing
+- If no evidence is found and N/A doesn't apply, mark NON_COMPLIANT and state it is missing
 - If the application content is insufficient to make a determination, mark CANNOT_BE_DETERMINED
 - ABSOLUTELY FORBIDDEN: Do NOT guess, assume, infer, or make up any information
 - ABSOLUTELY FORBIDDEN: Do NOT use general knowledge about what health centers "typically" do
-- ABSOLUTELY FORBIDDEN: Do NOT mark compliant without direct, explicit proof from the application text
+- ABSOLUTELY FORBIDDEN: Do NOT mark compliant without direct, explicit proof from the application text OR valid N/A conditions
 - REQUIRED: Every piece of evidence must be a direct quote from the application with exact page number
 - REQUIRED: If you cannot provide a direct quote and page number, mark as NON_COMPLIANT or CANNOT_BE_DETERMINED
 
@@ -929,8 +1167,14 @@ CRITICAL - REASONING REQUIREMENTS:
 APPLICATION CONTENT (Full document with page numbers and content types):
 ${applicationContent}
 
+⚠️ CRITICAL STATUS SELECTION RULES:
+- If your reasoning contains "not applicable" or "N/A condition is met" or "requirement does not apply" → status MUST be "NOT_APPLICABLE"
+- If you found clear evidence that satisfies the requirement → status MUST be "COMPLIANT"
+- If you did not find evidence or evidence is insufficient → status MUST be "NON_COMPLIANT"
+- NEVER use "NON_COMPLIANT" when your reasoning says "not applicable"
+
 Return JSON: {
-  "status": "COMPLIANT" or "NON_COMPLIANT" or "CANNOT_BE_DETERMINED",
+  "status": "COMPLIANT" or "NON_COMPLIANT" or "NOT_APPLICABLE" or "CANNOT_BE_DETERMINED",
   "whatWasChecked": "Brief statement of what requirement was validated (1-2 sentences max)",
   "evidence": "1-3 KEY direct quotes in 'quotation marks' that prove compliance, or 'Not found'. Keep it concise - only the most relevant evidence.",
   "evidenceLocation": "Page number only (e.g., 'Page 93' or 'Not found')",
@@ -973,6 +1217,19 @@ Return JSON: {
           compliantItems.push({
             element: element.element,
             requirement: element.requirementText,
+            status: result.status,
+            whatWasChecked: result.whatWasChecked || 'Not specified',
+            evidence: result.evidence,
+            evidenceLocation: result.evidenceLocation || 'Not specified',
+            reasoning: result.reasoning,
+            sectionsReferenced: result.sectionsReferenced || 'Not specified',
+            contentTypes: result.contentTypes || 'Not specified'
+          })
+        } else if (result.status === 'NOT_APPLICABLE') {
+          notApplicableItems.push({
+            element: element.element,
+            requirement: element.requirementText,
+            status: result.status,
             whatWasChecked: result.whatWasChecked || 'Not specified',
             evidence: result.evidence,
             evidenceLocation: result.evidenceLocation || 'Not specified',
@@ -984,6 +1241,7 @@ Return JSON: {
           nonCompliantItems.push({
             element: element.element,
             requirement: element.requirementText,
+            status: result.status,
             whatWasChecked: result.whatWasChecked || 'Not specified',
             evidence: result.evidence || 'No evidence found',
             evidenceLocation: result.evidenceLocation || 'Not found',
@@ -997,7 +1255,7 @@ Return JSON: {
       }
     }
 
-    return { compliantItems, nonCompliantItems }
+    return { compliantItems, nonCompliantItems, notApplicableItems }
   }
 
   // Handle manual upload
@@ -1565,22 +1823,47 @@ Return JSON: {
 
         {activeTab === 'results' && results && (
           <div className="results">
-            <h2 style={{ marginBottom: '30px', color: '#f1f5f9' }}>📊 Compliance Results: {applicationName}</h2>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
+              <h2 style={{ margin: 0, color: '#f1f5f9' }}>📊 Compliance Results: {applicationName}</h2>
+              <button
+                onClick={exportResultsToWord}
+                style={{
+                  padding: '10px 20px',
+                  background: '#2563eb',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                  fontSize: '0.95rem',
+                  fontWeight: '600',
+                  transition: 'all 0.3s',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                }}
+                onMouseEnter={(e) => e.target.style.background = '#1d4ed8'}
+                onMouseLeave={(e) => e.target.style.background = '#2563eb'}
+              >
+                📄 Export to Word
+              </button>
+            </div>
             
             {/* Summary Statistics */}
             {(() => {
               let totalCompliant = 0
               let totalNonCompliant = 0
+              let totalNotApplicable = 0
               
               SECTIONS.forEach(section => {
                 const result = results[section]
                 if (result) {
                   totalCompliant += result.compliantItems?.length || 0
                   totalNonCompliant += result.nonCompliantItems?.length || 0
+                  totalNotApplicable += result.notApplicableItems?.length || 0
                 }
               })
               
-              const totalItems = totalCompliant + totalNonCompliant
+              const totalItems = totalCompliant + totalNonCompliant + totalNotApplicable
               const complianceRate = totalItems > 0 ? ((totalCompliant / totalItems) * 100).toFixed(1) : 0
               
               return (
@@ -1664,6 +1947,35 @@ Return JSON: {
                     </div>
                   </div>
                   
+                  {/* Not Applicable Items */}
+                  <div 
+                    onClick={() => handleSummaryCardClick('not-applicable')}
+                    style={{ 
+                      background: '#334155', 
+                      border: '2px solid #64748b', 
+                      borderRadius: '12px', 
+                      padding: '20px', 
+                      textAlign: 'center',
+                      cursor: 'pointer',
+                      transition: 'transform 0.2s, box-shadow 0.2s'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-5px)'
+                      e.currentTarget.style.boxShadow = '0 10px 25px rgba(100, 116, 139, 0.3)'
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)'
+                      e.currentTarget.style.boxShadow = 'none'
+                    }}
+                  >
+                    <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#94a3b8', marginBottom: '8px' }}>
+                      {totalNotApplicable}
+                    </div>
+                    <div style={{ fontSize: '0.9rem', color: '#cbd5e1', fontWeight: '500' }}>
+                      ⊘ Not Applicable
+                    </div>
+                  </div>
+                  
                   {/* Compliance Rate */}
                   <div style={{ 
                     background: '#1e293b', 
@@ -1726,7 +2038,7 @@ Return JSON: {
                   
                   {isChapterExpanded && chapter.elements && chapter.elements.map((element, elemIdx) => {
                     // Find validation result for this element
-                    const allItems = [...result.compliantItems, ...result.nonCompliantItems]
+                    const allItems = [...result.compliantItems, ...result.nonCompliantItems, ...(result.notApplicableItems || [])]
                     const validationResult = allItems.find(item => {
                       if (!item.element || !element.element) return false
                       // Try exact match first
@@ -1762,10 +2074,18 @@ Return JSON: {
                     const detailKey = `${section}-${elemIdx}`
                     const showDetails = expandedDetails[detailKey] || false
                     
+                    // Check if this is a NOT_APPLICABLE status
+                    const isNotApplicable = validationResult && validationResult.status === 'NOT_APPLICABLE'
+                    
                     // Generate unique ID for navigation
-                    const itemType = isCompliant ? 'compliance' : 'non-compliance'
+                    const itemType = isNotApplicable ? 'not-applicable' : (isCompliant ? 'compliance' : 'non-compliance')
                     const itemId = `${section}-${itemType}-${elemIdx}`
                     const isHighlighted = highlightedItemId === itemId
+                    
+                    // Determine border and badge colors
+                    const borderColor = isNotApplicable ? '#64748b' : (isCompliant ? '#10b981' : '#ef4444')
+                    const badgeColor = isNotApplicable ? '#64748b' : (isCompliant ? '#10b981' : '#ef4444')
+                    const badgeText = isNotApplicable ? '⊘ NOT APPLICABLE' : (isCompliant ? '✅ COMPLIANCE' : '❌ NON COMPLIANCE')
                     
                     return (
                       <div 
@@ -1774,7 +2094,7 @@ Return JSON: {
                         style={{ 
                           marginTop: elemIdx === 0 ? '20px' : '0',
                           marginBottom: '20px', 
-                          border: `2px solid ${isCompliant ? '#10b981' : '#ef4444'}`,
+                          border: `2px solid ${borderColor}`,
                           borderRadius: '10px',
                           padding: '20px',
                           background: isHighlighted ? '#1e3a5f' : '#0f172a',
@@ -1795,13 +2115,13 @@ Return JSON: {
                             <span style={{ 
                               padding: '8px 16px', 
                               borderRadius: '20px', 
-                              background: isCompliant ? '#10b981' : '#ef4444',
+                              background: badgeColor,
                               color: 'white',
                               fontWeight: 'bold',
                               fontSize: '0.9rem',
                               whiteSpace: 'nowrap'
                             }}>
-                              {isCompliant ? '✅ COMPLIANCE' : '❌ NON COMPLIANCE'}
+                              {badgeText}
                             </span>
                           </div>
                         </div>
@@ -1854,31 +2174,152 @@ Return JSON: {
                         )}
                         
                         {validationResult && (
-                          <div style={{ marginTop: '15px' }}>
-                            <button
-                              onClick={() => setExpandedDetails(prev => ({...prev, [detailKey]: !showDetails}))}
-                              style={{
-                                width: '100%',
-                                padding: '12px 15px',
+                          <>
+                            {/* Rule Context Section */}
+                            <div style={{ marginTop: '15px' }}>
+                              <button
+                                onClick={() => setExpandedDetails(prev => ({...prev, [`context-${section}-${elemIdx}`]: !prev[`context-${section}-${elemIdx}`]}))}
+                                style={{
+                                  width: '100%',
+                                  padding: '12px 15px',
+                                  background: '#1e293b',
+                                  border: '1px solid #475569',
+                                  borderRadius: '8px',
+                                  cursor: 'pointer',
+                                  display: 'flex',
+                                  justifyContent: 'space-between',
+                                  alignItems: 'center',
+                                  fontSize: '0.95rem',
+                                  fontWeight: '600',
+                                  color: '#f1f5f9',
+                                  transition: 'all 0.3s'
+                                }}
+                              >
+                                <span>📋 Show Requirement Details</span>
+                                <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s', transform: expandedDetails[`context-${section}-${elemIdx}`] ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                                  ▼
+                                </span>
+                              </button>
+                            </div>
+
+                            {expandedDetails[`context-${section}-${elemIdx}`] && (
+                              <div style={{ 
+                                marginTop: '15px', 
+                                padding: '20px', 
                                 background: '#1e293b',
-                                border: '1px solid #475569',
                                 borderRadius: '8px',
-                                cursor: 'pointer',
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                alignItems: 'center',
-                                fontSize: '0.95rem',
-                                fontWeight: '600',
-                                color: '#f1f5f9',
-                                transition: 'all 0.3s'
-                              }}
-                            >
-                              <span>🔍 Show Evidence and Reasoning</span>
-                              <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s', transform: showDetails ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-                                ▼
-                              </span>
-                            </button>
-                          </div>
+                                border: '1px solid #334155',
+                                animation: 'slideDown 0.3s ease-out'
+                              }}>
+                                {/* Authority */}
+                                {chapter.authority && (
+                                  <div style={{ marginBottom: '20px' }}>
+                                    <strong style={{ color: '#f59e0b', display: 'block', marginBottom: '8px', fontSize: '0.95rem' }}>
+                                      ⚖️ Legal Authority:
+                                    </strong>
+                                    <div style={{ 
+                                      padding: '12px', 
+                                      background: '#0f172a', 
+                                      borderRadius: '6px',
+                                      borderLeft: '4px solid #f59e0b'
+                                    }}>
+                                      <p style={{ margin: '0', fontSize: '0.85rem', color: '#cbd5e1', lineHeight: '1.6' }}>
+                                        {chapter.authority}
+                                      </p>
+                                    </div>
+                                  </div>
+                                )}
+
+                                {/* Application Section */}
+                                {element.applicationSection && (
+                                  <div style={{ marginBottom: '20px' }}>
+                                    <strong style={{ color: '#8b5cf6', display: 'block', marginBottom: '8px', fontSize: '0.95rem' }}>
+                                      📂 Where to Review:
+                                    </strong>
+                                    <div style={{ 
+                                      padding: '12px', 
+                                      background: '#0f172a', 
+                                      borderRadius: '6px',
+                                      borderLeft: '4px solid #8b5cf6'
+                                    }}>
+                                      <p style={{ margin: '0', fontSize: '0.85rem', color: '#cbd5e1' }}>
+                                        {element.applicationSection}
+                                      </p>
+                                    </div>
+                                  </div>
+                                )}
+
+                                {/* Application Items Checklist */}
+                                {element.applicationItems && element.applicationItems.length > 0 && (
+                                  <div style={{ marginBottom: '20px' }}>
+                                    <strong style={{ color: '#06b6d4', display: 'block', marginBottom: '8px', fontSize: '0.95rem' }}>
+                                      ✓ Specific Items to Check:
+                                    </strong>
+                                    <div style={{ 
+                                      padding: '12px', 
+                                      background: '#0f172a', 
+                                      borderRadius: '6px',
+                                      borderLeft: '4px solid #06b6d4'
+                                    }}>
+                                      <ul style={{ margin: '0', paddingLeft: '20px', lineHeight: '1.8' }}>
+                                        {element.applicationItems.map((item, i) => (
+                                          <li key={i} style={{ fontSize: '0.85rem', color: '#cbd5e1', marginBottom: '8px' }}>
+                                            {item}
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    </div>
+                                  </div>
+                                )}
+
+                                {/* Notes/Footnotes */}
+                                {element.footnotes && (
+                                  <div>
+                                    <strong style={{ color: '#ec4899', display: 'block', marginBottom: '8px', fontSize: '0.95rem' }}>
+                                      📌 Important Notes:
+                                    </strong>
+                                    <div style={{ 
+                                      padding: '12px', 
+                                      background: '#0f172a', 
+                                      borderRadius: '6px',
+                                      borderLeft: '4px solid #ec4899'
+                                    }}>
+                                      <p style={{ margin: '0', fontSize: '0.85rem', color: '#cbd5e1', lineHeight: '1.6' }}>
+                                        {element.footnotes}
+                                      </p>
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                            )}
+
+                            {/* Evidence and Reasoning Section */}
+                            <div style={{ marginTop: '15px' }}>
+                              <button
+                                onClick={() => setExpandedDetails(prev => ({...prev, [detailKey]: !showDetails}))}
+                                style={{
+                                  width: '100%',
+                                  padding: '12px 15px',
+                                  background: '#1e293b',
+                                  border: '1px solid #475569',
+                                  borderRadius: '8px',
+                                  cursor: 'pointer',
+                                  display: 'flex',
+                                  justifyContent: 'space-between',
+                                  alignItems: 'center',
+                                  fontSize: '0.95rem',
+                                  fontWeight: '600',
+                                  color: '#f1f5f9',
+                                  transition: 'all 0.3s'
+                                }}
+                              >
+                                <span>🔍 Show Evidence and Reasoning</span>
+                                <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s', transform: showDetails ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                                  ▼
+                                </span>
+                              </button>
+                            </div>
+                          </>
                         )}
                         
                         {validationResult && showDetails && (
@@ -2357,6 +2798,28 @@ Return JSON: {
                       📊 Export to Excel
                     </button>
                     <button
+                      onClick={async () => {
+                        try {
+                          await axios.post(`${BACKEND_URL}/api/manual-review/clear-cache`)
+                          alert('✅ Manual review cache cleared!')
+                        } catch (error) {
+                          alert('❌ Failed to clear cache: ' + error.message)
+                        }
+                      }}
+                      style={{
+                        padding: '8px 16px',
+                        background: '#f59e0b',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '6px',
+                        cursor: 'pointer',
+                        fontSize: '0.9rem',
+                        fontWeight: '600'
+                      }}
+                    >
+                      🗑️ Clear Manual Review Cache
+                    </button>
+                    <button
                       onClick={() => {
                         setShowComparison(false)
                         setManualReviewFile(null)
@@ -2484,7 +2947,7 @@ Return JSON: {
                         <div style={{ padding: '20px' }}>
                           {chapter.elements.map((element, elemIdx) => {
                             // Find validation result for this element
-                            const validationResult = [...(result.compliantItems || []), ...(result.nonCompliantItems || [])]
+                            const validationResult = [...(result.compliantItems || []), ...(result.nonCompliantItems || []), ...(result.notApplicableItems || [])]
                               .find(item => {
                                 if (!item.element || !element.element) return false
                                 if (item.element === element.element) return true
@@ -2498,6 +2961,16 @@ Return JSON: {
                             if (!validationResult) return null
                             
                             const isCompliant = result.compliantItems?.some(item => {
+                              if (!item.element || !element.element) return false
+                              if (item.element === element.element) return true
+                              if (item.element.includes(element.element.substring(0, 20))) return true
+                              if (element.element.includes(item.element.substring(0, 20))) return true
+                              const normalizeText = (text) => text.toLowerCase().replace(/\s+/g, ' ').trim()
+                              if (normalizeText(item.element) === normalizeText(element.element)) return true
+                              return false
+                            })
+                            
+                            const isNotApplicable = result.notApplicableItems?.some(item => {
                               if (!item.element || !element.element) return false
                               if (item.element === element.element) return true
                               if (item.element.includes(element.element.substring(0, 20))) return true
@@ -2570,15 +3043,15 @@ Return JSON: {
                             return (
                               <div key={elemIdx} style={{
                                 marginBottom: '20px',
-                                border: `2px solid ${isCompliant ? '#10b981' : '#ef4444'}`,
+                                border: `2px solid ${isNotApplicable ? '#64748b' : isCompliant ? '#10b981' : '#ef4444'}`,
                                 borderRadius: '8px',
                                 overflow: 'hidden'
                               }}>
                                 {/* Element Header */}
                                 <div style={{
                                   padding: '12px 15px',
-                                  background: isCompliant ? '#064e3b' : '#7f1d1d',
-                                  borderBottom: `1px solid ${isCompliant ? '#10b981' : '#ef4444'}`
+                                  background: isNotApplicable ? '#1e293b' : isCompliant ? '#064e3b' : '#7f1d1d',
+                                  borderBottom: `1px solid ${isNotApplicable ? '#64748b' : isCompliant ? '#10b981' : '#ef4444'}`
                                 }}>
                                   <div style={{
                                     display: 'flex',
@@ -2590,13 +3063,13 @@ Return JSON: {
                                     </strong>
                                     <span style={{
                                       padding: '4px 12px',
-                                      background: isCompliant ? '#10b981' : '#ef4444',
+                                      background: isNotApplicable ? '#64748b' : isCompliant ? '#10b981' : '#ef4444',
                                       color: 'white',
                                       borderRadius: '4px',
                                       fontSize: '0.8rem',
                                       fontWeight: '600'
                                     }}>
-                                      {isCompliant ? '✅ COMPLIANCE' : '❌ NON COMPLIANCE'}
+                                      {isNotApplicable ? '⊘ NOT APPLICABLE' : isCompliant ? '✅ COMPLIANCE' : '❌ NON COMPLIANCE'}
                                     </span>
                                   </div>
                                 </div>

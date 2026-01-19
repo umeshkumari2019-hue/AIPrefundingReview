@@ -13,7 +13,7 @@
       "letter": "c",
       "name": "Sliding Fee for Column I Services",
       "status": "No",
-      "comments": "The health center does not demonstrate compliance based on the PAR review. Within 90 days, provide an updated sliding fee discount schedule(s) for services provided directly by the health center (Form 5A: Column I), that is structured as follows: 1) A full discount or only a nominal charge is provided for individuals and families with annual incomes at or below 100 percent of the current Federal Poverty Guidelines (FPG); 2) Partial discounts are provided for individuals and families with incomes above 100 percent of the current FPG and at or below 200 percent of the current FPG, adjusted based on gradations in income levels with at least three discount pay classes; and 3) No discounts are provided to individuals and families with annual incomes above 200 percent of the current FPG."
+      "comments": "Organization does not demonstrate compliance based on the PAR review. Within 90 days, provide an updated sliding fee discount schedule(s) for services provided directly by the health center (Form 5A: Column I), that is structured as follows: 1) A full discount or only a nominal charge is provided for individuals and families with annual incomes at or below 100 percent of the current Federal Poverty Guidelines (FPG); 2) Partial discounts are provided for individuals and families with incomes above 100 percent of the current FPG and at or below 200 percent of the current FPG, adjusted based on gradations in income levels with at least three discount pay classes; and 3) No discounts are provided to individuals and families with annual incomes above 200 percent of the current FPG."
     },
     {
       "section": "Sliding Fee Discount Program",
@@ -97,14 +97,7 @@
       "letter": "a",
       "name": "Annual Budgeting for Scope of Project",
       "status": "No",
-      "comments": "The health center does not demonstrate compliance based on the PAR review. Within 90 days, provide documentation of corrective actions taken to formulate the annual total health center project budget that reflects revenue and expenses for all sites, services, and activities within the scope of project."
-    },
-    {
-      "section": "Budget",
-      "letter": "b",
-      "name": "Revenue Sources",
-      "status": "",
-      "comments": ""
+      "comments": "Organization does not demonstrate compliance based on the PAR review. Within 90 days, provide documentation of corrective actions taken to formulate the annual total health center project budget that reflects revenue and expenses for all sites, services, and activities within the scope of project."
     },
     {
       "section": "Board Authority",
@@ -149,5 +142,5 @@
       "comments": "PS review Form 6B: Request for Waiver of Board Member Requirements (pp. 130) finds that element e. Waiver Requests does not apply to this health center."
     }
   ],
-  "cachedAt": "2026-01-19T03:54:00.465Z"
+  "cachedAt": "2026-01-19T19:07:07.478Z"
 }

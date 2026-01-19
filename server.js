@@ -313,6 +313,29 @@ app.post('/api/manual-review/save-cache', async (req, res) => {
   }
 })
 
+// Clear all manual review caches
+app.post('/api/manual-review/clear-cache', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const files = await fs.readdir(CACHE_DIR)
+    const manualReviewCaches = files.filter(f => f.startsWith('manual-review-') && f.endsWith('.json'))
+    
+    await Promise.all(
+      manualReviewCaches.map(file => fs.unlink(path.join(CACHE_DIR, file)))
+    )
+    
+    console.log(`✅ Cleared ${manualReviewCaches.length} manual review cache files`)
+    res.json({ 
+      success: true, 
+      message: `Cleared ${manualReviewCaches.length} manual review cache files`,
+      count: manualReviewCaches.length
+    })
+  } catch (error) {
+    console.error('Error clearing manual review cache:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
 // Save manual review content to file for analysis
 app.post('/api/save-manual-review', async (req, res) => {
   try {

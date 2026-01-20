@@ -11,10 +11,10 @@ const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || ''
 // Azure OpenAI configuration
 const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || ''
 const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || ''
-const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || ''
+const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || 'gpt-4'
 
 // Backend server configuration
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001'
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || ''
 
 const SECTIONS = [
  'Needs Assessment',

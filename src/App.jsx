@@ -11,10 +11,10 @@ const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || ''
 // Azure OpenAI configuration
 const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || ''
 const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || ''
-const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || 'gpt-4'
+const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || ''
 
 // Backend server configuration
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || ''
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001'
 
 const SECTIONS = [
  'Needs Assessment',
@@ -1104,15 +1104,22 @@ STEP 2 - SEARCH THE ENTIRE APPLICATION:
 
 STEP 3 - EVALUATE EVIDENCE STRICTLY (ZERO TOLERANCE FOR HALLUCINATION):
 
-🚨 FIRST PRIORITY - CHECK FOR N/A CONDITIONS:
+🚨 FIRST PRIORITY - CHECK FOR N/A CONDITIONS (STRICT RULES):
 - BEFORE evaluating compliance, read the "IMPORTANT NOTES AND GUIDANCE" section above
-- If the NOTES contain text like "Select 'N/A' if..." or "NOTE: Select 'N/A' if...", this is a N/A CONDITION
-- Check if the N/A condition applies to this application:
-  * Example: NOTE says "Select 'N/A' if Form 8 indicates no subawards" → Check Form 8 for Q2 answer
+- ⚠️ CRITICAL: You can ONLY mark as NOT_APPLICABLE if BOTH conditions are met:
+  1. The "IMPORTANT NOTES AND GUIDANCE" section contains EXPLICIT text like "Select 'N/A' if..." or "NOTE: Select 'N/A' if..." or "Not Applicable" for THIS SPECIFIC ELEMENT
+  2. The N/A condition described in that NOTE is actually met in the application
+- ⚠️ FORBIDDEN: Do NOT mark as NOT_APPLICABLE based on your own reasoning, logic, or interpretation
+- ⚠️ FORBIDDEN: Do NOT mark as NOT_APPLICABLE just because the organization has a waiver, special circumstance, or alternative approach
+- ⚠️ FORBIDDEN: Do NOT mark as NOT_APPLICABLE if the NOTE is for a DIFFERENT element in the same chapter
+- Example of VALID N/A: 
+  * NOTE says "Select 'N/A' if Form 8 indicates no subawards" → Check Form 8 for Q2 answer
   * If Form 8 shows Q2='NO' or '0' contracts/subawards → N/A condition is MET
-  * If N/A condition is MET → IMMEDIATELY return status: "NOT_APPLICABLE" (do NOT evaluate for compliance)
-  * In reasoning, state: "Not Applicable - [explain why N/A condition is met based on NOTE]"
-- CRITICAL: If you determine the requirement is "not applicable" in your reasoning, you MUST set status to "NOT_APPLICABLE", NOT "NON_COMPLIANT"
+  * ONLY THEN return status: "NOT_APPLICABLE" with reasoning: "Not Applicable - Form 8 Q2 shows 'NO' which meets the N/A condition stated in the NOTE"
+- Example of INVALID N/A:
+  * Organization has a governance waiver BUT the element has no NOTE about N/A for waivers → Mark as NON_COMPLIANT if requirements not met
+  * You think the requirement doesn't apply BUT there's no explicit NOTE → Mark as NON_COMPLIANT if requirements not met
+- IF NO EXPLICIT N/A NOTE EXISTS FOR THIS ELEMENT: You MUST evaluate for compliance/non-compliance - NOT_APPLICABLE is not an option
 
 AFTER checking N/A conditions, evaluate compliance:
 - Only mark COMPLIANT if you find CLEAR, EXPLICIT proof that fully satisfies the requirement (NOT for N/A cases)
@@ -1430,7 +1437,7 @@ Return JSON: {
             onClick={() => setActiveTab('compare')}
             disabled={!results}
           >
-            🔍 Compare with Manual
+            🔍 Compare with Manual Review
           </button>
         </div>
 

@@ -5,13 +5,13 @@ import { Document, Paragraph, TextRun, HeadingLevel, AlignmentType, Packer, Tabl
 import { saveAs } from 'file-saver'
 
 // Azure Document Intelligence configuration
-const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT || ''
-const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || ''
+const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT || 'https://eastus.api.cognitive.microsoft.com/'
+const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || '4584da939fd449f7aeb19db68a39b054'
 
 // Azure OpenAI configuration
-const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || ''
-const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || ''
-const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || ''
+const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || 'https://dmiai.openai.azure.com/'
+const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || 'cd596bdc8c5a42b99eced7a2e872f7fd'
+const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || 'gpt-4'
 
 // Backend server configuration
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001'
@@ -268,7 +268,7 @@ function App() {
 
   const saveRulesToFile = async (rules) => {
     try {
-      const response = await axios.post('http://localhost:3001/api/save-rules', { rules })
+      const response = await axios.post(BACKEND_URL, { rules })
       if (response.data.success) {
         console.log('Saved rules to file:', rules.length, 'chapters')
       }
@@ -333,7 +333,7 @@ function App() {
       // Title
       sections.push(
         new Paragraph({
-          text: `HRSA Compliance Analysis Report`,
+          text: `HRSA Pre-Funding Review Report`,
           heading: HeadingLevel.TITLE,
           alignment: AlignmentType.CENTER,
           spacing: { after: 200 }
@@ -510,7 +510,7 @@ function App() {
       // Generate and download
       const blob = await Packer.toBlob(doc)
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-').substring(0, 19)
-      const filename = `Compliance_Report_${applicationName || 'Report'}_${timestamp}.docx`
+      const filename = `Review_Report_${applicationName || 'Report'}_${timestamp}.docx`
       saveAs(blob, filename)
 
       alert('✅ Word document exported successfully!')
@@ -598,11 +598,11 @@ function App() {
           if (parsedElement) {
             const status = parsedElement.status?.toLowerCase()
             if (status?.includes('yes')) {
-              manualStatus = 'COMPLIANCE (Yes)'
+              manualStatus = 'COMPLIANT (Yes)'
             } else if (status?.includes('not applicable') || status?.includes('n/a')) {
               manualStatus = 'NOT APPLICABLE'
             } else if (status?.includes('no')) {
-              manualStatus = 'NON-COMPLIANCE (No)'
+              manualStatus = 'NON-COMPLIANT (No)'
             }
             manualComments = parsedElement.comments || ''
 
@@ -622,7 +622,7 @@ function App() {
         exportData.push([
           section,
           elementName,
-          isCompliant ? 'COMPLIANCE' : 'NON-COMPLIANCE',
+          isCompliant ? 'COMPLIANT' : 'NON-COMPLIANT',
           validationResult.evidence || '',
           validationResult.reasoning || '',
           manualStatus,
@@ -1399,9 +1399,9 @@ Return JSON: {
             alt="HRSA Logo" 
             style={{ height: '80px', width: 'auto' }}
           />
-          <h1 style={{ margin: 0 }}>📋 HRSA Compliance System</h1>
+          <h1 style={{ margin: 0 }}>📋 Pre-Funding Review Assistant</h1>
         </div>
-        <p>AI-Powered Document Intelligence for Health Center Compliance</p>
+        <p>AI-Powered Document Intelligence for Pre-Funding Review</p>
       </div>
 
       <div className="card">
@@ -1602,7 +1602,7 @@ Return JSON: {
           <div>
             {!manualRules ? (
               <>
-                <h2 style={{ color: '#f1f5f9' }}>Upload HRSA Compliance Manual</h2>
+                <h2 style={{ color: '#f1f5f9' }}>Upload Guiding Principles Document</h2>
                 <div 
                   className="upload-section"
                   onDragOver={handleDragOver}
@@ -1612,7 +1612,7 @@ Return JSON: {
                 >
                   <div className="upload-icon">📄</div>
                   <h3>{manualFile ? manualFile.name : 'Drop PDF here or click to upload'}</h3>
-                  <p>HRSA Compliance Manual PDF</p>
+                  <p>Guiding Principles Document PDF</p>
                   <input 
                     id="manual-input"
                     type="file" 
@@ -1638,11 +1638,11 @@ Return JSON: {
                       setManualRules(null)
                       setManualFile(null)
                       setResults(null)
-                      setStatus('Upload a new compliance manual to extract rules (previous rules will be overwritten)')
+                      setStatus('Upload a new guiding principles document to extract rules (previous rules will be overwritten)')
                     }}
                     style={{ background: '#f59e0b', fontSize: '0.9rem', padding: '8px 16px' }}
                   >
-                    📤 Upload New Manual
+                    📤 Upload New Guiding Principles Document
                   </button>
                 </div>
               </>
@@ -1839,7 +1839,7 @@ Return JSON: {
         {activeTab === 'results' && results && (
           <div className="results">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
-              <h2 style={{ margin: 0, color: '#f1f5f9' }}>📊 Compliance Results: {applicationName}</h2>
+              <h2 style={{ margin: 0, color: '#f1f5f9' }}>📊 Review Results: {applicationName}</h2>
               <button
                 onClick={exportResultsToWord}
                 style={{
@@ -1929,7 +1929,7 @@ Return JSON: {
                       {totalCompliant}
                     </div>
                     <div style={{ fontSize: '0.9rem', color: '#d1fae5', fontWeight: '500' }}>
-                      ✅ Compliance
+                      ✅ Compliant
                     </div>
                   </div>
                   
@@ -1958,7 +1958,7 @@ Return JSON: {
                       {totalNonCompliant}
                     </div>
                     <div style={{ fontSize: '0.9rem', color: '#fecaca', fontWeight: '500' }}>
-                      ❌ Non Compliance
+                      ❌ Non-Compliant
                     </div>
                   </div>
                   
@@ -2117,7 +2117,7 @@ Return JSON: {
                     // Determine border and badge colors
                     const borderColor = isNotApplicable ? '#64748b' : (isCompliant ? '#10b981' : '#ef4444')
                     const badgeColor = isNotApplicable ? '#64748b' : (isCompliant ? '#10b981' : '#ef4444')
-                    const badgeText = isNotApplicable ? '⊘ NOT APPLICABLE' : (isCompliant ? '✅ COMPLIANCE' : '❌ NON COMPLIANCE')
+                    const badgeText = isNotApplicable ? '⊘ NOT APPLICABLE' : (isCompliant ? '✅ COMPLIANT' : '❌ NON-COMPLIANT')
                     
                     return (
                       <div 
@@ -3101,7 +3101,7 @@ Return JSON: {
                                       fontSize: '0.8rem',
                                       fontWeight: '600'
                                     }}>
-                                      {isNotApplicable ? '⊘ NOT APPLICABLE' : isCompliant ? '✅ COMPLIANCE' : '❌ NON COMPLIANCE'}
+                                      {isNotApplicable ? '⊘ NOT APPLICABLE' : isCompliant ? '✅ COMPLIANT' : '❌ NON-COMPLIANT'}
                                     </span>
                                   </div>
                                 </div>

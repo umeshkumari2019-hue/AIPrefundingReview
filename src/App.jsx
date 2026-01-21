@@ -536,8 +536,8 @@ function App() {
       'Agent Analysis - Status',
       'Agent Analysis - Evidence',
       'Agent Analysis - Reasoning',
-      'Manual Review - Status',
-      'Manual Review - Comments',
+      'Project Officer Review - Status',
+      'Project Officer Review - Comments',
       'Match Status'
     ])
 
@@ -1437,7 +1437,7 @@ Return JSON: {
             onClick={() => setActiveTab('compare')}
             disabled={!results}
           >
-            🔍 Compare with Manual Review
+            🔍 Compare with Project Officer Review
           </button>
         </div>
 
@@ -2754,12 +2754,12 @@ Return JSON: {
 
         {activeTab === 'compare' && (
           <div>
-            <h2 style={{ color: '#f1f5f9', marginBottom: '20px' }}>🔍 Compare Agent Analysis with Manual Review</h2>
+            <h2 style={{ color: '#f1f5f9', marginBottom: '20px' }}>🔍 Compare Agent Analysis with Project Officer Review</h2>
             
             {!showComparison ? (
               <div>
                 <p style={{ color: '#cbd5e1', marginBottom: '20px', fontSize: '0.95rem' }}>
-                  Upload a manual review PDF to compare it side-by-side with the AI analysis results.
+                  Upload a project officer review PDF to compare it side-by-side with the AI analysis results.
                   The application number should be in the filename.
                 </p>
                 
@@ -2772,8 +2772,8 @@ Return JSON: {
                   style={{ marginBottom: '20px' }}
                 >
                   <div className="upload-icon">📄</div>
-                  <h3>{manualReviewFile ? manualReviewFile.name : 'Drop Manual Review PDF here or click to upload'}</h3>
-                  <p>Manual Review Document PDF</p>
+                  <h3>{manualReviewFile ? manualReviewFile.name : 'Drop Project Officer Review PDF here or click to upload'}</h3>
+                  <p>Project Officer Review Document PDF</p>
                   <input 
                     id="manual-review-input"
                     type="file" 
@@ -3200,7 +3200,7 @@ Return JSON: {
                                     )}
                                   </div>
 
-                                  {/* Manual Review */}
+                                  {/* Project Officer Review */}
                                   <div style={{
                                     padding: '15px',
                                     background: '#0f172a'
@@ -3213,7 +3213,7 @@ Return JSON: {
                                     }}>
                                       <span style={{ fontSize: '1.2rem' }}>👤</span>
                                       <strong style={{ color: '#10b981', fontSize: '0.9rem' }}>
-                                        Manual Review
+                                        Project Officer Review
                                       </strong>
                                     </div>
                                     

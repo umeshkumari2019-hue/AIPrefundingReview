@@ -1,1 +1,42 @@
-node_modules/ 
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables - NEVER COMMIT THESE
+.env
+.env.local
+.env.*.local
+.env.batch
+.env.production
+.env.server
+
+# Build outputs
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache and temporary files
+data/cache/
+*.tmp
+*.temp
+
+# Sensitive data
+batch-results/
+comparison-results/
+*.pdf
+*.docx
+
+# PM2
+.pm2/
+ecosystem.config.js

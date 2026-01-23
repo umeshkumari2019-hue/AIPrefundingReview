@@ -5,28 +5,67 @@ import { Document, Paragraph, TextRun, HeadingLevel, AlignmentType, Packer, Tabl
 import { saveAs } from 'file-saver'
 
 // Azure Document Intelligence configuration
-const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT || 'https://eastus.api.cognitive.microsoft.com/'
-const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || '4584da939fd449f7aeb19db68a39b054'
+const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT || ''
+const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || ''
 
 // Azure OpenAI configuration
-const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || 'https://dmiai.openai.azure.com/'
-const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || 'cd596bdc8c5a42b99eced7a2e872f7fd'
-const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || 'gpt-4'
+const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || ''
+const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || ''
+const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || ''
 
 // Backend server configuration
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001'
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || ''
 
 const SECTIONS = [
- 'Needs Assessment',
-   'Sliding Fee Discount Program',
-   'Key Management Staff',
-   'Contracts and Subawards',
+  'Needs Assessment',
+  'Sliding Fee Discount Program',
+  'Key Management Staff',
+  'Contracts and Subawards',
   'Collaborative Relationships',
   'Billing and Collections',
-   'Budget',
-   'Board Authority',
-   'Board Composition'
+  'Budget',
+  'Board Authority',
+  'Board Composition'
 ]
+
+// Text compression utility to reduce API payload size
+const compressApplicationText = (fullText) => {
+  let compressed = fullText
+  
+  // Remove page markers and separators
+  compressed = compressed.replace(/={10,}/g, '')
+  compressed = compressed.replace(/PAGE \d+/gi, '')
+  compressed = compressed.replace(/Page Number:\s*\d+/gi, '')
+  compressed = compressed.replace(/Tracking Number[^\n]*/gi, '')
+  
+  // Remove excessive whitespace and blank lines
+  compressed = compressed.replace(/\n{3,}/g, '\n\n')
+  compressed = compressed.replace(/[ \t]{2,}/g, ' ')
+  compressed = compressed.replace(/^\s+$/gm, '') // Remove whitespace-only lines
+  
+  // Remove page headers/footers (common patterns)
+  compressed = compressed.replace(/Page \d+ of \d+/gi, '')
+  compressed = compressed.replace(/\d{1,2}\/\d{1,2}\/\d{2,4}/g, '') // Dates
+  
+  // Remove table formatting characters but keep content
+  compressed = compressed.replace(/[│┤├┼─┌┐└┘]/g, ' ')
+  compressed = compressed.replace(/\[TEXT\]\s*/g, '') // Remove [TEXT] markers
+  compressed = compressed.replace(/\[TABLE[^\]]*\]:\s*/g, 'TABLE: ') // Simplify table markers
+  
+  // Remove excessive repetition (e.g., "___________" lines)
+  compressed = compressed.replace(/_{5,}/g, '')
+  compressed = compressed.replace(/-{5,}/g, '')
+  compressed = compressed.replace(/\.{5,}/g, '')
+  
+  // Remove multiple spaces (do this last)
+  compressed = compressed.replace(/  +/g, ' ')
+  compressed = compressed.replace(/\n /g, '\n') // Remove leading spaces on lines
+  
+  // Remove empty lines
+  compressed = compressed.split('\n').filter(line => line.trim().length > 0).join('\n')
+  
+  return compressed.trim()
+}
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
@@ -47,6 +86,9 @@ function App() {
   const [speechStatus, setSpeechStatus] = useState({}) // Track speech status for each item
   const [cachedApplications, setCachedApplications] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
+  const [currentPage, setCurrentPage] = useState(1)
+  const [itemsPerPage] = useState(12) // Show 12 applications per page
+  const [settingsSearchQuery, setSettingsSearchQuery] = useState('')
   const [manualReviewFile, setManualReviewFile] = useState(null)
   const [manualReviewContent, setManualReviewContent] = useState('')
   const [manualReviewParsed, setManualReviewParsed] = useState([])
@@ -232,12 +274,12 @@ function App() {
     try {
       const response = await axios.get(`${BACKEND_URL}/api/cache/list`)
       if (response.data.success) {
-        // Sort by timestamp descending (most recent first) and take top 5
+        // Sort by timestamp descending (most recent first)
         const sortedCaches = response.data.caches.sort((a, b) => 
           new Date(b.timestamp) - new Date(a.timestamp)
-        ).slice(0, 5)
+        )
         setCachedApplications(sortedCaches)
-        console.log('Loaded top 5 cached applications:', sortedCaches.length)
+        console.log('Loaded cached applications:', sortedCaches.length)
       }
     } catch (error) {
       console.error('Error loading cached applications:', error)
@@ -472,16 +514,6 @@ function App() {
               children: [
                 new TextRun({ text: `Evidence: `, bold: true }),
                 new TextRun({ text: item.evidence || 'No evidence found' })
-              ],
-              spacing: { after: 100 }
-            })
-          )
-
-          sections.push(
-            new Paragraph({
-              children: [
-                new TextRun({ text: `Evidence Location: `, bold: true }),
-                new TextRun({ text: item.evidenceLocation || 'Not specified' })
               ],
               spacing: { after: 100 }
             })
@@ -1012,23 +1044,37 @@ ${content}`
   }
 
   // Helper function to retry API calls with exponential backoff
-  const retryWithBackoff = async (fn, maxRetries = 3, initialDelay = 20000) => {
+  const retryWithBackoff = async (fn, sectionName, maxRetries = 3) => {
+    let lastError = null
+    
     for (let attempt = 0; attempt < maxRetries; attempt++) {
       try {
-        return await fn()
+        console.log(`🔄 Attempting ${sectionName} (attempt ${attempt + 1}/${maxRetries})`)
+        const result = await fn()
+        return result
       } catch (error) {
-        const isRateLimitError = error.response?.data?.error?.code === 'RateLimitReached'
+        lastError = error
+        const is429Error = error.response?.status === 429
         
-        if (isRateLimitError && attempt < maxRetries - 1) {
-          const delay = initialDelay * Math.pow(2, attempt) // Exponential backoff: 20s, 40s, 80s
-          console.log(`Rate limit hit. Retrying in ${delay/1000} seconds... (Attempt ${attempt + 1}/${maxRetries})`)
-          setStatus(`⚠️ Rate limit reached. Retrying in ${delay/1000} seconds... (Attempt ${attempt + 1}/${maxRetries})`)
-          await new Promise(resolve => setTimeout(resolve, delay))
+        if (attempt < maxRetries - 1) {
+          if (is429Error) {
+            const delay = 30000 * (attempt + 1) // 30s, 60s, 90s
+            console.log(`⚠️ Rate limit (429) on ${sectionName}. Waiting ${delay/1000}s... (Attempt ${attempt + 1}/${maxRetries})`)
+            setStatus(`⚠️ Rate limit. Waiting ${delay/1000}s before retry ${attempt + 2}/${maxRetries}...`)
+            await new Promise(resolve => setTimeout(resolve, delay))
+            console.log(`✅ Wait complete. Retrying ${sectionName} now...`)
+          } else {
+            console.log(`❌ Error on ${sectionName}: ${error.message}. Retrying in 5s...`)
+            await new Promise(resolve => setTimeout(resolve, 5000))
+          }
         } else {
-          throw error
+          console.log(`❌ Max retries (${maxRetries}) reached for ${sectionName}. Giving up.`)
         }
       }
     }
+    
+    // If we get here, all retries failed
+    throw lastError
   }
 
   // Azure OpenAI - Validate compliance
@@ -1299,6 +1345,8 @@ Return JSON: {
 
     setProcessing(true)
     setStatus('Generating file hash...')
+    
+    const startTime = Date.now()
 
     try {
       // Generate hash for the application file
@@ -1315,6 +1363,8 @@ Return JSON: {
       
       if (cachedData) {
         // Cache hit! Load results from cache
+        const totalTime = ((Date.now() - startTime) / 1000).toFixed(1)
+        console.log(`⏱️  Loaded from cache in ${totalTime}s`)
         setCacheStatus(`✅ Loaded from cache (analyzed on ${new Date(cachedData.timestamp).toLocaleString()})`)
         setResults(cachedData.results)
         setStatus(`✅ Analysis loaded from cache! (Original analysis: ${new Date(cachedData.timestamp).toLocaleString()})`)
@@ -1326,25 +1376,42 @@ Return JSON: {
       // Cache miss - proceed with full analysis
       setCacheStatus('🔄 No cache found - running full analysis...')
       setStatus('Extracting text from application...')
+      const extractionStartTime = Date.now()
       const content = await extractTextFromPDF(applicationFile)
-      setStatus('Analyzing compliance for each section...')
+      const extractionTime = ((Date.now() - extractionStartTime) / 1000).toFixed(1)
+      console.log(`📄 Text extraction took ${extractionTime}s`)
       
+      setStatus('Analyzing compliance...')
       const sectionResults = {}
+      const analysisStartTime = Date.now()
       
+      // Process sections sequentially
       for (let i = 0; i < SECTIONS.length; i++) {
         const section = SECTIONS[i]
         setStatus(`Analyzing ${section} (${i + 1}/${SECTIONS.length})...`)
         
-        // Use retry logic for validation
-        const result = await retryWithBackoff(() => validateCompliance(section, manualRules, content))
-        sectionResults[section] = result
+        try {
+          const result = await retryWithBackoff(
+            () => validateCompliance(section, manualRules, content),
+            section
+          )
+          sectionResults[section] = result
+          console.log(`✓ Completed ${i + 1}/${SECTIONS.length}: ${section}`)
+        } catch (error) {
+          console.error(`Failed ${section}:`, error.message)
+          sectionResults[section] = { error: error.message, compliantItems: [], nonCompliantItems: [], notApplicableItems: [] }
+        }
         
-        // Add delay between API calls to avoid rate limits (except after last section)
+        // Delay between sections to avoid rate limits (25s to stay under 450K TPM)
         if (i < SECTIONS.length - 1) {
-          setStatus(`⏳ Waiting 20 seconds to avoid rate limits... (${i + 1}/${SECTIONS.length} completed)`)
-          await new Promise(resolve => setTimeout(resolve, 20000)) // 20 second delay
+          setStatus(`⏳ Waiting 25 seconds before next section... (${i + 1}/${SECTIONS.length} completed)`)
+          await new Promise(resolve => setTimeout(resolve, 25000))
         }
       }
+      
+      const totalAnalysisTime = ((Date.now() - analysisStartTime) / 1000).toFixed(1)
+      const totalTime = ((Date.now() - startTime) / 1000).toFixed(1)
+      console.log(`⏱️  Analysis completed in ${totalAnalysisTime}s (Total: ${totalTime}s)`)
       
       // Save results to cache
       setStatus('💾 Saving results to cache...')
@@ -1356,7 +1423,7 @@ Return JSON: {
       
       setResults(sectionResults)
       setCacheStatus('✅ Analysis complete and cached!')
-      setStatus('✅ Analysis complete!')
+      setStatus(`✅ Analysis complete! (Total time: ${totalTime}s)`)
       setActiveTab('results')
     } catch (error) {
       setStatus(`❌ Error: ${error.message}`)
@@ -1439,6 +1506,12 @@ Return JSON: {
           >
             🔍 Compare with Project Officer Review
           </button>
+          <button 
+            className={`tab ${activeTab === 'settings' ? 'active' : ''}`}
+            onClick={() => setActiveTab('settings')}
+          >
+            ⚙️ Settings
+          </button>
         </div>
 
         {activeTab === 'dashboard' && (
@@ -1451,7 +1524,10 @@ Return JSON: {
                 type="text"
                 placeholder="🔍 Search by application name..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  setCurrentPage(1); // Reset to first page on search
+                }}
                 style={{
                   width: '100%',
                   padding: '12px 20px',
@@ -1482,18 +1558,41 @@ Return JSON: {
                   Upload and analyze your first application to see it here
                 </p>
               </div>
-            ) : (
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-                gap: '20px'
-              }}>
-                {cachedApplications
-                  .filter(app => 
-                    !searchQuery || 
-                    app.applicationName?.toLowerCase().includes(searchQuery.toLowerCase())
-                  )
-                  .map((app, index) => (
+            ) : (() => {
+              // Filter applications based on search query
+              const filteredApps = cachedApplications.filter(app => 
+                !searchQuery || 
+                app.applicationName?.toLowerCase().includes(searchQuery.toLowerCase())
+              );
+              
+              // Calculate pagination
+              const totalPages = Math.ceil(filteredApps.length / itemsPerPage);
+              const startIndex = (currentPage - 1) * itemsPerPage;
+              const endIndex = startIndex + itemsPerPage;
+              const currentApps = filteredApps.slice(startIndex, endIndex);
+              
+              // Reset to page 1 if current page is out of bounds
+              if (currentPage > totalPages && totalPages > 0) {
+                setCurrentPage(1);
+              }
+              
+              return (
+                <>
+                  {/* Results count */}
+                  <div style={{ 
+                    marginBottom: '20px', 
+                    color: '#94a3b8',
+                    fontSize: '0.9rem'
+                  }}>
+                    Showing {startIndex + 1}-{Math.min(endIndex, filteredApps.length)} of {filteredApps.length} applications
+                  </div>
+                  
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                    gap: '20px'
+                  }}>
+                    {currentApps.map((app, index) => (
                     <div
                       key={index}
                       style={{
@@ -1571,8 +1670,124 @@ Return JSON: {
                       </button>
                     </div>
                   ))}
-              </div>
-            )}
+                  </div>
+                  
+                  {/* Pagination Controls */}
+                  {totalPages > 1 && (
+                    <div style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      gap: '10px',
+                      marginTop: '30px',
+                      flexWrap: 'wrap'
+                    }}>
+                      <button
+                        onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                        disabled={currentPage === 1}
+                        style={{
+                          padding: '10px 20px',
+                          background: currentPage === 1 ? '#334155' : '#3b82f6',
+                          color: currentPage === 1 ? '#64748b' : 'white',
+                          border: 'none',
+                          borderRadius: '6px',
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          cursor: currentPage === 1 ? 'not-allowed' : 'pointer',
+                          transition: 'all 0.3s'
+                        }}
+                        onMouseEnter={(e) => {
+                          if (currentPage !== 1) e.target.style.background = '#2563eb';
+                        }}
+                        onMouseLeave={(e) => {
+                          if (currentPage !== 1) e.target.style.background = '#3b82f6';
+                        }}
+                      >
+                        ← Previous
+                      </button>
+                      
+                      <div style={{ 
+                        display: 'flex', 
+                        gap: '5px',
+                        alignItems: 'center'
+                      }}>
+                        {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => {
+                          // Show first page, last page, current page, and pages around current
+                          const showPage = page === 1 || 
+                                          page === totalPages || 
+                                          Math.abs(page - currentPage) <= 1;
+                          
+                          // Show ellipsis
+                          if (!showPage) {
+                            if (page === currentPage - 2 || page === currentPage + 2) {
+                              return <span key={page} style={{ color: '#64748b', padding: '0 5px' }}>...</span>;
+                            }
+                            return null;
+                          }
+                          
+                          return (
+                            <button
+                              key={page}
+                              onClick={() => setCurrentPage(page)}
+                              style={{
+                                padding: '10px 15px',
+                                background: currentPage === page ? '#3b82f6' : '#1e293b',
+                                color: currentPage === page ? 'white' : '#94a3b8',
+                                border: currentPage === page ? 'none' : '2px solid #334155',
+                                borderRadius: '6px',
+                                fontSize: '0.9rem',
+                                fontWeight: currentPage === page ? '600' : '400',
+                                cursor: 'pointer',
+                                transition: 'all 0.3s',
+                                minWidth: '40px'
+                              }}
+                              onMouseEnter={(e) => {
+                                if (currentPage !== page) {
+                                  e.target.style.borderColor = '#3b82f6';
+                                  e.target.style.color = '#f1f5f9';
+                                }
+                              }}
+                              onMouseLeave={(e) => {
+                                if (currentPage !== page) {
+                                  e.target.style.borderColor = '#334155';
+                                  e.target.style.color = '#94a3b8';
+                                }
+                              }}
+                            >
+                              {page}
+                            </button>
+                          );
+                        })}
+                      </div>
+                      
+                      <button
+                        onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                        disabled={currentPage === totalPages}
+                        style={{
+                          padding: '10px 20px',
+                          background: currentPage === totalPages ? '#334155' : '#3b82f6',
+                          color: currentPage === totalPages ? '#64748b' : 'white',
+                          border: 'none',
+                          borderRadius: '6px',
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          cursor: currentPage === totalPages ? 'not-allowed' : 'pointer',
+                          transition: 'all 0.3s'
+                        }}
+                        onMouseEnter={(e) => {
+                          if (currentPage !== totalPages) e.target.style.background = '#2563eb';
+                        }}
+                        onMouseLeave={(e) => {
+                          if (currentPage !== totalPages) e.target.style.background = '#3b82f6';
+                        }}
+                      >
+                        Next →
+                      </button>
+                    </div>
+                  )}
+                </>
+              );
+            })()}
 
             {/* No Search Results */}
             {cachedApplications.length > 0 && 
@@ -1812,27 +2027,6 @@ Return JSON: {
                 {cacheStatus}
               </div>
             )}
-            
-            <div style={{ marginTop: '20px', display: 'flex', gap: '10px', alignItems: 'center' }}>
-              <button 
-                onClick={clearAllCaches}
-                style={{
-                  padding: '10px 20px',
-                  background: '#7f1d1d',
-                  color: '#fca5a5',
-                  border: '1px solid #991b1b',
-                  borderRadius: '8px',
-                  cursor: 'pointer',
-                  fontSize: '0.9rem',
-                  fontWeight: '500'
-                }}
-              >
-                🗑️ Clear All Cached Analyses
-              </button>
-              <span style={{ fontSize: '0.85rem', color: '#94a3b8' }}>
-                Clear cached results to force re-analysis
-              </span>
-            </div>
           </div>
         )}
 
@@ -3354,6 +3548,257 @@ Return JSON: {
                     })
                   })()}
                 </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeTab === 'settings' && (
+          <div>
+            <h2 style={{ color: '#f1f5f9', marginBottom: '20px' }}>⚙️ Settings</h2>
+            
+            {/* Cache Management Section */}
+            <div style={{
+              background: '#1e293b',
+              border: '2px solid #475569',
+              borderRadius: '12px',
+              padding: '25px',
+              marginBottom: '30px'
+            }}>
+              <h3 style={{ color: '#f1f5f9', marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span>🗄️</span>
+                <span>Cache Management</span>
+              </h3>
+              
+              <p style={{ color: '#94a3b8', marginBottom: '20px', fontSize: '0.9rem' }}>
+                Manage cached analysis results and manual review data. Clearing cache will free up storage space.
+              </p>
+              
+              {/* Clear All Caches Button */}
+              <div style={{ marginBottom: '30px' }}>
+                <button
+                  onClick={async () => {
+                    if (window.confirm('⚠️ Are you sure you want to clear ALL caches? This will delete all cached analysis results and manual reviews.')) {
+                      try {
+                        await clearAllCaches()
+                        await loadCachedApplications()
+                        alert('✅ All caches cleared successfully!')
+                      } catch (error) {
+                        alert('❌ Failed to clear caches: ' + error.message)
+                      }
+                    }
+                  }}
+                  style={{
+                    padding: '12px 24px',
+                    background: '#ef4444',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    fontSize: '1rem',
+                    fontWeight: '600',
+                    transition: 'all 0.3s',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px'
+                  }}
+                  onMouseEnter={(e) => e.target.style.background = '#dc2626'}
+                  onMouseLeave={(e) => e.target.style.background = '#ef4444'}
+                >
+                  <span>🗑️</span>
+                  <span>Clear All Caches</span>
+                </button>
+              </div>
+              
+              {/* Search and Clear Individual Applications */}
+              <div>
+                <h4 style={{ color: '#f1f5f9', marginBottom: '15px', fontSize: '1.1rem' }}>
+                  Cached Applications
+                </h4>
+                
+                {/* Search Bar */}
+                <div style={{ marginBottom: '20px' }}>
+                  <input
+                    type="text"
+                    placeholder="🔍 Search cached applications..."
+                    value={settingsSearchQuery}
+                    onChange={(e) => setSettingsSearchQuery(e.target.value)}
+                    style={{
+                      width: '100%',
+                      padding: '12px 20px',
+                      fontSize: '1rem',
+                      background: '#0f172a',
+                      border: '2px solid #334155',
+                      borderRadius: '8px',
+                      color: '#f1f5f9',
+                      outline: 'none'
+                    }}
+                    onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
+                    onBlur={(e) => e.target.style.borderColor = '#334155'}
+                  />
+                </div>
+                
+                {/* Cached Applications List */}
+                {cachedApplications.length === 0 ? (
+                  <div style={{
+                    textAlign: 'center',
+                    padding: '40px 20px',
+                    background: '#0f172a',
+                    borderRadius: '8px',
+                    border: '2px dashed #334155'
+                  }}>
+                    <div style={{ fontSize: '3rem', marginBottom: '15px' }}>📂</div>
+                    <p style={{ color: '#64748b', fontSize: '0.9rem' }}>
+                      No cached applications found
+                    </p>
+                  </div>
+                ) : (
+                  <div style={{
+                    background: '#0f172a',
+                    borderRadius: '8px',
+                    border: '1px solid #334155',
+                    overflow: 'hidden'
+                  }}>
+                    {cachedApplications
+                      .filter(app => 
+                        !settingsSearchQuery || 
+                        app.applicationName?.toLowerCase().includes(settingsSearchQuery.toLowerCase()) ||
+                        app.cacheKey?.toLowerCase().includes(settingsSearchQuery.toLowerCase())
+                      )
+                      .map((app, index) => (
+                        <div
+                          key={index}
+                          style={{
+                            padding: '15px 20px',
+                            borderBottom: index < cachedApplications.length - 1 ? '1px solid #334155' : 'none',
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            transition: 'background 0.2s'
+                          }}
+                          onMouseEnter={(e) => e.currentTarget.style.background = '#1e293b'}
+                          onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
+                        >
+                          <div style={{ flex: 1 }}>
+                            <div style={{
+                              color: '#f1f5f9',
+                              fontSize: '1rem',
+                              fontWeight: '600',
+                              marginBottom: '5px'
+                            }}>
+                              {app.applicationName || 'Unnamed Application'}
+                            </div>
+                            <div style={{
+                              color: '#64748b',
+                              fontSize: '0.85rem',
+                              display: 'flex',
+                              gap: '15px',
+                              flexWrap: 'wrap'
+                            }}>
+                              <span>📅 {new Date(app.timestamp).toLocaleDateString('en-US', {
+                                year: 'numeric',
+                                month: 'short',
+                                day: 'numeric',
+                                hour: '2-digit',
+                                minute: '2-digit'
+                              })}</span>
+                              <span style={{ fontFamily: 'monospace' }}>
+                                🔑 {app.cacheKey.substring(0, 16)}...
+                              </span>
+                            </div>
+                          </div>
+                          
+                          <div style={{ display: 'flex', gap: '10px' }}>
+                            <button
+                              onClick={() => viewCachedApplication(app.cacheKey)}
+                              style={{
+                                padding: '8px 16px',
+                                background: '#3b82f6',
+                                color: 'white',
+                                border: 'none',
+                                borderRadius: '6px',
+                                cursor: 'pointer',
+                                fontSize: '0.85rem',
+                                fontWeight: '600',
+                                transition: 'background 0.2s'
+                              }}
+                              onMouseEnter={(e) => e.target.style.background = '#2563eb'}
+                              onMouseLeave={(e) => e.target.style.background = '#3b82f6'}
+                            >
+                              👁️ View
+                            </button>
+                            <button
+                              onClick={async () => {
+                                if (window.confirm(`Delete cached analysis for "${app.applicationName || 'this application'}"?`)) {
+                                  try {
+                                    await axios.delete(`${BACKEND_URL}/api/cache/delete`, {
+                                      data: {
+                                        fileHash: app.fileHash,
+                                        manualVersion: app.manualVersion
+                                      }
+                                    })
+                                    await loadCachedApplications()
+                                    alert('✅ Cache deleted successfully!')
+                                  } catch (error) {
+                                    alert('❌ Failed to delete cache: ' + error.message)
+                                  }
+                                }
+                              }}
+                              style={{
+                                padding: '8px 16px',
+                                background: '#ef4444',
+                                color: 'white',
+                                border: 'none',
+                                borderRadius: '6px',
+                                cursor: 'pointer',
+                                fontSize: '0.85rem',
+                                fontWeight: '600',
+                                transition: 'background 0.2s'
+                              }}
+                              onMouseEnter={(e) => e.target.style.background = '#dc2626'}
+                              onMouseLeave={(e) => e.target.style.background = '#ef4444'}
+                            >
+                              🗑️ Delete
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    
+                    {/* No Search Results */}
+                    {settingsSearchQuery && 
+                     cachedApplications.filter(app => 
+                       app.applicationName?.toLowerCase().includes(settingsSearchQuery.toLowerCase()) ||
+                       app.cacheKey?.toLowerCase().includes(settingsSearchQuery.toLowerCase())
+                     ).length === 0 && (
+                      <div style={{
+                        textAlign: 'center',
+                        padding: '30px 20px',
+                        color: '#64748b'
+                      }}>
+                        <div style={{ fontSize: '2rem', marginBottom: '10px' }}>🔍</div>
+                        <p style={{ fontSize: '0.9rem' }}>
+                          No applications match "{settingsSearchQuery}"
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+            
+            {/* Cache Status Display */}
+            {cacheStatus && (
+              <div style={{
+                padding: '15px 20px',
+                background: '#1e293b',
+                border: '2px solid #10b981',
+                borderRadius: '8px',
+                color: '#10b981',
+                fontSize: '0.95rem',
+                textAlign: 'center',
+                fontWeight: '600'
+              }}>
+                {cacheStatus}
               </div>
             )}
           </div>

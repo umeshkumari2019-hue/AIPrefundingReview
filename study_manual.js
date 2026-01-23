@@ -1,9 +1,12 @@
 // Study HRSA Compliance Manual structure using Azure Document Intelligence
 import axios from 'axios';
 import fs from 'fs';
+import dotenv from 'dotenv';
 
-const AZURE_DOC_ENDPOINT = 'https://eastus.api.cognitive.microsoft.com/';
-const AZURE_DOC_KEY = '4584da939fd449f7aeb19db68a39b054';
+dotenv.config();
+
+const AZURE_DOC_ENDPOINT = process.env.AZURE_DOC_ENDPOINT || '';
+const AZURE_DOC_KEY = process.env.AZURE_DOC_KEY || '';
 
 // Path to your HRSA Compliance Manual PDF
 const PDF_PATH = process.argv[2] || 'Y:\\Umesh\\HRSA_Compliance_Manual.pdf';

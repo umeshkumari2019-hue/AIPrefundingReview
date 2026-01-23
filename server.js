@@ -186,7 +186,7 @@ app.get('/api/cache/list', async (req, res) => {
   }
 })
 
-// Clear specific cache
+// Clear specific cache by cacheKey parameter
 app.delete('/api/cache/clear/:cacheKey', async (req, res) => {
   try {
     const { cacheKey } = req.params
@@ -200,6 +200,31 @@ app.delete('/api/cache/clear/:cacheKey', async (req, res) => {
       res.status(404).json({ success: false, error: 'Cache not found' })
     } else {
       console.error('Error clearing cache:', error)
+      res.status(500).json({ success: false, error: error.message })
+    }
+  }
+})
+
+// Delete specific cache by fileHash and manualVersion
+app.delete('/api/cache/delete', async (req, res) => {
+  try {
+    const { fileHash, manualVersion } = req.body
+    
+    if (!fileHash || !manualVersion) {
+      return res.status(400).json({ success: false, error: 'Missing fileHash or manualVersion' })
+    }
+    
+    const cacheKey = `${fileHash}_${manualVersion}`
+    const cacheFile = path.join(CACHE_DIR, `${cacheKey}.json`)
+    
+    await fs.unlink(cacheFile)
+    console.log(`✅ Deleted cache: ${cacheKey}`)
+    res.json({ success: true, message: 'Cache deleted successfully' })
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      res.status(404).json({ success: false, error: 'Cache not found' })
+    } else {
+      console.error('Error deleting cache:', error)
       res.status(500).json({ success: false, error: error.message })
     }
   }

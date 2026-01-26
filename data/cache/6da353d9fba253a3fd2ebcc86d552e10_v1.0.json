@@ -1,0 +1,307 @@
+{
+  "fileHash": "6da353d9fba253a3fd2ebcc86d552e10",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:17.868Z",
+  "applicationName": "AUDUBON AREA COMMUNITY CARE CLINIC, INC_Application-242957.pdf",
+  "extractedContent": "Application Number: 242957\nFilename: AUDUBON AREA COMMUNITY CARE CLINIC, INC_Application-242957.pdf\nProcessed: 2026-01-22T22:51:19.369Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "1. The Project Narrative (Section 5.a, 'Conduct and Update Needs Assessment') states: 'AACCC conducts a full Needs Assessment of its service area population annually in conjunction with its patient survey and strategic planning sessions... The most recent Needs Assessment was completed in March 2025 in conjunction with Audubon Area Community Services, Inc.'\n2. The application includes an excerpt from the 'AACCC Needs Assessment Excerpt - FY 2026 Update' and details the process, data sources, and findings (Attachment 14: Other Relevant Documents). \n3. The Needs Assessment includes analysis of demographics, health conditions, and provider availability for the current service area and special populations (e.g., homeless, low-income). \n4. The Project Narrative describes how the Needs Assessment is used to inform the Board's strategic planning process and service delivery decisions. \n5. The application references annual review and updates, and provides a summary of findings from the most recent assessment (March 2025). \n6. The Needs Assessment uses the most recently available data (e.g., 2018-2022 ACS, 2024 County Health Rankings, 2025 K-Count for homelessness, etc.).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application demonstrates that AACCC completes a comprehensive needs assessment at least annually, with the most recent completed in March 2025, well within the three-year requirement. The assessment uses current data sources, covers the defined service area and special populations (including homeless), and is used to inform service delivery and strategic planning. The process, findings, and use of the assessment are well documented in the application and attachments. Therefore, AACCC is compliant with Element b - Update of Needs Assessment.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13: Health Center Program Compliance states: 'AACCC provides services to patients using a sliding fee scale (SFS) for all individuals and/or families in the service area who wish to participate and who meet the income qualifications criteria as outlined in the sliding fee discount program policy and in accordance with the Federal Income Poverty Guidelines. AACCC's Board approved policy defines the terms and conditions of its sliding fee discount program, and its procedures define the program's implementation. The sliding fee discount program applies to all required and additional health services within the health center's scope of project. The sliding fee discount program applies uniformly to all AACCC users and complies with all health center program requirements, including determining eligibility solely on family size and income. The sliding fee discount (SFD) program policy is reviewed and updated (as needed) by the Board annually. The sliding fee discount schedule was most recently reviewed and approved by the Board to reflect the most current Federal Poverty Guidelines on January 22, 2025.' The policy is further detailed in the Project Narrative, and the SFD schedule is included in Attachment 10.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that the sliding fee discount program policy is board-approved, applies uniformly to all patients, is reviewed and updated annually, and addresses all required areas (including eligibility based solely on family size and income, application to all required/additional services, and annual review). The policy and schedule are included as attachments, and the board approval date is specified.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A shows that General Primary Medical Care, Diagnostic Laboratory, Screenings, Coverage for Emergencies During and After Hours, Voluntary Family Planning, Immunizations, Well Child Services, Gynecological Care, HP Required Substance Use Disorder Services, Case Management, Eligibility Assistance, and Outreach are all provided directly (Column I). Attachment 10: Sliding Fee Discount Schedule provides a detailed breakdown of the discount classes and associated fees for medical, behavioral health, lab, and immunization services. The Project Narrative and Attachment 13 confirm that the SFDS applies to all required and additional services provided directly, and that discounts are structured according to income and family size, with a nominal fee for those at or below 100% FPG. The SFDS schedule is consistent with the policy and is applied to all Column I services.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application demonstrates that the SFDS is applied to all directly provided (Column I) services, with discounts structured according to the board-approved policy and consistent with HRSA requirements. The SFDS schedule is included, and the structure (including nominal fees and discount classes) is clearly described and matches the policy.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule is explicitly based on the 2025 Federal Poverty Guidelines, as stated on the schedule itself ('* Based on 2025 Federal Poverty Guidelines'). Attachment 13: Health Center Program Compliance states: 'The sliding fee discount schedule was most recently reviewed and approved by the Board to reflect the most current Federal Poverty Guidelines on January 22, 2025.' The Project Narrative also confirms annual review and update to align with the most current FPG.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides direct evidence that the SFDS is updated annually to reflect the most current Federal Poverty Guidelines, with the 2025 guidelines explicitly used for the current schedule. The board approval date for the update is provided, and the process for annual review and update is described.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff provides detailed position descriptions for CEO, COO, CFO, Medical Director, and Clinic Program Director, including required qualifications, experience, and duties/functions. Attachment 5: Biographical Sketches for Key Management Staff provides the actual qualifications and experience of current staff. The Project Narrative (Section: Management Team) also describes the roles, responsibilities, and qualifications of each key management staff member.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application includes both position descriptions and biographical sketches for all key management staff, clearly documenting the required training, experience, and duties/functions for each. These documents are referenced in the Project Narrative and are included as attachments, meeting the requirement for documentation.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Project Narrative (Section: Management Team) states: 'Chief Executive Officer (CEO): The Chief Executive Officer (CEO) is a direct employee of the health center. The CEO is responsible for successful oversight of the clinical, fiscal, and operations management including oversight of key management staff in carrying out the day-to-day activities of the health center necessary to fulfill the HRSA-approved scope of project.' Attachment 4: Position Descriptions for Key Management Staff (CEO) states the CEO is accountable to the Board of Directors. The Bylaws (Article 3, Section 3.4.1) specify that the Board has ultimate authority for hiring, evaluating, and dismissing the CEO. Form 12 - Organization Contacts lists Brandon Harley as CEO, and the organizational chart (Attachment 3) shows the CEO at the top of the management structure, reporting to the Board.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that the CEO is directly employed by the health center, reports to the Board, and is responsible for oversight of other key management staff in day-to-day operations. This is supported by multiple sources: the Project Narrative, position descriptions, the organizational chart, and the Bylaws. The CEO's role and reporting relationship are clearly defined and compliant with HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements provides a detailed list of contracts for required services (e.g., LabCorp, Owensboro Health, Community Dental Clinic, River Valley Behavioral Health, Green River District Health Department, PROPIO for translation, GRITS for transportation). The application narrative (Attachment 13: Health Center Program Compliance) states: 'This oversight includes ensuring access to books and records, implementing a compliant sliding fee scale, maintaining accessibility to care, and ensuring quality improvement, credentialing, and competency treating the target population. Additionally, AACCC retains final contracts and related procurement records in accordance with federal requirements, as outlined in the Health Center Program Compliance Manual.' The contracts are described as including required provisions such as sliding fee scale, access to records, and compliance with HRSA requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides explicit evidence that contracts supporting the HRSA-approved scope of project are in place, are formal written agreements, and include required provisions such as sliding fee discount, access to records, quality, and credentialing. The contracts are regularly reviewed and managed by the CFO and Board Finance Committee to ensure compliance. This satisfies the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project? ... [ ] Yes [X] No'. 2c. Total number of contracts for substantive programmatic work and/or subawards: 0. The application narrative (Project Narrative, Capacity section) also states: 'AACCC solely carries out the scope of its project and does not utilize any subrecipients to carry out the health center project. AACCC's organizational structure demonstrates that the health center maintains direct control and authority over all aspects of the scope of project. The health center engages in limited contracting for services.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "AACCC does not contract with any entity for substantive programmatic work (i.e., does not contract out the majority of health care providers or core clinical services). All contracts are for ancillary or support services. Therefore, the requirement to obtain HRSA prior approval for contracting substantive programmatic work is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2b: 'Number of subawards made to subrecipients to carry out a portion of the proposed scope of project: 0.' The Project Narrative and Attachment 13: Health Center Program Compliance both state that AACCC does not utilize any subrecipients to carry out the health center project.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "AACCC does not make any subawards. All programmatic work is carried out directly by the health center. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2b: 'Number of subawards made to subrecipients to carry out a portion of the proposed scope of project: 0.' The Project Narrative and Attachment 13: Health Center Program Compliance both state that AACCC does not utilize any subrecipients to carry out the health center project.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "AACCC does not make any subawards. Therefore, there are no subaward agreements to review for required provisions, and this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application includes a detailed 'COLLABORATION' section (see Project Narrative, Collaboration section, and Attachment 9: Collaboration Documentation) that lists formal partnerships and referral agreements with local hospitals (Owensboro Health, Ohio County Healthcare), specialty providers (Owensboro Health for OB/GYN, LabCorp for diagnostics, Community Dental Clinic for dental, River Valley Behavioral Health for SUD and mental health), and social service organizations (AACS, Green River District Health Department, OASIS, New Beginnings, food banks, housing authorities, etc.). Letters of support from these partners are included in Attachment 9. The application describes how these collaborations provide access to specialty, dental, behavioral health, housing, food, and transportation services not available directly through the health center. The Summary of Contracts and Agreements (Attachment 7) and Form 5A/5C further document these arrangements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "AACCC has provided extensive documentation of formal and informal collaborative relationships with a broad range of providers and organizations in the service area. These collaborations are described in narrative, tabular, and attachment formats, and are supported by executed agreements and letters of support. The health center demonstrates active coordination and integration with hospitals, specialty providers, and social service agencies, including those serving special populations such as the homeless, those with SUD, and those experiencing food or housing insecurity. The evidence meets and exceeds the requirement for documenting collaborative efforts to provide access to services not available through the health center.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application describes coordination with the other FQHC in the service area, Regional Health Care Affiliates, Inc. dba Health First Community Health Center, including a letter of support from Health First (Attachment 9). The narrative details participation in the Kentucky Primary Care Association (KPCA) and Kentucky Health Center Network (KHCN), which facilitate data sharing, best practices, and statewide coordination among FQHCs. AACCC also collaborates with the Green River District Health Department and River Valley Behavioral Health (the regional community mental health center), both of which are state/local health services delivery projects. These relationships are described in the narrative, Form 5A, and Attachment 7: Summary of Contracts and Agreements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "AACCC clearly documents ongoing coordination and integration with other federally-funded health centers (Health First), state/local health departments, and mental health agencies. The health center participates in statewide FQHC networks and collaboratives, and has formal and informal relationships with other primary care providers serving similar populations. The inclusion of letters of support, formal agreements, and participation in statewide associations provides strong evidence of compliance with this requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Multiple sections of the application confirm participation in Medicaid, CHIP, Medicare, and private insurance: \n- Project Narrative (see 'Patient Population by Payor Type' and 'AACCC Patient Payor Mix') shows patient counts and percentages for Medicaid/CHIP, Medicare, and private insurance. \n- Form 3 - Income Analysis lists projected income from Medicaid, Medicare, Private, and Self Pay. \n- Attachment 13: Health Center Program Compliance states: 'The health center has contractual agreements with Medicaid, CHIP, Medicare, and private third-party insurers to collect reimbursement of its costs.' \n- Form 5A - Required Services Provided includes eligibility assistance and case management, supporting insurance enrollment. \n- Billing and Collections section in Attachment 13: 'Participation in Medicare, Medicaid, Children's Health Insurance Program (CHIP): The health center has contractual agreements with Medicaid, CHIP, Medicare, and private third-party insurers to collect reimbursement of its costs.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence that the health center participates in all required public insurance programs (Medicaid, CHIP, Medicare) and private insurance, as demonstrated by patient payor mix data, income analysis, and explicit statements in the compliance attachments and narrative. There is no evidence of exclusion or lack of participation in any required insurance program.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "- Attachment 13: Health Center Program Compliance, Billing and Collections section: 'AACCC has a Board approved policy designed to address waiving or reducing fees under certain circumstances to eliminate any financial barrier to care for patients experiencing hardships, such as homelessness or a medical condition that requires frequent medical visits. AACCC will extend a waiver to patients who meet the criteria and cannot pay. The Clinic Program Director reviews these requests on a case-by-case basis and brings them to the Board for approval of a waiver or reduction in fees.'\n- Project Narrative, Section 5: 'AACCC's Board approved policy defines the terms and conditions of its SFD program and its procedures define the program's implementation.'\n- Sliding Fee Discount Schedule (Attachment 10) and SFD policy: 'No patient is denied health care services due to an individual's inability to pay for services.'\n- Annual review and approval by the Board is documented: 'The SFD schedule was most recently reviewed and approved by the Board on January 22, 2025, to incorporate the most current Federal Poverty Guidelines.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides explicit evidence of a board-approved policy and operating procedures for waiving or reducing fees, including the process for case-by-case review and Board approval. The policy addresses specific circumstances (e.g., homelessness, frequent medical visits, inability to pay) and ensures no patient is denied care due to inability to pay. The policy is reviewed and approved annually by the Board, and the process is described in detail in both the narrative and compliance attachments.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a detailed annual budget (see SF-424A: Budget Information - Non-Construction Programs, Budget Narrative, and Budget Justification Narrative) that outlines projected costs and revenues for all sites and services within the HRSA-approved scope of project. The budget narrative describes how the budget was developed, reviewed, and approved by the Board, and how it aligns with the proposed work plan and projected patient volumes. The budget covers all four years of the project period and is consistent across all budget documents (see Budget Narrative, Tables 72–88). The Board’s authority to approve the annual budget is documented in the bylaws (Attachment 2: Bylaws, Article 3, Section 3.2.4 and 3.4.4.3).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a comprehensive, Board-approved annual budget that includes all projected costs and revenues necessary to support the full scope of the health center project. The budget is consistent across all required forms and narratives, and the process for its development and approval is clearly described and supported by Board bylaws. This meets HRSA’s requirements for budgeting for the scope of project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The budget and income analysis (see SF-424A, Budget Narrative, and Form 3: Income Analysis) itemize all projected revenue sources, including but not limited to: Federal 330 grant funds, program income (third-party payors, self-pay, Medicaid, Medicare, private insurance), local support (e.g., Catholic Charities, Kentucky Association of Health Plans), other support (340B revenue, MCO payments), and in-kind/other private sources. The budget tables (Tables 72–88) and Form 3 clearly break down revenue by payer and funding source. The narrative explicitly states that approximately 54% of revenue is from program income, 30% from the federal grant, and 16% from other sources. The Board’s approval of the budget, including all revenue sources, is documented.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a detailed breakdown of all revenue sources supporting the Health Center Program project, not just the HRSA award. These are clearly documented in both the budget forms and narrative, and align with HRSA’s expectations for comprehensive revenue reporting. The inclusion of all revenue sources and Board approval demonstrates compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws, Article 3 (Corporate Management, Governing Instruments and Limitation on Activities) states: 'the business, property and affairs of the Corporation shall be managed by the Board of Directors who will set the policies and direction for the Corporation and will oversee the management of the Corporation's business, property, affairs and day to day operations, including but not limited to...' and further in Section 3.4: 'The Board of Directors has ultimate and autonomous authority for the following (and no party including any corporate member or affiliate, may be granted approval or veto rights regarding any of the authorities listed below):' The application narrative (Attachment 13: Health Center Program Compliance) reiterates that no individual, entity, or committee has approval authority or veto power over the Board for required authorities and functions. The Affiliation Agreement (Attachment to Form 8) confirms that while Audubon Area Community Services provides management/administrative services, the Board retains final approval authority over key functions, including selection/dismissal of CEO, budget, strategic planning, and service scope.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and narrative explicitly state that the Board has ultimate and autonomous authority over the health center project, and that no other entity, including the affiliate (Audubon Area Community Services), has approval or veto power over the Board’s required authorities. The Affiliation Agreement further clarifies the division of responsibilities and preserves Board authority over all required HRSA functions. There is no evidence of any infringement or restriction on Board authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws, Article 3, Section 3.4 lists all required authorities and responsibilities, including: (3.4.1) hiring, annual evaluation, and dismissal of the CEO; (3.4.2) adopting personnel policies; (3.4.3) evaluating health center activities (including service utilization, productivity, patient satisfaction, achievement of project objectives, and patient grievances); (3.4.4) adopting financial management policies (including accountability, long-range planning, budget approval, eligibility for services, sliding fee scale, billing/collections); (3.4.5) adopting health care policies (scope/availability of services, location/hours, quality audits, collaborative relationships); (3.4.6) assuring compliance with laws; (3.4.7) annual evaluation and revision of mission/goals/budgets; (3.4.8) selecting the independent auditor; (3.4.9) evaluating the Board for efficiency and compliance. Application narrative (Attachment 13: Health Center Program Compliance) provides a table cross-referencing each required authority to the specific bylaw section. Board composition and conflict of interest requirements are also addressed in Article 4 and Article 7 of the bylaws.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "All required authorities and responsibilities as outlined by HRSA are explicitly included in the bylaws and are cross-referenced in the application. The Board’s role in all required functions is clearly documented, and the application narrative affirms that these authorities are not delegated or restricted by any contract or affiliation. There is no evidence of any missing or non-compliant authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws, Article 5 (Nomination, Election, Removals, and Vacancies) states: 'All of the Directors and members of the Board of Directors of the Corporation (the 'Board') at all times shall be nominated, elected and/or appointed (and may be removed) by the Board, upon the strict condition that at all times any such nominations, elections, appointments (and removals) will follow and be consistent with the requirements set forth in Section 4.2 hereinabove.' Article 5.4 details removal for cause by majority vote of the Board. The Affiliation Agreement (Attachment to Form 8) and the Bylaws (Article 3.4) state that no other entity, including the affiliate, has approval or veto rights over Board authorities and functions.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly establish that only the Board itself has authority for selection and removal of its members and officers, including the board chair. No other entity, committee, or individual is permitted to select the board chair or a majority of board members. The process for selection and removal is specified, and the application narrative and compliance attachments confirm this structure is in place and active.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Article 4 (Number, Qualifications, and Tenure of the Board of Directors) specifies: 'The number of Directors and members of the Board of Directors shall be at least nine (9), but no more than twenty-five (25)...' Article 4.2.2: 'A majority (51%) of Directors (and members of the Board of Directors) shall be individuals who are patients of (and served by) the Health Care Center and who utilized the Health Care Center as their principal source of primary health care, all within the last 24 months next preceding their election.' Article 4.2.3: 'All of the Directors and members of the Board of Directors shall reasonably represent the individuals served by the Corporation in terms of race, ethnicity and gender.' Article 4.2.4: 'No more than one-half (1/2) of the non-patient/non-client Board Members may be individuals who derive more than ten percent (10%) of such Member's respective annual income from the health care industry.' Article 4.2.5: 'No Board Member may be an employee of the Corporation or the Health Care Center or an immediate family member... of an employee.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly require all HRSA-mandated board composition elements: board size, patient majority, demographic representation, limits on health industry income among non-patient members, and prohibition of employees/immediate family members. The application narrative and compliance attachments confirm these requirements are in effect.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics lists 13 board members, with 7 identified as health center patients (54%), and all members living or working in the service area. The board includes members with expertise in school health, recovery, social justice outreach, behavioral health, finance, employment, charity, and homeless shelter management. Only one member (Mary Danhauer) is noted as earning >10% of income from the health care industry, and she is not a patient member. The application narrative (Governance section) and Attachment 13 (Health Center Program Compliance) confirm the board meets all composition requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The board currently meets all HRSA requirements: at least 9 and not more than 25 members, at least 51% are patients, non-patient members provide relevant expertise, no more than half of non-patient members earn >10% from health care, and no employees or immediate family members serve on the board. The board also reflects the community served in terms of demographics and expertise.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements states: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' The application narrative confirms the health center receives both 330(e) and 330(h) funding and is not requesting a waiver.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center receives 330(e) funding and is not requesting a waiver of the patient majority board composition requirements. Therefore, this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

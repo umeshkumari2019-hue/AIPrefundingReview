@@ -3,15 +3,16 @@ import axios from 'axios'
 import * as XLSX from 'xlsx'
 import { Document, Paragraph, TextRun, HeadingLevel, AlignmentType, Packer, Table, TableCell, TableRow, WidthType, BorderStyle } from 'docx'
 import { saveAs } from 'file-saver'
+import PDFViewer from './components/PDFViewer'
 
 // Azure Document Intelligence configuration
-const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT || ''
-const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY || ''
+const AZURE_DOC_ENDPOINT = import.meta.env.VITE_AZURE_DOC_ENDPOINT
+const AZURE_DOC_KEY = import.meta.env.VITE_AZURE_DOC_KEY
 
 // Azure OpenAI configuration
-const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT || ''
-const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY || ''
-const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT || ''
+const AZURE_OPENAI_ENDPOINT = import.meta.env.VITE_AZURE_OPENAI_ENDPOINT
+const AZURE_OPENAI_KEY = import.meta.env.VITE_AZURE_OPENAI_KEY
+const AZURE_OPENAI_DEPLOYMENT = import.meta.env.VITE_AZURE_OPENAI_DEPLOYMENT
 
 // Backend server configuration
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || ''
@@ -94,6 +95,10 @@ function App() {
   const [manualReviewParsed, setManualReviewParsed] = useState([])
   const [showComparison, setShowComparison] = useState(false)
   const [expandedEvidence, setExpandedEvidence] = useState({})
+  const [showPDFViewer, setShowPDFViewer] = useState(false)
+  const [highlightPDFPage, setHighlightPDFPage] = useState(null)
+  const [highlightText, setHighlightText] = useState(null)
+  const [pdfFile, setPdfFile] = useState(null)
 
   // Load saved compliance rules from JSON file on mount
   useEffect(() => {
@@ -242,6 +247,46 @@ function App() {
       console.error('Error saving to cache:', error)
     }
   }
+
+  // Extract page number from evidence location
+  const extractPageNumber = (evidenceLocation) => {
+    if (!evidenceLocation) return null
+    
+    // Try to match patterns like "Page 5", "page 5", "p. 5", "pg 5"
+    const patterns = [
+      /page\s+(\d+)/i,
+      /p\.?\s*(\d+)/i,
+      /pg\.?\s*(\d+)/i
+    ]
+    
+    for (const pattern of patterns) {
+      const match = evidenceLocation.match(pattern)
+      if (match && match[1]) {
+        return parseInt(match[1], 10)
+      }
+    }
+    
+    return null
+  }
+
+  // Navigate to evidence in PDF
+  const navigateToEvidence = (evidenceLocation, evidenceText) => {
+    const pageNumber = extractPageNumber(evidenceLocation)
+    if (pageNumber) {
+      setShowPDFViewer(true)
+      setHighlightPDFPage(pageNumber)
+      setHighlightText(evidenceText)
+    } else {
+      alert('Could not extract page number from evidence location')
+    }
+  }
+
+  // Store PDF file when application is uploaded
+  useEffect(() => {
+    if (applicationFile) {
+      setPdfFile(applicationFile)
+    }
+  }, [applicationFile])
 
   // Clear all caches
   const clearAllCaches = async () => {
@@ -2031,10 +2076,38 @@ Return JSON: {
         )}
 
         {activeTab === 'results' && results && (
-          <div className="results">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
-              <h2 style={{ margin: 0, color: '#f1f5f9' }}>📊 Review Results: {applicationName}</h2>
-              <button
+          <div className="results" style={{ display: 'flex', gap: '20px', height: 'calc(100vh - 200px)' }}>
+            {/* Results Panel */}
+            <div style={{ 
+              flex: showPDFViewer ? '1' : '1', 
+              overflowY: 'auto',
+              transition: 'all 0.3s ease'
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
+                <h2 style={{ margin: 0, color: '#f1f5f9' }}>📊 Review Results: {applicationName}</h2>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  <button
+                    onClick={() => setShowPDFViewer(!showPDFViewer)}
+                    style={{
+                      padding: '10px 20px',
+                      background: showPDFViewer ? '#ef4444' : '#10b981',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '8px',
+                      cursor: 'pointer',
+                      fontSize: '0.9rem',
+                      fontWeight: '600',
+                      transition: 'all 0.3s',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px'
+                    }}
+                    onMouseEnter={(e) => e.target.style.opacity = '0.9'}
+                    onMouseLeave={(e) => e.target.style.opacity = '1'}
+                  >
+                    {showPDFViewer ? '✖️ Close PDF' : '📄 View PDF'}
+                  </button>
+                  <button
                 onClick={exportResultsToWord}
                 style={{
                   padding: '10px 20px',
@@ -2055,7 +2128,8 @@ Return JSON: {
               >
                 📄 Export to Word
               </button>
-            </div>
+                </div>
+              </div>
             
             {/* Summary Statistics */}
             {(() => {
@@ -2600,30 +2674,50 @@ Return JSON: {
                                       }}>
                                         {isCompliant ? '✅ Evidence Found:' : '❌ Evidence:'}
                                       </strong>
-                                      <button
-                                        onClick={() => {
-                                          navigator.clipboard.writeText(validationResult.evidence).then(() => {
-                                            alert('✅ Evidence copied to clipboard!')
-                                          }).catch(() => {
-                                            alert('❌ Failed to copy')
-                                          })
-                                        }}
-                                        style={{
-                                          padding: '6px 12px',
-                                          background: '#3b82f6',
-                                          color: 'white',
-                                          border: 'none',
-                                          borderRadius: '4px',
-                                          cursor: 'pointer',
-                                          fontSize: '0.8rem',
-                                          fontWeight: '600',
-                                          transition: 'all 0.3s'
-                                        }}
-                                        onMouseEnter={(e) => e.target.style.background = '#2563eb'}
-                                        onMouseLeave={(e) => e.target.style.background = '#3b82f6'}
-                                      >
-                                        📋 Copy
-                                      </button>
+                                      <div style={{ display: 'flex', gap: '8px' }}>
+                                        <button
+                                          onClick={() => navigateToEvidence(validationResult.evidenceLocation, validationResult.evidence)}
+                                          style={{
+                                            padding: '6px 12px',
+                                            background: '#10b981',
+                                            color: 'white',
+                                            border: 'none',
+                                            borderRadius: '4px',
+                                            cursor: 'pointer',
+                                            fontSize: '0.8rem',
+                                            fontWeight: '600',
+                                            transition: 'all 0.3s'
+                                          }}
+                                          onMouseEnter={(e) => e.target.style.background = '#059669'}
+                                          onMouseLeave={(e) => e.target.style.background = '#10b981'}
+                                        >
+                                          🔍 Navigate
+                                        </button>
+                                        <button
+                                          onClick={() => {
+                                            navigator.clipboard.writeText(validationResult.evidence).then(() => {
+                                              alert('✅ Evidence copied to clipboard!')
+                                            }).catch(() => {
+                                              alert('❌ Failed to copy')
+                                            })
+                                          }}
+                                          style={{
+                                            padding: '6px 12px',
+                                            background: '#3b82f6',
+                                            color: 'white',
+                                            border: 'none',
+                                            borderRadius: '4px',
+                                            cursor: 'pointer',
+                                            fontSize: '0.8rem',
+                                            fontWeight: '600',
+                                            transition: 'all 0.3s'
+                                          }}
+                                          onMouseEnter={(e) => e.target.style.background = '#2563eb'}
+                                          onMouseLeave={(e) => e.target.style.background = '#3b82f6'}
+                                        >
+                                          📋 Copy
+                                        </button>
+                                      </div>
                                     </div>
                                     {validationResult.evidenceSection && validationResult.evidenceSection !== 'Not found' && (
                                       <div style={{ 
@@ -2943,6 +3037,24 @@ Return JSON: {
                 </div>
               )
             })}
+            </div>
+            
+            {/* PDF Viewer Panel */}
+            {showPDFViewer && (
+              <div style={{ 
+                flex: '1', 
+                minWidth: '400px',
+                borderLeft: '2px solid #334155',
+                paddingLeft: '20px'
+              }}>
+                <PDFViewer 
+                  pdfFile={pdfFile} 
+                  highlightPage={highlightPDFPage}
+                  highlightText={highlightText}
+                  onLoadSuccess={(numPages) => console.log(`PDF loaded with ${numPages} pages`)}
+                />
+              </div>
+            )}
           </div>
         )}
 

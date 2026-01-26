@@ -1,0 +1,307 @@
+{
+  "fileHash": "651e1193a14dd7297ffb84d588b3ab4c",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:13.117Z",
+  "applicationName": "FAMILY PRACTICE & COUNSELING SERVICES NETWORK INC_Application-242645.pdf",
+  "extractedContent": "Application Number: 242645\nFilename: FAMILY PRACTICE & COUNSELING SERVICES NETWORK INC_Application-242645.pdf\nProcessed: 2026-01-23T04:19:57.952Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the application narrative, under '5. Community Needs Assessment and Input', it states: 'FPCSN policy requires that an assessment of the needs of the target population and the service area communities will be conducted at least every three years and will be used by management and the Board for strategic planning.' The application further details the sources of data (Census, state and local studies, statistical analysis, and community relationships) and describes the process for gathering and using needs assessment data. The narrative also states, 'Formal needs assessments are done at least every three years, as well as when a new service or site is proposed either internally or by an external partner such as the Housing Authority, the PHA Tenants' Council, or the School District.' The needs assessment includes recent data (2023-2025) on population, poverty, health status, barriers, and special populations (e.g., public housing residents). The application references the last SAC application (October 2024) and describes annual reviews of patient origin and ongoing updates. The operational plan (Attachment 12) and compliance attachment (Attachment 13) both confirm the triennial needs assessment policy and its use in strategic planning.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application demonstrates that FPCSN has a written policy and practice of conducting a comprehensive needs assessment at least every three years, as required. The needs assessment uses the most recent data available, covers the current and proposed population (including special populations such as public housing residents), and is used to inform and improve service delivery. The application provides specific examples of how the needs assessment is conducted, updated, and used in planning and quality improvement. There is no evidence of a gap or deficiency in meeting the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13 - Health Center Program Compliance: 'FPCSN policy, approved by the Board, is that all required primary, preventive, dental, behavioral health, and additional health services are available and accessible to the target population without regard to patients' ability to pay, and that the health center has a sliding fee discount scale geared to U.S. poverty guidelines. It is the policy of FPCSN to uniformly apply fee discounts to all patients deemed eligible, based on the most recent Federal Poverty Guidelines.' The policy is described as board-approved and uniformly applied. The Operational Plan (Goal C.1) states: 'FPCSN will be in compliance with the Health Center SFDP requirements ... The policy and procedures were approved by the FPCSN Board.' The sliding fee policy and schedule are referenced as being on file and reviewed annually.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence that the sliding fee discount policy is board-approved, applies uniformly to all patients, and is reviewed and approved annually. The policy is described in detail in both the narrative and compliance attachments, and the operational plan confirms board approval. There is no evidence of exclusion or non-uniform application.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A - Required Services Provided shows all required services (except diagnostic radiology and intrapartum care) are provided directly (Column I). Attachment 10 (Sliding Scale) provides the detailed sliding fee schedule for Primary Care, Behavioral Health, Integrated Behavioral Health, and Dental services. Attachment 13 states: 'FPCN has sliding fee scales for Primary Care, Behavioral Health, Integrated Behavioral Health, and Dental services. The FPCSN sliding scales are revised annually and approved by the Board, include three categories between 100% and 200% of federal poverty level, and are used for all clinical services.' The schedule shows nominal fees for ≤100% FPG and discounts up to 200% FPG. The policy states the scale is embedded in the EHR and applied to all services provided directly.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence demonstrates that all directly provided (Column I) services have an associated sliding fee discount schedule, structured according to policy, and that discounts are provided as required. The schedule is detailed, covers all service lines, and is board-approved. The application of the scale is described as automatic and uniform for all direct services.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10 (Sliding Scale) explicitly states: 'Updated to reflect the 2025 HHS Poverty Guidelines.' The sliding fee schedule tables show income cutoffs that match the 2025 Federal Poverty Guidelines for family size. The narrative in Attachment 13 states: 'It is the policy of FPCSN to uniformly apply fee discounts to all patients deemed eligible, based on the most recent Federal Poverty Guidelines.' The Operational Plan (Goal C.3) states: 'The current scale is aligned with the 2025 FPG.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The sliding fee schedule is explicitly based on the most recent (2025) Federal Poverty Guidelines, as evidenced by both the schedule itself and the narrative statements. There is no indication of outdated guidelines or lack of alignment.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff and Attachment 5: Biographical Sketches for Key Management Staff are included in the application. The narrative (see 'KEY MANAGEMENT STAFF' in Attachment 13) states: 'As noted in Form 2, the organization chart, the position descriptions, and the key management resumes attached, all of the managers, including the Executive Director who is the CEO, are hired directly by FPCSN.' The application includes detailed job descriptions for CEO, COO, Chief Clinical Officer, CFO, and CIO, specifying duties and qualifications. Biographical sketches for each key management staff member provide education, experience, and relevant credentials.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both position descriptions and biographical sketches for all key management staff, detailing their qualifications, experience, and job functions. This meets the HRSA requirement for documentation of training, experience, and duties for each key management staff position.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "The CEO, Emily Nichols, is listed as a direct employee (see Form 2 - Staffing Profile: Project Director/Chief Executive Officer (CEO) 1.00 FTE, Direct Hire). The CEO job description (Attachment 4) states: 'The CEO is directly employed by the health center and reports directly to the governing Board of Directors.' The bylaws (Attachment 2, Article III) specify that the Board is responsible for selection and dismissal of the CEO. The organizational chart (Attachment 3) shows the CEO at the top, with all other key management staff reporting to her. The narrative (Attachment 13) reiterates: 'The Executive Director reports directly to the Board and the Board has the authority and responsibility for the selection/dismissal and evaluation of that position. The Executive Director is responsible to select and dismiss all personnel working in the health center and to assure there is a process for filling vacant key management positions. The Executive Director supervises the other members of the executive team and assures that Board policies are carried out.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is clear, documented evidence that the CEO is a direct employee of the health center, reports to the governing board, and oversees other key management staff in day-to-day operations. The job description, bylaws, and organizational chart all support compliance with this requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7 (Summary of Contracts, Agreements, and Subrecipient Arrangements) lists all contracts, including their type, description, and ongoing status. The narrative (Attachment 13, Contracts and Subawards section) states: 'All contracts and agreements include language indicating that no limit is placed on the health center's authority.' The application narrative further states: 'FPCSN financial accounting and internal control systems are designed to ensure that all federal funds are fully accounted for, including maintaining source documentation, that all expenditures of federal award funds are allowable, and that only actual work performed is charged to any award.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a detailed summary of all contracts and explicitly states that contract provisions safeguard the health center’s authority, and that contracts are compliant with HRSA requirements. There is no evidence of missing required provisions, and the contracts are for specialty or support services, not for substantive programmatic work. This meets the compliance standard for required contract provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 (Health Center Agreements) explicitly states: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project? [ ] Yes [X] No.' The narrative in Attachment 13 and the organizational structure section both state: 'It has no contracts with any other organization to perform substantive programmatic work within the proposed scope of project.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no contracts for substantive programmatic work; all contracts are for specialty, support, or individual provider services. Therefore, HRSA prior approval for such contracts is not required and this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 (Health Center Agreements) states: 'Do you currently have, or plan to utilize: b) Subawards to carry out a portion of the proposed scope of project.' The answer is [X] No. The narrative in Attachment 13 states: 'It has no subawards to carry out any portion of the project.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has not made any subawards. Therefore, HRSA prior approval for subawards is not required and this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 (Health Center Agreements) and Attachment 13 both state there are no subawards.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no subawards in place; thus, subaward agreement provisions are not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application narrative (see 'COLLABORATION' section and throughout the Project Narrative) details active collaboration with local hospitals (University of Pennsylvania Health System, Penn Medicine), specialty providers (contracts with Jefferson University Physicians for psychiatry, Dr. Joseph Kenney for cardiology, Dr. James Sandy for podiatry, Nova Care for physical therapy, Rite Choice Pharmacy for 340B pharmacy), and social service organizations (Philadelphia Housing Authority, School District of Philadelphia, Legal Clinic for the Disabled, Maternity Care Coalition, Vetri Community Partnership, Food Trust, Cradles to Crayons, SOWN, etc.). Letters of support from these organizations and other FQHCs are included in Attachment 9. The application describes referral agreements, co-location of services, and integration of enabling services (case management, legal, nutrition, transportation, etc.). The operational plan and contracts summary (Attachment 7) further document these relationships.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides extensive, specific, and current documentation of collaborative relationships with a broad range of local hospitals, specialty providers, and social service organizations, including those serving special populations (e.g., public housing residents, school-based populations, behavioral health, legal aid). There are written agreements, referral arrangements, and joint programming described. Letters of support from these partners further substantiate the collaborative efforts. The evidence meets and exceeds the HRSA requirement for documentation of coordination and integration of activities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application narrative (see 'COLLABORATION' section, Attachment 9, and Project Narrative) documents active participation in the Pennsylvania Association of Community Health Centers (PACHC) and the Health Federation of Philadelphia (HFP), both of which are HRSA-funded networks. FPCSN's CEO is a Board member of these organizations. The application lists all other FQHCs in the service area and states that all have provided letters of support (Attachment 9). There is explicit mention of collaboration with the City of Philadelphia Department of Public Health (which operates FQHCs), ChesPenn Health Services, Covenant House, Delaware Valley Community Health, Esperanza Health Services, Greater Philadelphia Health Action, Mazzoni Health Center, Philadelphia FIGHT, Project HOME, Public Health Management Corporation, Quality Community Health Care, Spectrum Health Services, and Sayre Health Center. Letters of support from these organizations are included. The application also describes joint projects, referral relationships, and shared advocacy and quality improvement initiatives.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, detailed, and current documentation of collaboration with other federally-funded, state, and local health services delivery projects, specifically including all other health centers in the service area. The relationships are ongoing, multi-faceted (joint projects, advocacy, referrals, quality improvement), and substantiated by letters of support. The application meets the HRSA requirement for documentation of coordination and integration with other primary care providers, including other health centers.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "1. Form 3 - Income Analysis shows projected income and patient counts for Medicaid (7,206 patients), Medicare (795 patients), Private (3,151 patients), and Self Pay (4,465 patients). CHIP is not listed separately, but the narrative and state support letter confirm participation. 2. Attachment 13 - Health Center Program Compliance, Billing and Collections section states: 'As noted in Form 3, FPCSN participates in Medicare, Medicaid, and CHIP, and other insurers. It has contracts with all MCOs in the service area.' 3. The Pennsylvania Department of Human Services letter (Attachment 9) supports FPCSN as a provider for Medicaid and CHIP. 4. The application narrative (Response section, Outreach, Eligibility Assistance, and Case Management Services) describes staff assisting patients with eligibility and enrollment for all health insurance coverage, including Medicaid and CHIP.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence that FPCSN participates in Medicaid, CHIP, Medicare, and other insurance programs. This is documented in the income analysis, narrative, compliance attachment, and state support letter. The presence of contracts with all MCOs and explicit mention of CHIP, Medicaid, and Medicare participation demonstrate compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "1. Attachment 13 - Health Center Program Compliance, Sliding Fee Discount Program section: 'Charges for patients with income below 100% of poverty are set at nominal levels that can be waived in some cases. The nominal charges are flat charges, are not set at the actual cost of the service provided, and are set at levels designed to be nominal from the perspective of the patient.' 2. Attachment 13, Billing and Collections, Patient Payment Collection and Waiver: 'Patients who indicate that they cannot pay the amount owed may have a payment plan established or may have the nominal fee waived, depending on circumstances. ... If a patient states they cannot pay, the patient meets with the Social Services Manager to better understand and overcome the patient's circumstances. If the patient cannot pay, FPCSN policy is that the fee will be waived. All patients are seen for the visit regardless of ability to pay.' 3. Sliding Fee Discount Schedule (Attachment 10) and narrative confirm Board approval and annual review. 4. Form 1C - Documents On File confirms that billing and collections policies/procedures, including those regarding waivers or fee reductions and refusal to pay, are on file.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides detailed, board-approved policies and procedures for waiving or reducing fees, including specific processes for assessing inability to pay and the involvement of the Social Services Manager. The sliding fee schedule, policy narrative, and confirmation of documents on file demonstrate that these policies are in place, board-approved, and operationalized. The policy that no patient is refused care due to inability to pay further supports compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a complete SF-424A Budget Information form, detailed Budget Narrative, and Form 3 - Income Analysis, all of which provide a total budget for the upcoming year. The budget narrative explicitly states: 'Complete budget materials for the year of the project period are included in this application, as are the staffing and income analysis forms. The budget assumptions are reasonable, given the number of users and the number of billable visits, as well as the severity of the health problems experienced by the people being served. The number of patients projected to be served is the same as the number listed as the SAAT patient target. The budgeted expenses, including salaries, benefits, and other supply and administrative costs, are reasonable for the size of the health center and the volume and types of services to be provided.' The budget tables (SF-424A, Budget Narrative, Form 3) all align with the projected scope of project (15,617 patients, 88,181 visits, all required and additional services as per Forms 5A/5B/5C).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has submitted a detailed annual budget to HRSA that includes all projected costs and revenues, and the narrative and forms explicitly tie the budget to the proposed scope of project (patient targets, service sites, services provided). The budget narrative and forms demonstrate that the budget was developed to support the full scope of project as described in the application, meeting the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A, Budget Narrative, and Form 3 - Income Analysis all include detailed breakdowns of revenue sources. The SF-424A Section A and Budget Narrative list the following revenue sources: Federal (HRSA) award, other federal ($218,000), state ($125,000), private grants/contracts ($160,000), 340B revenue ($13,770,000), and program income ($16,277,538), with a total budget of $34,891,923. Form 3 further breaks down program income by payer (Medicaid, Medicare, Private, Self-Pay). The Budget Narrative and Form 3 both show that all revenue sources are included in the annual budget, not just the HRSA award. The application narrative also states: 'FPCSN is operated in a way that maximizes non-grant revenue and leverages other resources, particularly patient service fees and 340B funds, for health center operations. The percentage of federal grant dollars in the overall budget has always been reasonable and was 19% of the budget in the most recent year.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The budget documents and narrative clearly include all projected revenue sources that will support the Health Center Program project, as required. The budget is not limited to the HRSA award, but includes all other federal, state, local, private, 340B, and program income sources. This meets the requirement for comprehensive revenue reporting.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2 - FPCSN Board Bylaws signed.pdf (Bylaws), Attachment 8 - FPCSN Engrossed Articles of Incorporation.pdf, Application Narrative (Governance section), Form 8 - Health Center Agreements (no parent, affiliate, or subsidiary), Attachment 13 - Compliance (Board Authority section), Organizational Chart, Board member list (Form 6A), and explicit statements in the narrative: 'The FPCSN Board elects its own members, as noted in Article III of the By-Laws. No individual, entity, or committee is noted as having authority or veto power over the Board and committees are specifically barred from amending the By-Laws or the Articles of Incorporation; selecting, approving, or dismissing Directors; or changing any resolution of the Board. There is no agreement or collaboration in place that restricts board authority.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides the FPCSN Bylaws and Articles of Incorporation, which clearly vest full authority for the health center project in the governing board. The bylaws specify that the board controls all corporate powers and business affairs, including the selection and evaluation of the CEO, approval of budgets, services, sites, and policies. The bylaws also explicitly state that no third party may appoint or require removal of board members, and that no committee or outside entity can override board decisions or amend bylaws/articles. The organizational chart and Form 8 confirm there is no parent, affiliate, or subsidiary with authority over the board, and no contracts or subawards that would transfer substantive programmatic authority. The application narrative and compliance attachment reiterate that the board maintains full oversight and authority, with no evidence of outside control or undue influence. Therefore, the health center is COMPLIANT with this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2 - FPCSN Board Bylaws signed.pdf (Bylaws, Article III - Powers of Board of Directors), Attachment 8 - FPCSN Engrossed Articles of Incorporation.pdf, Attachment 13 - Compliance (Board Authority section), Application Narrative (Governance section), and explicit listing in the bylaws of the following board authorities: (a) Approving the selection, and termination or dismissal of the health center's Chief Executive Officer; (b) Approving the health center's program project budget and applications; (c) Approving the health center's services and locations and hours of operations; (d) Evaluating the health center's performance, including achievement of project objectives, service utilization patterns, quality of care, efficiency and effectiveness; (e) Establishing or adopting policy related to the operations of the health center; (f) Assuring the health center operates in compliance with applicable Federal, State, and local laws and regulations; (g) Prohibit conflict of interest or appearance of the same by Members, employees, consultants, and those who provide services or goods to the CHC.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws (Attachment 2) explicitly enumerate all required authorities and responsibilities for the governing board, matching the HRSA requirements. These include CEO selection/dismissal, budget and application approval, approval of services/sites/hours, evaluation of performance, policy establishment, compliance assurance, and conflict of interest prohibition. The bylaws also describe the process for board meetings, quorum, voting, and committee limitations, ensuring that these authorities rest with the full board and cannot be delegated away. The application narrative and compliance attachment confirm that these authorities are exercised in practice. There is no evidence of any limitation or delegation of these responsibilities to another entity or individual. Therefore, the health center is COMPLIANT with this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2 - FPCSN Board Bylaws signed.pdf, Article III: Board of Directors: 'The Directors shall be elected by a vote of the majority of the Directors at a Board meeting.' 'Any individual director may be removed from office, with or without cause, by a vote of two-thirds (2/3) of the directors then in office.' 'No third party may appoint a majority of the total number of health center Board members or a majority of the non-patient members.' 'No Member shall be FPCSN employee, or an immediate family member (i.e., spouse, child, parent, brother, or sister by blood, adoption, or marriage) of such employee.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly specify that the board itself is responsible for the selection and removal of its members and officers, with no external entity, committee, or individual having this authority. The language explicitly prohibits third parties from appointing a majority of board members or non-patient members, and the process for removal and election is internal to the board. This meets HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2 - FPCSN Board Bylaws signed.pdf, Article III: 'At least fifty-one percent (51%) of the directors shall be patients served by the Corporation's health center and who, as a group, demographically represent the individuals served by the health center and should include representation from public housing.' 'No more than fifty percent (50%) of the remaining directors may be individuals who derive more than ten percent (10%) of their annual income from the health care industry.' 'The remaining directors shall be representative of the community in which the Corporation's health center is located, including public housing and shall be selected for their expertise in community affairs, local government, finance and banking, legal affairs, and other commercial and industrial concerns, or social service agencies within the community.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws contain all required language regarding board composition, including the 51% patient majority, limits on health care industry income, and requirements for community representation and expertise. This aligns with HRSA requirements for board composition.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics: 12 members listed, 6 of whom are identified as health center patients. Three members are identified as public housing representatives or residents. The expertise and income sources are documented for each member. The application narrative and Attachment 13 confirm: 'There are currently twelve members on the FPCSN Board, six of whom are FPCSN patients. One member is a representative of the Housing Authority and two others are or have been public housing residents. Three of the six non-patient members derive income from the health care industry.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board meets the 51% patient majority requirement (6 of 12), includes public housing representation, and limits non-patient members with >10% income from the health care industry to less than 50% of the non-patient members (3 of 6). The documentation is clear and meets HRSA standards.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements: 'Are you requesting a new waiver of the 51% patient majority governance requirement? [ ] Yes [X] No'. The organization is not requesting a waiver.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "No waiver is requested or required, as the board meets the patient majority requirement. Therefore, this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

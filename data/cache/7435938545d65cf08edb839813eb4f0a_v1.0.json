@@ -1,0 +1,307 @@
+{
+  "fileHash": "7435938545d65cf08edb839813eb4f0a",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:16.073Z",
+  "applicationName": "TRILLIUM HEALTH, INC._Application-242855.pdf",
+  "extractedContent": "Application Number: 242855\nFilename: TRILLIUM HEALTH, INC._Application-242855.pdf\nProcessed: 2026-01-23T09:54:14.413Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, Section 5, Needs Assessment, it states: 'Trillium Health conducts and updates its needs assessment every three years, or more frequently as needed, in response to organizational growth, service expansion, or emerging unmet needs. The most recent assessment was completed in February 2025 and approved by the Board of Directors. These assessments incorporate quantitative data and qualitative input from community stakeholders and are used to guide strategic planning, service line development, staffing models, and facility expansion.' The application provides extensive data tables and narrative analysis using the most recent available data (2023-2025) for the service area and special populations. The needs assessment is referenced throughout the Project Narrative and is used to inform service delivery, expansion plans, and strategic initiatives. The application also describes annual review processes and ongoing patient/community input (e.g., 'Patient and community input is also gathered on an ongoing basis through monthly satisfaction surveys, which are reviewed by leadership, clinical teams, the Patient Experience Advisory Council, and the Board of Directors.').",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that a comprehensive needs assessment was completed in February 2025 (within the required three-year window), approved by the Board, and uses the most recent available data. The assessment is used to inform and improve service delivery, with regular updates and ongoing community input. The narrative details how the needs assessment guides strategic planning, service line development, and operational decisions. The inclusion of recent data, specific dates, and Board approval meets the HRSA requirement for a triennial, data-driven, and actionable needs assessment.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Application narrative (Section 5, Sliding Fee Discount Program) states: 'The program is in full compliance with Health Center Program requirements and is governed by a board-approved policy and procedure, most recently updated, reviewed and approved in April 2025 (on an annual basis).' Attachment 13 (Health Center Program Compliance) further states: 'The Board of Directors reviews this policy annually, incorporating updates to the Federal Poverty Guidelines (FPG) and any other relevant federal changes.' The narrative also describes uniform application: 'sliding fee discounts are uniformly applicable/offered to all patients regardless of their income status.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is clear evidence of a board-approved sliding fee discount policy, reviewed annually, that applies uniformly to all patients. The policy is referenced as being reviewed and approved in April 2025, and the application narrative and compliance attachment both confirm uniform application and board oversight.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A (Required Services Provided) shows that Trillium Health provides General Primary Medical Care, Diagnostic Laboratory, Screenings, Coverage for Emergencies During and After Hours, Voluntary Family Planning, Immunizations, Well Child Services, Gynecological Care, Pharmaceutical Services, Case Management, Eligibility Assistance, Health Education, Outreach, Transportation, and Translation directly (Column I). The application narrative states: 'Sliding fee discounts are uniformly offered to all patients for all services within the HRSA scope of project. All formally executed agreements for contracted services and written referral agreements include requirements for providers to offer sliding fee discounts consistent with Trillium Health's policy.' The Sliding Fee Discount Schedule (Attachment 10) is referenced and included, showing discount levels for income up to 200% FPG, and the narrative confirms that discounts are applied to all in-scope services provided directly.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center provides all required services directly as shown on Form 5A, and the narrative and attachments confirm that discounts are structured and applied in accordance with policy for all Column I services. The schedule and policy are consistent with HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "The Sliding Fee Discount Schedule (Attachment 10) lists income thresholds that match the 2025 Federal Poverty Guidelines (e.g., $15,650 for a family of 1 at 100% FPG, $21,150 for a family of 2, etc.). The narrative states: 'Eligibility for the program is determined solely based on household income and family size, using the most recent FPG published in the Federal Register or other recognized federal sources. The policy includes a direct reference to the ASPE website for the latest FPG data.' The policy is reviewed and updated annually, as stated in the application.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The income thresholds on the SFDS match the 2025 FPG, and the narrative confirms annual updates and explicit reference to the current FPG. This meets the requirement for incorporation of the most recent FPG.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff contains detailed position descriptions for each key management staff role, including required education, experience, knowledge, skills, and major duties and responsibilities. Attachment 5: Biographical Sketches for Key Management Staff provides the actual training and experience of current incumbents. The Project Narrative and Section 10 of Attachment 13 (Health Center Program Compliance) also reference these attachments as the source for documentation. Form 2: Staffing Profile lists the key management staff and their FTEs.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "HRSA requires both position descriptions (detailing qualifications and duties) and evidence that these are on file and up to date. The application provides both the position descriptions (Attachment 4) and biographical sketches (Attachment 5) for all key management staff, with clear alignment between the required qualifications/duties and the actual staff. The Project Narrative and Compliance Attachment explicitly reference these documents as fulfilling the requirement. Therefore, the requirement is fully met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Form 2: Staffing Profile lists the CEO (Project Director) as a 1.0 FTE direct hire. Attachment 4: Position Descriptions for Key Management Staff (CEO section) states the CEO reports to the Board of Directors and directly supervises the executive team. The Project Narrative (Capacity section) confirms the CEO is directly employed, reports to the Board, and oversees all key management staff. Attachment 3: Project Organizational Chart shows the CEO at the top of the staff structure, reporting to the Board. The Bylaws (Attachment 2, Article IV) state the President/CEO is the chief executive officer, supervises management, and is subject only to the supervision of the Board. The Board's responsibilities (Bylaws, Article III, Section 20) include hiring, evaluating, and dismissing the CEO.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "All required aspects are documented: the CEO is a direct employee (not contracted), reports to the Board (not another entity), and is responsible for day-to-day operations and supervision of other key management staff. The position description, organizational chart, and bylaws all support this, and the application narrative confirms current practice. There is no evidence of any delegation or restriction of these authorities. Therefore, the requirement is fully met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements provides detailed descriptions of each contract, including the type of agreement (e.g., formal written services agreement, formal written referral agreement), the services covered, the timeframe, and the process for tracking and referring patients back to Trillium. The application narrative (Project Narrative, Section 2) and Form 5A indicate that all required services not provided directly are covered by formal written contracts/agreements. The compliance narrative in Attachment 13 states: 'All formally executed agreements for contracted services and written referral agreements include requirements for providers to offer sliding fee discounts consistent with Trillium Health's policy.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides detailed contract summaries that specify the existence of formal written agreements for all contracted services within the HRSA-approved scope of project. These summaries include required provisions such as sliding fee discounts, tracking, and referral processes, and compliance with HRSA requirements. The compliance narrative further confirms that all contracts include required provisions. There is no evidence of missing or incomplete contract provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8: Health Center Agreements, Part I, Question 2: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project?' is answered 'No'. The narrative in the Capacity section also states: 'This section is not applicable to Trillium Health.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Trillium Health does not have any contracts for substantive programmatic work (i.e., does not contract with a single entity for the majority of health care providers or for the majority of required services). Therefore, HRSA prior approval is not required, and this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8: Health Center Agreements, Part I, Question 2b: 'Subawards to carry out a portion of the proposed scope of project' is answered 'No'. The compliance narrative in Attachment 13, Section 12, states: 'Trillium Health does not have any subrecipients at this time.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Trillium Health does not have any subawards or subrecipients. Therefore, HRSA approval for subawards is not required, and this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8: Health Center Agreements, Part I, Question 2b: 'Subawards to carry out a portion of the proposed scope of project' is answered 'No'. The compliance narrative in Attachment 13, Section 12, states: 'Trillium Health does not have any subrecipients at this time.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Trillium Health does not have any subawards or subrecipients. Therefore, there are no subaward agreements to review for required provisions, and this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application narrative (see 'Collaboration' section and Attachment 9: Collaboration Documentation) details collaborations with local hospitals (e.g., Highland Hospital, Strong Memorial Hospital, Rochester General Hospital), specialty providers (e.g., Dulko Psychology, Unity Non-Invasive Cardiology), and social service organizations (e.g., East House, Spiritus Christi, Father Tracy Advocacy Center, Regional Health Reach, Delphi Rise, Rochester Housing Authority). Formal written agreements and letters of support are provided in Attachment 7 and Attachment 9. The Project Narrative describes referral processes, care coordination, and enabling services that link patients to services not available directly at Trillium Health. Form 5A shows required services provided through direct, contract, and referral arrangements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides comprehensive documentation of collaborative relationships with a wide range of providers and social service organizations in the service area. There are executed agreements, referral processes, and letters of support demonstrating active collaboration and integration of activities to ensure access to services not available through the health center. The evidence meets and exceeds HRSA requirements for this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application narrative (see 'Collaboration' section) and Attachment 9: Collaboration Documentation include letters of support and descriptions of formal relationships with other FQHCs and look-alikes in the service area, specifically Anthony L. Jordan Health Corporation (FQHC), Regional Health Reach (FQHC), and His Branches (FQHC Look-Alike). The application describes executed referral agreements and collaborative programs (e.g., oral health referrals to Anthony Jordan, outreach with Regional Health Reach, data sharing and best practices with His Branches). The application also documents participation in the Community Health Care Association of New York State (CHCANYS), the state PCA, and describes engagement with Accountable Health Partners (ACO) and Forward Leading IPA (FLIPA), which include other health centers. The application notes that a letter of support was requested from Anthony Jordan but not yet received, and provides evidence of the request.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application demonstrates ongoing, formalized relationships with other primary care providers, including other FQHCs and look-alikes in the service area, as well as participation in state and local health networks and collaboratives. The documentation of executed agreements, collaborative initiatives, and engagement with the PCA and ACO/HCCN structures meets HRSA's minimum requirements for coordination and integration with other primary care providers serving similar populations.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Form 3 - Income Analysis shows projected revenue from Medicaid ($17,249,700), Medicare ($564,982), Other Public ($565,462), and Private ($16,536,960). The Project Narrative (Billing and Collections section) states: 'The purpose of the Billing policy is to ensure that Trillium Health, Inc., as an FQHC, attempts to legally and ethically maximize reimbursement from third party payers, including Medicare, Medicaid, CHIP, and other public and private assistance programs or insurances.' The Project Narrative also describes eligibility assistance for all patients, and the enabling services staff are trained to help patients enroll in all available health insurance options. The Board-approved Billing policy (Attachment 13) specifically includes participation in Medicaid, CHIP, Medicare, and other insurance.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides direct evidence that Trillium Health participates in Medicaid, CHIP, Medicare, and other public/private insurance programs, both through policy and actual revenue. The narrative and supporting documents confirm active participation and assistance for patients to access these programs.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "Attachment 13: Health Center Program Compliance, Section 9 (Sliding Fee Discount Program) states: 'Trillium Health applies a single Sliding Fee Discount Schedule across all services, ensuring uniform access to discounted care. As outlined on of the Sliding Fee Discount Program Policy, “sliding fee discounts are uniformly applicable/offered to all patients regardless of their income status.” The policy also defines key terms such as household income and household size to guide eligibility assessments. The Board of Directors reviews this policy annually, incorporating updates to the Federal Poverty Guidelines (FPG) and any other relevant federal changes.' The Project Narrative (Billing and Collections) says: 'Trillium Health has three Board approved policies: Billing, Collections, and Charity Care to support its Billing and Collections processes.' The Charity Care policy 'discusses: eligibility criteria for charity care, the method by which patients may apply for charity care, and how Trillium Health will publicize the policy within the community served.' The Sliding Fee Discount Schedule (Attachment 10) is included and shows discounts based on income and family size, with 100% discount for those at or below 100% FPG and no nominal charge. The narrative further states: 'Trillium also understands that extenuating circumstances may exist whereby additional financial assistance is required “charity care.”'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is clear evidence of board-approved policies (Sliding Fee Discount, Charity Care) that specify circumstances for waiving or reducing fees due to inability to pay. The policies are reviewed annually, are board-approved, and are described in both the narrative and compliance attachments. The Sliding Fee Discount Schedule and Charity Care policy provide the required specificity.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a detailed SF-424A: Budget Information - Non-Construction Programs, a comprehensive Budget Narrative, and Form 3: Income Analysis. The budget narrative and forms present a total budget of $70,407,306 for the upcoming year, with line-item breakdowns for personnel, fringe, travel, supplies, contractual, other, and indirect charges. The narrative explicitly states: 'As demonstrated by the Budget Narrative, SF-424A, Form 2: Staffing and Form 3: Income Analysis, Trillium Health has presented a consistent budget for the upcoming four-year project period.' The budget aligns with the projected patient volume, service expansion, and the proposed scope of project as described throughout the application and on Form 5A/5B.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The budget is comprehensive, covers all cost and revenue categories, and is consistent across all required documents. It is explicitly tied to the scope of project and patient projections. The narrative confirms annual review and board approval. There is no evidence of missing or inconsistent budget information. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A and Budget Narrative list all revenue sources: Federal Funds - 330 Grant ($2,280,000), Federal Funds - Other ($1,621,949), State Funds ($2,828,972), Local Funds ($208,220), Private Funds ($255,375), Other Support ($28,046,624), and Program Income ($35,166,224). Form 3: Income Analysis details patient service revenue (Medicaid, Medicare, Other Public, Private, Self Pay) and other income (federal, state, local, private grants/contracts, other). The total non-federal income is $68,127,306, as shown in both the SF-424A and Form 3. The narrative states: 'Trillium Health maintains a consistent revenue stream through robust billing, enrollment, and grants management processes, and proactively monitors financial performance through detailed monthly reporting and analysis.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "All revenue sources, including non-HRSA funds, are clearly identified and quantified in the budget forms and narrative. The application demonstrates that the health center's budget includes all projected revenue sources supporting the project. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws (April 2025) - Article III, Section 1(a) states: 'The Corporation shall be managed by its Board of Directors (the \"Board\"). The property, funds, affairs, and business of the corporation shall be managed by the Board. The Board shall have and is vested with unlimited powers and authority, except as may be expressly limited by law, the Certificate of Incorporation, or these By-Laws.' Article III, Section 20 lists specific board responsibilities, including hiring and evaluating the CEO, approving the budget, policies, and scope of services, and ensuring compliance with applicable laws. The application narrative (Attachment 13: Health Center Program Compliance) confirms that 'no other individual, entity, or committee—including executive committees authorized by the board—holds approval authority or veto power over the board regarding its required authorities and functions.' The Project Narrative and Compliance Narrative further state that all key management staff are directly employed by Trillium Health, and that the board meets monthly and is responsible for all major decisions.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and application narrative provide clear, direct evidence that the governing board maintains full authority and oversight over the Health Center Program project, as required by HRSA. There are no indications of any restrictions, veto power, or outside control over board decisions. The board's authority is also supported by the organizational chart and position descriptions, which show direct reporting to the board and no parent, affiliate, or subsidiary organizations that could limit board authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws (April 2025), Article III, Section 20, explicitly lists the board's responsibilities, which include: (d) hiring, annually evaluating, and, if necessary, dismissing the Chief Executive Officer; (e) developing, adopting, and periodically updating personnel policies and procedures; (f) developing, adopting, and periodically updating financial management policies, including approval of the annual project plan and budget; (g) evaluating the Corporation's activities, including service utilization patterns, productivity, patient satisfaction, achievement of project objectives, and a process of hearing and resolving patient grievances; (h) assuring compliance with applicable Federal, state, and local laws and regulations; (i) developing, adopting, and periodically updating health care policies, including scope and availability of services, location and hours of services; (j) approving applications related to the health center project, including grants and other HRSA requests regarding scope of project; (k) evaluating the Corporation's achievements and assessing the service area and need for health services periodically; (l) evaluating itself periodically for efficiency, effectiveness, and compliance with Section 330 requirements; (m) officially accepting the annual audit; (n) selecting the independent audit firm. The Project Narrative and Compliance Narrative confirm that these authorities are exercised by the board and not delegated or restricted by any other entity.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly enumerate all required authorities and responsibilities as outlined by HRSA, and the application narrative confirms that these are actively exercised by the board. There is no evidence of any restrictions, delegation, or lack of clarity regarding these responsibilities. The board's composition and committee structure further support the board's ability to fulfill these duties.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws (Attachment_2._Board_Bylaws_April 2025[1].pdf), Article III, Section 3 (Nomination and Election of Directors) and Section 4 (Resignations and Removal of Directors) specify the nomination, election, and removal process. The Governance Committee recommends candidates, but the full board votes to elect directors and officers. No language permits any outside entity, committee, or individual to select the board chair or majority of board members. Section 1(b)(vi) prohibits employees and their immediate families from board service, further supporting independence.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly outline that only the board itself has authority for selection and removal of its members and officers. The process is board-driven, with no external or internal committee or individual (other than the board itself) able to select the board chair or a majority of board members. This meets HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 1(b) specifies: (i) Board members must reside or work in the service area and/or represent the population served; (ii) At least 51% of board members must be users (patients) of the health center; (iii) Consumer members must be current registered patients or parents/legal guardians of patients, and must have accessed services in the past 24 months; (iv) Non-consumer members must represent the community and bring relevant expertise; (v) No more than half of non-consumer members may derive more than 10% of income from the health care industry; (vi) Employees and immediate family members are ineligible for board service.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly require the board to meet all HRSA composition requirements: patient majority, demographic representation, community representation, limits on health industry income among non-patient members, and conflict of interest exclusions. This is fully compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics lists 18 board members, of whom 12 are marked as health center patients (67% consumer majority). The table also shows demographic and expertise diversity, with all members living or working in the service area. The application narrative (Governance section) confirms the board's demographic alignment with the patient population and details expertise areas.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The board meets and exceeds the 51% patient majority requirement, and the composition reflects the community served in terms of demographics and expertise. Documentation is clear and current.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements states: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' The application is for 330(e) Community Health Center funding only.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Trillium Health is not applying for 330(g), (h), or (i) funding, nor is it requesting a waiver of patient majority board requirements. This requirement does not apply.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "fileHash": "57b4f1c21dcc7c8561d7f6b909116ce7",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:14.645Z",
+  "applicationName": "INTERCARE COMMUNITY HEALTH NETWORK_Application-242748.pdf",
+  "extractedContent": "Application Number: 242748\nFilename: INTERCARE COMMUNITY HEALTH NETWORK_Application-242748.pdf\nProcessed: 2026-01-23T05:55:49.648Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "1. The Project Narrative Section 1.4 'Annual Process for Reviewing Target Population Need' (pages 9-13) describes an annual review process using UDS data, county health data, and community partner input. 2. Section 1.5 'Needs Assessment to Action' and 1.6 'Engaging Patients and Alignment of Needs' detail how findings are used to inform service delivery and strategic planning. 3. The narrative references use of the most recent available data, including 2023 MDHHS Health Risk Behaviors Report, 2025 County Comparison data, and 2024 UDS results. 4. The needs assessment covers the entire service area (Allegan, Berrien, Ottawa, Van Buren counties) and includes special populations such as farmworkers, with specific data and outreach strategies described. 5. The needs assessment is explicitly linked to action, with examples of program changes and expansions resulting from the findings. 6. The application provides data tables and references to external sources (e.g., County Health Rankings, BRFSS, CHNAs) and includes annual review and update language. 7. The application narrative repeatedly states that the needs assessment is updated annually and that the Board reviews and approves updates at least every three years (see Bylaws, Article III, Section 13A(5), and Project Narrative Section 1.4). 8. The application includes recent data (2023-2025) and describes how it is used to inform delivery of services, workforce planning, and program development.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, detailed evidence that a comprehensive needs assessment is completed and updated at least annually, and certainly within the required three-year timeframe. The needs assessment uses the most recent available data for the service area and special populations, and directly informs service delivery and program improvements. The process is described as systematic, ongoing, and action-oriented, with annual reviews and Board oversight. The inclusion of current data sources, specific population focus (including farmworkers), and examples of how findings are translated into action all demonstrate compliance with the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13 - Health Center Program Requirements Compliance.pdf, Section: Sliding Fee Discount Program (SFDP): 'InterCare's SFDP applies uniformly to all patients, regardless of insurance status or ability to pay. All patients are assessed for eligibility using family size and income, and no patient is denied care due to inability to pay.' Also, 'InterCare's Board of Directors reviews and approves all updates to the SFDP to maintain compliance and ensure that all directly provided services are included.' The Board-approved policies are referenced in the bylaws (Attachment 2), and the compliance narrative confirms regular board review. The sliding fee policies, schedule, and procedures are listed as on file in Form 1C.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence that the SFDP policies are board-approved, apply uniformly to all patients, and are regularly reviewed and updated by the Board. The policies address eligibility, application, and discount structure, and the compliance narrative confirms uniform application and board oversight. The presence of the policies in Form 1C and the narrative further confirm compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A - Required Services Provided shows all required services (medical, dental, behavioral health, etc.) are provided directly (Column I). Attachment 10 - Sliding Fee Discount Schedule.pdf lists the discount schedule for all directly provided services, including medical, dental, and mental health. The compliance narrative in Attachment 13 confirms that the SFDP covers all services provided directly by InterCare, including those in Form 5A, and that the schedule is structured according to policy. The narrative also details the nominal fee for patients at or below 100% FPG and tiered discounts for those up to 200% FPG, matching HRSA requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence shows that all required services in Form 5A Column I are covered by the SFDP, and the discount schedule is applied as per policy. The nominal and discounted fees are clearly described, and the compliance narrative confirms the structure is consistent with policy and HRSA requirements. There is no indication of any direct service excluded from the SFDP, so the requirement is met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10 - Sliding Fee Discount Schedule.pdf explicitly references discount categories based on percentage of the Federal Poverty Level (e.g., 0-100%, 101-125%, 126-150%, 151-200%). The compliance narrative in Attachment 13 states: 'InterCare's SFDP is aligned with the most current FPG, which are updated annually and incorporated into the discount schedule. The SFDP is updated annually to incorporate the latest FPG and covers all services provided directly by InterCare.' The narrative also states the Board reviews and approves updates within 30 days of federal guideline changes.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides explicit evidence that the sliding fee discount schedule is based on the most recent Federal Poverty Guidelines, is updated annually, and is board-approved. The schedule categories match HRSA expectations, and the annual update process is described in both the project narrative and compliance narrative. This meets the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff includes detailed position descriptions for CEO, CMO, CDO, CFO, and COO, each outlining summary of duties and responsibilities, position qualifications, knowledge and experience requirements, status and supervision, time and travel expectations, and salary range. Attachment 5: Biographical Sketches for Key Management Staff provides education, experience, and affiliations for each key staff member, including CEO, CFO, CDO, and COO.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both position descriptions and biographical sketches for all key management staff. The position descriptions clearly document the required qualifications (education, experience) and duties/functions for each role. The biographical sketches demonstrate that the individuals currently in these positions meet the qualifications. This meets HRSA's requirement for documentation of training, experience, and duties for key management staff positions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Form 2 - Staffing Profile lists the CEO (Project Director) as a direct hire (1.00 FTE, not contract). Attachment 4: Position Descriptions for Key Management Staff (Chief Executive Officer) states the CEO 'works under the broad policy guidance and direction of the Board of Directors' and 'supervises the Chief Medical Officer, Chief Dental Officer, Chief Financial Officer, Chief Operating Officer, Director of Human Resources, Director of Organizational Development and HR Programs, Communication and Marketing Specialist and the Executive Assistant.' The Corporate Bylaws (Attachment 2) Article V, Section 5, state: 'The Chief Executive Officer is an agent of the Board of Directors and shall be accountable to the Board. The Chief Executive Officer shall be responsible for the day-to-day care, supervision, direction and management of the Corporation, subject to the control of the Board and in furtherance of the policies and programs established by the Board.' The biographical sketch for the CEO (Attachment 5) confirms current employment. The organizational chart (Attachment 3) shows the CEO at the top, reporting to the Board, and supervising all other key management staff.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The CEO is a direct employee of InterCare (not contracted), reports directly to the governing board per the bylaws and position description, and is responsible for day-to-day oversight of all key management staff. The evidence is clear, consistent, and meets all HRSA requirements for this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7 - Summary of Contracts and Agreements lists contracts for services such as OB coverage, after-hours nurse triage, laboratory, pharmacy, translation, and communication services. The Contracts and Subawards Narrative (Attachment 13) states: 'All contracts and agreements require contractors to provide data necessary for federal financial and programmatic reporting, including patient service records, utilization statistics, and financial documentation. Contractors must comply with record retention and access requirements, allowing InterCare and regulatory agencies to audit records as needed. Agreements include provisions for property management, ensuring that any equipment or assets provided under the contract are properly tracked and maintained. Business Associate Agreements are also obtained when the contract will include access to protected health information. Contractors are required to adhere to all applicable federal, state, and local regulations regarding reporting, audits, and data security.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear and specific evidence that contracts contain required federal provisions for reporting, record retention, audit, and property management, as required by HRSA. The narrative details how these requirements are incorporated into agreements, and the summary of contracts demonstrates the types of services covered. There is no evidence of missing provisions or non-compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Question 2: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project?' Answer: No. Contracts listed in Attachment 7 are for support services (e.g., after-hours nurse triage, OB coverage, lab, pharmacy, translation), not for a single entity providing the majority of health care providers or substantive programmatic work. The Contracts and Subawards Narrative (Attachment 13) states: 'InterCare does not have any subcontractors or subrecipients. All services and program activities are provided directly by InterCare staff, ensuring full oversight and compliance with Health Center Program requirements.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This requirement is only applicable if the health center contracts with another entity for substantive programmatic work (e.g., a single entity providing the majority of clinical care). The application explicitly states that all core services are provided directly by InterCare staff and that there are no such contracts. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Question 2b: 'Number of subawards made to subrecipients to carry out a portion of the proposed scope of project.' Answer: 0. The Contracts and Subawards Narrative (Attachment 13) states: 'InterCare does not have any subcontractors or subrecipients. All services and program activities are provided directly by InterCare staff, ensuring full oversight and compliance with Health Center Program requirements.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no subawards made by the health center; all services are provided directly by InterCare. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements, Question 2b: 'Number of subawards made to subrecipients to carry out a portion of the proposed scope of project.' Answer: 0. The Contracts and Subawards Narrative (Attachment 13) states: 'InterCare does not have any subcontractors or subrecipients. All services and program activities are provided directly by InterCare staff, ensuring full oversight and compliance with Health Center Program requirements.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no subawards; the health center does not utilize subrecipients. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "Section 3 - Collaboration (Project Narrative pp. 31-35) details active partnerships with local hospitals (Corewell Health, Holland Hospital, Beacon Health), specialty providers (OB/GYN Associates of Holland, Quest Diagnostics), and social service organizations (Area Agency on Aging, United Way, Community Action Agency, Head Start, Van Buren Intermediate School District, Resilience Advocates for Ending Violence, etc.). Attachment 7 - Summary of Contracts and Agreements lists formal referral agreements and service contracts with hospitals and specialty providers. Attachment 9 - Collaboration Documentation includes letters of support from hospitals, public health departments, mental health agencies, schools, and social service organizations. The narrative describes referral processes, integrated care coordination, and outreach to special populations (e.g., farmworkers, school-based health, behavioral health, enabling services).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides robust, multi-source documentation of ongoing collaboration and integration with hospitals, specialty providers, and social service organizations. The narrative, contracts, and letters of support collectively demonstrate that InterCare actively coordinates with external partners to provide access to services not available through the health center, including for special populations. The evidence is specific, current, and directly responsive to the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "Section 3 - Collaboration (Project Narrative pp. 31-35) specifically states: 'InterCare also maintains ongoing partnerships with neighboring Federally Qualified Health Centers including Mshkiki Community Clinic, Family Health Center and Cass Family Clinic, to coordinate regional outreach to our communities.' Attachment 9 - Collaboration Documentation includes letters of support from Cass Family Clinic and Family Health Center, confirming collaborative relationships. The narrative further details participation in the Michigan Primary Care Association (MPCA), Health Center Controlled Network (HCCN), and Michigan Community Health Network (MCHN), which are statewide and regional networks of FQHCs. InterCare participates in regional community health needs assessments and quality improvement collaboratives. The application also references coordination with local public health departments and school districts.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct, and current documentation of relationships with other federally-funded health centers in the service area, as well as with state and local health services delivery projects. The letters of support from peer FQHCs, narrative descriptions of joint initiatives, and participation in state and regional networks meet and exceed the minimum requirement for establishing and maintaining such relationships.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Attachment 13 - Health Center Program Compliance Narrative, Billing and Collections section: 'InterCare Community Health Network participates in Medicare, Medicaid, the Children's Health Insurance Program (CHIP), and a wide range of other public and private health insurance programs. All applicable payers are billed for services provided, including managed care organizations, commercial insurance plans, and categorical grant programs.' Also, Form 3 - Income Analysis shows revenue from Medicaid, Medicare, Private, and Self Pay. Form 5A - Required Services Provided and Form 5A - Additional Services Provided confirm direct provision of services and billing. The Project Narrative (Section 2.2) also describes a payer mix including Medicaid (46.1%), Medicare (16.1%), Private Insurance (17.8%), and Self-Pay (20.0%).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct statements and supporting data that InterCare participates in Medicaid, CHIP, Medicare, and other public and private insurance programs. The presence of payer mix data, billing policies, and narrative statements all confirm active participation in these programs, meeting the HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "Attachment 13 - Health Center Program Compliance Narrative, Billing and Collections section: 'InterCare's Board-approved policies ensure that no patient is denied care due to inability to pay. The SFDP allows patients who are unable to pay the full cost of care to be assessed for eligibility based on family size and income. Discounts are applied to out-of-pocket costs for qualifying patients, and insured patients may receive sliding fee discounts secondary to their insurance coverage. If a patient demonstrates inability to pay, staff follow established procedures to waive or reduce fees, including extended payment terms and individualized fee waivers based on documented need. All billing and collections policies, including those related to waiving or reducing fees, are reviewed and approved by the Board of Directors.' The Sliding Fee Discount Program (SFDP) is described in detail, with board approval and annual review. The Sliding Fee Discount Schedule (Attachment 10) and narrative in the Project Narrative (Section 2.5) further describe the process for waiving/reducing fees. Form 1C - Documents On File confirms the existence of billing and collections policies/procedures, including those regarding waivers or fee reductions and refusal to pay.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is explicit documentation of board-approved policies and procedures for waiving or reducing fees, including the circumstances (inability to pay, documented need), and the process is described as being in active use. The policies are reviewed and approved by the Board, and the SFDP is detailed and aligned with HRSA requirements. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a detailed SF-424A Budget Information form, a comprehensive budget narrative, and multi-year budget justifications (see Budget Narrative, SF-424A, and Budget Justification tables). The budget is broken down by object class, revenue sources, and expense categories, and is consistent across the SF-424A, Budget Narrative, and Form 3 - Income Analysis. The budget covers all projected costs and revenues for the full scope of project, including medical, dental, behavioral health, enabling, and outreach services, as well as all service sites and populations described in the application.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "HRSA requires that the annual budget submitted reflect all projected costs and revenues necessary to support the full HRSA-approved scope of project. The application provides a complete, detailed budget for the upcoming year, with clear alignment to the described scope of project, including all service lines, sites, and populations. The budget is consistent across all required forms and narratives, and includes both federal and non-federal revenue sources and all major expense categories. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A, Budget Narrative, and Form 3 - Income Analysis all provide detailed breakdowns of revenue sources, including: HRSA grant funds (CHC and MSAW), state funds, local funds, other federal funding, private grants/contracts, program income (including Medicaid, Medicare, private insurance, self-pay), pharmacy income, and other miscellaneous income. Program income is projected at $26,175,558, state funds at $2,829,817, local funds at $275,000, and other federal at $500,000, with additional detail on WIC, school-based grants, and managed care incentives. The budget narrative explains the methodology for projecting each revenue source and ties them to the scope of project.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "HRSA requires that the annual budget include all projected revenue sources, not just the Health Center Program award, that will support the project. The application provides a full accounting of all revenue sources, with supporting detail and explanations, and these are consistent across all budget forms and narratives. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "The bylaws (Attachment 2) explicitly state: 'The Board shall have the authority, on its own prerogative or upon recommendation of the Chief Executive Officer, to establish, amend and revise, general policies including, but not limited to the following: (1) Hiring, periodically evaluating the performance of (consistent with the Corporation's performance evaluation policy for the Chief Executive Officer) and dismissing the Chief Executive Officer of the Corporation. (2) Approving the annual federal grant application, as well as other grant applications related to the Corporation's health center project and requests to federal, state and local agencies related to the federal scope of project (including but not limited to, Change in Scope requests submitted to HRSA).' The bylaws also state: 'In no event shall any other entity, committee (including the Executive Committee, subject to Article VI, Section 2 of these Bylaws) or individual (or any Directors appointed by any other entity or committee) be granted ultimate approval or veto rights regarding any of the aforementioned functions of the Board.' The application narrative (Attachment 13) further affirms that the Board's authority is not restricted by any contract or agreement, and there is no co-applicant.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and application narrative provide clear, explicit language that the Board maintains full authority over the health center project, including all required areas of oversight, and that no other entity has veto or approval rights over Board actions. There is no evidence of any arrangement or agreement that would infringe upon this authority. This meets HRSA requirements for maintenance of board authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "The bylaws (Attachment 2, Article III, Section 13) enumerate the Board's authorities and responsibilities, including: (1) Hiring, evaluating, and dismissing the CEO; (2) Approving the annual federal grant application and other grant requests; (3) Developing, adopting, and updating health care policies (scope, services, locations, hours, quality improvement); (4) Developing and reviewing personnel policies; (5) Developing and reviewing financial management policies, annual budgets, priorities, eligibility, billing, and long-range planning; (6) Setting priorities for allocation of project funds; (7) Monitoring financial status, selecting auditors, reviewing and accepting audit reports, ensuring follow-up; (8) Ensuring compliance with all applicable laws and regulations; (9) Measuring and evaluating the organization's activities and performance at least annually, including quality, utilization, productivity, patient satisfaction, and achievement of goals; (10) Engaging in long-term strategic planning at least once every three years; (11) Regular review and updating of bylaws, mission, goals, objectives, plans, and budgets; (12) Attending to any matter determined to be in the best interest of the Corporation. The bylaws also specify that the Board meets monthly, maintains minutes, and that no other entity or committee can override Board authority. The application narrative (Attachment 13) restates these authorities and confirms Board oversight in all required areas.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws provide a comprehensive and explicit list of all required authorities and responsibilities as outlined by HRSA, including those related to CEO oversight, budget and grant approval, service scope, policy development, financial management, compliance, and evaluation. The application narrative confirms these authorities are exercised in practice. There are no gaps or omissions in the required authorities and responsibilities. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Bylaws (Attachment 2 - Bylaws.pdf), Article III, Sections 2, 3, 8, and 10: Selection, election, and removal of directors and officers are solely by the Board. Section 8 states: 'In no event shall any Director appointed by any other entity, committee or individual be chosen and serve as Chair of the Board.' Section 10 states: 'Any Director, officer or agent may be removed by the Board of Directors by a vote of two-thirds (2/3) of the entire Board... In no event shall any other entity, committee or individual require the removal of any Director not appointed by such party.' Section 4G: 'In no event shall Directors appointed by any other entity, committee or individual (other than the Board) constitute a majority of the entire Board or a majority of the Non-Patient Community Representatives, nor shall any other entity, committee or individual preclude the selection of Directors not appointed by such party.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly specify that only the Board itself selects and removes members and officers, including the chair, and explicitly prohibit any other entity or individual from controlling the majority of board seats or the chair. The process for selection and removal is detailed, and the language matches HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Bylaws (Attachment 2 - Bylaws.pdf), Article III, Section 1: 'The Board of Directors shall consist of nine (9) to fifteen (15) members.' Section 4A: 'Patient Representatives shall comprise at least a majority of the Board and shall be individuals who are served by the Corporation and who, as a group, represent the individuals being served by the Corporation, in terms of demographic factors such as race, ethnicity and gender.' Section 4B: Non-patient members must represent the community served. Section 4C: 'No more than one-half (1/2) of the Non-Patient Community Representatives of the Board may be individuals who derive more than 10% of their annual income from the health care industry.' Section 4E: 'No member of the Board of Directors shall be an employee of InterCare or an immediate family member... of an InterCare employee.' Section 4D: Special population representation is required if the center receives 330(g), (h), or (i) funding.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws specify all required elements: board size, patient majority, demographic representation, non-patient expertise, limits on health care industry income, exclusion of employees/immediate family, and special population representation. These match HRSA requirements for board composition.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics: 9 board members listed. 5 of 9 (55%) are health center patients. Patient members represent diverse roles (teaching assistant, farmworker, student support coordinator, etc.) and reside or work in the service area. Non-patient members include a retired dentist, small business owners, education, and a health resource director. Only one non-patient member earns >10% income from the health industry. No board members are employees or immediate family of employees (Form 6A and narrative confirm this). Board composition is reviewed annually (see Project Narrative Section 6.1 and Compliance Narrative).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board composition meets all HRSA requirements: 9 members (within 9-15), at least 51% are patients, patient members reflect the population served, non-patient members bring relevant expertise, only one non-patient member earns >10% from health care, and there are no employees or immediate family members on the board. Documentation is complete and up-to-date.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' InterCare is applying for/receiving 330(e) funding (see SF-424, Project Narrative, and Summary Page).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "InterCare is a 330(e) Community Health Center grantee and does not request a waiver of the patient majority board composition requirement. The waiver provision is only applicable to health centers funded solely under 330(g), (h), or (i) and not 330(e). Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

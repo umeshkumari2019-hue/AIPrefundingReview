@@ -1,0 +1,307 @@
+{
+  "fileHash": "ffd0c76a4b61f55953d6a1249aa731fe",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:16.437Z",
+  "applicationName": "NORTHWEST HUMAN SERVICES, INC._Application-242871.pdf",
+  "extractedContent": "Application Number: 242871\nFilename: NORTHWEST HUMAN SERVICES, INC._Application-242871.pdf\nProcessed: 2026-01-23T07:19:58.631Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, Criterion 1: Need, the application states: 'NWHS completes a formal Needs Assessment in accordance with Needs Assessment Program Requirement. The 2023-2025 NWHS Needs Assessment was reviewed and approved by the Board of Directors on December 15, 2023.' It further states: 'NWHS completes or updates a formal Needs Assessment of the target population and service area at least once every three years for the purposes of informing and improving the delivery of health center services.' The application also details annual reviews and Board presentations, and references the use of the most recent data (2023-2025) and Board approval. The narrative describes the sources of data used (UDS, state and county data, local health department information, county community health assessments, Service Area Review, and the NWHS Strategic Plan). The needs assessment is used to inform and improve service delivery, and the process is described as ongoing and systematic.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that a formal needs assessment was completed and Board-approved in December 2023, which is within the three-year requirement. The process is described as recurring at least every three years, with annual reviews and Board involvement. The needs assessment uses the most recent available data and informs service delivery and planning, as required by HRSA. The narrative also describes how the needs assessment is used to identify gaps, inform the strategic plan, and guide program development. There is no evidence of a gap in compliance with the three-year update requirement, and the process described aligns with HRSA's expectations for data sources, Board approval, and use for service improvement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule.pdf and Policy Number: BS-200-100 (Sliding Fee Discount Program) are included. The policy states: 'It is the policy of NWHS, based on the requirements set forth in section 330(k)(3)(G) of the Public Health Services Act and 42 C.F.R 51c.303(f) and any other relevant regulation, to establish discounts to its established schedule of fees. This policy is designed to reduce barriers to accessing services for such patients.' The policy applies to all services within NWHS approved Scope of Project for which there is an established charge regardless of the service type or mode of delivery (direct, by contract, or by formal referral arrangement). The policy is reviewed and approved annually by the Board of Directors, as shown by the signature history (most recently June 9, 2025, by the CEO). The policy defines income, family, documentation, and application process. The application narrative (Criterion 2, Section 5) further describes uniform application, eligibility, and annual board review.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has a board-approved sliding fee discount policy (BS-200-100) that applies uniformly to all patients, regardless of service type or delivery method. The policy is reviewed and approved annually by the Board, as evidenced by the signature log. The policy and procedures address all required areas, including definitions, documentation, eligibility, and application process. The application narrative confirms uniform application and annual review. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A: Services Provided shows that all required services (General Primary Medical Care, Preventive Dental, Mental Health, etc.) are provided directly (Column I) by the health center. Attachment 10: Sliding Fee Discount Schedule.pdf provides the discount schedule for medical, dental, nurse/integration specialist, and mental health services. The schedule includes: (1) Full discount for 0-100% FPG (with a nominal charge), (2) Partial discounts for 101-200% FPG, with at least three discount pay classes (B, C, D), (3) No discount for >200% FPG, (4) Nominal charges for 0-100% FPG that are flat and less than the first discount class above 100% FPG, and (5) The schedule is based on the most current FPG. The application narrative (Criterion 2, Section 5b and c) describes the structure and application of the schedule, and confirms that all direct services are covered by the SFDS.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center provides all required services directly (Column I) and applies the sliding fee discount schedule to those services. The SFDS is structured with a full discount for 0-100% FPG (with a nominal charge), at least three partial discount classes for 101-200% FPG, and no discount above 200% FPG. The nominal charge is flat and less than the fee for the next class. The schedule is consistent with the policy and is applied to all direct services. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule.pdf includes the 2025 Federal Poverty Guidelines (FPG) for family sizes 1-12, with increments for additional family members. The policy (BS-200-100) states: 'The sliding fee schedule (Appendix D) will be updated effective the 1st day of the month following the release of the Federal Poverty Level Guidelines from the US Department of Health and Human Services.' The application narrative (Criterion 2, Section 5b.iv) confirms that the schedule and policy are updated annually to reflect the most recent FPG, and the Board-approved schedule for 2025 is included.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The sliding fee discount schedule incorporates the most recent (2025) Federal Poverty Guidelines, as shown in the attached schedule and policy. The policy requires annual updates upon release of new FPG. The application narrative confirms this process. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff provides detailed job descriptions for the CEO, COO, CFO, Medical Director, Clinic Director, and IT Director, including required qualifications, duties, and supervisory responsibilities. Attachment 5: Biographical Sketches for Key Management Staff provides education, experience, and background for each key management staff member. The Project Narrative (Criterion 4) references these attachments and summarizes the qualifications and responsibilities of each key staff member.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application includes both position descriptions (duties/functions and qualifications) and biographical sketches (training and experience) for all key management staff, as required. The documentation is specific, up-to-date, and covers all required positions. The evidence is found in the referenced attachments and summarized in the narrative, meeting the requirement for documentation of qualifications and duties/functions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff includes the CEO job description, which states the CEO is supervised by the Board of Directors and is responsible for overall agency direction and supervision of programs and staff. The Project Narrative (Criterion 4) states, 'The CEO, appointed by the NWHS Board of Directors and serving as a non-voting ex-officio member of the Executive Committee, provides overall leadership and accountability for program performance, regulatory compliance, and alignment with NWHS' mission. The CEO reports directly to the Board and is responsible for day-to-day program management of health center activities, ensuring qualified and effective leadership across all programs.' Form 2 - Staffing Profile lists the CEO as a direct hire (1.0 FTE, not contract). The Bylaws (Section 5.F) state, 'The CEO will be responsible for the general care, supervision, and direction of the corporation's affairs in furtherance of the policies and programs established by the Board. The CEO has the authority to employ, supervise, and discharge all staff personnel in accordance with the policies established by the Board.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The CEO is directly employed by NWHS (not a contractor), as shown in Form 2 and the budget. The CEO reports to and is supervised by the Board of Directors, as documented in the Bylaws and job description. The CEO is responsible for overseeing other key management staff and day-to-day operations, as detailed in the job description and narrative. All requirements of this element are fully met and supported by multiple sources in the application.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements lists formal written contracts/MOUs (e.g., with Bridgeway Recovery Services, Salem Health, Quest Diagnostics, Passport to Languages, Wellpartner, Safeway, Walgreens, Walmart) for services such as laboratory, radiology, pharmacy, translation, and substance abuse services. The application narrative (Project Narrative, Form 5A) confirms that all required and additional services are provided either directly or via formal written contracts/agreements, and the contracts are ongoing, with clear terms and renewal/cancellation clauses. The compliance narrative in Attachment 13 also states: 'NWHS applies similar oversight standards to all contractual arrangements to ensure compliance, fiscal integrity, and adherence to HRSA requirements.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has formal written contracts for all services not provided directly, as evidenced by Attachment 7 and Form 5A. The contracts are described as ongoing, with appropriate terms, and the compliance narrative affirms that contracts are managed to ensure compliance with HRSA requirements. There is no evidence of missing or inadequate contract provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements (and Project Narrative, Attachment 13) states: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project? [ ] Yes [X] No'. The application narrative (Criterion 4, c) also states: 'NWHS does not have subrecipients or contractors carrying out the proposed project.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center does not contract with another organization to perform substantive programmatic work (i.e., does not contract for the majority of health care providers or for the core programmatic functions). All contracts are for ancillary/support services (e.g., lab, pharmacy, translation), not for substantive programmatic work as defined by HRSA. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements: 'Do you currently have, or plan to utilize: b) Subawards to carry out a portion of the proposed scope of project. ... [ ] Yes [X] No'. Attachment 13: 'N/A - NWHS does not have any subrecipients for which federal or non-federal funds are passed on to.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center does not make any subawards (no subrecipients), as confirmed in Form 8 and Attachment 13. Thus, HRSA approval for subawards is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements and Attachment 13 both confirm there are no subawards or subrecipients.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no subawards or subrecipients, so this requirement does not apply.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application narrative (Criterion 3: Collaboration, pp. 39-45) describes extensive collaboration with local hospitals (e.g., Salem Health, West Valley Hospital), specialty providers (e.g., Bridgeway Community Health for substance use disorder services), and social service organizations (e.g., Center for Hope and Safety, Mid-Willamette Valley Community Action Agency, Shangri-La Corporation). Attachment 7: Summary of Contracts and Agreements lists formal agreements with hospitals and specialty providers. Attachment 9: Collaboration Documentation contains current letters of support from all major partners, including hospitals, county health departments, specialty providers, and social service organizations. The narrative details how these collaborations provide access to services not available directly at NWHS, such as inpatient care, specialty diagnostics, substance use disorder treatment, and domestic violence services.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both narrative and documentary evidence (formal agreements, letters of support) demonstrating ongoing, active collaboration with a broad range of local providers and social service organizations. These collaborations are specifically described as providing access to services not available through NWHS, and the documentation is current and comprehensive. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "Criterion 3: Collaboration (pp. 39-45) and Attachment 9: Collaboration Documentation show that NWHS collaborates with other HRSA-supported health centers in the service area, specifically Yakima Valley Farm Workers Clinic and Virginia Garcia Memorial Health Center (both FQHCs with overlapping or adjacent service areas). Letters of support from both organizations are included in Attachment 9. The narrative describes participation in the PacificSource Coordinated Care Organization (CCO), which includes all local FQHCs, and in the Oregon Primary Care Association (OPCA), with the CEO serving on the OPCA board. The Service Area Map/Table (Attachment 1) and data tables confirm the presence and collaboration with other health centers. NWHS also documents collaboration with county health departments, local hospitals, and other state/local programs.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, current evidence of collaboration and coordination with other federally-funded health centers (FQHCs) in the service area, as well as with state and local health service programs. This is supported by narrative, formal letters of support, and participation in regional/statewide networks. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "1. Form 3 - Income Analysis shows projected and prior year income from Medicaid ($5,032,000 projected), Medicare ($1,814,879 projected), and other public and private payers. 2. The Project Narrative states: 'NWHS maintains insurance credentialing for billing Federal Medicare plans and state Medicaid plans. NWHS maintains credentialing with approximately 200 other insurance plans.' 3. Attachment 13 (Health Center Program Compliance) explicitly states participation in Medicare, Medicaid, and other insurance. 4. Form 5A - Required Services Provided includes eligibility assistance as a direct service, supporting insurance enrollment. 5. Letters of support from PacificSource, the Coordinated Care Organization (CCO), and other partners reference NWHS's role in serving Medicaid-eligible patients.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides direct evidence that NWHS participates in Medicaid, Medicare, and other public/private insurance programs. This is supported by billing data, narrative statements, and external partner letters. The presence of eligibility assistance and extensive insurance credentialing further confirm compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "1. Attachment 10: Sliding Fee Discount Schedule and Policy BS-200-100 details the sliding fee discount program, including eligibility, application, documentation, and discount classes based on income/family size. 2. Policy BS-200-207 (Hardship Waiver Policy) is referenced in the Project Narrative and Attachment 13, providing for waiving or reducing fees in cases of hardship. 3. The Project Narrative and Compliance Narrative state: 'No patient will be denied services due to inability to pay for such services.' 4. The Board reviews and approves the sliding fee discount schedule annually (see policy and narrative). 5. The sliding fee discount application and required documentation are included, showing operational procedures. 6. Form 1C - Documents On File confirms that billing and collections policies, including waivers or fee reductions, are current. 7. The Project Narrative describes how patients are informed of these policies and how eligibility is determined.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application includes board-approved policies and documented procedures for waiving or reducing fees, including a hardship process. These are reviewed annually by the board and are operationalized through eligibility staff and patient-facing materials. The policies specify circumstances for waivers/reductions, and the application demonstrates that these are in use.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes the SF-424A: Budget Information - Non-Construction Programs, Budget Narrative, and detailed budget tables showing a total budget of $31,551,663. The budget narrative states: 'The budget is consistent across all submission documents, including the Budget Narrative and SF-424A, ensuring accuracy and alignment with HRSA requirements. Each cost item has been reviewed to confirm that it is reasonable, necessary, and allocable to the proposed activities.' The budget aligns with the proposed work plan, supports patient projections, and includes all required cost categories (personnel, fringe, travel, supplies, contractual, other, indirect). The application narrative explicitly states: 'The NWHS budget has been carefully developed to ensure financial stability while supporting the patient volumes and service levels outlined in this application. It reflects a balanced approach that sustains ongoing operations and strategically invests in the resources necessary to preserve access, quality, and continuity of care for our service area.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant has submitted a comprehensive annual budget that covers all projected costs and revenues necessary to support the HRSA-approved scope of project. The budget is detailed, consistent across all required forms and narratives, and is clearly tied to the proposed services and patient projections. This meets the requirement for budgeting for the scope of project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A and Budget Narrative detail all revenue sources: Federal (SAC Funding Request: $3,508,802), State Funds ($15,216,489), Local Funds ($1,476,861), Other Support ($3,369,896), and Program Income ($7,979,615), totaling $31,551,663. Form 3 - Income Analysis further breaks down patient service revenue (Medicaid, Medicare, Other Public, Private, Self Pay) and other income (State, Local, Contributions, Other). The narrative confirms: 'The budget is consistent across all submission documents, including the Budget Narrative and SF-424A, ensuring accuracy and alignment with HRSA requirements.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a complete accounting of all projected revenue sources, including federal, state, local, other support, and program income. These are clearly delineated in the budget forms and narrative, with totals matching across all documents. This meets the requirement to include all revenue sources supporting the Health Center Program project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws, Section 6 - Authority of the Board of Directors, states: 'The Board shall have the authority to establish policies governing the conduct of projects or programs undertaken by the corporation to achieve the purposes and objectives of NWHS.' Attachment 13: Health Center Program Compliance Narrative and Policy AD-200-102, Duties of Northwest Human Services Board of Directors, Section V. Authority, further state: 'Additionally, the governing Board maintains the authority for oversight, specifically: That organizational structure and documents do not allow for any other individual, entity, or committee to reserve approval authority or have veto power over the health center board with regard to the required authorities and functions.' Application narrative (Criterion 6: Governance) reiterates that no other entity or committee reserves approval authority or veto power over the board regarding required authorities and functions. Form 8 confirms no parent, affiliate, or subsidiary organization, and no contracts or subawards for substantive programmatic work.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws, board policies, and compliance narrative explicitly state that the governing board retains full authority for oversight of the Health Center Program project, and that no other entity or committee can override or restrict this authority. There are no co-applicant, parent, affiliate, or subrecipient arrangements that could limit board authority. The organizational chart and board policies reinforce this structure. Therefore, NWHS is compliant with the requirement that the board maintains authority over the Health Center Program project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws, Section 6 - Authority of the Board of Directors, lists the required authorities and responsibilities, including: holding monthly meetings (Section 4.A), approving selection/dismissal of the CEO (Section 6.A), approving annual budget and grant applications (Section 6.C, 6.G), approving services, locations, and hours (Section 6.I), evaluating performance (Section 6.D), establishing/adopting policies (Section 6.B, 6.C, 6.E, 6.L), and assuring compliance with laws and regulations (Section 6.F). Attachment 13: Health Center Program Compliance Narrative, under 'Governance: Board Authority,' cross-references these sections and explicitly identifies where each authority is documented. Policy AD-200-102, Duties of Northwest Human Services Board of Directors, also reiterates these authorities and confirms that no other entity or agreement restricts them.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and supporting policies clearly enumerate all required authorities and responsibilities of the governing board as specified by HRSA, and the application narrative provides explicit cross-references to the relevant sections. The documentation confirms the board holds all required authorities and that these are not delegated or restricted by any other entity or agreement. Therefore, NWHS is compliant with this requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws, Section 3 (Directors), Section 5 (Officers), and Section 6 (Authority of the Board of Directors) specify the process for selection, ratification, and removal of board members and officers. Section 3.F states, 'The Board shall have the power to appoint a Board member to fill any vacancy occurring in the Board...' Section 5.A states, 'Following an annual meeting of the membership, the Board shall elect a Chairperson from among the members of the Executive Committee from the prior year and the Board shall elect its remaining Officers from among its members.' Section 6.J and 6.K specify the Board's authority to remove Directors and Officers.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly establish that only the Board has the authority to select and remove board members and officers, including the board chair, and there is no evidence of any other entity, committee, or individual having this authority. The process for selection and removal is ongoing and documented. No evidence of impermissible outside influence is found.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Section 3.A states, 'The corporation shall be governed by a Board of Directors of not less than nine (9) nor more than twenty-five (25) members.' Section 3.C.2.a requires that 'The majority of Directors should be: (i) representative of the populations served by NWHS; (ii) live or work in NWHS's service area; (iii) use NWHS as their principal source of primary care or be served by NWHS programs within the approved Bureau of Public Health Care Scope of Services; and (iv) have utilized the services of NWHS within the last two years.' Section 3.C.2.b-c addresses non-user Directors, expertise, and income from the health care industry. Section 3.C.1 prohibits employees or immediate family members from serving.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly require the board to meet all HRSA composition requirements, including size, patient majority, representation, expertise, and conflict of interest. These requirements are restated in Policy AD-200-104 and referenced in the compliance narrative.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics lists 12 board members, with 7 identified as health center patients (Jan Margosian, Michelle Pecora, Ashley Jackson, Susan Scott, Jim Christian, Michael Wise, Yolanda Harris), which is 58%. The board includes members with expertise in finance, law, accounting, media, and healthcare, and all members live or work in the service area. No member has >10% income from the health industry. No employees or immediate family members are listed.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board composition meets all HRSA requirements: at least 9 members, patient majority (58%), demographic and expertise representation, and no conflicts of interest. This is supported by the board roster and Form 6A.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements states: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' The application requests 330(e) (CHC) funding and not solely 330(g), (h), or (i).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "NWHS is a 330(e) (CHC) grantee and does not request a waiver of the patient majority board composition requirement. Therefore, this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

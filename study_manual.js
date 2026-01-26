@@ -3,10 +3,11 @@ import axios from 'axios';
 import fs from 'fs';
 import dotenv from 'dotenv';
 
-dotenv.config();
+// Load environment variables
+dotenv.config({ path: '.env.batch' });
 
-const AZURE_DOC_ENDPOINT = process.env.AZURE_DOC_ENDPOINT || '';
-const AZURE_DOC_KEY = process.env.AZURE_DOC_KEY || '';
+const AZURE_DOC_ENDPOINT = process.env.AZURE_DOC_ENDPOINT;
+const AZURE_DOC_KEY = process.env.AZURE_DOC_KEY;
 
 // Path to your HRSA Compliance Manual PDF
 const PDF_PATH = process.argv[2] || 'Y:\\Umesh\\HRSA_Compliance_Manual.pdf';

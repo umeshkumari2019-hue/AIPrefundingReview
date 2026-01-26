@@ -1,0 +1,307 @@
+{
+  "fileHash": "60b468b78c1c562ef324e346e52df92d",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:17.791Z",
+  "applicationName": "QUALITY OF LIFE HEALTH SERVICES, INC._Application-242949.pdf",
+  "extractedContent": "Application Number: 242949\nFilename: QUALITY OF LIFE HEALTH SERVICES, INC._Application-242949.pdf\nProcessed: 2026-01-23T07:53:25.416Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "1. In the Project Narrative, Section 5.a (Conduct and Update Needs Assessment), the application states: 'QOLHS conducts a full Needs Assessment of its service area population every two to three years as part of its strategic planning process... The most recent Needs Assessment was completed in 2022 (finalized in 2023) and includes an analysis of the demographics and health care needs within the current service area and the availability of primary care, dental and behavioral health providers serving the low-income populations in the communities QOLHS serves.'\n2. The application further details data sources: 'Data sources used to develop these Needs Assessments include U.S. Census Bureau QuickFacts, Centers for Disease Control, Bureau of Labor Statistics, County Health Rankings, HRSA Data, Alabama Department of Public Health, USA Health Rankings/Alabama Life Expectancy.'\n3. The application includes a summary of the 2023 Community Health Needs Assessment in Attachment 14: Other Relevant Documents, with a table of contents and introduction, and references to the methodology and data sources.\n4. The application describes how the needs assessment is used for strategic planning, service delivery, and to inform the Board and executive team. It also describes how patient and community input is incorporated into the process.\n5. The application addresses special populations (e.g., Migratory and Seasonal Agricultural Workers, Residents of Public Housing) in the needs assessment and in the Project Narrative.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that a comprehensive needs assessment was completed in 2022 (finalized in 2023), within the required three-year timeframe. The needs assessment uses current, relevant data sources for the service area and special populations. The process is described as informing service delivery and strategic planning, and the results are presented to leadership and the Board. The application also shows that the needs assessment is used to identify gaps and expansion opportunities, and that patient and community input is incorporated. Therefore, the application is COMPLIANT with Element b - Update of Needs Assessment.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule(s) and Attachment 13: Health Center Program Compliance state: 'QOLHS's Board approved policy defines the terms and conditions of its SFD program, and its procedures define the program's implementation. The SFD program applies to all required and additional health services within the health center's scope of project. The SFD program applies uniformly to all QOLHS users and complies with all health center program requirements. The SFD program policy is reviewed and updated (as needed) by the Board at least once every three years. The SFD schedule was most recently reviewed and approved by the Board on February 20, 2025, to incorporate the most current Federal Poverty Guidelines.' The policy also states eligibility is based solely on family size and income, applies to all patients regardless of insurance status, and is reassessed annually or upon financial change.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence of a board-approved sliding fee discount policy, reviewed and updated within the required timeframe, and explicitly states that the policy applies uniformly to all patients and is based solely on family size and income. The policy is described in both the narrative and supporting attachments, and the board approval date is provided. The policy addresses all required areas, including eligibility, application, and uniform application.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule and Attachment 13: Health Center Program Compliance detail the discount structure: 'If family/household size and income are within column A (at or below 100% poverty level), a 100% discount will be applied, patient is responsible for a $25.00 nominal charge (medical) or $45.00 (dental). Column B (101–125% FPL): patient pays 25% (medical) or 35% (dental). Column C (126–175% FPL): patient pays 50%. Column D (176–200% FPL): patient pays 75%. Column E (above 200% FPL): full charge.' Form 5A shows all required services are provided directly (Column I), and the schedule is applied to all required and additional services. The policy also states, 'Sliding fee discounts are provided to all patients, regardless of insurance status, whose family incomes are at or below 200% FPG.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence demonstrates that the sliding fee discount schedule is structured in accordance with HRSA requirements for all Column I services, with clear discount classes and nominal charges for patients at or below 100% FPL. The schedule is board-approved, current, and applies to all required and additional services provided directly, as confirmed by Form 5A. The structure and application of the SFDS are fully compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule states: '*BASED ON THE 2025 FEDERAL POVERTY GUIDELINES PUBLISHED BY THE DEPARTMENT OF HEALTH AND HUMAN SERVICES (HHS) IN THE FEDERAL REGISTER ON JANUARY 16, 2025. SLIDING FEE SCALE IS EFFECTIVE UPON BOARD APPROVAL.' The narrative and Attachment 13 also state, 'The sliding fee discount schedule was most recently reviewed and approved by the Board to reflect the most current Federal Poverty Guidelines on February 20, 2025.' The income thresholds in the schedule match the 2025 FPG.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides explicit evidence that the sliding fee discount schedule is based on the most recent Federal Poverty Guidelines, with the board approval date and effective date aligning with the 2025 FPG. The narrative confirms an annual review and update process. This meets HRSA compliance for this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff provides detailed descriptions for the President/Chief Executive Officer, Vice President/Chief Medical Officer, Vice President of Operations, and Senior Vice President of Financial Services, including required education, experience, knowledge, and specific duties. The Project Narrative (Section: Management Team) also summarizes the qualifications and responsibilities for each key management staff member. Attachment 5: Biographical Sketches for Key Management Staff further documents the experience and qualifications of current staff. Form 2 - Staffing Profile lists the key management positions and FTEs.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application contains both position descriptions and biographical sketches for all key management staff, detailing required qualifications, experience, and job duties. This meets HRSA requirements for documentation of key management staff positions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "The Project Narrative (Section: Management Team) states: 'The President and Chief Executive Officer (CEO) is a direct and full-time employee of the health center. The CEO is responsible for successful oversight of the clinical, fiscal, and operations management including oversight of key management staff in carrying out the day-to-day activities of the health center necessary to fulfill the HRSA-approved scope of project.' The CEO is listed as a direct hire (Form 2 - Staffing Profile), and the Bylaws (Article III, Section 3.2) specify that the CEO is selected, hired, evaluated, and dismissed by the Board of Directors and is directly accountable to the Board. The organizational chart (Attachment 3) shows the CEO at the top, reporting to the Board and overseeing all other key management staff. The budget and salary tables confirm the CEO is a direct employee.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is clear and consistent documentation that the CEO is directly employed by the health center, reports to the Board, and oversees all other key management staff in the day-to-day operations. This meets all HRSA compliance requirements for CEO responsibilities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements lists contracts for required services (e.g., diagnostic laboratory, radiology, after-hours coverage, gynecological care, pharmaceutical services, translation, etc.) and notes that these are formal written contracts or agreements. Attachment 13: Health Center Program Compliance states: 'QOLHS complies with all requirements defined in the Health Center Program Compliance Manual related to overseeing contracts. This oversight includes maintaining formal written contracts or agreements for required services, which conforms to Public Health Service Act Section 330 requirements and administrative regulations for Medicare and Medicaid programs. QOLHS provides oversight and monitors contractors to ensure their performance aligns with federal or state healthcare program requirements. This oversight includes ensuring access to books and records, implementing a compliant sliding fee scale, maintaining accessibility to care, and ensuring quality improvement, credentialing, and competency treating the target population.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a detailed list of contracts, describes oversight and required provisions, and explicitly states compliance with HRSA requirements for contract provisions. There is no indication of missing required contract provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2: '[ ] Yes [X] No' to 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project?' and '2c. Total number of contracts for substantive programmatic work and/or subawards: 0'. The application narrative (Capacity section) also states: 'QOLHS solely carries out the scope of its project and does not utilize any subrecipients to carry out the health center project. QOLHS's organizational structure demonstrates that the health center maintains direct control and authority over all aspects of the scope of project. The health center engages in limited contracting only for services that are either not required services within the scope of project or represent a small part of overall clinical operations.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This element is not applicable because QOLHS does not contract with another organization to perform substantive programmatic work (i.e., does not contract out the majority of health care providers or a major portion of the scope of project). Therefore, HRSA prior approval is not required.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2: '[ ] Yes [X] No' to 'Do you currently have, or plan to utilize: ... b) Subawards to carry out a portion of the proposed scope of project.' and '2c. Total number of contracts for substantive programmatic work and/or subawards: 0'. The application narrative (Capacity section) also states: 'QOLHS solely carries out the scope of its project and does not utilize any subrecipients to carry out the health center project.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This element is not applicable because QOLHS does not make subawards to carry out any portion of the scope of project. Therefore, HRSA prior approval is not required.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2: '[ ] Yes [X] No' to 'Do you currently have, or plan to utilize: ... b) Subawards to carry out a portion of the proposed scope of project.' and '2c. Total number of contracts for substantive programmatic work and/or subawards: 0'. The application narrative (Capacity section) also states: 'QOLHS solely carries out the scope of its project and does not utilize any subrecipients to carry out the health center project.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This element is not applicable because QOLHS does not have any subawards. Therefore, there are no subaward agreements that need to meet HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application includes extensive narrative and documentation of collaborative relationships with local hospitals (e.g., Gadsden Regional Medical Center, Marshall Medical Centers), specialty providers (e.g., Women's Health Partners, Oral Surgery Associates, Kazi Optometry), and social service organizations (e.g., United Way, Community Action Agency, East Coast Migrant Head Start, Greater Gadsden Housing Authority, Phenix City Housing Authority, Marshall County Home Place). Attachment 7: Summary of Contracts and Agreements lists formal referral and contract relationships for services not available at the health center. Attachment 9: Collaboration Documentation contains letters of support from hospitals, specialty providers, social service agencies, housing authorities, and schools. The Project Narrative (Collaboration section) describes how QOLHS coordinates with these partners to provide access to specialty, hospital, behavioral health, dental, vision, transportation, nutrition, and social support services. The application details protocols for referral tracking, closed-loop follow-up, and care coordination. The resource lists in Attachment 14 further demonstrate integration with community-based organizations.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is clear, specific, and extensive documentation of ongoing collaboration with a broad range of providers and organizations in the service area, including formal agreements, referral arrangements, and joint programs. The application describes both the process and the outcomes of these collaborations, including how they support access to services not available directly through the health center (e.g., specialty care, hospital services, nutrition, transportation, housing, behavioral health, etc.). The inclusion of letters of support and detailed contract summaries provides strong evidence of active, current partnerships. The application also describes systems for tracking referrals and ensuring continuity of care, which demonstrates integration. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The Project Narrative (Collaboration section) and Attachment 9: Collaboration Documentation provide evidence of relationships with other FQHCs and look-alikes, including Alabama Regional Medical Services, Bayou La Batre Area Health Development Board, Capstone Health, Central North Alabama Health Services, Christ Health Center, Franklin Primary Health Center, Health Services, Inc., Northeast Alabama Health Services, Rural Health Medical Program, Southeast Alabama Rural Health Associates, Thrive Alabama, Valley Healthcare System, and Whatley Health Services. Letters of support from these organizations are included. The application states, 'QOLHS maintains extensive relationships with other regional FQHCs and works informally to improve access to services by referring patients for services provided by one of the organizations but not the other.' QOLHS is an active member of the Alabama Primary Health Care Association (APHCA), which facilitates collaboration, data sharing, and joint initiatives among FQHCs. The application also documents collaboration with the Alabama Department of Public Health and other state/local health programs. The GeoNavigator software is referenced, showing QOLHS is the only FQHC with a physical clinic in its service area, but relationships with neighboring FQHCs are maintained.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear documentation of ongoing collaboration and coordination with other federally-funded and state/local health services delivery projects, including formal and informal relationships with other FQHCs, participation in the state PCA, and partnerships with the state health department. The inclusion of numerous letters of support from other health centers, and the narrative description of data sharing, referral arrangements, and joint initiatives, demonstrate that QOLHS meets and exceeds the minimum requirement to establish and maintain relationships with other health centers in the service area. The application also explains that there are no other FQHCs physically located in the immediate service area, but relationships with neighboring FQHCs are robust. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Multiple sections of the application confirm participation in Medicaid, CHIP, Medicare, and other insurance programs:\n- Project Narrative: 'QOLHS serves a combination of public, private and uninsured patients.'\n- Patient Payor Mix: '23% are insured through Medicaid, and 17% are Medicare recipients.'\n- Form 3 - Income Analysis: Medicaid, Medicare, Private, and Self Pay are all listed as payer categories, with projected income and patient counts for each.\n- Attachment 13: Health Center Program Compliance: 'The health center has contractual agreements with Medicaid, CHIP, Medicare, and private third-party insurers to collect reimbursement of its costs.'\n- Form 5A: Required Services Provided: All required services are provided, and billing policies reference all major payors.\n- Site listings (Form 5B) confirm Medicare billing numbers for all sites.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence that the health center participates in Medicaid, CHIP, Medicare, and private insurance programs. This is demonstrated through payer mix data, explicit statements in the narrative, and the existence of billing infrastructure for these programs. The health center also has policies and procedures in place for billing and collections from these payors, and the budget and income analysis show actual and projected revenue from each. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "Evidence is found in several places:\n- Attachment 13: Health Center Program Compliance: 'QOLHS has Board-approved policies and procedures for billing and collections to ensure that the organization complies with all HRSA program requirements. ... QOLHS's billing and collection policies explicitly state that no patient is denied services because of an inability to pay. ... QOLHS has a Board approved policy designed to address waiving or reducing fees under certain circumstances to eliminate any financial barrier to care for patients experiencing hardships, such as homelessness, major medical condition, sudden personal catastrophe, natural disaster or domestic violence. QOLHS will extend a waiver to patients who meet the criteria and cannot pay. The patient completes a form which documents the specific hardship. The CEO or VP of Financial Services review the information and make the determination to waive and/or reduce the fee.'\n- Sliding Fee Discount Schedule (Attachment 10): Board approved, with explicit nominal charges and discount classes, and reference to policy for waiving fees in hardship.\n- Project Narrative: 'While all patients are asked to render payments that may be due at the time of service, QOLHS understands that there are legitimate situations in which a patient simply cannot afford to pay. QOLHS has a Board approved policy designed to address waiving or reducing fees under certain circumstances to eliminate any financial barrier to care for patients experiencing hardships.'\n- Form 1C - Documents On File: Billing and Collections policies/procedures, including those regarding waivers or fee reductions and refusal to pay, are on file and up to date.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides detailed, board-approved policies and procedures for waiving or reducing fees, including the process for documenting hardship, the specific circumstances under which waivers/reductions are granted, and the roles of staff in approving such waivers. The policies are reviewed regularly and are implemented in practice, as described in the narrative and compliance attachments. The sliding fee policy is current, board-approved, and covers all required services. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a comprehensive budget package: SF-424A, Budget Narrative, and multiple tables (see Budget Narrative, SF-424A, Form 3 - Income Analysis, and Form 2 - Staffing Profile). The budget is detailed for each year of the project period and aligns with the scope of project as described in the Project Narrative and Forms 5A/5B. The budget narrative explicitly states: 'QOLHS prepares its annual budget and, in coordination with the Service Area Competition grant, constructs a project budget through a collaborative planning process.' The Board of Directors reviewed and approved the budget, and the budget supports the projected patient volumes and services (see Budget Narrative, Summary Page, and Project Narrative).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a complete annual budget that covers all projected costs and revenues for the entire HRSA-approved scope of project, including all sites and services. The budget is consistent across all required forms and is Board-approved. The budget narrative and SF-424A show that the budget was developed specifically for the HRSA application and reflects the total scope of project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A, Budget Narrative, and Form 3 - Income Analysis all detail revenue sources beyond the Health Center Program award. These include: Program Income (Medicaid, Medicare, Private, Self-Pay), State funds, and Other Support (Pharmacy Revenue, Hep C Pharmacy Revenue, Managed Care Revenue, Miscellaneous Revenue, Interest Income). The Budget Narrative and SF-424A Section C list these sources and amounts. Form 3 - Income Analysis provides payer mix and projected income by payer. The Budget Narrative states: 'This revenue will be generated from a variety of sources, including patient services, 340B pharmacy revenue, federal grants, state funding, interest income, and other revenue sources.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly includes all projected revenue sources that will support the Health Center Program project, not just the HRSA award. The budget forms and narrative provide a breakdown of revenues by payer and other sources, demonstrating compliance with the requirement to include all revenue sources.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 3.1 states 'The Board of Directors is the governing authority of Quality of Life Health Services, Inc.' and lists all required authorities (e.g., selection/dismissal of CEO, budget approval, policy development, oversight of all activities, etc.). Attachment 13: Health Center Program Compliance crosswalks these requirements to specific bylaw citations. The application narrative (Governance section) affirms that the Board has full authority, and that no individual, entity, or committee has veto power over the Board. Form 8 confirms QOLHS is not part of a parent, affiliate, or subsidiary organization and does not contract out substantive programmatic work.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly grant the Board all required authorities and oversight functions. The application narrative and compliance attachments confirm that no other entity or individual has approval or veto power over the Board. There are no co-applicant or parent/affiliate arrangements, and contracts do not infringe on Board authority. This meets HRSA requirements for maintenance of Board authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 3.1 lists all required Board authorities, including: selection/dismissal of CEO, approval of annual budget and grant applications, approval of scope of services, locations and hours, evaluation of health center performance, policy adoption, and compliance with laws. Attachment 13: Health Center Program Compliance provides a table mapping each HRSA-required Board authority to the exact bylaw section. The application narrative (Governance section) further describes Board activities and confirms these authorities are exercised. Form 6A shows an active Board with regular meetings and documented oversight.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and compliance documentation clearly enumerate all HRSA-required Board authorities and responsibilities. The application narrative and Board documentation confirm these are implemented in practice. There is no evidence of missing or restricted authorities. This satisfies the HRSA requirement for Board authorities and responsibilities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 3.3 (Selection/Election Process for Board Members) and Section 3.6 (Vacancies/Resignations/Removal) specify the nomination, election, and removal process for board members. The bylaws state that the Nominations Committee submits nominations to the Board, and elections are held by the Board. Removal requires a two-thirds vote of the Board. There is no indication that any other entity, committee, or individual outside the Board has authority over selection or removal. The application narrative (Governance section) and Attachment 13 (Health Center Program Compliance) further confirm that no other entity has approval authority or veto power over the Board.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly outline a process for selection and removal of board members that is controlled by the Board itself, with no external entity or individual having authority over the selection of the board chair or the majority of board members. This meets the HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 3.4 (Number and Terms of Board Members) and Section 3.5 (Composition of Board) require a board of not less than 9 nor more than 15 persons, with at least 51% being patients of the health center, and specify that patient members must reasonably reflect the race/ethnicity, special status, socioeconomic status, age, and gender of the center's population. Non-patient members are selected for their expertise and must be representative of the service area, and no more than half of non-patient members may earn more than 10% of their income from the health care industry. Immediate family members of employees are prohibited from board membership. This is further confirmed in Attachment 13 (Health Center Program Compliance) and Form 6A (Current Board Member Characteristics).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and supporting documentation explicitly require board composition to meet all HRSA requirements regarding size, patient majority, demographic representation, expertise, and conflict of interest. This is fully compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics lists 13 board members, with 7 of 12 (58%) identified as health center patients, and all members living or working in the service area. The board includes members with expertise in finance, business, education, public housing, healthcare, and construction. No member is indicated as earning more than 10% of income from the health care industry. The application narrative and Attachment 13 confirm that the board composition is reviewed annually for compliance with HRSA requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board composition, as documented in Form 6A and supported by the narrative, meets all HRSA requirements for patient majority, relevant expertise, and community representation. The board size is within the required range, and there are no conflicts of interest. This is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements states: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' The application narrative and funding request confirm that QOLHS receives 330(e) funding.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant receives 330(e) funding and is not requesting a waiver of the patient majority board composition requirement. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

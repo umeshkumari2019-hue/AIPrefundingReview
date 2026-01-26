@@ -1,0 +1,307 @@
+{
+  "fileHash": "81ce8a7ee85c09e41e654469768539cc",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:17.927Z",
+  "applicationName": "CHERRY STREET SERVICES INC_Application-242959.pdf",
+  "extractedContent": "Application Number: 242959\nFilename: CHERRY STREET SERVICES INC_Application-242959.pdf\nProcessed: 2026-01-23T00:18:31.722Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, under '5. Describe how you will: a. Conduct and update your needs assessment,' the application states: 'Needs assessments are formally updated at least every three years, with interim analyses conducted as new data become available. Cherry Health uses these findings to monitor trends in chronic disease, behavioral health, access to care, and social determinants of health. The results guide programmatic adjustments, service expansions, and resource allocation to ensure Cherry Health remains responsive to the evolving needs of the community. The most recent Cherry Health Needs Assessment was completed in 2024.' The application further describes the use of multiple data sources (UDS, CHNAs, Census, etc.) and the integration of special population data (e.g., homeless, MSAW). The narrative details how the needs assessment informs service delivery and is presented to the Board of Directors. There is also evidence of annual review and ongoing monitoring.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear and specific evidence that a formal needs assessment is completed at least every three years (with the most recent in 2024), uses current data sources for the service area and special populations, and is used to inform and improve service delivery. The process is described as ongoing, with annual reviews and interim analyses. The needs assessment is integrated into strategic planning and Board oversight, meeting all aspects of the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13: Health Center Program Compliance states: 'The organization's Sliding Fee Policy and procedures ensure uniform application of sliding fee discounts to all required and additional services as detailed in the Sliding Fee Discount Schedule (SFDS) Attachment for all patient out of pocket expenses. Cherry Health's billing software is designed to align with these policies and procedures, and applies discounts appropriately based on patient's discount eligibility through the SFDP.' The narrative further details definitions of income and family, methods for assessing eligibility, and states: 'Cherry Health's Finance Committee and Board of Directors reviews and approves the nominal fee.' The Bylaws (Attachment 2) Section III.H.2.g. require the Board to adopt and evaluate policies related to the sliding fee discount program at least every three years. Form 1C confirms the existence of board-approved sliding fee discount program policies and procedures.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is clear, specific evidence that Cherry Health has board-approved sliding fee discount program policies, that these policies apply uniformly to all patients and services, and that they address required areas such as income/family definitions, eligibility assessment, and nominal charges. The Board's oversight and approval are documented in both the narrative and the Bylaws. The policies are described as applying to all patients and all required/additional services, and the process for review and approval is detailed.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A - Required Services Provided shows all required services (General Primary Medical Care, Diagnostic Laboratory, Screenings, Preventive Dental, etc.) are provided directly (Column I) by Cherry Health. Attachment 10: Sliding Fee Scale 2025.pdf and the narrative in Attachment 13 detail a five-category discount schedule (100%, 75%, 50%, 25%, 0%) based on income and family size, with a nominal $20 charge for those at or below 100% FPG. The narrative states: 'Cherry Health's sliding fee scale adheres to Health Center Program Requirements and includes the required number of categories and income ranges.' The SFDS is applied to all required and additional services provided directly.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence demonstrates that Cherry Health provides all required services directly (Column I) and applies its SFDS consistently to those services. The SFDS structure matches HRSA requirements (five categories, nominal charge for ≤100% FPG, partial discounts up to 200% FPG, no discount above 200% FPG). The policies and the actual schedule are aligned, and the application of the schedule to all direct services is confirmed.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Scale 2025.pdf and the narrative in Attachment 13 both state: 'BASED ON 2025 FEDERAL POVERTY GUIDELINES.' The tables show the 2025 FPG amounts for each family size, and the narrative compares 2024 and 2025 FPGs, noting the percentage increase. The application states: 'The 100% discount category includes the maximum amount of income that a family (household) can earn to fall within Federal Poverty Guidelines (FPG).' The SFDS tables are labeled as effective March 2025 and explicitly reference the 2025 FPG.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The SFDS provided is based on the most recent (2025) Federal Poverty Guidelines, as required. The amounts for each family size match the 2025 FPG, and the application narrative confirms the update from 2024 to 2025. There is no evidence of outdated guidelines being used.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff includes detailed, competency-based job descriptions for each key management staff position (CEO, CFO, CMO, COO, CPO, CDO). Each job description contains required education, experience, duties/functions, and skills/competencies. Attachment 5: Biographical Sketches for Key Management Staff provides resumes/biographical information showing qualifications and experience for each individual in these positions.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both the required position descriptions and biographical sketches for all key management staff. The position descriptions clearly outline the duties/functions and required training/experience for each role. The biographical sketches demonstrate that the individuals currently holding these positions meet or exceed the stated qualifications. This meets the HRSA requirement for documentation of key management staff positions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Form 2 - Staffing Profile lists the Project Director/CEO as a direct hire (1.00 FTE, not contracted). The job description for the CEO (Attachment 4) states the CEO 'reports to: Board of Directors' and is 'responsible to the board of directors for the management and administration of the organization including policy implementation, planning, fiscal and operational management, program development, public relations, and management and development of staff.' The organizational chart (Attachment 3) shows the CEO reporting directly to the Board and overseeing all other Chiefs. The Bylaws (Attachment 2) Section III.H.2.n state the Board is responsible to 'hire, direct, evaluate, supervise, and dismiss the Chief Executive Officer of the Corporation, who shall report directly to the Board and...carry out independent, day-to-day oversight of the Health Center Program activities solely on behalf of the Board.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence confirms that the CEO is a direct employee, reports to the Board, and has clear responsibility for overseeing key management staff and day-to-day operations. The organizational chart, job description, and Bylaws all support this structure. This fully meets HRSA requirements for CEO employment, reporting, and oversight responsibilities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements lists all contracts and referral arrangements for required services (e.g., Quest Diagnostics, Corewell Health, CVS Pharmacy, Professional Treatment Services, Voices for Health). The application narrative (Attachment 13: Health Center Program Compliance) states: 'When federal programs are incorporated within the HRSA-approved scope of project, all contractors and subrecipients are required to adhere to the distinct statutory, regulatory, and policy requirements associated with those funding streams. Oversight includes: Executing written agreements that clearly define deliverables, performance expectations, reporting requirements, and applicable compliance obligations.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a detailed summary of contracts, the nature of services provided, and the process for tracking patient care and follow-up. The compliance narrative describes oversight mechanisms and contract provisions to ensure compliance with federal requirements. This demonstrates that contracts supporting the HRSA-approved scope of project include the required provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2a: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project?' is answered 'No.' The application narrative and staffing profile (Form 2) confirm that all clinical and administrative staff are direct hires, and no contracts for substantive programmatic work are in place.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Because Cherry Health does not contract with another organization to perform substantive programmatic work (i.e., does not contract with a single entity for the majority of health care providers), this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2b: 'b) Subawards to carry out a portion of the proposed scope of project' is answered 'No.' Attachment 13: Health Center Program Compliance states: 'Cherry Health does not utilize subrecipients to carry out any portion of the HRSA-approved scope of project. All services are delivered directly by Cherry Health or through contractual agreements that are managed and monitored in accordance with 45 CFR Part 75 procurement standards.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no subawards in place; all services are provided directly or through contracts for discrete services, not subrecipient arrangements. Therefore, this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2b: 'b) Subawards to carry out a portion of the proposed scope of project' is answered 'No.' Attachment 13: Health Center Program Compliance reiterates that no subrecipients are used.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no subawards; thus, there are no subaward agreements to review for required provisions. This element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application provides extensive narrative and documentation of collaborative relationships with local hospitals (Corewell Health, Mercy Health St. Mary’s, Pennock Hospital, Mary Free Bed Rehabilitation Hospital, United Memorial Hospital), specialty providers (e.g., Quest Diagnostics, Redwood Laboratory, Cologuard, Professional Treatment Services), and social service organizations (Area Agency on Aging of Western Michigan, Baxter Community Center, Kent ISD Bright Beginnings, Community Food Club, Dégagé Ministries, Family Promise, Health Net of West Michigan, Legal Aid of Western Michigan, Literacy Center of West Michigan, Lakeshore Regional Entity, Mid-State Health Network, Ferris State University, etc.). Letters of support from these organizations are included in Attachment 9. The narrative describes joint initiatives (e.g., Kent County Opioid Task Force, tele-dentistry pilot to reduce ED use, medical-legal partnerships, food insecurity programs), formal referral arrangements for specialty and hospital care, and integrated care coordination processes.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center provides clear, specific, and multi-faceted evidence of ongoing, documented collaboration with a broad range of providers and programs in the service area, including those serving special populations. These collaborations are both described in the narrative and substantiated by letters of support. The application details how these relationships provide access to services not available directly through the health center (e.g., hospital admissions, specialty diagnostics, legal services, food assistance), and how care coordination and integration are operationalized. This meets and exceeds the requirement for documentation of collaborative efforts.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application provides narrative and documentation of collaboration with other HRSA-supported health centers and look-alikes, specifically naming Catherine’s Health Center (FQHC Look-Alike) and Family Health Care (FQHC). Letters of support from both are included in Attachment 9. The narrative describes regular coordination with Catherine’s Health Center for patient referrals, insurance enrollment, and service navigation, as well as joint outreach and continuity of care efforts with Family Health Care. The application also describes active participation in the Michigan Primary Care Association (MPCA), the Health Center Controlled Network (MQIN), and regional/state health initiatives. The service area map and table (Attachment 1) identify other providers in the area. The application further describes collaboration with local health departments, schools, and other state/local health programs.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center provides clear documentation of established and ongoing relationships with other HRSA-funded health centers and look-alikes in the service area, as required. The application includes letters of support, describes referral and care coordination processes, and details participation in state and regional networks. The narrative demonstrates integration with other federally, state, and locally funded health service projects serving similar populations. This meets the minimum and intent of the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Attachment 13: Health Center Program Compliance, Billing and Collections section: 'Cherry Health participates with many insurance plans, including Medicare, Medicaid, CHIP, and other private assistance programs or insurances.' Also, Form 3: Income Analysis shows projected income from Medicaid, Medicare, and Private insurance. The Project Narrative and Budget Justification further reference participation in these programs and billing for these payers.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides direct statements of participation in Medicaid, CHIP, Medicare, and private insurance, and this is further substantiated by the income analysis and billing system descriptions. The health center's billing infrastructure and payer mix confirm active participation in the required insurance programs, meeting HRSA compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "Attachment 13: Health Center Program Compliance, Billing and Collections section: 'Cherry Health's Billing and Collections procedure maintains a schedule of fees for specific patient care services... Where appropriate, and when financial support is available, Cherry Health maintains a schedule of discounts based on the federal poverty guidelines implemented to provide greater access to services for patients with low incomes. The schedule of discounts is applied through our Sliding Fee Discount Program.' Also, the Sliding Fee Discount Program section details the process for assessing eligibility, the nominal fee, and board approval. The Sliding Fee Discount Schedule (Attachment 10) is provided, and the Project Narrative describes board approval and review of the nominal fee and policies.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence of board-approved policies and procedures for waiving or reducing fees, including a detailed sliding fee discount schedule, eligibility assessment based on income and family size, and explicit statements that no one is denied care due to inability to pay. The Board's role in approving and reviewing these policies is documented, and the process for applying discounts is described in detail, meeting HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a detailed SF-424A: Budget Information - Non-Construction Programs, Budget Narrative, and Budget Justification. The SF-424A and Budget Narrative provide a comprehensive annual budget totaling $80,219,483, with line-item breakdowns for personnel, fringe, supplies, contractual, and other costs. The budget narrative explicitly states: 'Cherry Health's proposed budget is carefully structured to support the planned increases in patients and services outlined in our scope of project and work plan. All figures are consistent across the Budget Narrative, SF-424A, and supporting worksheets. The budget directly aligns with our proposed work plan activities, including staffing, care coordination, enabling services, facility operations, and technology enhancements needed to accommodate projected patient growth.' The budget aligns with the patient projections and services described in the scope of project (see Form 1A, Project Narrative, and Budget Narrative).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a complete, detailed annual budget that includes both costs and revenues, is consistent across all application documents, and is explicitly linked to the health center's scope of project and projected patient/service increases. The budget narrative and SF-424A demonstrate that the health center has developed and submitted an annual budget to HRSA that reflects the costs and revenues necessary to support the proposed/approved scope of project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A, Budget Narrative, and Form 3: Income Analysis all provide detailed breakdowns of revenue sources. The SF-424A Section A and the Budget Narrative list: Federal (HRSA) funding ($9,213,116), State funding ($1,749,881), Local funding ($104,346), Other federal funding (SAMSHA, ACL, AmeriCorps: $1,766,302), Contributions and fundraising ($670,777), Private grants/contracts ($1,410,116), Other (pharmacy, interest, rent, performance incentives, etc.: $24,764,510), and Program income ($40,540,435). Form 3: Income Analysis further details patient service revenue by payer (Medicaid, Medicare, Private, Self Pay) and other income. The budget narrative explains the methodology for estimating program income and describes all anticipated revenue sources supporting the project.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly includes all projected revenue sources in addition to the Health Center Program award, as required. The budget narrative and Form 3: Income Analysis provide detailed, itemized projections for all revenue streams, including federal, state, local, private, and program income. This demonstrates that the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2 - Cherry Street Services, Inc Bylaws.pdf, Section III. Board of Directors, H. Power and Functions, states: 'The authorities, functions, responsibilities and mission of the Board shall be consistent with Section 330 of the Public Health Service Act ... and shall include, but not limited to, the power and authority necessary to establish and pursue the mission, goals, objectives and services of the Corporation, and management of all the affairs, property, and interests of the Corporation. ... The Board also has the power to dissolve the Corporation. The Board has specific responsibility for the oversight of the Health Center Program.' The Project Organizational Chart (Attachment 3) shows the Board of Directors at the top, overseeing the CEO, who in turn oversees all other executives. The application narrative (Criterion 4, Capacity) confirms the Board's direct oversight of the CEO and that 'no individual, entity, or committee reserves or has approval/veto power over the board with regard to the Board's authorities and functions.' Form 8 confirms there is no parent, affiliate, or subsidiary organization, and no contract for substantive programmatic work.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and organizational chart clearly establish that the Board of Directors has final authority over the Health Center Program project, including oversight of the CEO, approval of budgets, policies, and strategic direction. There is no evidence of any external entity or individual holding veto or approval power over the Board. The Board's authorities are not delegated or limited by any contract or agreement. This meets HRSA's requirement for maintenance of board authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2 - Cherry Street Services, Inc Bylaws.pdf, Section III. Board of Directors, H. Power and Functions, specifically enumerates the following required authorities and responsibilities: (a) holding monthly meetings; (b) establishing policies for the conduct of the Corporation and reviewing all policies and procedures; (c) establishing, maintaining, and updating personnel policies; (d) adopting and updating health care policies, including scope and availability of services, service site locations, and hours of operation; (e) providing direction for long-range planning; (f) establishing a process for hearing and resolving patient grievances; (g) adopting and evaluating sliding fee discount program, quality improvement and assurance, and billing and collections policies; (h) establishing a conflict of interest policy; (i) adopting an affirmative action policy; (j) establishing the organizational structure; (k) approving the annual operational budget and project plan; (l) selecting an independent auditor and accepting the annual audit report; (m) evaluating operational activities at least annually, including services, utilization, productivity, patient satisfaction, and achievement of project objectives; (n) hiring, directing, evaluating, supervising, and dismissing the CEO; (o) assessing and prioritizing unmet needs of the target population; (p) ensuring compliance with applicable laws and regulations; (q) controlling the receipt and allocation of resources; (r) ensuring fulfillment of Board member responsibilities; (s) reviewing and acting on all legal matters; (t) approving all contracts and loans requiring unbudgeted expenditures over $50,000. The application narrative (Attachment 13 and Criterion 6 - Governance) cross-references these authorities and confirms their implementation.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws enumerate all HRSA-required board authorities and responsibilities, including those related to CEO selection/dismissal, budget approval, service scope and sites, policy adoption, strategic planning, evaluation, compliance, and more. The application narrative and compliance attachment further confirm that these authorities are implemented in practice. There is no evidence of any restriction or delegation of these authorities to another entity or individual. This meets HRSA's requirement for outlining and implementing all required board authorities and responsibilities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2 - Cherry Street Services, Inc Bylaws.pdf, Section III. Board of Directors, A. Election; Number; Terms of Office, C. Removal, D. Resignation and Vacancies, and IV. Officers, B. Election of Officers. The bylaws state that the board itself, via a nominating committee, nominates candidates for director and officer positions, and the board votes to elect directors and officers. Removal is by two-thirds vote of the board. There is no provision for any other entity, committee, or individual outside the board to select the board chair or majority of board members.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws provide a clear, board-controlled process for selection and removal of board members and officers. There is no evidence of outside control over board composition or chair selection. The process is compliant with HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2 - Cherry Street Services, Inc Bylaws.pdf, Section III.B. Qualifications and Composition: 'Board membership shall be comprised of at least 51% Consumers of the Corporation's health services. Consumers must reasonably represent the demographic factors of the Corporation's patients (including race, ethnicity, and gender) as such demographic factors are reflected in the Corporation's Uniform Data System report/application and should live in the service area.' The bylaws also specify that non-consumer directors must represent the whole community and be selected for relevant expertise, and that no more than 50% of non-consumer directors may derive more than 10% of their income from the health care industry. Employees and immediate family members of employees (except the CEO) are prohibited from serving as directors.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly require the board to meet all HRSA composition requirements: minimum 51% patient/consumer members, demographic representation, expertise among non-patient members, limits on health industry income, and exclusion of employees/family. This is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics: 14 board members are listed. 8 of 14 (57%) are identified as health center patients. All board members live or work in the service area. The board includes members with expertise in entrepreneurship, health care law, nursing, advocacy, real estate finance, pastoral work, education, firefighting/paramedic, law, accounting, rural area needs/mental health, sales consulting, HR/governance, and human services. Only 2 of 14 derive more than 10% of income from the health care industry. Bylaws require a minimum of 15 and maximum of 21 members; the application narrative and board roster indicate the current number is within this range.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board meets all HRSA requirements: at least 51% patient/consumer members, representation of the community, expertise, income limits, and residency/work in the service area. Documentation is clear and complete.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements: 'Alert: This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' The application requests and receives 330(e) (CHC) funding.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center receives 330(e) funding and is not requesting a waiver of the patient majority board composition requirement. Therefore, this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

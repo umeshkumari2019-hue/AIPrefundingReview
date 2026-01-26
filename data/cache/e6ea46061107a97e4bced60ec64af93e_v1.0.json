@@ -1,0 +1,307 @@
+{
+  "fileHash": "e6ea46061107a97e4bced60ec64af93e",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:18.041Z",
+  "applicationName": "ALIVIO MEDICAL CENTER, INC_Application-243049.pdf",
+  "extractedContent": "Application Number: 243049\nFilename: ALIVIO MEDICAL CENTER, INC_Application-243049.pdf\nProcessed: 2026-01-22T22:36:04.030Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, Section A.5.a, the application states: 'Alivio conducts a comprehensive needs assessment at least every three years for strategic planning and development purposes. Needs assessments are designed using secondary data collected and analyzed from a variety of sources, including Alivio's hospital partners (Lurie Children's Hospital, MacNeal Hospital, Mount Sinai Hospital, Rush University Medical Center, St. Anthony Hospital, and Stroger Hospital of Cook County), public health departments (Chicago, Cook County, and Illinois), and community organizations throughout Alivio's service area. The needs assessment is also informed by patient surveys and provider input.' The application further describes that the most recent review and approval of the service area was in September 2025, and the needs assessment uses data from 2023-2025 (e.g., UDS 2024, CDC 2024, ACS 2023, Map the Meal Gap 2021, etc.). The application also details annual review processes and Board involvement.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear and specific evidence that a comprehensive needs assessment is completed at least every three years, most recently in September 2025, and is used to inform and improve service delivery. The assessment uses up-to-date, multi-source data and includes input from patients, providers, and community organizations. The process and timing are consistent with HRSA requirements. There is also evidence of annual review and Board oversight. Therefore, the application is COMPLIANT with Element b.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13: Health Center Program Compliance Narrative, Sliding Fee Discount Program section: 'Alivio's practice management system is updated annually to reflect the federal poverty tables that are used to determine a patient's eligibility for the sliding fee discount. In addition, the Finance department conducts an annual SFDP training for all front office staff on the changes to the SFDP policy. This ensures that patient discounts are applied uniformly and fairly to all patients. All patients are informed of the SFDP and offered an opportunity to apply.' Also, Attachment 2: Bylaws, Article III, Section 1g: 'to establish and adopt policies for the organization, including personnel policies, program policies, and by-laws, related to the operations of the health center.' The application narrative (Section 5a and 5b) describes annual board review and approval of the SFDS policy and schedule.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that the sliding fee discount program policies are board-approved, apply uniformly to all patients, and are reviewed and updated annually. The policies address eligibility, application, and uniform administration, and are documented in both the narrative and attachments.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A: Services Provided shows that all required services (General Primary Medical Care, Diagnostic Laboratory, Screenings, Family Planning, Immunizations, Well Child, Gynecological, Obstetrical, Preventive Dental, Pharmaceutical, Case Management, Eligibility Assistance, Health Education, Outreach, Transportation, Translation) are provided directly (Column I). Attachment 10: Sliding Fee Discount Schedules shows a discount structure for all these services, with full discounts for ≤100% FPG and gradated discounts up to 200% FPG. The narrative in Attachment 13 and the Project Narrative (Section 5b) confirms that the SFDS is applied to all direct services and is consistent with policy.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The SFDS applies to all Column I services as required, with a full discount for those at or below 100% FPG and gradated discounts for those up to 200% FPG, as shown in the sliding fee schedule. The application of the SFDS to all direct services is confirmed by both the forms and the narrative.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedules is labeled 'Effective: July 2025' and is 'Based on 2025 Federal Poverty Guidelines.' The Project Narrative and Attachment 13 both state that the sliding fee schedule is updated and approved annually by the board, based on the U.S. federal poverty guidelines as soon as possible after the guidelines are released each calendar year.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The SFDS uses the current (2025) Federal Poverty Guidelines, as evidenced by the date and explicit reference in the sliding fee schedule. The narrative confirms the annual update process to ensure alignment with the most recent FPG.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff contains detailed job descriptions for Chief Executive Officer, Chief Medical Officer, Chief Financial Officer, Chief Operating Officer, Dental Director, and Director of Human Resources, each listing duties/functions and required qualifications. Attachment 5: Biographical Sketches for Key Management Staff provides training and experience for each individual in these positions.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both position descriptions and biographical sketches for all key management staff. The position descriptions specify duties/functions and required qualifications (education, experience, skills), while the biographical sketches confirm that the individuals in these roles meet or exceed those qualifications. This meets the HRSA requirement for documentation of training, experience, and duties for each key management staff position.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff (Chief Executive Officer) states the CEO is 'directly employed by the health center' and 'reports to the Board of Directors.' The job description lists direct supervisory responsibility for other key management staff (CMO, CFO, COO, HR Director, etc.). Attachment 2: Bylaws, Article III, Section 1f, gives the board authority to hire, terminate, and supervise the CEO. Form 2 - Staffing Profile lists the CEO as a direct hire (1.00 FTE). The Project Narrative and Organizational Chart confirm the CEO's oversight of day-to-day operations and key staff.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly documents that the CEO is a direct employee (not contracted), reports to the board, and supervises other key management staff. The bylaws and job description establish the board's authority over the CEO and the CEO's responsibility for daily operations and staff oversight. The organizational chart and Form 2 further confirm this structure. This satisfies all aspects of the HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project?' Answer: No. Also, in Attachment 13: Health Center Program Compliance Narrative: 'Alivio does not have any subrecipients in the execution of the project...Alivio does have formalized contractors to support the provision of required, additional, and specialty services, as reflected on Form 5A - Services Required and Attachment 7 - Summary of Contracts and Agreements. Consistent with Compliance Manual Chapter 12: Contracts and Subawards, all contracted services have gone through legal review to ensure they are compliant with Section 330 and that Alivio maintains appropriate oversight and authority.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Alivio does not contract out a majority of required health services or substantive programmatic work. All contracts are for supplemental or specialty services, not for the majority of required services. Form 8 and the narrative confirm no such contracts exist, so prior HRSA approval is not required. Compliance is demonstrated by the absence of such arrangements and clear documentation.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 13: Health Center Program Compliance Narrative: 'Each contract or agreement includes appropriate provisions around activities to be performed, schedules, payment terms, and policies and procedures to be followed in carrying out the agreement, along with the maximum amount of money for which the grantee may become liable to the contractor under the agreement. Applicable contracts also include terms requiring compliance with Federal procurement standards or grant requirements, including conflict of interest standards, provisions addressing records retention and access, audit, and property management, as well as requirements for the contractor to submit financial and programmatic reports to Alivio to monitor performance and meet applicable federal financial and programmatic reporting requirements.' Attachment 7: Summary of Contracts and Agreements lists contracts with LabCorp, Sinai Medical Group, Saint Anthony Hospital, Bienestar, and Boost Lingo, all described as service agreements with ongoing timeframes and documentation in the EHR.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a summary of contracts and a detailed narrative confirming that all required federal provisions are included in contracts. There is evidence of annual review, legal oversight, and Board involvement. The contracts are for specific services (e.g., lab, translation, pharmacy) and not for a majority of required health services. The documentation meets HRSA requirements for contract provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements: 'Do you currently have, or plan to utilize: b) Subawards to carry out a portion of the proposed scope of project.' Answer: No. Attachment 13: Health Center Program Compliance Narrative: 'Not applicable. Alivio does not currently nor plan to engage subrecipients or provide subawards with Health Center Program funds.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Alivio Medical Center does not have any subawards or subrecipients. The application clearly states this in multiple locations. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements: No subawards. Attachment 13: Health Center Program Compliance Narrative: 'Not applicable. Alivio does not currently nor plan to engage subrecipients or provide subawards with Health Center Program funds.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no subawards or subrecipients. This requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "Section C. Collaboration of the Project Narrative describes extensive collaboration with local hospitals (e.g., MacNeal Hospital, Saint Anthony Hospital, Lurie Children's Hospital, Rush University Medical Center, Sinai Chicago, Cook County Health, etc.), specialty providers (Sinai Medical Group for radiology, OB/GYN, etc.), and social service organizations (Chinese American Service League, AgeOptions, El Valor, Gads Hill Center, Healthcare Alternative Systems, Pilsen Neighbors Community Council, Shriver Center on Poverty Law, Corazon Community Services, Pav YMCA, etc.). Letters of support from these organizations are included in Attachment 9: Collaboration Documentation. The application details how Alivio refers patients for specialty and social services not available in-house and receives referrals from these organizations. Formal written contracts and referral agreements are documented in Attachment 7: Summary of Contracts and Agreements and Form 5A: Services Provided (Columns II and III).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Alivio Medical Center provides extensive, specific documentation of collaborative relationships with a wide range of local hospitals, specialty providers, and social service organizations. The application includes both narrative descriptions and supporting documentation (letters of support, contracts, referral agreements) demonstrating that these collaborations are active, ongoing, and support access to services not available through the health center. The evidence meets and exceeds the HRSA requirement for coordination and integration of activities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "Section C.2 of the Project Narrative states that Alivio has strong working relationships with other FQHCs in the Chicago area, actively participates in a CEO consortium with Chicago-based FQHCs, and is a member of the Medical Home Network (a coalition of FQHCs and hospitals). Alivio has received letters of support from the CEOs of Access Community Health Network, Erie Family Health Centers, Esperanza Health Centers, Friend Family Health Center, Inner City Muslim Action Network, Lawndale Christian Health Center, Miles Square Health Center, PCC Community Wellness Center, Pillars Community Health, Tapestry 360 Health, and TCA Health (see Attachment 9: Collaboration Documentation). The application also documents collaboration with the Illinois Primary Health Care Association (the state PCA) and participation in the Medical Home Network and other learning collaboratives. The Collaboration Documentation Tracker in Attachment 9 shows outreach to all FQHCs in the service area and receipt of letters of support from nearly all.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Alivio Medical Center provides clear, specific, and extensive evidence of active collaboration and coordination with other federally-funded health centers (FQHCs), state and local health services delivery projects, and the state PCA. The application includes both narrative and documentary evidence (letters of support, collaboration tracker) that demonstrates these relationships are established and maintained, meeting the HRSA requirement for collaboration with other primary care providers.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Attachment 13: Health Center Program Compliance Narrative, Billing And Collections section: 'That office bills public and private third-party insurance after each eligible patient visit to the full extent allowable by the insurance plan, including Medicare, Medicaid, including CHIP, and other public and private assistance programs and insurance.' Form 3 - Income Analysis shows projected income from Medicaid, Medicare, Private, and Self Pay. Project Narrative and Form 5A confirm acceptance of public and private insurance. The sliding fee schedule and narrative also state: 'Alivio Medical Center accepts major insurance plans including Medicaid and Medicare.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Alivio Medical Center demonstrates active participation in Medicaid, CHIP, Medicare, and other insurance programs through its billing practices, income projections, and explicit statements in the compliance narrative and project narrative. The evidence is clear and consistent across multiple sections of the application, confirming compliance with this requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "Attachment 13: Health Center Program Compliance Narrative, Billing And Collections section: 'Alivio's sites operate using Board-approved policies to ensure that fees or payment can be waived or reduced based on specific circumstances due to a patient's inability to pay. ... For patients who have specific circumstances leaving them unable to pay for services, Alivio has a waiver of charges policy and procedure. The policy and procedure ensure that patients who are experiencing financial hardship are not denied service based on inability to pay. ... Since waivers are only to be used in special circumstances, and must be applied evenly and without discrimination, waivers must be approved by health center leadership or their designee (per policy). Any waiving of charges is documented in the patient's file along with an explanation. Such circumstances may include but are not limited to proof of bankruptcy settlement, catastrophic situations (e.g., death or disability in family), or other documentation that shows that the patient would be unable to pay medical bills and still be able to pay for other basic necessary expenses.' Also, Form 1C - Documents On File lists 'Billing and Collections policies/procedures, including those regarding waivers or fee reductions and refusal to pay.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides detailed evidence of board-approved policies and procedures for waiving or reducing fees, including specific examples of qualifying circumstances (e.g., bankruptcy, catastrophic situations). The process for approval and documentation is described, and the existence of these policies is confirmed in the compliance narrative and on Form 1C. This meets the HRSA requirement for both the existence and utilization of such policies.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a completed SF-424A: Budget Information - Non-Construction Programs, a detailed Budget Narrative, and multi-year budget projections. The budget summary (SF-424A, Budget Narrative) shows total projected costs and revenues ($24,745,939 for Year 1) and aligns with the proposed scope of project, patient projections (24,000 unduplicated patients), and service delivery sites (see Form 5B, Project Narrative, and Budget Narrative). The Project Narrative (Section G) states: 'Alivio's Management Team, working closely with its Board of Directors, has developed a budget for this application based on its experience providing health care and enabling services to its target population... The completed SF-424A, budget narrative, project narrative, forms, and attachments included in this application have been thoroughly reviewed for consistency, ensuring that resources are appropriately allocated within Alivio to continue delivering high quality care to its patient population.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a comprehensive annual budget that reflects all projected costs and revenues necessary to support the HRSA-approved scope of project. The budget is consistent across all required documents (SF-424A, Budget Narrative, Project Narrative), and there is explicit discussion of how the budget supports the projected number of patients and services. This meets the requirement for developing and submitting a total budget that supports the scope of project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A and Budget Narrative both detail all projected revenue sources: Federal (Health Center Program award: $4,242,474), Applicant (retained earnings: $450,044), State ($1,000,000), Local ($1,000,000), Private Grants/Contracts ($2,000,000), Contributions ($600,000), Other ($7,150,000), and Program Income ($8,303,421). Form 3 - Income Analysis further breaks down patient service revenue by payer (Medicaid, Medicare, Private, Self-Pay) and other income (state, local, private grants, contributions, other). The Project Narrative (Section G) and Budget Narrative explain the sources and amounts of all revenues, and these are consistent across all budget documents.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly includes all required revenue sources in the annual budget, not just the Health Center Program award. All sources are itemized and consistent across the SF-424A, Budget Narrative, and Form 3. This meets the requirement for including all projected revenue sources that will support the Health Center Program project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 1 states: 'The Board of Directors shall have full power to establish policies consistent with applicable laws and regulations, and to oversee the operation and management of Alivio Medical Center.' Attachment 13: Health Center Program Compliance Narrative further states: 'No other individual, entity, or committee (including, but not limited to, an executive committee the board authorizes, and consistent with Attachment 3: Project Organizational Chart) reserves approval authority or has veto power over the board regarding the required authorities and functions.' The Project Narrative (Section D.1 and Attachment 3: Organizational Chart) shows the line of authority runs from the board directly to the CEO, with the board responsible for oversight and no parent, affiliate, or subsidiary organization (Form 8: Health Center Agreements confirms 'No').",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly vest full authority for oversight and management of the health center in the governing board. The Project Organizational Chart and narrative confirm the board's direct oversight, with no other entity or committee holding veto or approval authority over the board's required authorities and functions. There are no parent, affiliate, or subsidiary organizations or subrecipients that could infringe on board authority. The application narrative and compliance attachment both affirm that all collaborations and contracts are structured to avoid infringing on board authority. Therefore, the application is COMPLIANT with this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 1 lists the board's responsibilities, including: (a) establishing committees; (b) strategic planning; (c) monitoring implementation and evaluating performance; (d) hiring, evaluating, and terminating the CEO; (e) adopting policies; (f) approving the annual budget and applications; (g) approving services, locations, and hours of operation; (h) monitoring financial status and audits; (i) ensuring compliance with laws and timely filing of reports. Attachment 13: Health Center Program Compliance Narrative cross-references these bylaws sections for each required authority, confirming their presence. The Project Narrative (Section F.2) describes board oversight of strategic direction, financial health, and quality improvement. Board composition and expertise are addressed in Form 6A and the bylaws (Article III, Section 2).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and compliance narrative clearly document all required authorities and responsibilities of the governing board as outlined in HRSA requirements, including CEO selection and removal, budget and application approval, policy adoption, service and site approval, performance evaluation, and legal compliance. The board's role is further supported by the project narrative and board composition forms. Therefore, the application is COMPLIANT with this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 3 (Elections) and Section 6 (Removal/Absence) specify that the Executive and Finance Committee nominates candidates, but the full board votes to elect and remove members. Article IV, Section 3 (Election of Officers) states officers are elected by the board. Attachment 13: Health Center Program Compliance Narrative confirms no other entity or individual has authority over board selection/removal.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly outline a board-driven process for selection and removal, with no evidence of outside entity control. The application narrative further affirms that only the board holds these authorities, meeting HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 2 states the board shall have at least nine (9) and no more than twenty-one (21) members, and that the majority will be users (patients) and representative of the ethnic/racial, age, sex, and economic status of the user population. The board will also seek inclusion of expertise in health care delivery, education, research, finance, law, and management. Attachment 13: Health Center Program Compliance Narrative references these requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws include all required composition elements: minimum/maximum size, patient majority, demographic representativeness, and non-patient expertise, as required by HRSA.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics lists 9 board members, with 5 identified as health center patients (55.6%), and all members either live or work in the service area. The board includes expertise in legal, environmental, community organizing, education, nursing, finance, and healthcare. Attachment 13: Health Center Program Compliance Narrative confirms compliance with patient majority and expertise requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board meets all composition requirements: size, patient majority, demographic and expertise representation, and no evidence of prohibited relationships (e.g., employees or immediate family of employees on the board).",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' Also, on the Summary Page, only CHC-330(e) funding is requested; no 330(g), (h), or (i) funding.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Alivio Medical Center is applying for/receiving only 330(e) (Community Health Center) funding and is not requesting a waiver of the patient majority requirement. Therefore, this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

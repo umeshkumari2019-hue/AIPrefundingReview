@@ -1,0 +1,307 @@
+{
+  "fileHash": "12456d083472ce2debadc17abcbbdc24",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:15.755Z",
+  "applicationName": "ARROYO VISTA FAMILY HEALTH FOUNDATION_Application-242835.pdf",
+  "extractedContent": "Application Number: 242835\nFilename: ARROYO VISTA FAMILY HEALTH FOUNDATION_Application-242835.pdf\nProcessed: 2026-01-22T22:41:47.620Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, under '5. Describe how you will: a. Conduct and update your needs assessment,' Arroyo Vista states: 'According to the HRSA Health Center Program Compliance Manual \"a health center shall complete or update a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services.\" At Arroyo Vista, we conduct and update a Needs Assessment annually.' The narrative further details the processes, data sources, and frequency of assessment. The application also describes the use of the most recent UDS data, census data, and other current sources throughout the Needs Assessment section. The needs assessment is used to inform service delivery, strategic planning, and scope of project updates.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly demonstrates that Arroyo Vista Family Health Foundation completes and updates a needs assessment at least annually (more frequently than required), using the most recent available data for the service area and special populations. The assessment is used to inform and improve service delivery, as required by HRSA. The evidence is explicit and comprehensive, meeting all aspects of the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "The application states: 'Arroyo Vista Family Health Center's Sliding Fee Discount Program (SFDP) is uniformly applied to all patients that meet the federal poverty income guidelines. Per Arroyo Vista SFDP Policy & Procedure #108, Procedure 1: \"Patient's eligibility for the SFDP shall be based on income and family size and no other factors.\"' The Compliance Narrative and main narrative both reference Policy & Procedure #108 as board-approved and Attachment 10: Sliding Fee Discount Schedule as consistent with this policy. The policy is described as board-approved annually. The Bylaws (Attachment 2) assign policy approval to the board.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that the SFDP policy is board-approved, applies uniformly to all patients, and is reviewed/approved annually. The policy is referenced by number, described as board-approved, and the process for board approval is outlined. The policy addresses eligibility based only on income and family size, and the narrative describes its application to all patients. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A shows all required and additional services are provided directly (Column I) or via contract, and the narrative states: 'Arroyo Vista utilizes a sliding fee schedule for all services within Arroyo Vista's scope of project with three different discounted payment classes above 100% and below 200% of the federal poverty level.' The Sliding Fee Discount Schedule (Attachment 10) provides a table with discount classes B-E (0-100%, 101-125%, 126-150%, 151-200%, and above 200%), with patient responsibility and applicable discount percentages clearly listed. The narrative details nominal charges for those at or below 100% FPG and sliding discounts for those up to 200% FPG, with full charges above 200%. The SFDS is described as being auto-applied in the EHR for all direct services.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence shows the SFDS is structured per board policy, applies to all direct (Column I) services, and provides discounts as required by HRSA (nominal fee ≤100% FPG, sliding scale up to 200%, full charges above 200%). The SFDS schedule is current and matches the policy description. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule explicitly states: '(1) Source - HHS Poverty Guidelines for 2025 in effect as of January 15, 2025. The Federal Register Notice for the 2025 Poverty Guidelines was published on January 17, 2025.' The Compliance Narrative confirms: 'Per SFDP Policy & Procedure #108, the Sliding Fee Scale Schedule (SFSS) is updated annually during the first quarter of the calendar year based on the current U.S. Department of Health & Human Services Federal Poverty Guidelines (FPG) and presented to Arroyo Vista's board Finance Committee for review and approval. The updated SFSS is then presented to the full governing board for final review and approval.' The SFDS table in Attachment 10 matches the 2025 FPG.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides direct evidence that the most recent FPG (2025) is used in the SFDS, and the policy requires annual updates to reflect the current guidelines. The SFDS schedule is dated and references the correct Federal Register notice. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff provides detailed position descriptions for the Chief Executive Officer, Chief Medical Officer, Chief Financial Officer, Director of IT, and Director of Clinic Operations, including duties, responsibilities, required qualifications, and supervision responsibilities. Attachment 5: Biographical Sketches for Key Management Staff provides education, experience, and relevant background for each key management staff member. The Project Narrative (Capacity section) references these attachments and summarizes the qualifications and roles of the management team.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application contains comprehensive position descriptions and biographical sketches for all key management staff, detailing both the required qualifications (education, experience, skills) and the specific duties/functions for each role. This meets the HRSA requirement for documentation of key management staff positions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff (Chief Executive Officer) states: 'Accountability: Board of Directors. Summary: Responsible for all operational day to day functions of AVFHC. Directly employed by the health center.' Duties include serving as ex-officio member of the Board, implementing Board policies, overseeing all staff and contract personnel, and being responsible for the day-to-day functions of the HRSA-approved scope of project. The Bylaws (Attachment 2, Article 6, Section II, E.8 and E.9) confirm that the Board is responsible for hiring, evaluating, and dismissing the CEO, and that the CEO is a direct employee of the health center and reports to the Board. The Project Narrative (Capacity section) reiterates that the CEO is a direct hire, reports to the Board, and oversees all key management staff.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is clear, direct evidence that the CEO is a direct employee of the health center, reports to the governing board, and is responsible for overseeing other key management staff in carrying out day-to-day activities necessary to fulfill the HRSA-approved scope of project. The position description, bylaws, and narrative are all consistent and compliant with HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements provides detailed descriptions of contract provisions for each service, including compliance contract monitoring, record retention, access, audit, and property management. The contracts specify that Arroyo Vista is authorized to inspect, audit, and make copies of contractor records that relate to the contract upon reasonable notice. There is also mention of HIPAA compliance, business associate agreements, and patient follow-up tracking protocols.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides detailed evidence that all contracts supporting the HRSA-approved scope of project include required provisions such as record retention, access for audit, compliance monitoring, and HIPAA/privacy protections. The contracts are described in detail, and the processes for monitoring and oversight are explained, meeting HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2a: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project? For the purposes of the Health Center Program, contracting for substantive programmatic work applies to contracting with a single entity for the majority of health care providers.' Answer: [X] No. 2c. Total number of contracts for substantive programmatic work and/or subawards: 0.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center does not contract with another organization to perform substantive programmatic work (i.e., does not contract with a single entity for the majority of health care providers). Therefore, HRSA prior approval is not required and this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2b: 'Subawards to carry out a portion of the proposed scope of project.' Answer: 0. Attachment 13: Health Center Compliance Narrative, Section 3: 'Not applicable. Arroyo Vista does not have a subrecipient agreement.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application explicitly states that Arroyo Vista does not have any subawards or subrecipient agreements. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, Question 2b: 0 subawards. Attachment 13: Health Center Compliance Narrative, Section 3: 'Not applicable. Arroyo Vista does not have a subrecipient agreement.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no subawards or subrecipient agreements in place. Therefore, the requirement to include specific provisions in subaward agreements is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application narrative (see 'COLLABORATION' section, Project Narrative, and Attachment 9: Collaboration Documentation) describes extensive collaboration with local hospitals (e.g., Alhambra Hospital Medical Center, Monterey Park Hospital, San Gabriel Valley Medical Center, White Memorial Medical Center, Los Angeles County General Medical Center), specialty providers (e.g., Allied Pacific of California IPA, California Liver Research Institute, Quality Dialysis Center), and social service organizations (e.g., LA Best Babies Network, Family Community Inc, Hope the Mission, WIC, schools, senior centers, churches, LA County Department of Public Health, LA County Department of Mental Health). Letters of support from these partners are included in Attachment 9. The application details how Arroyo Vista refers patients to these organizations for services not available at the health center, such as inpatient care, specialty care, dialysis, home visiting, and social support services.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides specific, detailed documentation of collaborative relationships with a wide range of providers and organizations in the service area, including hospitals, specialty care, and social services, with evidence of formal referral processes and letters of support. This meets the HRSA requirement for documenting coordination and integration of activities to provide access to services not available through the health center.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application narrative (see 'COLLABORATION' section and Attachment 9: Collaboration Documentation) describes active collaboration with other HRSA-supported health centers and look-alikes in the service area. The narrative lists 23 health centers, including Comprehensive Community Health Centers, Chinatown Service Center, Garfield Health Center, Clinica Monseñor Oscar Romero, Northeast Community Clinic, St. John's Community Health, Via Care, and others, with letters of support included in Attachment 9. The application also describes participation in the Community Clinic Association of Los Angeles County (CCALAC) and the California Primary Care Association (CPCA), as well as the Health Center Controlled Network (HCCN), for sharing best practices, data, and coordination of care. The service area map (Attachment 1) and table document the presence and collaboration with other health centers in the area.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, specific documentation of ongoing collaboration and coordination with other federally-funded health centers and programs serving similar populations, including evidence of formal relationships, participation in local and state associations, and letters of support. This meets the HRSA requirement for documenting collaboration with other primary care providers.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "1. Project Narrative: 'Arroyo Vista is proud to provide quality health services at low or no cost to its patients. We offer the Medi-Cal/CHIP program, CPSP, Family PACT, Medicare, Covered California, Every Woman Counts and Presumptive Eligibility for children and adults. We also accept the Medicare Advantage/Special Needs Plans options under numerous health plans for those eligible under both Medicare and Medi-Cal.'\n2. Form 3: Income Analysis: Medicaid, Medicare, Private, and Self-Pay are all listed as payer categories with corresponding patient and visit counts and projected income. CHIP is included under Medicaid per California policy.\n3. Attachment 13: Health Center Compliance Narrative, Section 5a: 'Arroyo Vista conducts billing and collections for Medicare, Medicaid (in California, the Children's Health Insurance Program was transitioned into Medicaid), Medi-Medi; employer based commercial and Covered California private insurance plans, in addition to other available programs, e.g. Every Woman Counts (EWC), and Presumptive Eligibility for children and adults.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, repeated evidence that Arroyo Vista participates in Medicaid (Medi-Cal), CHIP (integrated into Medi-Cal in California), Medicare, and other public/private insurance programs. This is confirmed in both narrative and financial forms. There is no evidence of exclusion of any required program. Therefore, the health center is COMPLIANT with Element c.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "1. Attachment 13: Health Center Compliance Narrative, Section 5b: 'Payment for services is due at the time services are rendered. If any patient, regardless of income level or sliding fee discount pay class, is unable to make the full payment, they are offered a payment plan and are not denied service based on ability to pay. Billing department staff initiate a Financial Agreement form with the patient.'\n2. Further in Attachment 13: 'Fees or payments can be waived or reduced on a case by case basis upon request under the following circumstances, for example: \"a. Extreme hardship cases with medical conditions requiring frequent or expensive care, upon consultation with patient's primary care provider; b. Patient who has been determined to fall within one category on the sliding fee scale and later provided documentation justifying a new position on the sliding fee scale; c. Patient who is temporarily limited in ability to pay for services received (i.e., suffering extreme poverty, particularly when combined with mental health issues, homelessness with no income or other assets, unemployment or disability with no other assets, and in cases when the patient has no income due to serious and expensive medical emergencies from major accidents, catastrophes, earthquake, fire or flood.)\" When a patient requests an adjustment to reduce or waive charges, the staff working with the patient initiates the Request to Waive or Reduce Fees form and submits to the Director of Clinical Operations or designee to review/approve and return the form to the staff who initiated the form. The staff then discuss the terms with the patient and request the patient's signature of acceptance. The Request to Waive or Reduce Fees form is submitted to the Billing Department and to Health Information Management for scanning into the patient's chart. A copy is provided to the patient. The above practices are in place and align with Fiscal Policy Billing Policy 108 - Sliding Fee Discount Program.'\n3. Form 1C: Documents On File: Billing and Collections policies/procedures, including those regarding waivers or fee reductions and refusal to pay, are indicated as on file.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application describes in detail the existence and use of board-approved policies and procedures for waiving or reducing fees, including specific circumstances (extreme hardship, change in financial status, catastrophic events, etc.) and the process (forms, approvals, documentation). These policies are referenced as being board-approved (Policy 108) and are supported by documentation on file. Therefore, the health center is COMPLIANT with Element h.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a detailed SF-424A Budget Information form, Budget Narrative, and multiple references to the Board-approved budget covering each year of the four-year SAC project period. The budget narrative and tables (see Budget Narrative, SF-424A, and Summary Page) show alignment with the scope of project, including patient projections, service sites, and services provided (see Forms 1A, 5A, 5B). The budget is described as supporting the delivery of comprehensive, high-quality primary care services to underserved populations, regardless of ability to pay, and is consistent across all documents.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a comprehensive, Board-approved annual budget with detailed revenue and expense projections, consistent with the HRSA-approved scope of project. The budget is justified, aligns with the proposed work plan, and supports patient and service projections. All required budget documents are included and consistent.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A and Budget Narrative provide a breakdown of all revenue sources, including the federal request, applicant organization funds, private grants, other support, and program income (fees, third-party reimbursements, etc.). Form 3: Income Analysis details patient service revenue by payer (Medicaid, Medicare, Other Public, Private, Self-Pay) and other income (private grants, retained earnings, etc.). The budget narrative discusses the use of board-designated reserves and provides a payer mix analysis.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly identifies and quantifies all revenue sources supporting the Health Center Program project, including federal, non-federal, program income, and other sources, as required. These are consistent across the SF-424A, Budget Narrative, and Form 3, demonstrating full compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws, Article 6, Section II: Power, Accountability, and Authority. The bylaws state: 'the activities and affairs of this corporation shall be conducted and all corporate powers shall be exercised by or under the direction of the Board of Directors.' Section II.D: 'No individual, entity or committee (including but not limited to, an executive committee authorized by the Board of Directors) reserves or has approval/veto power over the Board of Directors with regard to the required authorities and functions.' Section II.C: 'The corporation's collaboration or agreements with other entities will not restrict or infringe upon the board's required authorities and functions.' The Compliance Narrative (Attachment 13) also references these sections.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly document that the governing board has full authority over the Health Center Program project, with no other entity or committee holding veto or approval power over the board's required authorities and functions. This is further reinforced in the compliance narrative, which directly cites the relevant bylaws sections. There is no evidence of any restrictions or infringements on board authority, and the organizational chart (Attachment 3) shows direct reporting lines to the board. The application also affirms that Arroyo Vista is not part of a parent, affiliate, or subsidiary organization, and does not contract out a majority of required services, eliminating concerns about external control.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws, Article 6, Section II.E lists the board's duties, including: (5) 'Hold monthly meetings at such times and places as required by these Bylaws and record in meeting minutes the board attendance, key actions and decisions.' (8) 'The Board is responsible for the selection/dismissal and performance evaluation of the Chief Executive Officer.' (7) 'Approve the corporation's annual Health Center Program project applications and budget.' Section II.B.1: 'The Board will be responsible for the hours of operations, scope and availability of services to be provided at the corporation (including decisions to subaward or contract for a substantial portion of services), and health center service site locations.' Section II.B: 'The Board shall be responsible for the oversight of the Health Center Program project and have authority to approve the “Principles of Practice” which dictate the health care delivery policies, and shall be responsible for evaluating the performance of the Health Center Program.' Section II.E.11: 'The Board is responsible for establishing or adopting policies related to the operations of the health center.' Section II.E.10: 'The Board is responsible for assuring that the corporation is operating in compliance with applicable Federal, State and local laws and regulations.' These are all cited in Attachment 13: Compliance Narrative, Section 7.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly enumerate all required authorities and responsibilities for the governing board as outlined by HRSA, including holding monthly meetings, CEO selection/dismissal, budget and application approval, service scope and site approval, performance evaluation, policy establishment, and legal compliance. The compliance narrative references these specific bylaw sections, demonstrating that the board's authorities and responsibilities are both documented and implemented. There is no evidence of any required authority being delegated away from the board or any gaps in the documentation.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws, Article 6, Section IV (Election Procedure and Term of Office), Section VII (Termination), Section VIII (Removal of Directors), and Section II.D (No individual, entity or committee...reserves or has approval/veto power over the Board of Directors with regard to the required authorities and functions). Section IV.H: 'The Board member selection process does not permit any other entity, committee or individual (other than the board) to select the board chair or the majority health center board members, including the majority of the non-patient board members.' Section VIII.C: 'The Board member removal process does not permit any other entity, committee or individual (other than the board) to remove the board chair or the majority health center board members, including the majority of the non-patient board members.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws provide a detailed, board-controlled process for selection and removal of board members, explicitly stating that only the board has this authority, and no outside entity, committee, or individual may select or remove the board chair or majority of board members. The process is ongoing, with annual elections and a nominating committee structure, and removal is by board resolution only. This meets the HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Article 6, Section III: 'A governing Board of a range of 9-15 members shall be appointed in a manner prescribed in these Bylaws.' 'A majority (51%) of the Board will be users/patients served by the health center and will reflect the total health facility catchment area population. These health center patient board members must, as a group, reasonably represent the individuals who are served by the health center in terms of demographic factors, such as race, ethnicity and gender. The remaining non-patient Board members (49%) may be professionals who are representatives of the community served by the health center or the health center's service area, either by living or working in the community, or by having a demonstrable connection to the community. Non-patient members are selected to provide relevant expertise and skills (for example, community affairs, local government, finance and banking, legal affairs, trade unions and other commercial and industrial concerns, social services). No more than one half of these professionals on the Board may derive more than 10% of their annual income from the health care industry.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly require a board size within the HRSA range, a majority (at least 51%) of board members to be health center patients, demographic representation, and that non-patient members be community representatives with relevant expertise, with a limit on health industry income. This meets all HRSA requirements for board composition.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics: 9 board members are listed; 5/9 (56%) are health center patients (Sergio Tejadilla, Armando Hernandez, Peter Fernandez, Roger Estrada, Jose Natividad Flores Cortes); all board members are Latino (matching the 91% Latino patient population); gender mix is 3 female, 6 male (patient population is 59% female, 41% male); non-patient members live or work in the service area and have expertise in community affairs, legal, religion, HR, engineering, education; none earn >10% income from health industry.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The board is within the required size, has a patient majority, reflects the demographics of the patient population, and non-patient members meet the requirements for community representation and expertise. No member is an employee or immediate family member of an employee. This is fully compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' Application Summary Page: Only CHC-330(e) funding is requested; no 330(g), (h), or (i) funding is requested.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant is a CHC-330(e) grantee/applicant, not a 330(g), (h), or (i) only grantee, and is not requesting a waiver. Therefore, this requirement does not apply.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

@@ -26,12 +26,12 @@ const __dirname = path.dirname(__filename);
 
 // Configuration
 const CONFIG = {
-  BACKEND_URL: process.env.BACKEND_URL || '',
-  AZURE_DOC_ENDPOINT: process.env.AZURE_DOC_ENDPOINT || '',
-  AZURE_DOC_KEY: process.env.AZURE_DOC_KEY || '',
-  AZURE_OPENAI_ENDPOINT: process.env.AZURE_OPENAI_ENDPOINT || '',
-  AZURE_OPENAI_KEY: process.env.AZURE_OPENAI_KEY || '',
-  AZURE_OPENAI_DEPLOYMENT: process.env.AZURE_OPENAI_DEPLOYMENT || '',
+  BACKEND_URL: process.env.BACKEND_URL,
+  AZURE_DOC_ENDPOINT: process.env.AZURE_DOC_ENDPOINT,
+  AZURE_DOC_KEY: process.env.AZURE_DOC_KEY,
+  AZURE_OPENAI_ENDPOINT: process.env.AZURE_OPENAI_ENDPOINT,
+  AZURE_OPENAI_KEY: process.env.AZURE_OPENAI_KEY,
+  AZURE_OPENAI_DEPLOYMENT: process.env.AZURE_OPENAI_DEPLOYMENT,
 
   // Rate limiting settings
   DELAY_BETWEEN_REQUESTS: 2000, // 2 seconds between API calls

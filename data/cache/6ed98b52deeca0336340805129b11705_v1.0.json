@@ -1,0 +1,307 @@
+{
+  "fileHash": "6ed98b52deeca0336340805129b11705",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:14.856Z",
+  "applicationName": "PRIMARY HEALTHCARE ASSOCIATION OF S.C., THE_Application-242782.pdf",
+  "extractedContent": "Application Number: 242782\nFilename: PRIMARY HEALTHCARE ASSOCIATION OF S.C., THE_Application-242782.pdf\nProcessed: 2026-01-23T07:44:44.522Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, under 'NEED', the application states: 'Primarily through its outreach/enabling staff and contractors, the SCAgWHP conducts needs assessments on a bi-annual basis. To ensure a comprehensive look at the specific needs of the community, the Program secures input from farmworker patients, their employers (growers/crew leaders), and like-missioned partners/interested individuals. Based on information gleaned from needs assessments, coupled with input from patient satisfaction surveys and the availability of funding, the SCAgWHP's Scope of Project is updated to provide additional services, as practicable.' Further, it references the use of the most recent UDS data, patient satisfaction surveys, and a population estimate study. The application also states that 'recent needs assessments resulted in heightened efforts in certain areas of the state—services that are already in-scope—as opposed to adding new services, while patient satisfaction survey results were utilized to improve the patient experience.' Additionally, the application notes that 'completion of bi-annual needs assessments and patient satisfaction surveys; ongoing communication with key gatekeepers and partners; securing input from members of the SC Agricultural Worker Health Advisory Council; and keeping abreast of the health care/policy landscape at the local, statewide, regional, and national levels' are used to assess and respond to the health care needs of the population.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that the needs assessment is conducted at least every three years (in fact, bi-annually), uses the most recent available data (including UDS, surveys, and external studies), and informs the delivery of services (as evidenced by the addition of podiatry and chiropractic services and adjustments to service focus). The process includes input from patients, employers, and partners, and results are used for service planning and improvement. This meets the HRSA requirement for a regularly updated, data-driven needs assessment that informs program delivery.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule(s) includes three SFDSs (medical, dental, pharmacy) with board approval date (March 19, 2025), and the policy states: 'The SFD Program will be applied uniformly to all clients who qualify (those with incomes at or below 200% of the Federal Poverty Guidelines [FPG]).' The policy defines income and family size, and is referenced in the Project Narrative and Health Center Program Compliance section. Multiple executed contracts (Form 8) require contractors to apply the SFD schedule and policy, and the policy is referenced as being board-approved and reviewed annually.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The policy is board-approved, applies uniformly to all patients, defines income and family size, and is required in all contracts. The application narrative and attachments confirm annual board review and approval. The policy is applied across all service types and contractors, as evidenced by contract language and the narrative. There is no evidence of exclusion or non-uniform application. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A: Services Provided shows that all required clinical services are provided via Column II (formal written contract/agreement), not Column I (direct). The only services listed in Column I are enabling services (case management, eligibility assistance, health education, outreach, transportation, translation), which are not subject to the SFDS requirement for direct clinical services. The Project Narrative explicitly states: 'the SCAgWHP does not have any services listed under Column III. Additionally, and since the SCAgWHP is an MHVP that exclusively employs the Services Coordinator Model, it does not provide direct clinical services nor operate a service delivery site.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no direct (Column I) clinical services; all required clinical services are provided via contract (Column II). The only Column I services are enabling, which are not required to have a SFDS under HRSA policy. The SFDS is applied to all clinical services provided via contract, as confirmed by executed agreements and policy. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule(s) for medical, dental, and pharmacy services is based on the 2025 Federal Poverty Guidelines (FPG), as shown by the income ranges for each family size and the note: 'The Sliding Fee Discount Schedule is based on Federal Poverty Guidelines and is updated annually.' The schedules are board-approved March 19, 2025, with an effective date of April 1, 2025. The Project Narrative and Health Center Program Compliance section both state that the SFDS is updated annually based on the current FPG, and that the board approves revisions each year.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The SFDSs use the current (2025) FPG, are updated annually, and are board-approved. The income ranges match the 2025 FPG, and the process for annual update is documented in both policy and narrative. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff provides detailed job descriptions for the Chief Program Officer/SCAgWHP Director, Chief Financial Officer, and SCAgWHP Clinical Director, including required education, experience, skills, and essential functions. Attachment 5: Biographical Sketches for Key Management Staff provides resumes/biographical sketches for these individuals, documenting their qualifications and experience. The Project Narrative and Organizational Chart (Attachment 3) further clarify reporting relationships and duties.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application includes both position descriptions and biographical sketches for all key management staff. The position descriptions specify duties/functions, required education, and experience. The biographical sketches confirm that current staff meet or exceed these requirements. This documentation meets HRSA’s requirement for demonstrating the qualifications and responsibilities of key management staff.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "The Bylaws (Attachment 2, Article VI) state the Board of Directors recruits, selects, and appoints the Chief Executive Officer (CEO), who is the duly authorized representative in management and is subject only to the Board. The Project Narrative (Capacity section) and Organizational Chart (Attachment 3) confirm the CEO is directly employed, reports to the Board, and oversees the Chief Program Officer (CPO), CFO, and other key staff. The CPO/SCAgWHP Director reports to the CEO and is responsible for day-to-day program operations. Form 12 lists the CEO (Dr. Vicki M. Young) as the Chief Executive Officer. The Bylaws and narrative confirm the CEO’s oversight of key management staff and direct reporting to the Board.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly documents that the CEO is a direct employee, reports to the Board, and is responsible for oversight of key management staff, as required by HRSA. The reporting structure is confirmed in the Organizational Chart and Bylaws. The CEO’s role in overseeing day-to-day activities and ensuring fulfillment of the HRSA-approved scope of project is explicitly described.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements indicates 28 contracts for substantive programmatic work; contracts are uploaded and available for review. The application narrative (Project Narrative, Compliance Attachments) states: 'All voucher contracts include five (5) sections: 1) scope of services; 2) time of performance; 3) compensation and invoice submission requirements; 4) terms and conditions; and 5) signatures.' The application is a competing continuation, and the summary page and compliance narrative state that the scope of project and contract arrangements are unchanged and have been previously approved by HRSA. The application explicitly states: 'The SCAgWHP is a Farmworker Health Voucher Program, which provides all of its health care services to agricultural workers and their families (MSAW) via a network of fee-for-service contractors throughout the state; note, however, that the Program does not have any subrecipient arrangements.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has multiple contracts for substantive programmatic work (voucher model), and these have been previously approved by HRSA as part of the scope of project. There is no indication of new or changed arrangements requiring new HRSA approval. The application includes executed contracts, and the applicant affirms that all arrangements are within the HRSA-approved scope. Therefore, the requirement is met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Multiple executed contracts are provided in Form 8 - Health Center Agreements. The contract templates and executed agreements (e.g., with McLeod Dillon Family Medicine, ReGenesis Health Care, Rural Health Services, etc.) include: (1) scope of services, (2) time of performance, (3) compensation and invoice submission requirements, (4) terms and conditions, and (5) signatures. The terms and conditions sections include: sliding fee discounts, billing and collections, extended/after-hours coverage, hospital admitting privileges/continuity of care, tracking of referrals and diagnostic testing, credentialing and privileging, malpractice insurance, record retention, non-discrimination, and termination/amendment clauses. The compliance narrative and contract excerpts in the application confirm these provisions.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The contracts provided include all required HRSA provisions, as evidenced by the explicit contract language and compliance narrative. The contracts are current, signed, and uploaded, and the applicant describes a process for regular review and compliance monitoring. Therefore, the requirement is met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "The application narrative (Project Narrative, Compliance Attachments) states: 'The SCAgWHP does not have any subrecipient arrangements.' Form 8 - Health Center Agreements, Section 2b, indicates 0 subawards. The compliance narrative and budget narrative both confirm that all programmatic work is performed via contracts, not subawards.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no subawards in the scope of project. The applicant explicitly states this in multiple sections, and the contracts provided are all for fee-for-service arrangements, not subrecipient relationships. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "The application states there are no subawards. Form 8 - Health Center Agreements, Section 2b, indicates 0 subawards. The compliance narrative and project narrative confirm that all programmatic work is performed via contracts, not subawards.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Since there are no subawards, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application includes a detailed 'COLLABORATION' section describing formal and informal collaborative relationships with local and state partners, including local hospitals, specialty providers, and social service organizations. Attachment 9: Collaboration Documentation contains numerous letters of support from hospitals (e.g., McLeod Medical Center - Dillon), hospital-owned practices, rural health clinics, local health departments, Head Start, legal services, churches, and other farmworker-serving agencies. The project narrative and contract summaries (Attachment 7) list a wide network of contracted providers for services not available directly through the health center, such as vision, dental, podiatry, chiropractic, and emergency care. Contracts (Form 8) include requirements for hospital admitting privileges, referral tracking, and care coordination. Letters from social service partners (e.g., SC Legal Services, PASOs, Department of Education, churches) further evidence integration with organizations serving special populations.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is extensive, specific, and current documentation of collaborative relationships with a broad range of providers and programs in the service area. The health center demonstrates both formal (contractual) and informal (referral, joint outreach, resource sharing) collaboration with hospitals, specialty providers, and social service organizations. The evidence includes executed contracts, letters of support, and narrative descriptions of how these collaborations ensure access to services not directly provided by the health center, meeting and exceeding HRSA expectations for this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application narrative and Attachment 9 provide explicit documentation of collaboration with other federally-funded health centers (FQHCs/CHCs) in the service area. The Project Narrative (COLLABORATION section) lists formal, fee-for-service arrangements with multiple health centers (e.g., ReGenesis Health Care, Rural Health Services, CareSouth Carolina, Cooperative Health Center, Low Country Health Care System, Family Health Centers, HopeHealth, New Horizon Family Health Services, Tandem Health SC). Letters of support from these health centers are included, confirming ongoing collaboration and referral relationships. The application also documents collaboration with other Section 330(g) grantees (Beaufort-Jasper-Hampton CHS, Fetter Healthcare Network, Carolina Health Centers, Little River Medical Center), with bi-directional referrals for continuity of care. The health center is a member of the state Primary Care Association and the Health Center Controlled Network, further supporting coordination with other primary care providers. Contracts and agreements (Form 8) and the service area map/table show the integration of activities and shared service areas.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center provides clear, specific, and current documentation of both formal and informal collaboration with other federally-funded and local health services delivery projects, including all other health centers in the service area. The evidence demonstrates not only the existence of these relationships but also their active maintenance and operational integration (e.g., shared patients, referrals, joint outreach, shared data systems). This meets and exceeds the minimum HRSA requirement for this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "In the 'Health Center Program Compliance' section, the application states: 'In certain situations, patients may not be able or refuse to pay for the nominal or discounted patient fee. Waiving or reducing charges may only be used in special circumstances (e.g., family emergency, job loss, and other valid temporary reasons clients are unable to pay) and will be up to the discretion of clinical voucher contractors. For such rare instances and to assure consistency in implementation, voucher providers will be instructed to contact the SCAgWHP Director or a designee for appropriate guidance and action. Any waiver or reduction of charges should be documented in the client's file along with an explanation. The Program will make every effort to reimburse clinical contractors for waived/reduced patient fees.' This language is also reflected in clinical service agreements (contracts) with providers, and the sliding fee discount schedules and policies are board-approved (see Attachment 10 and narrative).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, board-approved policy language and operational procedures specifying the circumstances under which fees may be waived or reduced, including examples (family emergency, job loss, etc.), documentation requirements, and a process for provider consultation and reimbursement. This satisfies the HRSA requirement for both policy content and operationalization.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "NON-COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "The application states in the 'Health Center Program Compliance' section and in Form 3: Income Analysis: 'As a voucher grantee, the Program functions similar to a third-party payor for the community; does not bill or collect payments from patients for billable clinical services rendered by fee-for-service providers; and does not participate in Medicare, Medicaid, or other public/private health insurance. Securing patient nominal charges/fees, as applicable, is the responsibility of the contractors and collected payments convey to the voucher providers, not to the SCAgWHP.' Further, Form 3 shows zero patients or revenue for Medicaid, Medicare, or other insurance. Contracts with providers do require them to bill insurance if applicable, but the health center itself does not enroll as a provider or directly participate.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "HRSA requires health centers to participate as providers in Medicaid, CHIP, Medicare, and other insurance programs, not merely to require contracted providers to bill insurance. The applicant explicitly states it does not participate as a provider in any insurance program, and its Form 3 confirms zero insurance revenue or patients. This is a fundamental non-compliance with Element c, regardless of the voucher model.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a detailed SF-424A: Budget Information - Non-Construction Programs, a comprehensive Budget Narrative, and a Personnel Table for the period April 1, 2026 - March 31, 2030. The budget narrative explicitly states: 'Note that the submitted Budget Narrative was developed based on patient and utilization projections, services as approved in the SCAgWHP's current scope of project (medical, dental, mental health, vision, and enabling), the Program's voucher service delivery and staffing models, and prior experiences.' The budget aligns with the projected patient targets and the approved scope of project as reflected in Form 5A and the Project Narrative.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a complete annual budget (SF-424A, Budget Narrative) that is directly tied to the HRSA-approved scope of project. The budget narrative and forms clearly show that the budget was developed to support the full range of services and patient projections in the scope. The budget includes all required categories and is consistent with the scope of project as described in the application. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "Form 3 - Income Analysis shows all revenue sources, with lines for Medicaid, Medicare, Other Public, Private, Self-Pay, and Other Federal/State/Local/Private/Contributions/Applicant. All lines except for the Health Center Program award are $0.00, and the Comments/Explanatory Notes state: 'The SCAgWHP is a Farmworker Health Voucher Program (MHVP) that renders all its clinical services to agricultural workers and their families through a network of fee-for-service contractors in targeted areas in SC. The Program functions similar to a third-party payor and does not charge patients for services. ... voucher contractors charge a nominal fee and co-pays to patients ... Fees charged to and collected from patients convey to the corresponding fee-for-service contractor, not to the Program. In addition, the Program is not a Medicaid, Medicare, or other public/private insurance provider. As such, the SCAgWHP does not have any patient related revenue.' The SF-424A and Budget Narrative also show $0.00 for all non-federal sources.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly documents that the only revenue source for the project is the HRSA Health Center Program award, and that no other revenues (patient, Medicaid, Medicare, private, etc.) are received by the health center for this project. This is consistent with the Services Coordinator Model for a Farmworker Health Voucher Program, as described in the Project Narrative and Form 3. The application provides a full accounting of all revenue sources, including $0.00 for all non-HRSA sources, and explains why this is the case. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws (Att. 2 Bylaws.pdf) and the 'Health Center Program Compliance' narrative explicitly state that the SCPHCA Board of Directors serves as the official governing body of the SCAgWHP. The bylaws (Article III, Section I, IV, and VI) specify that the Board has all powers necessary to carry out the mission, controls and directs the affairs and assets of the Association, meets monthly, approves the selection and termination of the CEO, approves the SCAgWHP's annual budget and grant applications, approves the Program's scope of project and hours of operation, evaluates performance, establishes/adopts policies, and assures compliance with applicable laws. The Project Narrative and Compliance Attachment further confirm that the Board maintains full authority and oversight, with no restrictions from contracts or other arrangements. Contracts (Form 8) do not restrict board authority.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides direct excerpts from the bylaws and narrative documentation that the Board has and exercises full authority over the Health Center Program project, including all required areas of oversight. The Board's authority is not limited by contracts or other arrangements, and its powers are detailed in both the bylaws and the compliance narrative. Monthly meetings, policy approval, CEO selection/termination, budget and scope approval, and compliance assurance are all explicitly described. This meets the HRSA requirement for maintenance of board authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws (Att. 2 Bylaws.pdf), Article III, Section IV (Board of Directors Expectations and Responsibilities), explicitly lists the Board's responsibilities, including: (e) Establish policy for the Association; (f) Hire, supervise, and evaluate the Chief Executive Officer; (g) Support acquisition of financial and other resources; (h) Monitor finances; (i) Maintain and update long-range plans; (j) Participate in organizational decision-making; (k) Represent the Association to the public, policy makers, and other partners if requested. Section IV(m) specifically lists: (i) Approving the annual SCPHCA, SCAgWHP and SCHCCN project budgets and applications; (ii) Approving SCAgWHP services and the location and hours of operation of Program sites; (iii) Evaluating the performance of the SCPHCA, SCAgWHP and SCHCCN; (iv) Establishing or adopting policy related to the operations of the SCPHCA, SCAgWHP and SCHCCN; and (v) Assuring the SCPHCA, SCAgWHP and SCHCCN operate in compliance with applicable Federal, State, and local laws and regulations. These are also summarized in the Compliance Attachment and Project Narrative.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and supporting narratives provide explicit, detailed language that covers all required authorities and responsibilities for the governing board as outlined by HRSA, including policy setting, CEO hiring/firing, budget approval, scope of project, performance evaluation, and compliance assurance. The evidence is direct, from the governing documents, and matches HRSA's expectations for board authorities and responsibilities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws, Article III, Section II and Section VIII, and Article IV, Section V. The bylaws specify that the Board of Directors consists of representatives appointed by the Organizational Member's Board Chair, and the Board itself elects its officers. Removal and replacement of board members is governed by the Board, with a two-thirds vote required for removal. No other entity, committee, or individual is given authority to select the board chair or majority of board members.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly describe the process for selection and removal of board members, and explicitly vest this authority in the Board and Organizational Members (FQHCs), not any outside entity or individual. The process for removal is also specified and requires board action. There is no evidence that any other entity or individual outside the Board selects the board chair or majority of board members.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section II. The bylaws state the Board of Directors consists of one authorized representative of each Organizational Member (typically the CEO or ED) and one Clinical Representative. The board size is set at a minimum of nine and a maximum of twenty-five members. The bylaws also state that no more than one-half of the non-patient board members may derive more than 10 percent of their annual income from the health care industry.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws set clear requirements for board composition, including size, representation, and income limitations for non-patient board members, in alignment with HRSA requirements for board composition.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics. The board is composed of 23 members, all with expertise in nonprofit health administration or the health industry (for the Clinical Representative). None are health center patients. Only one board member (the Clinical Representative) derives more than 10% of income from the health care industry, which is within the allowed limit. Board members live or work in the service area.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board composition matches the requirements as documented in Form 6A, with appropriate expertise, income limitations, and service area connection. The lack of patient board members is addressed through a waiver (see below).",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements. The application indicates the organization currently has a waiver of the 51% patient majority governance requirement and is requesting its continuation. The waiver narrative provides justification based on the transient, remote, and hard-to-reach nature of the MSAW population, and describes alternative mechanisms for patient input (Agricultural Worker Health Advisory Council, needs assessments, patient satisfaction surveys).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center receives only 330(g) funding, does not receive 330(e), and has submitted a waiver request with required justification and an alternative mechanism for patient input, in accordance with HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    }
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "fileHash": "4ce214f2d4badeedc5257f6322ad8512",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:18.802Z",
+  "applicationName": "CHUUK STATE DEPARTMENT OF HEALTH SERVICES_Application-243095.pdf",
+  "extractedContent": "Application Number: 243095\nFilename: CHUUK STATE DEPARTMENT OF HEALTH SERVICES_Application-243095.pdf\nProcessed: 2026-01-23T00:23:42.216Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "The Project Narrative and Project Abstract provide a detailed needs assessment of the service area (Weno Island, Chuuk State), including population demographics, health indicators, barriers to care, and health disparities, referencing data from the 2010 FSM Census, 2013/14 household income survey, 2011-2014 health statistics, and other recent sources. The application describes annual review of the service area, and the Board's intent to submit a New Access Point application for expansion. The narrative also discusses the process for ongoing needs assessment, including collaboration with public health programs and annual planning. The application states: 'How the service area is annually reviewed - The service area is the entire island and population of Weno; hence there is no opportunity to expand or adjust the service area of the existing health center without a New Access Point application to HRSA for the lagoon and/or outer islands, such as Faichuk or the Mortlocks. The CHCC Board of Directors anticipates submitting an NAP for Faichuk in the near future.' The MOA (Memorandum of Agreement) between CCHC and CDHS also includes a commitment to 'planning and implementing periodic community needs assessments to ensure services of CCHC are responsive and appropriate to the community.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a comprehensive, data-driven needs assessment that is current (using the most recent available data for the service area), addresses all required factors (demographics, health status, barriers, disparities, etc.), and describes a process for regular review and update. The narrative and attachments demonstrate that the needs assessment is used to inform service delivery and planning. The inclusion of annual review, collaboration with public health, and Board oversight further supports compliance. There is no indication that the assessment is out of date or missing required components. The MOA and narrative confirm ongoing and periodic updates. Therefore, the application is COMPLIANT with Element b - Update of Needs Assessment.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule(s) (Attachment 10 - Sliding Fee Scale.pdf); Project Narrative and policy section: 'CCHC's Board of Directors (co-applicant board) Approved: Purpose: To establish a sliding fee discount program that will comply with the Chuuk State Constitution and the Chuuk's government health services (Article X education and Health Section 6) and HRSA's Sliding Fee requirement as outlined in the in Policy Inform Health Center Program Compliance Manual chapter 9.' Policy and procedures detail uniform application, eligibility, notification, covered services, waiver process, and annual update.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application includes a board-approved Sliding Fee Discount Program policy, explicitly stating it applies to all patients, is reviewed and approved by the board, and addresses all required areas (notification, eligibility, covered services, waiver, annual review, etc.). The policy is attached, referenced in the narrative, and procedures are described in detail. Uniform application and board approval are clearly documented.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A: Services Provided shows all required services are provided directly (Column I checked for medical, dental, behavioral health, enabling services, etc.). The Sliding Fee Discount Schedule (Attachment 10) and policy detail the discount structure for all services provided directly, including fee schedule, discount classes, and nominal fee. The policy states: 'All services provided by CCHC and included in the Center's scope of project are covered as part of the Sliding Fee Discount Program (in accordance with Form 5a).'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center provides all required services directly (as shown in Form 5A Column I), and the SFDS applies to all these services, as detailed in the policy and schedule. The discount structure matches the policy, with clear classes and nominal fee, and is board-approved. There is no evidence of exclusion of any direct service from the SFDS. The narrative and attachments confirm coverage and structure.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Sliding Fee Discount Schedule (Attachment 10) includes FPG thresholds for 1-12+ household members, with a note: 'Based on FPG published Jan 13,2018 Will be updated with the 2019 FPG as soon as they are available.' Policy states: 'The Federal Poverty Levels will be updated annually within a reasonable time of the published annual Federal Poverty Guidelines (FPG).' Project Narrative and policy confirm annual update process.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The SFDS schedule explicitly incorporates FPG thresholds, and the policy requires annual update upon release of new guidelines. The application demonstrates current use and a process for timely update, meeting HRSA requirements. No evidence of outdated FPG or failure to update.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff (Attachment 4 - Position Descriptions.pdf) includes detailed job descriptions for Executive Director, Medical Director, Finance Officer, Operations Manager, and Quality Assurance Manager. Each position description lists required qualifications (education, experience), duties, and reporting relationships. Attachment 5: Biographical Sketches for Key Management Staff (Chief Executive Officer - CV.pdf) provides evidence of actual staff credentials and experience. The Project Narrative (Management Team section) also references these documents and summarizes the management structure.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides comprehensive position descriptions for all key management staff, specifying required qualifications (e.g., degrees, years of experience), major duties, and reporting lines. Biographical sketches further demonstrate that staff meet these requirements. The documentation is explicit and meets HRSA expectations for this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "The Executive Director/CEO position description (Attachment 4) states the position reports to the Chuuk Community Health Center Governing Board and is responsible for managing all operations, finances, and facilities, and for supervising all staff. The Project Narrative (Organizational Structure and Management Team sections) confirms the CEO is a direct employee and has full supervisory responsibility. The Co-Applicant Agreement (Attachment 6) and Bylaws (Attachment 2) specify that the Governing Board approves the hiring, evaluation, and dismissal of the Executive Director, who is accountable to the Board. Form 2 - Staffing Profile lists the CEO as a direct hire (100% FTE), not a contractor.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The CEO is directly employed by the health center (not a contractor), reports to the governing board (as confirmed in both the position description and governance documents), and has documented responsibility for overseeing other key management staff and day-to-day operations. The application provides multiple, consistent sources of evidence, fully meeting the HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, states: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project? ... [ ] Yes [X] No'. The application narrative and attachments further state: 'CCHC/CDHS has no contracts or subrecipient agreements for services. CDHS provides inpatient and some public health services, as described in the attached MOA.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There are no contracts for substantive programmatic work; all services are provided directly by CCHC/CDHS staff. Therefore, there are no contracts that would require specific provisions, but the absence of such contracts is clearly documented and compliant with HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, states: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project? ... [ ] Yes [X] No'. The application narrative and attachments further state: 'CCHC/CDHS has no contracts or subrecipient agreements for services.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center does not have any arrangements with contractors to perform substantive programmatic work. Therefore, HRSA approval for such contracts is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, states: 'Do you currently have, or plan to utilize: b) Subawards to carry out a portion of the proposed scope of project. ... [ ] Yes [X] No'. The application narrative and attachments further state: 'CCHC/CDHS has no contracts or subrecipient agreements for services.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has not made any subawards. Therefore, HRSA approval to subaward is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements, Part I, states: 'Do you currently have, or plan to utilize: b) Subawards to carry out a portion of the proposed scope of project. ... [ ] Yes [X] No'. The application narrative and attachments further state: 'CCHC/CDHS has no contracts or subrecipient agreements for services.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has not made any subawards. Therefore, subaward agreement provisions are not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The Project Narrative and Collaboration section detail a formal Memorandum of Agreement (MOA) between Chuuk Community Health Center (CCHC) and the Chuuk State Department of Health Services (CDHS), outlining collaboration for clinical and administrative services. The MOA (Attachment 9) specifies that CDHS will provide specialty, inpatient, and emergency services not available at the health center, including laboratory, radiology, dental, and behavioral health services. The Project Narrative also describes coordination with public health programs (e.g., Maternal and Child Health, Family Planning, Immunization, NCD, Communicable Diseases), and the integration of public health specialty clinics at CCHC sites. There is also mention of enabling services (e.g., transportation, outreach), and a plan to expand integration with social determinants of health (SDOH) services, referencing site visits to Kokua Kalihi Valley Comprehensive Family Services in Hawaii.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "CCHC provides substantial documentation of ongoing and planned collaboration with the only other health care provider in Chuuk State (CDHS), as well as integration with public health programs and specialty services. The MOA and narrative describe how CCHC ensures access to services not available directly at the health center, including specialty, hospital, and enabling services. The application also acknowledges gaps in SDOH integration but demonstrates a plan for future expansion. This meets the intent and requirements of Element a.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The Collaboration section of the Project Narrative states: 'There are no other hospitals, private providers, rural health clinics or FQHCs (besides CCHC) in Chuuk State.' It also documents that CCHC has collaborated with other health centers in the Federated States of Micronesia (Wa'ab CHC in Yap State, Kosrae CHC in Kosrae State), including training visits by the Clinical Director and Executive Director. The co-applicant agreement (Attachment 6) and MOA (Attachment 9) further formalize the collaboration between CCHC and CDHS, which operates the only other health services in the state. The application also describes participation in the Migrant Clinicians Network and developing protocols with Kokua Kalihi Valley Comprehensive Family Services in Hawaii for care coordination of migrating Chuukese patients.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that CCHC has coordinated and integrated activities with all other relevant health services delivery projects and programs in the service area and, where possible, in the broader FSM region. The narrative explains the unique context: CCHC and CDHS are the only providers in Chuuk State, and there are no other FQHCs or health centers in the service area. The application also describes collaboration with other FSM health centers and with US-based organizations serving Chuukese migrants. This fulfills the requirement for Element b.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "The application includes a detailed, board-approved Sliding Fee Discount Program policy (Attachment 10, Project Narrative, and dedicated policy section) that specifies: (1) No patient is denied care based on inability to pay; (2) The CEO is the only individual allowed to waive fees based on hardship situations that would cause a barrier to care for a patient, with justification documented and signed off by the CEO and tracked via a waiver adjustment code; (3) All services within scope are covered by the sliding fee discount program; (4) The policy is board-approved and staff are trained on it; (5) The nominal fee is set at $1.00 for patients at or below 100% FPL, and there are three discount classes above 100% up to 200% FPL; (6) Procedures for notification, eligibility, documentation, and evaluation are described; (7) Policy is reviewed at least every three years for patient impact.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center provides clear, board-approved policies and procedures for waiving or reducing fees, including the specific circumstances (hardship situations) and the process for documentation and approval. The sliding fee discount program is described in detail, with provisions for waivers, staff training, and periodic evaluation. This meets HRSA requirements for Element h.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "NON-COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "The application states: 'Residents of the FSM, including Chuuk State, are not eligible for US federal programs such as Medicaid, Medicare and Children's Health Insurance Program (CHIP). The US Affordable Care Act does not apply to the FSM.' Form 3 - Income Analysis shows $0.00 in revenue from Medicaid, Medicare, CHIP, or private insurance. The only insurance programs referenced are MiCare (FSM national insurance, covers ~2% of population) and Chuuk State Health Plan (covers ~30%), but the health center does not bill these for local services, and receives only minimal block payments for off-island care. Form 5B - Service Sites confirms 'Health center does not/will not bill under the FQHC Medicare system at this site.' The Project Narrative and Budget Justification also confirm no participation in Medicaid, Medicare, or CHIP.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "HRSA requires participation in Medicaid, CHIP, Medicare, and other appropriate insurance programs. The health center does not participate in Medicaid, CHIP, or Medicare because the FSM is not eligible for these programs under US law. While there is some reference to local insurance plans (MiCare and Chuuk State Health Plan), the health center does not bill these for local services and receives negligible income from them. Therefore, the health center does not meet the requirement for Element c, and is NON-COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a completed SF-424A Budget Information form, detailed budget justification, and Form 3: Income Analysis. The budget covers all object class categories (personnel, fringe, travel, supplies, other) and totals $686,250, matching the scope of project described in the narrative and service site forms. The budget justification details expenses for all three service sites and aligns with projected patient and visit volumes. The co-applicant agreement and bylaws confirm Board approval of the annual budget.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a comprehensive annual budget that reflects all projected costs and revenues necessary to support the health center's HRSA-approved scope of project. The budget is consistent across all required forms and narrative sections, and is approved by the Board as required. The budget supports the described service delivery model, staffing, and operational needs.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A, Budget Justification, and Form 3: Income Analysis list all projected revenue sources: Federal (HRSA grant - $650,000), State (Chuuk DHS - $30,000), Program Income ($6,250 from patient fees), and Other (no additional federal, local, or private grants for this period). The budget justification explains the calculation of program income from medical and dental visits and notes the absence of Medicaid, Medicare, or private insurance revenue. The application narrative discusses the lack of other insurance or private funding sources in Chuuk and the reliance on grant and local government support.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "All revenue sources that will support the Health Center Program project are clearly identified and included in the annual budget. The application provides a transparent accounting of expected program income and local government support, and explains the fiscal context of Chuuk State. There is no evidence of omitted revenue sources, and the budget aligns with the unique funding environment described in the narrative.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "1. The Articles of Incorporation (Attachment 8) state: 'The Board shall be responsible for the decision making, management, and control of affairs of CCHC in accordance with applicable laws, these article and bylaws of CCHC.'\n2. The Bylaws (Attachment 2) Section 2.1: 'The property, funds, affairs and business of the CCHC shall be managed by the Governing Board. The Governing Board shall have and is vested with the full power and authority of CCHC except as may be expressly limited by the laws of Chuuk State or these Bylaws.'\n3. The Co-Applicant Agreement (Attachment 6) and its Appendix 1 specify that the Governing Board determines its own membership, approves the annual budget, selects and dismisses the Executive Director, and has authority over key policies and oversight functions.\n4. The Project Narrative and Governance section confirm the Board's ultimate accountability and authority for the health center project, including selection/dismissal of the Executive Director, approval of the budget, and policy setting.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, explicit documentation in the Articles of Incorporation, Bylaws, and Co-Applicant Agreement that the governing board has and maintains authority over the health center project, including key functions such as selection and dismissal of the Executive Director, budget approval, policy setting, and overall oversight. The Board is self-perpetuating, not controlled by the public entity, and meets all HRSA requirements for board authority in a public co-applicant model. The organizational chart and narrative further support this structure.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "1. The Bylaws (Attachment 2, Section 2.2) list the Board's responsibilities, including: strategic planning, establishing/monitoring policy, selection/dismissal/evaluation of the Executive Director, monitoring/evaluating performance of services, representing CCHC in the community, monitoring/evaluating Board performance, and approving the grant application and annual budget.\n2. The Co-Applicant Agreement (Attachment 6 and Appendix 1) further details Board authorities over: board membership, budget approval, selection/dismissal of Executive Director, staff recruitment/dismissal, grant applications, policy setting for service delivery, quality assurance, assessment of community needs, and more.\n3. The Articles of Incorporation (Attachment 8) and Project Narrative reiterate these authorities.\n4. Form 6A confirms the Board is user-majority, represents the community, and is not controlled by the public entity.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The required authorities and responsibilities are explicitly outlined in the Bylaws, Articles of Incorporation, and Co-Applicant Agreement, matching HRSA's list (e.g., selection/dismissal of Executive Director, budget approval, policy setting, quality assurance, needs assessment, etc.). The Board's composition and functioning are also compliant with HRSA requirements. There is no evidence of any required authority or responsibility being omitted or improperly delegated.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Bylaws, Section 3.4, 3.6, and Co-Applicant Agreement: The bylaws state the Governing Board is self-perpetuating and elects its own members (Section 3.4), fills vacancies by majority vote (Section 3.6), and selects officers (Section 5.2-5.4). The Co-Applicant Agreement (Appendix 1) specifies the Board determines its own membership and that no other entity may select a majority of board members or the board chair. The agreement also confirms the Board has authority to remove members.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and co-applicant agreement clearly establish that only the board itself selects and removes members and officers, with no external entity or committee having this authority. This meets the HRSA requirement for independent board selection and removal.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Bylaws Section 3.2 and Co-Applicant Agreement: The bylaws require at least 51% of board members to be users of the health center, limit health industry representation to no more than half of non-user members, prohibit employees and immediate family members of employees from serving, and require representation from the community served. The Co-Applicant Agreement reiterates these requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The governing documents specify all required elements of board composition, including patient majority, limits on health industry income, conflict of interest, and community representation, fully meeting HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics and Project Narrative: The board roster lists nine members, all of whom are health center patients and live or work in the service area. The board includes a range of expertise (legal, education, community leadership, women's council, climate change, legislative, business). Only one member (Ermine Walliby) derives >10% income from the health industry, which is within limits. No members are employees or immediate family of employees.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board meets all HRSA composition requirements: patient majority (100%), appropriate expertise, community representation, and conflict of interest restrictions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 1A, Summary Page, and Form 6B: The application is for Community Health Center (CHC-330(e)) funding only, with $0 requested for 330(g), 330(h), or 330(i). Form 6B indicates the waiver is not applicable.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant is not seeking funding under 330(g), 330(h), or 330(i), and is not requesting a waiver of patient majority board composition. Therefore, this requirement does not apply.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

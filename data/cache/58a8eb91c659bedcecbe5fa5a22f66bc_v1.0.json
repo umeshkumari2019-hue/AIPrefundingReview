@@ -1,0 +1,307 @@
+{
+  "fileHash": "58a8eb91c659bedcecbe5fa5a22f66bc",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:16.194Z",
+  "applicationName": "COVENANT HOUSE INC_Application-242864.pdf",
+  "extractedContent": "Application Number: 242864\nFilename: COVENANT HOUSE INC_Application-242864.pdf\nProcessed: 2026-01-23T01:49:00.258Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "1. The application states: 'The most recent 2024/2025 Community Health Needs Assessment (CHNA) for the Northwest Philadelphia neighborhood/region provides this data: rchna-sepa.org.'\n2. The narrative describes use of the Rapid Participatory Appraisal (RPA) framework, annual review processes, and integration of EHR and community data, with focus groups and stakeholder input.\n3. The application references use of 'the latest UDS data as a baseline,' and annual review of service area demographics, population shifts, and health needs.\n4. Data cited is from 2023, 2024, and 2025, including population, poverty, disease prevalence, and service utilization.\n5. The application describes annual and ongoing needs assessment activities, including patient, staff, and community surveys, focus groups, and use of local and national data sources (e.g., Philadelphia Department of Public Health, CDC PLACES, UDS, etc.).\n6. The application details how the needs assessment informs service delivery, outreach, and program planning, and documents recent changes in the service area and population.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that a needs assessment was completed and updated within the last three years (2024/2025 CHNA), uses the most recent available data, and includes both quantitative (demographics, disease prevalence, hospitalization rates) and qualitative (surveys, focus groups, stakeholder interviews) sources. The process is described as ongoing and annual, with explicit mechanisms for using the assessment to inform and improve services. The needs assessment addresses the current and proposed population, special populations (e.g., HIV, behavioral health, maternal health, substance use), and is used to guide outreach, service expansion, and quality improvement. This meets the HRSA requirement for Element b.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule(s) (2025 Sliding Fee Scale Board Approved March 2025.pdf); Health Center Program Compliance Narrative: 'Covenant House Inc. maintains a robust Sliding Fee Discount Program (SFDP) to ensure access to care regardless of a patient's ability to pay. The program is structured around the Federal Poverty Guidelines and offers discounts based on family size and income. All patients are informed of the SFDP at registration and signage is prominently displayed in both English and Spanish. Eligibility is determined through a standardized application process, and discounts are applied across all services, including medical, dental, and behavioral health. The program is reviewed annually to ensure alignment with federal requirements and community needs. (See Sliding Fee Schedule attached)'; Form 1C - Documents On File: 'Sliding Fee Discount Program policies, operating procedures, and sliding fee schedule.'; Board Bylaws: 'Establish and approve policies related to the operation of the health center.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application includes a board-approved sliding fee discount schedule (Attachment 10, dated March 2025), and the narrative describes policies that apply uniformly to all patients, covering eligibility, application, and annual review. The policies are referenced as being board-approved and reviewed annually. The Bylaws confirm board authority over such policies. There is no indication of exclusion or limitation based on patient type or service. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A: Services Provided, Column I, shows that all required services (e.g., General Primary Medical Care, Diagnostic Laboratory, Screenings, Family Planning, Immunizations, Well Child, Gynecological, Obstetrical, Preventive Dental, Pharmaceutical, Case Management, Eligibility Assistance, Health Education, Outreach, Transportation, Translation) are provided directly (Column I checked). Attachment 10: Sliding Fee Discount Schedule(s) (2025 Sliding Fee Scale Board Approved March 2025.pdf) shows a discount schedule by income and family size, with nominal charges for ≤100% FPG and graduated discounts for 101–200% FPG. Narrative states: 'Patient charges are adjusted using a standardized Sliding Fee Discount Schedule (Attachment 10), which aligns with federal poverty guidelines. The schedule outlines specific discount levels based on income brackets and family size, ensuring that patients pay only what they can reasonably afford.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The SFDS is applied to all direct services listed in Column I of Form 5A, and the schedule provides for nominal charges at or below 100% FPG, and graduated discounts up to 200% FPG, as required. The narrative and schedule confirm that the SFDS is structured consistently with policy and applies to all direct services. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule(s) (2025 Sliding Fee Scale Board Approved March 2025.pdf) shows income levels for family sizes 1–8 and increments for each additional person, which match the 2025 Federal Poverty Guidelines. The narrative states: 'The program is structured around the Federal Poverty Guidelines and offers discounts based on family size and income.' The schedule is labeled '2025' and was board approved March 2025.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The sliding fee schedule uses the 2025 Federal Poverty Guidelines, as demonstrated by the income levels and family size increments. The schedule is current for the application year and explicitly references the FPG. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff (JOB DESCRIPTIONS-SENIOR MANAGEMENT.pdf) and Attachment 5: Biographical Sketches for Key Management Staff (BIOS-SENIOR MANAGEMENT.pdf) are included in the application. The job descriptions for CEO, CFO, COO, Director of Human Resources, and Director of Revenue Management Services are provided in full within the application text, specifying required education, experience, duties, and reporting relationships. Biographical sketches for each key management staff member are also included, demonstrating their qualifications and relevant experience.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "HRSA requires that each key management staff position have a documented position description outlining duties/functions and required qualifications, and that the individuals filling these roles have documented relevant experience and training. The application provides both the position descriptions and biographical sketches for all key management staff (CEO, CFO, COO, Director of Human Resources, Director of Revenue Management Services), meeting the requirement for documentation of both duties and qualifications. The evidence is clear, specific, and meets the compliance standard.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "The CEO (Dr. Susan Stukes, DDS) is listed as a direct employee in Form 2 - Staffing Profile (1.0 FTE, direct hire, not contract). The CEO job description states that the CEO 'reports to the Board of Directors, Covenant House Inc.' and is 'responsible for the administration of the Corporation in all its activities and departments, subject to such policies as may be adopted and such orders as may be issued by the Board.' The organizational chart shows the CEO at the top, with all other key management staff (COO, CFO, Director of HR, etc.) reporting to the CEO. The bylaws (Article VIII) specify that the Board selects and employs the CEO, who is responsible for administration and is the Board's authorized representative. The CEO's biographical sketch confirms her employment and leadership role. The application narrative and attachments consistently describe the CEO as overseeing day-to-day activities and key management staff.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "HRSA requires that the CEO/Project Director be a direct employee (not a contractor), report to the governing board, and be responsible for day-to-day operations and oversight of other key management staff. The application provides multiple, consistent sources of evidence (Form 2, job description, organizational chart, bylaws, narrative, and bios) confirming that Dr. Stukes is a direct employee, reports to the Board, and oversees all key management staff and operations. The documentation is complete and unambiguous, fully meeting the compliance requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements (Summary of Contracts and Agreements-2025 SAC Application.docx) details that each agreement includes contractor identification, scope of services, service delivery and location, timeframe of agreements, and patient follow-up tracking. The Health Center Program Compliance Narrative states: 'Each contract includes performance benchmarks and reporting requirements. Our finance team collaborates to ensure that all contractual relationships support the health center's mission and meet HRSA expectations.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a summary of contracts and MOUs that outlines the required provisions, including performance benchmarks, reporting, and compliance. The narrative confirms that all contracts are reviewed for alignment with HRSA requirements, and there is a centralized procurement process that includes conflict of interest disclosures and scope of work review. This meets the HRSA requirement for contract provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project? [ ] Yes [X] No'. 2c. Total number of contracts for substantive programmatic work and/or subawards: 0.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center reports that it does not have any contracts for substantive programmatic work as defined by HRSA (i.e., contracting with a single entity for the majority of health care providers). Therefore, the requirement to request and receive HRSA approval is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements: 'b) Subawards to carry out a portion of the proposed scope of project.' 2b. Number of subawards made to subrecipients to carry out a portion of the proposed scope of project: 0. 2c. Total number of contracts for substantive programmatic work and/or subawards: 0. The Health Center Program Compliance Narrative states: 'CHI does not issue or manage any subawards under its current funding.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has not made any subawards. Therefore, the requirement to request and receive HRSA approval for subawards is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements: 2b. Number of subawards made to subrecipients to carry out a portion of the proposed scope of project: 0. The Health Center Program Compliance Narrative states: 'CHI does not issue or manage any subawards under its current funding.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has not made any subawards. Therefore, the requirement for subaward agreements with required provisions is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application provides detailed documentation of collaborative relationships with a variety of providers and organizations. Attachment 7: Summary of Contracts and Agreements lists formal referral and contract relationships with Temple University Hospital, Jefferson Einstein Hospital (radiology and OB/GYN), St. Christopher's Hospital for Children, Germantown Pharmacy, Miami Psych Concierge (psychiatry), Dr. Maasi Smith (podiatry), Corrielus Cardiology, Dr. Sara Clemens (infectious disease), LabCorp, and JR Language Translation Services. The narrative also describes partnerships with Northeast Treatment Centers, Caring People's Alliance, Widener University, Stop and Surrender, Quality Community Health Care, Inc., the Philadelphia Department of Public Health, the School District of Philadelphia, and the Health Federation of Philadelphia. Letters of support from community partners (Attachment 9) further corroborate these collaborations.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application demonstrates robust and ongoing coordination and integration with a wide range of local hospitals, specialty providers, and social service organizations. There is clear documentation of both formal written agreements (MOUs, contracts) and informal partnerships, as well as evidence of collaborative activities (e.g., referral tracking, joint programming, community events). The inclusion of specialty care, behavioral health, translation, and outreach services through external partners supports access to services not available directly through the health center. The evidence meets and exceeds the HRSA requirement for this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application narrative and Attachment 9: Collaboration Documentation include letters of support and partnership from the Health Federation of Philadelphia (which operates the Health Center Controlled Network and includes other FQHCs), Quality Community Health Care, Inc. (another FQHC in North Philadelphia), and the Pennsylvania Association of Community Health Centers (PACHC). The narrative describes active participation in PACHC-led training, technical assistance, and peer learning collaboratives, as well as engagement with the Health Federation of Philadelphia's HCCN and Board of Directors. The service area map and data table show overlapping service areas with other health centers, and the application describes coordination to avoid duplication and address service gaps.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence of collaboration with other federally-funded health centers and state/local health service delivery projects. There are formal relationships and ongoing communication with other FQHCs in the area, as well as participation in statewide and regional health center networks. The health center demonstrates awareness of overlapping service areas and describes efforts to coordinate services and referrals. This meets the HRSA requirement for documenting collaboration with other primary care providers serving similar populations.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "1) The 'Billing and Collections' section of the Project Narrative states: 'Covenant House, Inc. recognizes and accepts payment from sources who have defined levels of reimbursement for specific populations for insured individuals: Medicare, Medicaid, and rates established by participating HMO (Keystone first, Health partners, Bravo), Independence Blue Cross and Highmark.' 2) The Health Center Program Compliance Narrative states: 'The health center participates in Medicare, Medicaid, CHIP, and a variety of private insurance plans.' 3) Form 3 - Income Analysis shows projected income from Medicaid, Medicare, Other Public, and Private insurance. 4) The Project Narrative and Form 5A confirm eligibility assistance and outreach for public insurance enrollment.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence that Covenant House Inc. participates in Medicaid, CHIP, Medicare, and private insurance programs. The narrative, compliance documents, and financial forms all consistently reference billing and collections from these payers, and the health center assists patients with enrollment. Therefore, the requirement is fully met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "1) The Project Narrative, under 'Sliding Fee Scale Determination,' details that all patients are assessed for sliding fee discount eligibility based on income and family size, in accordance with HRSA guidelines. 2) The Sliding Fee Discount Schedule (Attachment 10) is board-approved (Board Approval Date: March 2025) and provides specific discount levels. 3) The Compliance Narrative states: 'All patients are informed of the SFDP at registration and signage is prominently displayed in both English and Spanish. Eligibility is determined through a standardized application process, and discounts are applied across all services, including medical, dental, and behavioral health.' 4) The Compliance Narrative further states: 'Collections policies are patient-centered, avoiding aggressive tactics and ensuring that patients are not denied services due to inability to pay.' 5) Form 1C confirms that billing and collections policies, including those regarding waivers or fee reductions and refusal to pay, are on file.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is robust documentation of a board-approved sliding fee discount policy, with clear procedures for assessing eligibility and applying discounts or nominal charges based on inability to pay. The policy is reviewed annually, and the application process is described. The presence of the board approval date and the explicit statement that patients are not denied services due to inability to pay further support compliance. Therefore, the requirement is fully met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a detailed SF-424A: Budget Information - Non-Construction Programs, Budget Narrative, and supporting budget tables (Tables 5-14) showing a total budget of $6,980,629, with line-item breakdowns for personnel, fringe, supplies, contractual, other, etc. The narrative and tables align with the described scope of project in the Project Narrative and Forms 5A/5B/5C, and the budget is reviewed and approved by the Board per Bylaws Article VI, 6.1. The budget narrative specifically states 'No substantive changes during the period of performance,' indicating ongoing alignment with the approved scope.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a comprehensive annual budget that includes both projected costs and revenues, is detailed by object class, and matches the described scope of services, sites, and patient projections. The Board's authority to approve the budget is documented in the bylaws. The budget narrative and forms are standard HRSA requirements and are present and complete.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A and Budget Narrative (Tables 5, 11, 59) show revenue from the Federal 330 Grant ($3,253,891), Program Income ($3,694,252), and Contributions/Donations ($32,486). Form 3 - Income Analysis details payer mix (Medicaid, Medicare, Private, Self Pay, Other Public), and Table 59 shows projected income by payer. The budget narrative and Form 3 also reference prior year income and projected income. The application explicitly states 'Total Revenue: 3,253,891 (Fed) + 3,726,738 (Non-Fed) = 6,980,629.' No other federal, state, or local grants are projected except a small amount of state funding ($32,463).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The annual budget includes all revenue sources supporting the project, not just the HRSA award. The application provides a breakdown of program income by payer (Medicaid, Medicare, Private, Self-Pay, Other Public), as well as contributions/donations and any other non-federal sources. This meets the requirement to include all projected revenue sources.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "The Bylaws (Attachment 2) and Compliance Narrative state: 'The Board of Directors holds full authority over the Covenant House Inc.'s operations, including the approval of key policies, strategic plans, and financial decisions. The board is actively involved in evaluating the CEO and ensuring that the health center meets its mission to serve the medically underserved. All major decisions, including expansion of services, and changes to the sliding fee scale, are subject to board approval. The board's authority is clearly delineated in the bylaws and is exercised in accordance with federal guidelines.' Article VI, Section 6.1 of the Bylaws lists specific board authorities, and Article VI, Section 6.13(a) states: 'The Board shall have full power to manage and direct the business of the Corporation, with the authority to delegate such power, including the power to make binding contracts on behalf of the Corporation, to the CEO/Executive Director, or the Board President.' The Compliance Narrative further states: 'No other individual, entity, or committee (including but not limited to, an Executive Committee authorized by the board) reserves approval authority or has veto power over the board with regard to the required authorities and functions. Collaborations Covenant House Inc. may have with other entities in fulfilling the health center's proposed scope of project shall not restrict or infringe upon the board's required authorities and functions.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence in the Bylaws and Compliance Narrative that the governing board maintains full authority over the health center project, including all major decisions and oversight functions, with no evidence of any outside entity or individual having veto or approval authority over the board. The Bylaws explicitly enumerate the board's powers and responsibilities, and the narrative confirms that these are not restricted by any contracts, collaborations, or executive committees. This meets HRSA's requirement for board authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "The Bylaws (Attachment 2, Article VI, Section 6.1) enumerate the board's authorities and responsibilities, including: annual review and approval of objectives; approval of selection and evaluation of the CEO (including authority to continue or terminate); approval of the annual Health Center program budget and application; establishment and approval of policies related to operation; approval of health center services and the location and hours of operation; approval of all substantial contracts and/or written agreements; adoption and regular evaluation of quality assurance/quality improvement assessments; monitoring financial status including annual audit; evaluation of overall performance; conducting long-range/strategic planning; and ensuring compliance with all applicable federal, state, and local laws and regulations. The Compliance Narrative also references these sections and confirms their presence and application.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The Bylaws directly and explicitly list all required authorities and responsibilities as outlined by HRSA, including those related to CEO selection/dismissal, budget approval, policy adoption, service and site approval, quality and performance evaluation, and legal compliance. The application narrative references these sections and confirms their implementation. There is no evidence of any omission or restriction of these authorities. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Bylaws (Attachment 2: CHI BOD By-Laws-Revised June 2024.doc) Article VI, Sections 6.4 and 6.5: Directors are elected by vote of a majority of the directors then in office at the annual meeting of the Board (6.4). Any director may be removed from office, with or without cause, by vote of two-thirds (2/3) or more of the directors then in office (6.5). Article VII, Section 7.2: Officers (including President/Board Chair) are elected by the Board. There is no provision for any outside entity, committee, or individual to select the board chair or majority of board members.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly state that only the board itself elects and removes directors and officers, including the board chair. No other entity, committee, or individual has this authority. This meets HRSA requirements for board autonomy in selection and removal processes.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Bylaws (Attachment 2: CHI BOD By-Laws-Revised June 2024.doc) Article VI, Section 6.3(a): 'A majority of the Board shall be individuals who are users of the center, and who, as a group, represent the population being served or expected to be served with regard to demographic factors, such as race, ethnic background, sex, etc.' Section 6.2(a): Board shall consist of not less than nine (9) nor more than twenty-five (25) persons. Section 6.3(b): The remaining members of the Board shall be selected for their expertise and must reside, work, or have a significant connection to the service area. Section 6.3(c): No employee or immediate family member of an employee may serve on the board (except CEO as non-voting ex-officio).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws include all required elements: minimum/maximum size, patient majority, demographic representation, expertise requirements for non-patient members, and exclusion of employees/immediate family. This aligns with HRSA requirements for board composition.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics: Lists 9 board members, with 5 marked as health center patients (Gwendolyn Starks, Tracey Wynn, Katherine Card, Paulette Hunt, Francine Fulton), which is 55.5%. All members either live or work in the service area. Areas of expertise are diverse (school health, counseling, health services, marketing, legal, education, community outreach). None receive >10% of income from the health industry. Bylaws confirm exclusion of employees/family.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The board is documented as having a patient majority (5 of 9), with all members living or working in the service area and a range of expertise. This matches the requirements for current board composition.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' Funding request (Summary Page) is for 330(e) only; no funding requested under 330(g), 330(h), or 330(i).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Covenant House Inc. is applying for/receiving only 330(e) funding (Community Health Center) and is not requesting a waiver of board composition requirements. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

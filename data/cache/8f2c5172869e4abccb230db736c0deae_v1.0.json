@@ -1,0 +1,307 @@
+{
+  "fileHash": "8f2c5172869e4abccb230db736c0deae",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:16.786Z",
+  "applicationName": "UNIVERSAL COMMUNITY HEALTH CENTER_Application-242893.pdf",
+  "extractedContent": "Application Number: 242893\nFilename: UNIVERSAL COMMUNITY HEALTH CENTER_Application-242893.pdf\nProcessed: 2026-01-23T10:17:15.003Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, under 'Need', the application states: 'At least once every three years, UCHC partners with a community analyst and health market expert to conduct a needs assessment, guiding the Board of Directors and key management staff on the future direction and focus of the organization. The last needs assessment was completed in October 2025, which falls within the three-year compliance period outlined in Chapter 3: Needs Assessment of the Health Center Program Compliance Manual.' The application further details that the needs assessment is used to inform service delivery, is presented to the Board for review and approval, and is based on the most recently available data (e.g., 2023 ACS, 2023 California Health Interview Survey, 2024 UDS, etc.). The needs assessment addresses all required areas, including service area definition, barriers to care, health status, social determinants, and special populations (if applicable).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that a comprehensive needs assessment was completed in October 2025, within the required three-year window. The assessment uses current data sources and is used to inform service delivery and strategic planning, as required by HRSA. The process for updating the needs assessment and using it to guide the Board and management is described in detail, and the assessment addresses the required content areas. There is no indication of non-compliance or missing information.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13: Health Center Program Compliance (Sliding Fee Discount Program Compliance Narrative) states: 'Universal Community Health Center (UCHC) is passionately committed to ensuring that patient access to services is equally applied for all. UCHC's Sliding Fee Discount Program is administered to ensure equal access and uniformity in how it is applied. UCHC is committed to ensuring that no patient is denied service based on an inability to pay. An assessment for eligibility for UCHC's Sliding Fee Discount Schedule is based solely on income and the size of the patient's household (no other criteria) compared with the latest Federal Poverty Guidelines (FPG) released by the Federal Register each year.' The policy is referenced as board-approved in multiple locations, including the Project Narrative and Attachment 13. Form 1C - Documents On File confirms the existence of 'Sliding Fee Discount Program policies, operating procedures, and sliding fee schedule.' The policy is described as applying uniformly to all patients, with annual reassessment and signage in multiple languages.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence of a board-approved sliding fee discount policy that applies uniformly to all patients, is based solely on income and family size, and is reviewed annually. The policy is described in detail, including methods for assessment, signage, and language accessibility. The policy is referenced as board-approved, and the process for annual review and update is described. There is no evidence of exclusionary criteria or non-uniform application. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule 2025.pdf provides a detailed table showing discount classes (A-F) based on income as a percent of FPL, with specific nominal and flat fees for each service type (medical, dental, behavioral health, optometry, nutrition, podiatry, pharmacy, mammography). The schedule shows: full discount (nominal fee) for ≤100% FPL, partial discounts for 101-200% FPL (with at least three discount classes), and no discount for >200% FPL. The Project Narrative and Attachment 13 confirm that the SFDS is applied to all direct services in Column I, and that the SFDS is used for all in-scope services. The policy also describes nominal charges for ≤100% FPL, partial discounts for 101-200% FPL, and no discount above 200% FPL. Form 5A: Services Provided shows that all required services are provided directly (Column I) or by contract/referral, and the narrative confirms that the SFDS is applied to all direct services.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The SFDS is structured in accordance with HRSA requirements: full discount/nominal fee at ≤100% FPL, at least three discount classes for 101-200% FPL, and no discount above 200% FPL. The schedule is detailed and covers all direct services. The application narrative and attachments confirm that the SFDS is applied to all direct (Column I) services. There is no evidence of non-compliance or gaps. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule 2025.pdf explicitly states: 'Based on FPG published Jan 15, 2025. Will be updated with the most current FPG as soon as they are available.' The Project Narrative and Attachment 13 confirm that the SFDS is updated annually to reflect the most recent FPG, and the CFO is responsible for updating the schedule each year. The income thresholds in the SFDS match the 2025 FPG as published by HHS.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The SFDS uses the most recent FPG (2025) and the application describes an annual process for updating the schedule to reflect the current FPG. The evidence is direct and explicit. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff includes detailed job descriptions for CEO, CMO, CFO, and Director of Compliance and Risk Management, outlining duties/functions and required training/experience. Attachment 5: Biographical Sketches for Key Management Staff provides educational background and experience for each individual. The Project Narrative (Capacity section) references these attachments and summarizes qualifications and roles. Form 2: Staffing Profile lists the key management positions as direct hires.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both position descriptions and biographical sketches for all key management staff, including CEO, CFO, CMO, and Director of Compliance and Risk Management. Each position description details duties/functions and required qualifications, and each biographical sketch demonstrates the individual’s relevant training and experience. This meets the requirement for documented duties/functions and qualifications for each key management staff position.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff (CEO) states the CEO is a direct hire, appointed by and reports directly to the Board of Directors, and oversees the leadership team in carrying out day-to-day activities. The Project Narrative (Capacity section) and Bylaws (Article VI, Section 9) confirm the CEO is appointed/dismissed by the Board, reports to the Board, and is the principal officer directing all operations. Form 2: Staffing Profile lists the CEO as a direct hire (0.8 FTE). The organizational chart (Attachment 3) shows the CEO at the top, reporting to the Board and overseeing other key management staff.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The CEO is directly employed by UCHC (not contracted), as shown in Form 2 and the job description. The Bylaws and job description confirm the CEO is appointed by and reports to the Board of Directors, not to any other entity or committee. The CEO’s duties include oversight of all operations and key management staff, ensuring execution of the HRSA-approved scope of project. This fully meets the HRSA requirement for CEO employment, reporting, and oversight responsibilities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements details contracts for laboratory, radiology, pharmacy, transportation, translation, dental, and mental health services. The Compliance Narrative in Attachment 13 states: 'As with all UCHC contracts that support the HRSA-approved scope of project, they include provisions that address the following: (a) the specific activities or services to be performed or goods to be provided; (b) mechanisms for the health center to monitor contractor performance; and (c) requirements for the contractor to provide data necessary to meet the recipient's applicable federal financial and programmatic reporting requirements, as well as provisions addressing record retention and access, audit, and property management.' The narrative further describes oversight, monitoring, and reporting requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a detailed summary of contracts, describes required provisions, and explicitly states that contracts contain mechanisms for monitoring, reporting, and compliance with federal requirements. This meets HRSA's expectations for contract provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8: Health Center Agreements, Part I, Question 2a is marked 'No' for contracts with another organization to perform substantive programmatic work. The Compliance Narrative in Attachment 13 states, 'UCHC does not contract with another organization to perform substantive programmatic work, such as contracting with a single entity for the majority of healthcare providers, within the proposed scope of project.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This requirement is not applicable because UCHC does not contract out substantive programmatic work as defined by HRSA. Therefore, no HRSA prior approval is needed.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8: Health Center Agreements, Part I, Question 2b is marked 'No' for subawards. The Compliance Narrative in Attachment 13 states, 'UCHC does not have subrecipient agreements to carry out the proposed project.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This requirement is not applicable because UCHC has not made any subawards. No HRSA approval is needed.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8: Health Center Agreements, Part I, Question 2b is marked 'No' for subawards. The Compliance Narrative in Attachment 13 states, 'UCHC does not have subrecipient agreements to carry out the proposed project.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This requirement is not applicable because UCHC does not have any subawards in place.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application narrative (Collaboration section) describes established collaborative relationships with local hospitals (e.g., Adventist Health White Memorial, Mosaic Family Care Specialist Hospital Group), specialty providers (e.g., Grand Avenue Imaging, United Medical Imaging, Alinea, Eisner Health, Ketchum Vision, Wellnest Emotional Health Wellness, White Memorial Community Health Center), and social service organizations (e.g., All Peoples Community Center, American Heart Association, Community Clinic Association of Los Angeles County). Attachment 7: Summary of Contracts and Agreements details formal referral and contract arrangements for specialty and enabling services. Attachment 9: Collaboration Documentation includes letters of support from specialty providers, hospitals, and social service agencies. The narrative explains how referrals are tracked, how follow-up and care coordination are ensured, and how social determinants of health are addressed through partnerships.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is clear, detailed documentation of collaborative relationships with a wide variety of providers and organizations in the service area, including both health care and social service entities. The application provides both narrative descriptions and supporting documentation (contracts, MOUs, letters of support) showing that UCHC coordinates with hospitals, specialty providers, and social service organizations to ensure access to services not available at the health center. The processes for referral, tracking, and follow-up are described, and the partnerships are current and ongoing. This meets the HRSA requirement for coordination and integration of activities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application narrative (Collaboration section) describes active collaboration and coordination with other FQHCs and look-alikes in the service area. UCHC provides a list of 37 other health centers operating in the service area and describes ongoing relationships with many of them, including Central Neighborhood Health Foundation, JWCH Institute, and St. John's Community Health. Attachment 9: Collaboration Documentation contains letters of support from at least 20 FQHCs and look-alikes in the service area. The application also documents requests for letters of support from additional health centers, with evidence of outreach (emails) to those who did not respond. UCHC participates in local and state associations (CCALAC, CPCA, SCCHC), and Dr. Chavez serves on the CPCA Board of Directors. The application describes joint efforts, shared best practices, and participation in regional initiatives.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides robust evidence of collaboration with other federally-funded health centers and similar organizations in the service area. There are numerous letters of support from peer FQHCs, documentation of outreach to those who did not respond, and narrative descriptions of joint activities and association participation. This demonstrates both the establishment and maintenance of relationships, as well as active coordination and integration of activities. This meets the HRSA requirement for collaboration with other primary care providers.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "The Compliance Narrative under Billing and Collections states: 'UCHC as an entity is enrolled in Medicare and Medicaid (Medi-Cal in California). Staff provide eligibility and enrollment assistance to patients for government-sponsored programs such as Medicare and Medicaid. In California, the Medicaid program also includes supplemental programs which UCHC is also enrolled in, including Family Planning, Access, Care and Treatment Program (FPACT), Cancer Detection Program (CDP), Breast Cancer Screening & Diagnostic Information (BCSDI), Presumptive Eligibility for Pregnant Women (PE4PW), and Children's Presumptive Eligibility (CPE). Furthermore, California's CHIP program, previously known as Child Health and Disability Program (CHDP), transitioned into Medicaid in July 2024, to standardize care. All UCHC clinicians are participants within each federal and/or state insurance program, maximizing UCHC 's enrollment.' Form 3: Income Analysis shows projected income from Medicaid ($14,179,375), Medicare ($1,008,000), and other public and private insurance. Form 5A: Services Provided and Form 5B: Service Sites confirm services are provided at all sites, and the Project Narrative details outreach and enrollment assistance.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence that UCHC participates in Medicaid (Medi-Cal), Medicare, CHIP (now integrated into Medi-Cal in California), and other public/private insurance programs. They also provide eligibility and enrollment assistance. The financial projections in Form 3 further confirm active billing and participation in these programs. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "The Compliance Narrative under Billing and Collections states: 'In alignment with UCHC's Board-approved policies and procedures, including billing and collections process, no patient will be denied service due to inability to pay. Therefore, during times of hardship, such as loss of income or housing or other unforeseen circumstances, patients may request an application for Hardship Reduction or Waiver of Fees. Through this method, a patient may receive a full waiver of charges or a partial waiver of charges. This waiver may be requested for current charges, as well as previous balances. Any waiving or charges should be documented in the patients file along with an explanation. Under most circumstances, fee reduction applications must be approved by UCHC's Billing Manager or their designee.' The Sliding Fee Discount Program policy and Attachment 13 further describe the process for waiving/reducing fees, including documentation and approval requirements. Form 1C - Documents On File confirms the existence of these policies.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application describes board-approved policies and procedures for waiving or reducing fees, including the circumstances (loss of income, housing, or other hardship), documentation, approval process, and assurance that no patient is denied care due to inability to pay. The Sliding Fee Discount Program and related attachments support this. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a completed SF-424A (see Table 30, Table 31), Budget Narrative, and Budget Justification, which present a detailed annual budget for Year 1 ($21,142,817 total), with federal and non-federal sources, and object class categories. The narrative states: 'UCHC's SF-424A, Budget Justification Narrative, Form 2: Staffing Profile, and Form 3: Income Analysis are complete and consistent and provide detailed presentation of Year 1 (April 1, 2026 - March 31, 2027) of the Health Center Program project.' The budget aligns with the projected patient volume and services described in the application and forms (e.g., Form 1A, Form 3, Forms 5A/5B).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a comprehensive, annual total budget that includes all projected costs and revenues for the HRSA-approved scope of project, as required. The budget is consistent across all required forms and narratives, and is directly tied to the scope of services and patient projections. This meets the requirement for developing and submitting an annual budget that supports the proposed or approved scope of project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A (Table 30, Table 32), Budget Narrative, and Form 3: Income Analysis (Table 77, Table 78) detail all revenue sources, including: Federal (HRSA) award ($1,951,392), Applicant ($1,000,000), Other ($1,935,000), Program Income ($16,256,425), and total non-federal ($19,191,425). Form 3 further breaks down program income by payer (Medicaid, Medicare, Other Public, Private, Self Pay) and other sources (private grants/contracts, contributions, retained earnings). The Budget Narrative and tables are consistent with these figures.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly identifies and quantifies all projected revenue sources for the annual budget, including the HRSA award and all other sources (program income, private grants, contributions, retained earnings, etc.). The revenue sources are consistent across all budget forms and narratives, and support the Health Center Program project as required.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 1 states: 'The Directors of the Corporation shall possess all powers and authority granted to nonprofit corporations under Chapter 31 of Title 33 of the Code of Laws of California, as amended from time to time. The corporation does not allow for any individual, entity or committee to reserve approval authority or have veto power over the health center board with regard to the required authorities and functions. Any collaboration or agreements with other entities does not restrict or infringe upon the health center board's required authorities and functions.' The Compliance Narrative in Attachment 13 further references this section and confirms that no other individual, entity, or committee reserves approval authority or has veto power over the board regarding required authorities and functions.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly state that the board holds all powers and that no other party has veto or approval authority over the board's required functions. The application narrative confirms that collaborations or agreements do not restrict board authority. There is no evidence of a parent, affiliate, or subsidiary organization or a contract for substantive programmatic work that would infringe on board authority (Form 8: Health Center Agreements). Therefore, the health center is compliant with this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws, Article III, Section 1, lists the specific authorities and responsibilities of the board, including: (a) selection and removal of officers, (b) employment and evaluation/dismissal of the CEO, (c) adoption of personnel policies, (d) adoption of financial management practices, (e) adoption of health care policies (including scope of services, locations, hours), (f) approval of annual project budget and revisions, (g) selection of auditor and approval of annual report, (h) evaluation of corporation activities, (i) assuring compliance with applicable laws, (j) adoption and evaluation of strategic plan, (k) monitoring patient satisfaction and complaints, (l) reviewing and approving continuation grant applications, (m) self-evaluation of the board, (n) evaluation of corporation achievements and officer performance, (o) maintaining tracking system for board actions, (p) revising mission/goals based on evaluation. The Compliance Narrative in Attachment 13 cross-references these sections for each required authority and responsibility.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws enumerate all required board authorities and responsibilities as specified in the HRSA Health Center Program Compliance Manual, including CEO selection/dismissal, budget approval, policy adoption, evaluation of the health center, and assurance of compliance with laws. The application narrative provides direct citations to the relevant bylaw sections for each required authority. There is no evidence of restrictions or delegation of these authorities to another entity. Therefore, the health center is compliant with this element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws, Article IV, Sections 6–9 detail nomination, election, resignation, and removal of directors and officers. Article III, Section 1 states: 'The corporation does not allow for any individual, entity or committee to reserve approval authority or have veto power over the health center board with regard to the required authorities and functions.' The application narrative (Governance: Board Authority Compliance Narrative) references these sections and confirms no outside entity has selection/removal power.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly outline the process for selection and removal of board members, limiting this authority to the board itself. There is explicit language prohibiting any other entity, committee, or individual from having approval or veto power over board composition, including for the board chair and non-patient members. This meets the HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Article IV, Section 3: 'The board shall consist of at least nine (9), but no more than twenty-five (25) directors.' 'At least fifty-one percent (51%) of the directors or patient members, must utilize the health services of the corporation as their medical home and be known as users of the corporation.' 'No more than one-half of non-patient board members derive more than 10 percent of their annual income from the healthcare industry.' 'Non-patient members either live or work in the community where the health center is located.' 'No member shall be an employee or a family member of an employee of UCHC.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws include all required elements: board size (9–25), patient-majority (at least 51%), non-patient member restrictions (income from healthcare industry, community representation), and prohibition of employees or their family members. This satisfies the HRSA requirements for board composition.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A: Current Board Member Characteristics lists 11 board members. 7/11 (64%) are health center patients. All non-patient members either live or work in the service area. No board member derives more than 10% of income from the health care industry. No board member is an employee or immediate family member of an employee. The application narrative and the Governance: Board Composition Compliance Narrative confirm these details.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board composition matches the requirements: at least 9 members, patient-majority, appropriate non-patient member expertise and community ties, and no disqualifying employment or family relationships. Documentation is clear and complete.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B: Request for Waiver of Board Member Requirements states: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' The application requests only 330(e) funding (see Summary Page, Funding Type).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant is a 330(e) Community Health Center and is not requesting a waiver of the patient majority board composition requirements. Therefore, this requirement does not apply.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

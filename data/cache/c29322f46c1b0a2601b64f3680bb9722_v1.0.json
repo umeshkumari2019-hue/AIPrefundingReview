@@ -1,0 +1,307 @@
+{
+  "fileHash": "c29322f46c1b0a2601b64f3680bb9722",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:18.319Z",
+  "applicationName": "COASTAL HEALTH & WELLNESS_Application-243050.pdf",
+  "extractedContent": "Application Number: 243050\nFilename: COASTAL HEALTH & WELLNESS_Application-243050.pdf\nProcessed: 2026-01-23T00:47:22.696Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, under '5. Needs Assessment and Just-in-Time Response to Improve Service Delivery', it states: 'Coastal Health & Wellness conducts a needs assessment every three-to-four years, in conjunction with the Service Area Competition.' Further, the application includes a comprehensive, data-driven needs assessment with current data (2025) on demographics, poverty, insurance, health disparities, and barriers to care. The needs assessment addresses the service area, target populations, and health disparities, and is used for strategic planning and service delivery improvements. The application also describes annual review and use of UDS data, patient origin analysis, and strategic plan updates based on needs assessment findings.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application demonstrates that Coastal Health & Wellness (CHW) completes a needs assessment at least every three years, specifically tied to the Service Area Competition (SAC) cycle, which is consistent with HRSA requirements. The needs assessment uses the most recent available data (2025), covers all required topics (demographics, health status, barriers, special populations), and is explicitly used to inform and improve service delivery and strategic planning. The process is described as routine and integrated into board review and planning. There is no evidence of missing or outdated needs assessment, and the application provides detailed, current data analysis and documentation of how the assessment is used. Therefore, the application is COMPLIANT with Element b.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13: Health Center Program Compliance states: 'The CHW Governing Board must approve each year's updated sliding fee schedule before it is implemented. The most recent sliding fee discount schedule was approved and implemented on February 1, 2025.' The Bylaws (Attachment 2) under 'Specific Duties of Board' require periodic review and approval of the sliding fee scale discount program. The application narrative (Section 5. Sliding Fee Discount Program) describes uniform applicability, annual board review, and policy details. Form 1C confirms that sliding fee discount program policies and procedures are on file.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence of a board-approved sliding fee discount policy, annual review and approval, and uniform application to all patients. The policies are described in detail, and the board's authority and process are documented in the bylaws and narrative.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A - Required Services Provided shows that all required services are provided directly (Column I) and Attachment 13 and the narrative state: 'The sliding fee discount schedule applies to all services provided by Coastal Health & Wellness (CHW), regardless of whether the service is listed on Form 5A: Services Provided or offered as an additional service.' The uploaded Sliding Fee Discount Schedule (Attachment 10) details the discount classes and income thresholds. The narrative and Attachment 13 further confirm that the schedule is applied to all directly provided services, and that discounts are based solely on income and family size.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence confirms that the sliding fee discount schedule is applied to all directly provided (Column I) services, is structured according to board-approved policy, and provides discounts as required. The SFDS is consistent with policy and is implemented for all eligible patients.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule (2025/2026) is based on the HHS Poverty Guidelines, 2024, as stated on the schedule itself. The narrative and Attachment 13 both state: 'Each year, the sliding fee scale is updated, per the poverty guidelines published annually in the Federal Register by the U.S. Department of Health and Human Services, under the authority of 42 U.S.C. 9902(2).' The application states the most recent sliding fee discount schedule was approved and implemented on February 1, 2025.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The uploaded SFDS uses the current (2024) Federal Poverty Guidelines, and the policy requires annual updates to reflect the most recent FPG. The board approval date and explicit reference to the 2024 guidelines confirm compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff includes detailed position descriptions for CEO/Executive Director/Project Director, Chief Operations Officer, Medical Director, Chief Financial Officer, Dental Director, and Chief Information Officer. Each position description lists required qualifications (education, experience, certifications), essential job functions, supervisory skills, and knowledge/abilities. Attachment 5: Biographical Sketches for Key Management Staff provides resumes/CVs for each key management staff member, showing their training and experience. The Project Narrative, organizational chart (Attachment 3), and Form 2: Staffing Profile further corroborate the existence and roles of these positions.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both position descriptions and biographical sketches for all key management staff, with clear documentation of required training, experience, and duties/functions. This meets the HRSA requirement for documentation of qualifications and functions for each key management staff position.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff (CEO/Executive Director/Project Director) states the CEO reports to the Coastal Health & Wellness Governing Board and supervises the Chief Operating Officer, Chief Nursing Officer, and Medical Director. The Project Narrative and Bylaws confirm that the CEO is selected, evaluated, and, if necessary, dismissed by the Governing Board. Form 2: Staffing Profile lists the CEO as a direct hire. Attachment 13: Health Center Program Compliance explicitly states: 'Coastal Health & Wellness' CEO/Executive Director/Project Director: 1) Is directly employed by the health center. 2) Reports to the health center's governing board. 3) Is responsible for overseeing other key management staff in carrying out the day-to-day activities of the project.' The organizational chart (Attachment 3) visually shows the CEO at the head of the management team, reporting to the Governing Board.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides multiple, consistent sources of evidence that the CEO/Project Director is directly employed by the health center, reports to the governing board, and oversees other key management staff in day-to-day operations. This satisfies all aspects of the HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements lists all contracts and agreements, including type, description, and dates. Attachment 13: Health Center Program Compliance states: 'Additionally, Attachment 7: Summary of Contracts and Agreements and Form 8: Health Center Agreements demonstrate all contracts include the: 1) Specific activities or services to be performed and/or goods to be provided. 2) Mechanisms to monitor contractor performance. 3) Requirements for the contractor to provide data necessary to meet applicable federal financial and programmatic reporting requirements, as well as provisions addressing record retention and access, audit, and property management.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a detailed summary of contracts and agreements, and the compliance attachment explicitly states that all contracts include the required provisions. There is also a reference to Form 8: Health Center Agreements, which confirms that these provisions are present. No evidence was found of missing required provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8: Health Center Agreements, Part I, Question 2a, is answered 'No' for contracts with another organization to perform substantive programmatic work. Attachment 7: Summary of Contracts and Agreements states: 'Coastal Health & Wellness does not have any contracts, agreements, or subrecipient agreements with any entities for any substantial portions of the project.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center does not have any contracts for substantive programmatic work. Therefore, HRSA approval is not required, and this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8: Health Center Agreements, Part I, Question 2b, is answered 'No' for subawards. Attachment 7: Summary of Contracts and Agreements confirms there are no subrecipient agreements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has not made any subawards. Therefore, HRSA approval is not required, and this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8: Health Center Agreements, Part I, Question 2b, is answered 'No' for subawards. Attachment 7: Summary of Contracts and Agreements confirms there are no subrecipient agreements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has not made any subawards. Therefore, there are no subaward agreements to review, and this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application provides extensive narrative and documentation of collaborative relationships. In the 'COLLABORATION' section, the health center lists referral arrangements and MOUs with local hospitals (e.g., University of Texas Medical Branch, Mainland Medical Center), specialty providers (e.g., MD Anderson Cancer Center, Singleton Associates/RadPartners, Mainland Radiology Association), and social service organizations (e.g., Galveston County Food Bank, St. Vincent's House, Gulf Coast Center for mental health and substance use disorder services). Attachment 7: Summary of Contracts and Agreements lists formal agreements with these entities. Attachment 9: Collaboration Documentation includes letters of support from these partners, and the narrative describes how these collaborations provide access to services not available directly through the health center (e.g., specialty care, inpatient care, cancer treatment, food assistance, behavioral health). The application also details care coordination processes, referral tracking, and integration of enabling services.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has provided clear, specific, and sufficient documentation of collaborative efforts with a wide range of providers and programs in the service area, including both health care and social service organizations. The evidence includes both narrative descriptions and formal documentation (MOUs, contracts, letters of support). The collaborations are active and support access to services not available directly through the health center, fulfilling the HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application narrative (see 'COLLABORATION' and 'Service Coordination with Other Providers and Community Organizations') describes coordination with other HRSA-supported health centers, including Stephen F. Austin Community Health Centers (Community Health Network), St. Hope Foundation, Busy Bee Wellness Center, and Access Care of Coastal Texas (ACCT). Attachment 9: Collaboration Documentation includes evidence of requests for letters of support from these health centers, and letters of support from ACCT and St. Hope Foundation are included. The application also describes collaboration with the Texas Association of Community Health Centers (TACHC), the state Primary Care Association, and participation in the Health Center Controlled Network (HCCN). The application notes that while some letters of support from HRSA-supported health centers were not received in time, evidence of the requests is provided. The narrative details collaboration with state and local programs (e.g., Galveston County Health District, Gulf Coast Center, College of the Mainland, local public health programs).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has documented ongoing efforts to coordinate and integrate activities with other federally-funded, state, and local health services delivery projects and programs, including other health centers in the service area. The evidence includes both narrative descriptions of collaborative activities and formal documentation of outreach and support. The requirement to establish and maintain relationships with other health centers is met, even though not all letters of support were received, as the health center demonstrates good faith efforts and provides alternative documentation.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Multiple sections of the application confirm participation in Medicaid, Medicare, CHIP, and private insurance: \n- Project Narrative: 'Accessibility is also increased through acceptance of Medicaid, Medicare, private insurance, as well as sliding-scale fees for uninsured patients (up to 200% of the Federal Poverty Level).' \n- Attachment 13: Health Center Program Compliance: 'In accordance with the Billing & Collection Policy & Procedure and supported on Form 3: Income Analysis, Coastal Health & Wellness will participate in Medicaid, Medicare, CHIP, and as appropriate, other public and/or private assistance programs or health insurance.' \n- Form 3: Income Analysis shows projected income from Medicaid, Medicare, and private insurance. \n- Form 5A: Required Services Provided and contracts with UTMB and other providers support billing for these payors.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, repeated, and specific evidence that the health center participates in Medicaid, CHIP, Medicare, and private insurance programs. Income projections and policy statements confirm active participation. There is no evidence of any exclusion or non-participation. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "Attachment 13: Health Center Program Compliance states: 'Per Section X. Medical Fee Waiving Policy & Procedure, \"It is the policy of Coastal Health & Wellness (CHW) to ensure that the lack of means does not hinder care while additionally ensuring that each of our patients is treated equally and fairly. Patients who present for care without the means for payment should follow first the policy for Sliding Fee Program to determine their poverty level. The patient who falls into a category that they are unable to fulfill must further discuss with the eligibility specialist on their current financial hardship (e.g. bankrupt, loss of employment, loss head of household) and/or medical hardship (e.g. terminally ill) to provide protection from undue financial burden. The fees may be reduced or waived all together.\"' \nFurther, 'Other waiver criteria include but is not limited to the following: Chronic illness; Financial problems related to transportation or other unexpected expenses; Natural disasters; House fire; Loss of primary income sources; Death of a family member defined above.' \n'All documentation must be completed, and the additional hardship will be in effect for a period of up to 3 months and then re-evaluated.' \nForm 1C - Documents On File confirms 'Billing and Collections policies/procedures, including those regarding waivers or fee reductions and refusal to pay.' \nBylaws (Attachment 2) and Board authority sections confirm board approval of such policies.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides detailed, board-approved policies describing the process and criteria for waiving or reducing fees, including specific hardship circumstances (e.g., bankruptcy, loss of income, chronic illness, disaster, death of family member). The process includes documentation and periodic review. The policies are referenced in the compliance attachment, and board approval is documented in the bylaws and board authority sections. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a detailed SF-424A: Budget Information - Non-Construction Programs, Budget Narrative, and Personnel Justification. The total budget is $12,850,820.00, with line-item breakdowns for personnel, fringe, supplies, contractual, other, and no indirect charges. The budget narrative ties expenses to the scope of project (e.g., personnel for direct clinical/enabling services, supplies for preventative care, contracted services for lab/telehealth, etc.). The application states: 'The proposed budget aligns with HRSA's funding guidance and supports: Adequate personnel and staffing for direct clinical services and enabling services; Supplies and equipment to support preventative care, management of chronic illnesses, and cancer screening; Contracted services for laboratory, telehealth, and facilities; Health information management and quality improvement systems; Education and health literacy for patient engagement leading to healthier outcomes.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has submitted a comprehensive annual budget that aligns with the HRSA-approved scope of project, as evidenced by the detailed SF-424A, budget narrative, and explicit linkage of budgeted items to the scope of services and sites described in the application. The budget covers all required cost categories and is consistent with the scope of project as described in Form 5A, 5B, and the project narrative.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A and Budget Narrative include the following revenue sources: Federal (HRSA award) $3,237,400; State $361,376; Local $2,740,567; Other $85,000; Program Income (fees, third party reimbursements, and payments generated from the projected delivery of services) $6,426,477; for a total revenue of $12,850,820. The Form 3: Income Analysis further breaks down patient service revenue by payer (Medicaid, Medicare, Private, Self Pay) and other income sources (Other Federal, State, Local, Other). The application narrative and budget narrative both state that 'all program income and non-federal source income, including county support and patient revenue, will supplement federal HRSA funds to maximize health outcomes for Galveston service area patients and residents.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The budget includes all required revenue sources: the HRSA award, state and local funds, program income (including third-party reimbursements and self-pay), and other support. These are clearly itemized in both the SF-424A and the budget narrative, and the amounts are consistent across forms. The application demonstrates that the health center has a realistic and comprehensive plan for all revenues that will support the Health Center Program project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "1. The Coastal Health & Wellness Governing Board Bylaws (Attachment 2) state: 'The Governing Board shall provide the required community-based governance and oversight of Coastal Health & Wellness, consistent with the Bylaws of the Galveston County United Board of Health, which has delegated to the Governing Board the specific authorities and responsibilities over Coastal Health & Wellness.' 2. The Co-Applicant and Shared Services Agreement (Attachment 6) Section 1 and Section 5 explicitly state that the CHW Governing Board has 'complete authority of oversight and policy-making for Coastal Health & Wellness' and lists the board's sole authority for all required HRSA authorities. 3. The Bylaws state: 'Other than as agreed upon with the Galveston County United Board of Health, no other party may be granted approval or vetoing rights regarding any of the aforementioned authorities.' 4. The organizational chart (Attachment 3) shows the Governing Board at the top of the health center's reporting structure, with the Executive Director reporting directly to it. 5. The application narrative and Attachment 13 (Health Center Program Compliance) reiterate that 'no other individual, entity, or committee... reserves approval authority or has veto power over the board regarding the required authorities and functions.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct, and repeated evidence in the bylaws, co-applicant agreement, organizational chart, and narrative that the CHW Governing Board maintains full authority for oversight of the Health Center Program project. There is no evidence of any other entity or individual having veto or approval authority over the board regarding the required HRSA authorities. The co-applicant agreement and bylaws are explicit that the board's authority is not subject to outside approval, and the reporting structure supports this. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "1. The Coastal Health & Wellness Governing Board Bylaws (Attachment 2, 'Specific Duties of the Board' section) enumerate all required HRSA authorities, including: selection, evaluation, and dismissal of the Executive Director; approval of annual budget and grant applications; approval of services, sites, and hours of operation; evaluation of health center performance; adoption of policies; and ensuring compliance with federal, state, and local laws. 2. The Co-Applicant and Shared Services Agreement (Attachment 6, Section 5) lists the board's required authorities in detail, matching HRSA requirements. 3. The bylaws state: 'The Governing Board shall have specific responsibility to: Act as supervisor to the Executive Director, which includes the responsibility for the selection, annual evaluation of performance, and, if necessary, dismissal of this position... Approve the annual operating plan, operating budget, and capital budget for Coastal Health & Wellness... Approve applications and renewals related to the Health Center Program... Establish general policies necessary and proper for the efficient and effective operation of the Clinic, and to review and approve the scope and availability of services, location and hours of services offered by the Clinic...' 4. The application narrative and Attachment 13 (Health Center Program Compliance) confirm that the board holds all required authorities and that these are not subject to approval or veto by any other entity.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application includes the full text of the bylaws and the co-applicant agreement, both of which clearly and specifically outline all required authorities and responsibilities of the governing board as required by HRSA. The language is explicit and comprehensive, and there is no evidence of any limitation or restriction on these authorities. The application narrative and compliance attachment further confirm that these authorities are the 'sole responsibility' of the board. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "The Coastal Health & Wellness Governing Board Bylaws (Attachment 2) specify in 'Election of Membership' that all voting members of the Governing Board are elected by a majority of the seated Governing Board members, upon consideration of a slate of recommended nominees presented to the Governing Board. The bylaws also state, 'In no event shall Board members appointed by any third-party constitute a majority of the entire Governing Board or a majority of the non-consumer representatives, nor shall any third-party preclude the selection of Governing Board members not appointed by such third-party.' Removal of board members is also by majority vote of the board (Bylaws, Section 4). The co-applicant agreement reiterates that the CHW Governing Board has sole authority for board member selection and removal.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and co-applicant agreement provide clear, explicit language that the board itself controls selection and removal of its members and chair, with no other entity or individual holding veto or selection power over the majority or chair. The process is detailed and compliant with HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Bylaws (Attachment 2, Section 1: Membership) state: 'The membership of the Governing Board will consist of no less than nine (9) and no more than fifteen (15) persons collectively representing the community at large and accurately reflecting the ethnic and socioeconomic distribution of the region's population. At a minimum, a majority of the Board members shall be individuals who utilize Coastal Health & Wellness as their principal source of primary care and who, as a group, represent the individuals being served by the Clinic, in terms of demographic factors such as race, ethnicity, gender, and economic status (\"consumer representatives\").' The bylaws further specify non-consumer member requirements and limitations on health care industry income, and prohibit employees and immediate family members from serving as board members.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly require a board composition that meets all HRSA requirements: size, patient majority, community representation, expertise, and conflict-of-interest safeguards. The requirements are detailed and match HRSA's Board Composition requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics lists 9 board members, of whom 5 are marked as 'Consumer' (patients) and 4 as 'Community.' The application narrative and bylaws confirm that the board is required to have a majority of patient members. The table shows that none of the consumer members derive >10% of income from the health care industry, and all members live or work in the service area. The application narrative states: 'Form 6A demonstrates six (6) of nine (9) board members are consumers.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board composition is documented and matches the requirements: at least 51% are patients, non-patient members represent relevant community expertise, and there are no conflicts with health care industry income or employment. All members live or work in the service area.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements states: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' The application requests only 330(e) funding (see Summary Page, Funding Type).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This requirement is not applicable because the health center is applying for/receiving 330(e) Community Health Center funding only, and is not seeking a waiver of the patient majority board composition requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

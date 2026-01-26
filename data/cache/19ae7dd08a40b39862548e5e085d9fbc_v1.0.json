@@ -1,0 +1,307 @@
+{
+  "fileHash": "19ae7dd08a40b39862548e5e085d9fbc",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:16.494Z",
+  "applicationName": "THE WEST OAKLAND HEALTH COUNCIL_Application-242875.pdf",
+  "extractedContent": "Application Number: 242875\nFilename: THE WEST OAKLAND HEALTH COUNCIL_Application-242875.pdf\nProcessed: 2026-01-23T09:24:18.084Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "The application contains a detailed Needs Assessment section that states: 'Baywell Health will conduct a comprehensive community needs assessment every three years, consistent with HRSA SAC and Board policy, integrating data from UDS Mapper, Alameda County Public Health, and regional CHNAs. Interim annual updates will capture demographic and epidemiologic trends, informing revisions to the Scope of Project and operational planning.' The narrative further details use of the most recent UDS Mapper data (2022, as the latest available), county public health reports, and partner hospital CHNAs. The assessment addresses population demographics, health disparities, social determinants, and service area trends. It also describes annual reviews and Board presentations of findings, and links the assessment to service planning and resource allocation. The application includes specific data points, tables, and projections based on recent data (2022-2025), and describes ongoing community input and annual interim updates.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application demonstrates that a comprehensive needs assessment is completed at least every three years, as required, and that annual interim updates are performed. The needs assessment uses the most recently available data (explicitly noting the use of 2022 UDS Mapper data as the latest available), incorporates county and local data, and addresses all required elements (demographics, health disparities, social determinants, service area trends, and special populations such as the Black community and homeless individuals). The process is clearly described as informing service delivery, resource allocation, and Board decision-making. There is no evidence of a gap in the three-year cycle, and the assessment is current and robust. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13 - Health Center Program Compliance states: 'Please see Attachment 1 - Sliding Fee Discount Program Policy used by Baywell Health, which describes all aspects of the SFDP referenced above.' The policy is included as 'Attachment 2 - Sliding Fee Discount Program Policy' and is board-approved (signed by CEO and Board President). The policy states: 'No aspect of the sliding fee scale discount program (SFSD), including West Oakland Health's fees themselves, the procedures for assessing patient eligibility, or the procedures for collecting payments, will create barriers to health care services.' It further states: 'The SFDP applies to all FQHC in-scope services.' The policy details definitions, eligibility, nominal charges, annual review, and uniform application.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The policy is board-approved, applies to all patients, and addresses income/family size, nominal charges, annual review, and uniform application. The application narrative and policy explicitly state that the SFDP applies to all in-scope services and all patients, and the policy is reviewed and approved by the board annually.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A - Required Services Provided shows that Baywell Health provides all required services directly (Column I), including medical, dental, behavioral health, pharmacy, case management, eligibility assistance, health education, outreach, transportation, and translation. The Sliding Fee Discount Schedules (Attachment 10) and policy show that for all services provided directly (medical, dental, pharmacy, behavioral health, optometry), the SFDS is applied, with clear discount categories based on FPG and nominal charges for those at/below 100% FPG. The UC Berkeley Optometry contract (Column II) explicitly states that all revenues go to WOHC and that patients must apply for the SFDS at registration.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "All Column I services have a corresponding SFDS, and the schedules and policy show discounts are structured and applied as required. The policy and contract documentation ensure that the SFDS is applied even for contracted direct services (e.g., optometry), and the application narrative confirms uniform application to all direct services.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "The Sliding Fee Discount Schedules for Medical, Dental, and Dental Prosthodontics explicitly state: 'Based on 2024 U.S. Department of Health and Human Services Federal Poverty Guidelines (FPG), http://aspe.hhs.gov/poverty.' The policy (Attachment 2) states: 'The SFDP policy is reviewed and updated annually with current Federal Poverty Guidelines and to ensure nominal fees do not create a financial barrier to care.' The schedules show the 2024 FPG values for each family size.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The schedules and policy both state that the most recent FPG is used, and the 2024 FPG values are shown in the tables, demonstrating current incorporation. The annual review process ensures continued compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff provides detailed position descriptions for CEO, CFO, CMO, CCO, CBOO, CIO, and CSO, including required qualifications, education, experience, and specific duties/functions. Attachment 5: Biographical Sketches for Key Management Staff provides resumes/CVs for individuals in these roles, detailing their training and experience. The application narrative and budget justification also reference these attachments and summarize the roles and qualifications. For example, the CEO position description outlines responsibilities, required education, and experience, and the biographical sketch for Robert Phillips (CEO) demonstrates he meets/exceeds these requirements. Similar documentation is present for all other key management staff.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "HRSA requires documentation of both the qualifications (education, experience) and the duties/functions for each key management staff position. The application provides both position descriptions and biographical sketches for all key management staff, with clear alignment between required qualifications and the actual experience of incumbents. The documentation is specific, current, and covers all required positions. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Form 2 - Staffing Profile lists the Project Director/Chief Executive Officer (CEO) as a direct hire (1.00 FTE, not contract). The CEO position description (Attachment 4) states the CEO 'reports to the Board of Directors' and is 'responsible for administering, implementing, and directing all aspects of West Oakland Health Council (WOHC), its programs and centers, in accordance with the policies established by the Board of Directors.' The bylaws (Attachment 2) specify that the Board approves the selection, evaluation, and dismissal of the CEO, and that the CEO is responsible for the day-to-day administration and for hiring/supervising key management staff. The organizational chart (Attachment 3) shows the CEO at the top of the management structure, with all other key management staff reporting to the CEO. The budget justification and narrative further confirm the CEO is a direct employee and not a contractor.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "HRSA requires that the CEO/Project Director be directly employed by the health center, report to the governing board, and oversee day-to-day operations and key management staff. The application provides clear, multiple, and consistent evidence that the CEO is a direct employee, reports to the board, and is responsible for overseeing all key management staff and the daily operations of the health center. The bylaws, organizational chart, position description, and staffing profile all support this. Therefore, this element is compliant.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements indicates 'Yes' to contracts for substantive programmatic work and lists 4 such contracts. The UC Berkeley contract for optometry is uploaded and selected for OSV review. The application narrative and Attachment 13 reference oversight and compliance with HRSA requirements. The contract summary and agreement include all required provisions (e.g., sliding fee, credentialing, record retention, insurance, indemnification, HIPAA, non-discrimination, independent contractor status, etc.). The contract is included in the application as required for OSV and prior approval.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has contracts for substantive programmatic work (e.g., optometry with UC Berkeley), has uploaded the contract as required, and the contract includes all required provisions. The inclusion of the contract in Form 8 and its selection for OSV review is the mechanism by which HRSA reviews and approves such arrangements. There is no evidence of missing HRSA approval or lack of documentation.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "The UC Berkeley contract (uploaded and summarized in Form 8) includes: sliding fee discount (Section 4B), credentialing and privileging (Section 5D), record retention (Section 9), HIPAA and confidentiality (Section 9C), insurance (Section 7), indemnification (Section 8), non-discrimination (Section 11D), independent contractor status (Section 11I), and performance monitoring (Scope of Services, Section 3). The contract is reviewed and referenced in Attachment 13 as meeting HRSA requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The contract provided for substantive programmatic work contains all required HRSA provisions, as evidenced by the contract text and summary. The application narrative and Attachment 13 further confirm oversight and compliance. There is no evidence of missing or non-compliant contract provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "The application includes a budget line for a subaward to Lincoln Families ($314,729, see Budget Narrative and Table 25), but there is no documentation in the application, Form 8, or Attachments that a subaward agreement is uploaded or that HRSA prior approval was requested/received. However, the instructions state this element is 'Not Applicable for Look-alikes.' This applicant is a Section 330 grantee, not a look-alike, so the requirement is applicable. However, the application does not provide the required documentation for HRSA prior approval for the subaward.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "While the applicant is not a look-alike (so the element is applicable), there is no evidence of HRSA prior approval for the Lincoln Families subaward. However, since the instructions say 'Not Applicable for Look-alikes,' and the applicant is not a look-alike, the requirement is applicable. But since the question asks for items that are not applicable, and this is not the case, this element should not be listed as not applicable but rather as non-compliant. Therefore, this element is not included here.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "The instructions state this element is 'Not Applicable for Look-alikes.' The applicant is a Section 330 grantee, not a look-alike, so the requirement is applicable. However, the application does not provide a subaward agreement for Lincoln Families or any other subrecipient. Since the question asks for items that are not applicable, and this is not the case, this element should not be listed as not applicable but rather as non-compliant. Therefore, this element is not included here.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application provides extensive narrative and documentation of collaborative relationships. In the 'Collaboration' section, Baywell Health describes partnerships with Alameda Health System (local hospitals), Highland Hospital (specialty care), CHCN (specialty referrals), and social service organizations (e.g., Lincoln Families, City Team, St. Vincent de Paul). Attachment 7: Summary of Contracts and Agreements lists formal written agreements with UC Berkeley (optometry), BabyLive Advice (perinatal support), and others. Letters of support from Alameda Health System, Asian Health Services, Axis Community Health, Bay Area Community Health, LifeLong Medical Care, Native American Health Center, and Tiburcio Vasquez Health Center further document active collaboration. The UC Berkeley optometry contract (Attachment 8) details a formal arrangement for specialty care not available on-site. The narrative also describes the Community Impact team connecting patients to housing, benefits, and domestic violence resources.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has provided clear, specific, and current evidence of coordination and integration with local hospitals, specialty providers, and social service organizations. These relationships are documented through contracts, referral arrangements, and letters of support, as well as narrative descriptions of how patients are connected to services not available on-site. The evidence meets HRSA requirements for documenting collaborative relationships supporting access to comprehensive care.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application includes a detailed section on collaboration with other primary care providers. Baywell Health is a member of the Community Health Center Network (CHCN) and Alameda Health Consortium (AHC), which includes all FQHCs in Alameda County. The narrative describes participation in CHCN-led workgroups, shared specialty referral systems, and joint advocacy efforts. Letters of support from all other FQHCs in the service area (Asian Health Services, Axis Community Health, Bay Area Community Health, La Clínica, LifeLong Medical Care, Native American Health Center, Tiburcio Vasquez Health Center) confirm ongoing relationships and collaboration. The application also describes participation in county-wide programs such as HealthPAC and Enhanced Care Management, which require coordination with other health centers and county agencies.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has provided robust documentation of collaboration and integration with other federally-funded, state, and local health service delivery projects, especially other FQHCs in the service area. The evidence includes both narrative descriptions and formal letters of support, as well as participation in county-wide networks and programs. This meets and exceeds the minimum HRSA requirement for documenting collaborative relationships with other primary care providers.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Attachment 13 - Health Center Program Compliance states: 'Baywell Health participates in Medicare, Medi-Cal, CHIP, and many other health insurance programs to ensure we can provide high-quality care to our patients, and as a means to retain and allow for an avenue to care for our patients.' Form 3: Income Analysis shows revenue from Medicaid ($10,641,579.52), Medicare ($1,001,533.94), and other public/private/self-pay sources. The Project Narrative and Form 5A also confirm participation in these programs.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct statements of participation in Medicaid (Medi-Cal), CHIP, and Medicare. Revenue data in Form 3 confirms active billing and participation. The narrative and compliance attachments further reinforce that the health center is enrolled in and actively billing these programs, as required by HRSA. There is no evidence of exclusion or non-participation in any required program.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "Attachment 13 - Health Center Program Compliance and the Sliding Fee Discount Program Policy (Attachment 10) state: 'No patients are denied care because of inability to pay.' The policy outlines that the SFDP applies to all in-scope services, is based solely on income and family size, and that nominal fees are set at levels that are 'nominal from the perspective of the patient.' The policy also states: 'Emergency discounts or waivers may be approved when the standard fee would create a barrier to care, consistent with Board-approved criteria (e.g., natural disasters, death, injury or illness of a spouse/relative, divorce, loss of employment).' The SFDP and Billing and Collections Policy are reviewed and approved by the Board annually.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a board-approved Sliding Fee Discount Program policy that details the process for waiving or reducing fees due to inability to pay, including specific circumstances for emergency waivers and a process for patients to request $0 fees if unable to pay nominal charges. The policy is reviewed annually by the Board, and the application narrative confirms operational use of these procedures. This meets HRSA's requirements for both policy and practice.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes the SF-424A: Budget Information - Non-Construction Programs, a detailed Budget Narrative, and Form 3: Income Analysis. The budget totals $22,407,294.00, with line-item breakdowns for personnel, fringe, travel, equipment, supplies, contractual, other, and indirect costs. The budget narrative aligns with the scope of project as described in the project narrative and Form 5A/5B service/site forms. The budget includes projections for four years and is tied to the projected patient and visit volumes, service types, and staffing described in the application.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has provided a comprehensive annual budget that covers all projected costs and revenues necessary to support the full HRSA-approved scope of project. The budget is detailed, aligns with the described services, staffing, and patient projections, and is submitted as part of the required HRSA application forms. This meets the requirement for developing and submitting an annual 'total budget' for the scope of project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A, Budget Narrative, and Form 3: Income Analysis all include detailed breakdowns of revenue sources. These include: Federal (HRSA) award ($4,059,545), Applicant ($785,000), State ($1,512,781), Local ($2,796,945), Other ($1,543,471), and Program Income ($11,709,552). Form 3 further breaks down program income by payer (Medicaid, Medicare, Other Public, Private, Self Pay) and includes prior year and projected income. The narrative and tables clearly show all sources of revenue that will support the project, not just the HRSA award.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a full accounting of all projected revenue sources, including federal, state, local, other, and program income, with supporting detail in both narrative and tabular formats. This satisfies the requirement to include all revenue sources that will support the Health Center Program project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws (Copy of Bylaws.pdf), Article V, Section 1: 'The activities and affairs of the Corporation shall be conducted and all corporate powers shall be exercised by or under the direction of the Board of Directors.' Article II - Purpose: 'the responsibility of the WOHC Board of Directors shall be to: (a) hold monthly meetings where a quorum is present; (b) approve selection (and termination or dismissal as appropriate) of the Council's CEO; (c) approve the annual budget, and applications as appropriate; (d) approve services, locations, and hours of operation of WOHC sites; (e) evaluate the performance of the health center; (f) establish or adopt policy related to operations of the health center; and (g) assure the health center operates in compliance with applicable federal, state, and local laws and regulations.' The application narrative and Attachment 13 (Health Center Program Compliance) also reference these sections and state that 'no other individual, entity, or committee...reserves approval authority or has veto power over the board with regard to the required authorities and functions.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly state that all corporate powers are exercised by or under the direction of the Board of Directors, and enumerate the board’s required authorities. The application narrative and compliance attachment further confirm that no other entity or committee has veto or approval power over the board’s required authorities, and that collaborations or contracts do not infringe on board authority. There is no evidence of any restriction or reservation of board authority elsewhere in the application. Therefore, the health center is compliant with the requirement that the board maintains authority for oversight of the Health Center Program project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws (Copy of Bylaws.pdf), Article II - Purpose and Article V - Board of Directors, Section 1: Powers, list the following authorities and responsibilities: holding monthly meetings; approving selection and termination of the CEO; approving the annual budget and applications; approving services, locations, and hours of operation; evaluating performance of the health center; establishing/adopting policy related to operations; assuring compliance with applicable laws and regulations. Attachment 13 (Health Center Program Compliance) cross-references these sections and confirms their presence. The Project Narrative and Governance section also describe board engagement in strategic planning, financial oversight, quality improvement, and policy adoption.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly and specifically enumerate all required authorities and responsibilities of the governing board as outlined by HRSA, including those related to CEO selection/dismissal, budget approval, service/location/hours approval, evaluation of performance, policy adoption, and compliance assurance. The application narrative and compliance attachment confirm these authorities are not delegated or restricted. Therefore, the health center is compliant with the requirement that the governing board’s required authorities and responsibilities are outlined in its governing documents.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws, Article V, Section 1: 'all corporate powers shall be exercised by or under the direction of the Board of Directors.' Section 2 describes the number and qualifications of directors, and Section 3 details the election and term of office, including that the board votes on nominees. Section 4 and Section 6 outline removal and resignation, with removal by majority vote of the board. Section 5 describes the Election Committee, which is appointed by the Board and only presents nominees; the Board itself votes. Section 6 describes termination for cause, and Section 7 details filling vacancies by majority board vote. Article VI, Section 2 states that officers (including the President/Chair) are elected annually by the Board.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly vest authority for selection and removal of board members and officers solely in the Board of Directors. No other entity, committee, or individual has authority to select the board chair or a majority of board members. The process for selection, removal, and filling vacancies is specified and is board-controlled, meeting HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Article V, Section 2: 'The Board of Directors shall consist of no less than (9) and no more than fifteen (15) members. A majority of the Board shall be consumers of the Corporation and shall be representative of the individuals served by the Corporation in terms of demographic factors such as race, ethnicity, sex, socioeconomic status, and age (hereinafter \"Consumer Directors\"). Each Consumer Director shall be a current registered patient of the Corporation and have accessed the Corporation in the past twenty-four (24) months to receive at least one or more in-scope service(s) that generated a visit as defined under FQHC program; or be the legal guardian of a patient of the Corporation meeting the aforementioned criteria. The remaining directors may be non-consumers of the Corporation (hereinafter \"Non-Consumer Directors\"). Not more than fifty percent (50%) of the Non-Consumer Directors may derive more than ten percent (10%) of their income from the health care industry. ... No Board member shall be an employee of the Corporation or spouse, domestic partner, child, parent, brother, or sister, by blood or marriage, of an employee.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws specify the required board size (9-15), majority consumer/patient representation, demographic representativeness, restrictions on health industry income for non-consumer members, and prohibit employees or their immediate family members from serving. This meets all HRSA board composition requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics: Lists 10 board members. Of these, at least 5 are marked as 'Health Center Patient' (Justus Samuels, Kathleen Harris, Carol Burton, Tammy Summers, Loyd Ware), which is a majority. The board includes a range of expertise (social work, philanthropy, legal, community organizing, finance, city program management, research). The 'Live or Work in Service Area' column is checked for all members. None derive >10% income from the health industry. Application narrative: 'The Baywell Health Board of Directors is composed of nine members whose backgrounds and lived experiences closely mirror the demographics of the communities we serve. The Board's racial, ethnic, and gender composition reflects that of our patient population, ensuring that decision-making remains grounded in the realities of those receiving care. A majority—five of the nine members—are active consumers of health center services.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The board currently meets HRSA requirements for size, majority patient/consumer representation, demographic representativeness, community expertise, and absence of disqualifying conflicts. This is supported by Form 6A and the narrative.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' Also, on the Summary Page, only 330(e) funding is requested; no funding is requested under 330(g), 330(h), or 330(i).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant is a 330(e) Community Health Center and is not requesting a waiver of board composition requirements for 330(g), 330(h), or 330(i). Therefore, this element is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

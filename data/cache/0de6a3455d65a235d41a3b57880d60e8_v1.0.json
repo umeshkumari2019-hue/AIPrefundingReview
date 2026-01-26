@@ -1,0 +1,307 @@
+{
+  "fileHash": "0de6a3455d65a235d41a3b57880d60e8",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:14.734Z",
+  "applicationName": "LONE STAR CIRCLE OF CARE_Application-242757.pdf",
+  "extractedContent": "Application Number: 242757\nFilename: LONE STAR CIRCLE OF CARE_Application-242757.pdf\nProcessed: 2026-01-23T06:18:00.231Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "The Project Narrative, Section 'Need', states: 'During LSCC's strategic planning process conducted every three years, leadership and Board members conduct an internal assessment... External assessment involves a review of needs assessments, market analysis, and identification of environmental factors with potential to impact health center performance. As part of the community needs assessment, HRSA's Service Area Needs Assessment Methodology (SANAM) generates the service area's Unmet Needs Score (UNS)...' In Section 'Needs Assessment, Scope of Project, and Patient/Community Input', it further states: 'LSCC reviews and updates its Needs Assessment annually, incorporating state and local census, demographic, and health assessment data to gain perspective on the forces impacting health care in Central Texas.' The needs assessment includes recent data (2023-2025) from Census, UDS, GeoCare Navigator, Texas Department of State Health Services, and local health authorities. The application provides detailed tables and narrative analysis of population growth, poverty, insurance status, health disparities, and special populations (e.g., Hispanic, rural, children, seniors). The application also describes how the needs assessment informs service delivery, site locations, and program planning.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly documents that LSCC completes and updates a comprehensive needs assessment at least annually, with a formal strategic planning process every three years. The needs assessment uses the most recent data available and covers all required topics, including special populations. It is used to inform and improve service delivery, as evidenced by the integration of needs assessment findings into strategic planning, site selection, and program development. The inclusion of current data sources and explicit statements about the frequency and use of the needs assessment demonstrate compliance with HRSA requirements for Element b.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13: Health Center Program Compliance states: 'LSCC's board-approved policy, Program and Financial Screening, guides implementation of the sliding fee discount schedule and directs how it is applied equally to all patients.' The policy is referenced as being reviewed and approved by the Board of Directors at least once every three years. The Bylaws (Attachment 2) assign the Board responsibility for policy approval. The application narrative (Section 5, Sliding Fee Discount Program) describes the policy as applying to all patients and details the process for eligibility determination, income/family size definitions, and annual updates.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence that there is a board-approved sliding fee discount policy, that it applies uniformly to all patients, and that it addresses the required areas (eligibility, income/family size, annual review, application to all services, etc.). The policy is referenced multiple times, and the Board's authority is established in the Bylaws. There is no indication of selective application or gaps.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A (Required, Additional, and Specialty Services) shows that all required and additional services are provided directly (Column I) by LSCC. Attachment 10: Sliding Fee Discount Schedule provides detailed fee schedules for all service lines (Primary Care, Behavioral Health, Dental, OB/GYN, Optometry, Pharmacy, etc.) with graduated discounts for patients at 0–200% FPL, including nominal charges for those ≤100% FPL. The narrative in Section 5 and Attachment 13 confirms that discounts are applied to all in-scope services, including those provided directly, and that no patient ≤200% FPL is denied care for inability to pay.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence demonstrates that all services provided directly (Column I) are covered by the sliding fee discount schedule, with discounts structured according to policy and HRSA requirements. The fee schedule shows nominal fees for ≤100% FPL and graduated discounts up to 200% FPL for all service lines. The policy and schedule are consistent, and there is no evidence of excluded services or inconsistent application.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 13: Health Center Program Compliance states: 'LSCC's Sliding Fee Scale and FPL Guidelines policy updated on October 21, 2025, states that LSCC will annually update its Fee Schedule within 90 days following HHS's release of the new federal poverty guidelines.' The application narrative also describes that the FPL is updated annually in the program registration process, VeritySource screening software, and athenaOne EPM system. The sliding fee schedules in Attachment 10 reflect current FPL percentages.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The documentation clearly states that the sliding fee discount schedule is updated annually to reflect the most recent federal poverty guidelines, and this is incorporated into both policy and operational systems. The update timeline (within 90 days of HHS release) is compliant with HRSA expectations. There is no evidence of outdated FPL usage.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff provides detailed descriptions of duties, supervisory relationships, skills, knowledge, experience requirements, and position qualifications for the CEO, CMO, CFO, COO, CIO, and CAO. Attachment 5: Biographical Sketches for Key Management Staff provides evidence of the training and experience of each individual in these roles.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application includes comprehensive position descriptions and biographical sketches for all key management staff. Each description lists required qualifications, duties, and supervisory relationships, and the biographical sketches confirm that the individuals in these roles possess the requisite experience and credentials. This meets the requirement for documentation of training, experience, and duties/functions for each key management staff position.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Form 2: Staffing Profile lists the Project Director/Chief Executive Officer (CEO) as a direct hire (1.00 FTE, not contracted). Attachment 4: Position Descriptions for Key Management Staff (CEO section) states the CEO 'reports to the Board of Directors and directly supervises the COO, CMO, CAO, CIO, and CFO, in addition to other senior-level administrative staff.' The Bylaws (Attachment 2, Section 2.1.2 and 2.1.3) require Board approval of CEO selection/dismissal and specify that the CEO is responsible for management and day-to-day operations. Form 12 - Organization Contacts lists Jon Calvin as CEO, and his biographical sketch (Attachment 5) confirms his direct employment and role. The organizational chart (Attachment 3) shows the CEO at the top of the management structure, reporting to the Board.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The CEO is a direct employee (not contracted), as shown in Form 2 and the budget narrative. The CEO reports directly to the Board (per Bylaws and position description), and is responsible for overseeing all other key management staff in day-to-day operations. The application provides clear, direct evidence that all aspects of this requirement are met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7: Summary of Contracts and Agreements details contracts with clinical service providers (e.g., Austin Radiological Association, Quest Diagnostics, Access Nurse PM, Walgreens, CVS, Equiscript, etc.). The application narrative (Attachment 13: Health Center Program Compliance, Contracts and Sub-Awards section) states: 'LSCC's Monitoring the Provision of Contracted Services policy applies to contractual arrangements for patient care, treatment or service, noting that all contacted service providers must abide with laws, regulations, and appropriate accreditation standards.' It further describes annual evaluation, adverse incident reporting, grievance process, and compliance with laws and standards. The application also states that contracts for services provided by referral (such as diagnostic laboratory and imaging) include provisions requiring discounted services in accordance with a sliding fee scale that meets HRSA requirements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both policy-level and contract-specific evidence that required provisions are included in contracts supporting the HRSA-approved scope of project. The policies and contract summaries address compliance with laws, adverse incident reporting, patient grievance process, sliding fee discounts, and annual evaluation, meeting HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Question 2: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project?' is answered 'No'. The narrative and Attachment 7: Summary of Contracts and Agreements show contracts for support services, not for a single entity providing the majority of health care providers or substantive programmatic work.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This requirement is not applicable because LSCC does not contract with another organization to perform substantive programmatic work as defined by HRSA (i.e., contracting with a single entity for the majority of health care providers). All clinical services are provided directly by LSCC or through individual provider contracts, not through a single entity for the majority of services.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements, Question 2b: 'Number of subawards made to subrecipients to carry out a portion of the proposed scope of project.' is 0. The application narrative and Attachment 13: Health Center Program Compliance (Sub-Recipient Grant Management & Monitoring policy) discuss subrecipient monitoring, but there is no evidence that any subawards have been made.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This requirement is not applicable because LSCC has not made any subawards to carry out a portion of the proposed scope of project. This is explicitly stated in Form 8 and supported by the absence of any subaward documentation in the application.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements, Question 2b: 'Number of subawards made to subrecipients to carry out a portion of the proposed scope of project.' is 0. No subaward agreements are described or provided in the application.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "This requirement is not applicable because LSCC has not made any subawards. Therefore, there are no subaward agreements to review for required provisions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application provides extensive documentation of collaborative relationships with local hospitals (e.g., Ascension Seton, Baylor Scott & White Health), specialty providers (e.g., Austin Radiological Association, OB Hospitalist Group Texas, Community eConsult Network), and social service organizations (e.g., Bastrop County Cares, Central Texas Food Bank, Meals on Wheels, Head Start, WIC, Bluebonnet Trails Community Services). Attachment 7: Summary of Contracts and Agreements lists formal agreements with these entities. The narrative describes co-location models (e.g., Project Headwaters campus, Oak Springs with Integral Care), mobile outreach (Big Pink Bus, Mobile FARMacy), and use of platforms like Findhelp.org for closed-loop referrals. Letters of support from these partners are included in Attachment 9: Collaboration Documentation.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly documents a robust network of collaborations with a wide range of providers and community organizations, including formal written agreements, co-location of services, and shared referral and data systems. These collaborations are specifically designed to provide access to services not available directly through the health center (e.g., specialty care, imaging, social services), and to support the needs of special populations. The evidence meets and exceeds HRSA's requirements for coordination and integration of activities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application details ongoing collaboration with other HRSA-funded health centers in the service area, including CommUnityCare, People's Community Clinic, Community Health Centers of South Central Texas, and Waco Family Medicine. Letters of support from these FQHCs are included in Attachment 9: Collaboration Documentation. The narrative describes regular meetings between LSCC leadership and other FQHC leaders, joint participation in coalitions (e.g., Central Texas Addressing Cancer Together, Bastrop County Cares), shared referral arrangements (e.g., MAP patients referred to CommUnityCare for specialty care), and joint projects (e.g., findhelp.org referral tracking, mobile mammography events at other FQHCs). LSCC is also an active member of the Texas Association of Community Health Centers (TACHC) and participates in the My Texas My Health Clinically Integrated Network, as described in the narrative and supported by a letter from TACHC in Attachment 9.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "There is clear, specific, and ongoing documentation of collaboration with other FQHCs and safety-net providers in the service area, as well as with state and local health programs (e.g., Central Health, local health departments, Medicaid, MAP, Family Planning Program, Healthy Texas Women). The evidence includes both narrative description and formal letters of support, demonstrating that LSCC meets and exceeds the HRSA requirement for collaboration with other primary care providers and integration with other health services delivery projects.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Attachment 13: Health Center Program Compliance, Billing and Collections section states: 'LSCC participates in Medicare, Medicaid, the Children's Health Insurance Program (CHIP), Marketplace qualified health plans, and Tricare, as well as state/local publicly funded assistance programs and private insurance. LSCC maintains a Medicare and Medicaid provider number for each clinic and each provider to ensure compliance and proper reimbursement.' Further, Form 3 - Income Analysis shows revenue from Medicaid, Medicare, CHIP, and private insurance. The Project Narrative and multiple other sections describe outreach and enrollment assistance for Medicaid, CHIP, Marketplace, and other programs.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear and specific evidence that LSCC participates in all required insurance programs (Medicaid, CHIP, Medicare) and other public/private insurance programs. The narrative, attachments, and financial forms confirm active billing, provider enrollment, and patient assistance for these programs. There is no indication of any gaps or non-participation. Therefore, the requirement is fully met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "Attachment 13: Health Center Program Compliance, under 'WAIVING OR REDUCING FEES POLICY AND PROCEDURE,' states: 'The Waiver and Reduction of Fees Policy acknowledges that patients may not be able to pay the nominal fee, discount, or other fees. A waiver or reduction of fee(s) or nominal charge(s) for extraordinary patient circumstances will be evaluated and authorized by the Chief Operations Officer, a Regional Vice President, or a Site Manager on a case-by-case basis. Any waiving or reduction of charges will be documented in the practice management system record along with an explanation.' The Sliding Fee Discount Program section also notes that 'no patient is ever denied care due to an inability to pay.' The policy is referenced as board-approved and reviewed annually.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides explicit evidence of a board-approved policy and operating procedure for waiving or reducing fees, including the process, responsible staff, documentation, and the principle that inability to pay will not prevent access to care. The procedures are described in detail and are consistent with HRSA requirements. There is no evidence of non-compliance or missing elements. Therefore, this requirement is fully met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a completed SF-424A Budget Information form and a detailed Budget Narrative for a 4-year project period, with line-item expenses and revenue projections. The budget totals $100,491,166 for the first year, with clear breakdowns by object class and funding source (federal, state, program income, private grants, etc.). The narrative explicitly states: 'The budget presentation consisting of Form SF-424A, Budget Narrative, Form 2: Staffing Profile, and Form 3: Income Analysis has been developed based on LSCC's current and projected costs and revenues necessary to support the proposed project.' Form 5A and 5B confirm the scope of project and sites/services.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The health center has submitted a comprehensive annual budget and supporting documentation (SF-424A, Budget Narrative, Income Analysis, Staffing Profile) that aligns with the HRSA-approved scope of project, as required. The budget includes all projected costs and revenues necessary to support the proposed project, and the application narrative confirms this alignment. The scope of project is clearly defined in Forms 5A/5B and the budget supports all required and additional services.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A, Budget Narrative, and Form 3: Income Analysis detail all revenue sources, including: Federal (HRSA award: $5,650,616), Applicant (Program Income: $76,209,778), State ($1,067,450), Other ($17,563,322), and a total of $100,491,166. Form 3: Income Analysis further breaks down patient service revenue by payer (Medicaid, Medicare, Other Public, Private, Self-Pay) and other income (state, private grants/contracts, other). The Budget Narrative and tables are consistent across all forms.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The annual budget includes all required revenue sources in addition to the HRSA award, with detailed projections for each category (federal, state, local, private, program income). The documentation is consistent and comprehensive, meeting the requirement for full transparency of revenue sources supporting the Health Center Program project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws, Section 2.1, 2.2, and 2.3.2: The Board is responsible for determining the mission of the corporation and monitoring the fulfillment of that mission. The Board must establish policies that will ensure the proper oversight and evaluation of the mission of the Corporation and ensure the Corporation operates in compliance with applicable federal, state and local laws and regulations. Section 2.2 states: 'The Board shall ensure that it is vested with its required authorities and that any opportunity for an outside entity to impede, limit, or deny such authority is minimized.' Section 2.3.2: 'The composition of the Board will fully comply with all current and future regulations and requirements applicable to Federally Qualified Health Centers.' Attachment 13: Health Center Program Compliance, Governance: Board Authority, reiterates these points and explicitly states that no other entity has veto power over the board, and that the board retains full and direct authority over the health center project.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and compliance documentation clearly establish that the Board has independent, ultimate authority over the health center project, including selection/dismissal of the CEO, budget approval, oversight of services, and strategic direction. There are explicit statements that no other entity can override or limit this authority, and there are no co-applicant or parent/affiliate agreements. The organizational chart and Form 8 confirm there is no parent, affiliate, or subsidiary organization. This meets HRSA requirements for board authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws, Section 2.1.1: The Board will approve each annual budget and financial audit; engage in long term strategic planning; evaluate the progress in meeting annual and long term goals; oversee selection of services to be provided, location of the services, and hours of operation; approve any grant application made under section 330 of the Public Health Service Act; and exercise appropriate oversight and authority over all contracted services. Section 2.1.2: The Board must approve the selection and dismissal of the CEO. Section 2.1.4: The Board will annually evaluate the performance of the CEO. Attachment 13: Health Center Program Compliance, Governance: Board Authority, further details these responsibilities and confirms that the Board meets monthly, approves the annual budget and applications, approves proposed services and locations, evaluates performance, establishes policies, and assures compliance with applicable laws. Form 6A lists board members and their roles, confirming a functioning board.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and compliance attachments explicitly enumerate all required board authorities and responsibilities as outlined by HRSA, including CEO selection/dismissal, budget approval, service/site/hours approval, grant application approval, evaluation of health center performance, and policy establishment. The board meets at least monthly and is majority patient, as required. The evidence is clear and comprehensive.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws, Article Two, Sections 2.4 (Nomination and Election of Directors), 2.14 (Removal of Directors), and 2.2 (Independent Authority of Board) state that directors are nominated and elected by the board, and removal is by majority vote of the board. Section 2.2 explicitly prohibits any other entity from having overriding approval authority, veto power, or authority to select or dismiss the CEO.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly outline that only the board itself has the authority to select and remove board members and the CEO. There are no provisions for outside entities, committees, or individuals to select the board chair or majority of board members. The process is fully under board control, meeting HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws, Section 2.3.2, states that a minimum of 51% of directors are patients served by the Corporation and that no more than 50% of non-patient directors may derive more than 10% of their annual income from the health care industry. Patient directors must represent the individuals served by the Corporation in terms of demographic factors such as race, ethnicity, and gender. Non-patient directors must represent the communities served and be selected for relevant expertise.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly require a patient majority, demographic representation, and limits on non-patient directors' income from the health care industry, as required by HRSA. The board size is also within the required range (9-25).",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics lists 11 board members, with at least 6 identified as health center patients (Elizabeth Johnson, Scott Alarcon, Sasha Bulkley, Alton McCallum, Roland Valle, Jack Hunnicutt), meeting the 51% patient majority. The board includes members with expertise in communications, management, education, health care, law, finance, insurance, and advocacy. The table also shows that non-patient members live or work in the service area and that only 3 non-patient members derive >10% of income from health care, which is less than half of the non-patient members.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board composition meets all HRSA requirements: patient majority, demographic and community representation, relevant expertise, and limits on non-patient members' health care income. Documentation is clear and complete.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements states: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' In Form 1A, the applicant is applying for CHC-330(e) funding only.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant is not seeking funding under 330(g), 330(h), or 330(i) and is not requesting a waiver of the patient majority requirement. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

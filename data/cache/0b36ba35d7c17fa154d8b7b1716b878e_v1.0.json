@@ -1,0 +1,307 @@
+{
+  "fileHash": "0b36ba35d7c17fa154d8b7b1716b878e",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:17.052Z",
+  "applicationName": "LA CLINICA DE LA RAZA, INC._Application-242919.pdf",
+  "extractedContent": "Application Number: 242919\nFilename: LA CLINICA DE LA RAZA, INC._Application-242919.pdf\nProcessed: 2026-01-23T06:12:19.179Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, Section 5.a (Updating Needs Assessment), the application states: 'La Clinica's Planning Department conducts an annual Community Needs Assessment. The most recent needs assessment draws on and incorporates the most up-to-date information and secondary data available, such as the American Community Survey five year estimates; County Health Status Profiles; California Department of Public Health; California Health Interview Survey collected by University of California, Los Angeles (UCLA) Center for Health Policy Research; California Department of Education; and California Health Kids Survey administered by WestEd.' The narrative further details that the assessment is used to inform and improve service delivery, is presented to staff and the Board, and influences strategic planning and program decisions. The needs assessment section includes extensive, recent data (2023-2025) for Alameda, Contra Costa, and Solano counties, and describes annual review and update processes. The application also describes how the needs assessment is used to inform site and service planning, and how it is made available to staff and the Board.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application demonstrates that the needs assessment is completed annually (exceeding the minimum three-year requirement), uses the most recent available data, covers the full service area and special populations, and is used to inform and improve the delivery of health center services. The process is well-documented, with clear evidence of regular updates and integration into planning and quality improvement. Therefore, the requirement is fully met.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13 - Appendix A - Health Center Program Compliance states: 'La Clinica's Sliding Fee Discount Program is available to all patients whose incomes are under 200% of the Federal Poverty Level, and it is applied uniformly to all patients of each service line. As stated in our Sliding Fee Discount Program Policy and Procedure, on : \"The purpose of this policy is to ensure organizational compliance with the requirements set forth under Section 330 of the Public Health Services Act and to guide the application of a sliding fee discount program to all eligible patients and visits.\" This policy is enforced consistently.' The policy is described as board-approved and is referenced in the bylaws and compliance narrative. The policy includes definitions of income and family, annual recertification, and applies to all patients regardless of insurance status.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear, direct evidence of a board-approved sliding fee discount policy that applies uniformly to all patients and addresses all required areas, including definitions, documentation, annual recertification, and uniform application across service lines. The policy is referenced in both the compliance narrative and the bylaws, and the process for board review and approval is described.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A - Required Services Provided and Form 5A - Additional Services Provided show that all required and additional services are provided directly (Column I) by La Clinica. The Sliding Fee Discount Schedule (Attachment 10) provides detailed discount levels for all service lines (medical, dental, pharmacy, radiology, optical, behavioral health) and matches the policy described in the compliance narrative. The compliance narrative states: 'La Clinica's Billing Department applies the Sliding Fee Discount to all charges to patients who qualify based on their income and family size assessment.' The schedule includes nominal fees for patients at or below 100% FPL and sliding discounts up to 200% FPL, as required.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence demonstrates that all directly provided services (Column I) have an SFDS applied in accordance with policy, with clear discount levels and nominal fees as required by HRSA. The policy and practice are consistent, and the application includes both the schedule and narrative confirmation.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10 - Sliding Fee Discount Schedule includes a link to the 2025 HHS Poverty Guidelines and states: 'https://www.federalregister.gov/documents/20/2025-01377/annual-update-of-the-hhs-poverty-guidelines'. The compliance narrative states: 'La Clinica updates the Sliding Fee Discount Program Policy and Procedure and the Sliding Fee Discount Matrix each year to incorporate the most recent Federal Poverty Guidelines, among other considerations. As stated on of the Sliding Fee Discount Program Policy and Procedure, \"Income eligibility determinations will utilize the current year's Federal Poverty Level (FPL) guidelines.\" This provision is carefully followed by our Fiscal Accounting department.' The income ranges in the SFDS match the 2025 FPG for all family sizes.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides direct evidence that the most recent Federal Poverty Guidelines are incorporated into the SFDS, with explicit reference to the 2025 guidelines, annual updates, and matching income ranges. The process for annual update is described and implemented.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff contains detailed position descriptions for the Chief Executive Officer, Chief Medical Officer/Clinical Director, Chief Financial Officer, Chief Information Officer, and Director of Medical Operations. Each description includes required qualifications, knowledge, abilities, and a list of duties/functions. Attachment 5: Biographical Sketches for Key Management Staff provides specific training and experience for each individual in these roles. The Project Narrative (Capacity section) also summarizes the management team, their reporting structure, and required qualifications.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both general position descriptions (Attachment 4) and individual biographical sketches (Attachment 5) for all key management staff, clearly documenting required qualifications, experience, and duties/functions as required by HRSA. This meets the requirement for documentation of key management staff positions.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "The Project Narrative (Capacity section) states: 'The CEO has nine (9) direct reports who make up the CEO's Executive Team. The CEO and her Executive Team are directly employed by La Clinica.' The organizational chart (Attachment 3) shows the CEO at the top, reporting to the Board of Directors. The CEO's position description (Attachment 4) states: 'Reports to: Board of Directors.' The Bylaws (Article IX, Section 1) state: 'The Board of Directors shall appoint a Chief Executive Officer who shall be the chief executive officer of the Corporation. The Chief Executive Officer shall be the Board's representative in the management of the Corporation. The Chief Executive Officer shall act as the duly authorized representative of the Board of Directors in all matters in which the Board has not formally designated someone else to act. The Chief Executive Officer shall be responsible only to the Board for the proper performance of his/her duties.' The CEO's biographical sketch (Attachment 5) confirms Jane Garcia is the CEO and has led La Clinica since 1982. The Staffing Profile (Form 2) shows the CEO as a direct hire (1.00 FTE, not a contractor).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence confirms the CEO is directly employed by La Clinica, reports to the Board of Directors, and oversees other key management staff. The CEO's responsibilities, reporting relationship, and employment status are clearly documented and compliant with HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [
+        {
+          "element": "Element e - HRSA Approval for Contracting Substantive Programmatic Work",
+          "requirement": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "If the health center has arrangements with a contractor to perform substantive programmatic work, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements: 'Do you currently have, or plan to utilize: a) Contract(s) with another organization to perform substantive programmatic work within the proposed scope of project?' is answered 'No'. In Attachment 13 - Appendix A, the applicant states: 'La Clinica does not currently have subrecipients to the Health Center Program grant.' Also, 'La Clinica does not contract or allow subcontracts with any person or entity that is actively opposing United States or coalition forces involved in a contingency operation in which members of the Armed Forces are actively engaged in hostilities.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant clearly states that it does not have contracts for substantive programmatic work as defined by HRSA (i.e., contracting with a single entity for the majority of health care providers or for a majority of a required service line). Therefore, the requirement to request and receive prior HRSA approval does not apply. The applicant has also provided a detailed summary of all contracts and agreements (Attachment 7), none of which meet the threshold for substantive programmatic work. The evidence supports compliance because the applicant has no such arrangements in place.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element f - Required Contract Provisions",
+          "requirement": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's contracts that support the HRSA-approved scope of project include provisions that address the following:",
+          "evidence": "Attachment 7 - Summary of Contracts and Agreements: 'Please note that all contracts and referral agreements listed below include or are currently negotiating the following provisions: The specific activities or services to be performed or goods to be provided. Mechanisms for the health center to monitor contractor performance. Requirements for the contractor to provide data necessary to meet the recipient's applicable Federal financial and programmatic reporting requirements, and Provisions addressing record retention and access, audit, and property management.' Multiple contract examples are provided, each listing scope, tracking, and reporting.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant provides a detailed summary of all contracts and referral agreements, explicitly stating that all contracts include the required provisions (scope of work, monitoring, reporting, record retention, audit, and property management). The contracts listed (e.g., NYU Langone, UCSF, Stanford, MedMark, Kaiser, etc.) include language or summaries indicating compliance with these requirements. This meets HRSA's expectations for contract provisions supporting the scope of project.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element g - HRSA Approval to Subaward (Not Applicable for Look-alikes)",
+          "requirement": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "If the health center has made a subaward, the health center requested and received prior approval from HRSA as documented by:",
+          "evidence": "Form 8 - Health Center Agreements: 'Do you currently have, or plan to utilize: b) Subawards to carry out a portion of the proposed scope of project?' is answered 'No'. Attachment 13 - Appendix A: 'La Clinica does not currently have subrecipients to the Health Center Program grant.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant states it does not have any subawards or subrecipients under the Health Center Program grant. Therefore, the requirement for HRSA approval to subaward is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Subaward Agreement (Not Applicable for Look-alikes)",
+          "requirement": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's subaward(s) that supports the HRSA-approved scope of project includes provisions that address the following:",
+          "evidence": "Form 8 - Health Center Agreements: 'Do you currently have, or plan to utilize: b) Subawards to carry out a portion of the proposed scope of project?' is answered 'No'. Attachment 13 - Appendix A: 'La Clinica does not currently have subrecipients to the Health Center Program grant.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The applicant does not have any subawards or subrecipients. Therefore, the requirement for subaward agreement provisions is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "The application contains an extensive 'Collaboration' section in the Project Narrative, Attachment 9: Collaboration Documentation, and numerous executed agreements and letters of support from local hospitals (e.g., Sutter Health, John Muir Health, UCSF Benioff Children's Hospital, Sutter Solano Medical Center, Alta Bates Summit Medical Center), specialty providers (e.g., Kaiser Permanente, MedMark Treatment Centers, Stanford Health Care), and social service organizations (e.g., Alameda County Community Food Bank, Food Bank of Contra Costa and Solano, The Unity Council, Child Start, Inc., WIC programs). The application also details referral and care transition agreements (e.g., with Sutter Delta Medical Center, Contra Costa Regional Medical Center, Kaiser Permanente, MedMark, John Muir Health, etc.), and describes partnerships to address food insecurity, housing, and workforce development. Formal written contracts and MOUs are provided in Attachment 7: Summary of Contracts and Agreements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence demonstrates that La Clinica has established and documented a comprehensive network of collaborative relationships with local hospitals, specialty providers, and social service organizations, including those serving special populations. These collaborations are formalized through contracts, MOUs, and letters of support, and are described in detail in the application narrative and attachments. The documentation covers both access to services not available directly through the health center and integration with community resources, meeting the HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "The application provides detailed documentation of collaboration with other FQHCs and look-alikes in the service area, including Asian Health Services, Axis Community Health, Bay Area Community Health, Baywell Health, LifeLong Medical Care, Tiburcio Vasquez Health Center, Community Medical Centers, CommuniCare+Ole, and Native American Health Center. Letters of support from these organizations are included in Attachment 9: Collaboration Documentation. The narrative describes joint participation in local consortia (Alameda Health Consortium, Community Health Center Network, Aliados Health), regional and state associations (California Primary Care Association), and joint programs for workforce development, quality improvement, emergency preparedness, and managed care. The application also includes letters of support from county health departments (Alameda, Contra Costa, Solano), and describes collaborative efforts with public health, WIC, and First 5 agencies. The Form 8 - Health Center Agreements confirms that La Clinica does not contract out the majority of health care providers to another entity, and is not a subsidiary, parent, or affiliate.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides substantial, specific, and current evidence of active collaboration and integration with other federally-funded, state, and local health service delivery projects and programs, including other health centers in the service area. The documentation includes both narrative descriptions and formal letters of support, as well as evidence of joint participation in networks and consortia. This meets and exceeds the minimum HRSA requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "1. Project Narrative, Section 'Insurance Coverage': 'Countywide, 4.1% of residents are uninsured, versus 5.2% of residents in La Clinica's service area. Meanwhile, about 27.2% of service area residents were Medi-Cal beneficiaries...' 2. Appendix A - Health Center Program Compliance: 'As described in La Clinica's Billing and Coding Policy ... La Clinica makes every reasonable effort to participate in various health insurance and payment programs that may include but are not limited to programs such as Medicare, Medi-Cal, CHIP, managed care health plans, private health plans, Marketplace qualified health plans, and other public assistance programs.' 3. Form 3 - Income Analysis: Shows revenue from Medicaid, Medicare, Other Public, Private, and Self Pay. 4. Collaboration documentation and contracts with multiple managed care plans (e.g., Alameda Alliance for Health, Partnership HealthPlan of California, Contra Costa Health Plan) and specialty care referral agreements.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides multiple, consistent pieces of evidence that La Clinica participates in Medicaid (Medi-Cal), CHIP, Medicare, and other public and private insurance programs. This is supported by narrative descriptions, income analysis, and documentation of contracts and collaborations with public and private insurers. The evidence is clear and comprehensive, demonstrating compliance with the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "1. Appendix A - Health Center Program Compliance: 'As discussed in La Clinica's \"Sliding Fee Discount Program Policy and Procedure,\" requests for reduced or waived service fees may be made by all patients or legal guardians. A financial hardship, for the purposes of this policy, is defined as one or more of the following: Bankruptcy settlement; Indigency (job loss, homelessness, etc.); Catastrophic situations (death, disability, or serious medical illness in family, divorce, etc.); Recent catastrophic events such as fire, tornado, earthquake, flooding, etc.; or Event or situation resulting in the patient's inability to pay clinical bill and still be able to pay for other basic necessary expenses.' 2. 'This policy and procedure is reviewed and approved by the Board of Directors annually.' 3. 'After the patient submits a Hardship Waiver request with the applicable documentation, the Billing Director or his/her designee will review the request, and if approved, will work with patient to enter a payment plan, or reduce or waive any fees, to ensure that no patient will be denied services due to inability to pay.' 4. Form 1C - Documents On File: Confirms existence of 'Billing and Collections policies/procedures, including those regarding waivers or fee reductions and refusal to pay.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides explicit documentation of board-approved policies and procedures for waiving or reducing fees, including the specific circumstances that qualify as financial hardship. The process for requesting and approving waivers is described, and the policy is reviewed and approved by the Board annually. This meets the HRSA requirement for both the existence and utilization of such policies.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The SF-424A: Budget Information - Non-Construction Programs and the detailed Budget Narrative (see tables 18-30) provide a total budget of $160,734,580, with line-item breakdowns for personnel, fringe, travel, equipment, supplies, contractual, other, and indirect charges. The budget justification narrative explicitly states: 'The total budget (federal and non-federal) is $160,734,580 and is aligned with the personnel and non-personnel expenses projected to be required to provide the services in La Clinica's scope of project to the projected number of unduplicated patients.' The budget aligns with the projected number of patients (80,000) and the service types described in the application narrative and forms.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a comprehensive annual budget that covers all projected costs and revenues for the HRSA-approved scope of project. The budget is detailed, aligns with the described services and patient projections, and is submitted as part of the application, meeting the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A and Budget Narrative (see tables 18-30 and 24) list all revenue sources, including: Federal (HRSA) award ($8,499,049), State funds ($2,314,671), Local funds ($19,628,444), Other Federal funding ($292,021), Other support ($15,254,892), Program Income ($114,745,503), and a total revenue of $160,734,580. Form 3 - Income Analysis (table 98) further breaks down projected income by payer category (Medicaid, Medicare, Other Public, Private, Self Pay) and other sources (federal, state, local, private grants/contracts, contributions, other). The narrative explicitly states that 'Beyond the federal grant award, La Clinica projects to have grants from both the public and private sectors, along with third-party payor reimbursement to cover budgeted expenses.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The budget includes all required revenue sources beyond the HRSA award, with detailed projections for each category. The revenue sources are clearly identified and quantified, supporting the health center's scope of project. This meets the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "Attachment 2: Bylaws (Attachment 2 - Bylaws - Amended 2024.pdf), Article V, Section 1 - Powers and Responsibilities: 'The Board shall assume full authority and oversight responsibility for the Corporation, including the operation, functions, business, and governance of the Corporation, in accordance with the Corporation's Articles of Incorporation and Bylaws, and shall have the power and authority to do and perform or cause to have performed all acts within the limits of the law and not inconsistent with the Articles of Incorporation and these Bylaws.' The bylaws explicitly state that no other individual, entity, or committee, including but not limited to, an executive committee authorized by the Board, shall be authorized to reverse approval authority or have veto power over the Corporation with regard to its required authorities and functions. The application narrative (Attachment 13, Compliance Narrative - Appendix A) reiterates these powers and describes regular board meetings, board approval of budgets, services, and policies, and annual CEO evaluation.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws and application narrative provide clear, direct evidence that the Board has and maintains full authority over the health center project, including all required areas of oversight. There are no indications of any restrictions or limitations on the Board's authority by outside entities, and the Board's independence is explicitly protected in the bylaws. The application further describes how these authorities are operationalized in practice. This meets HRSA requirements for maintenance of board authority.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 2: Bylaws (Attachment 2 - Bylaws - Amended 2024.pdf), Article V, Section 1 - Powers and Responsibilities, lists all required authorities and responsibilities, including: holding monthly meetings (Article VI, Section 2), approval of the health center grant application and budget (Article V, Section 1), selection/dismissal and performance evaluation of the CEO (Article V, Section 1), selection of services to be provided and the health center hours of operations (Article V, Section 1), measuring and evaluating the organization's progress in meeting its annual and long-term programmatic and financial goals and developing plans for the long-range viability of the organization by engaging in strategic planning, ongoing review of the organization's mission and bylaws, evaluating patient satisfaction, and monitoring organizational assets and performance (Article V, Section 1), and establishment of general policies for the health center (Article V, Section 1). The bylaws also specify that the Board approves policies for financial management, sliding fee discounts, personnel, and other operational matters. The application narrative (Attachment 13, Compliance Narrative - Appendix A) provides further detail and examples of how the Board exercises these responsibilities.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly enumerate all HRSA-required board authorities and responsibilities, and the application narrative confirms that these are implemented in practice. The Board's roles in CEO selection and evaluation, budget and grant approval, policy adoption, service and site approval, and strategic planning are all clearly documented. There is no evidence of any required authority or responsibility being omitted or delegated inappropriately. This meets HRSA requirements for required board authorities and responsibilities.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Bylaws, Article V, Section 5 (Selection of Board of Director), Section 7 (Removal of Board of Directors), and Section 1 (Powers and Responsibilities) state that the Board is responsible for selection and removal of its members, and that no other entity, committee, or individual has authority to select the board chair or majority of board members. The bylaws explicitly state: 'no other individual, entity, or committee, including but not limited to, an executive committee authorized by the Board, shall be authorized to reverse approval authority or have veto power over the Corporation with regard to its required authorities and functions.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws provide a clear, board-controlled process for selection and removal of board members and officers, with no evidence of outside entity or individual having selection authority. The process is documented and aligns with HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Bylaws, Article V, Section 2 (Composition of the Board): 'The Board shall consist of between twelve (12) and eighteen (18) members as determined by the Articles of Incorporation, Bylaws, and Board of Directors.' 'At least 51% of the Board members shall be patients of the Corporation.' 'Patient members of the board, as a group, will reasonably, represent the individuals being served by the Corporation, in terms of demographic factors such as race, ethnicity, and gender consistent with the demographics reported in the Corporation's Uniform Data Systems (UDS) report.' 'No more than one-half of non-consumer Board members may be individuals who derive more than 10% of their annual income from the health care industry.' 'No Board of Director may be an employee of the Corporation and immediate family member (i.e. spouses, children, parents, or siblings through blood, adoption, or marriage) Corporation employee.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws explicitly require all elements of HRSA's required board composition, including patient majority, demographic representation, limits on non-consumer board members' health care income, and prohibition on employees/immediate family members. This is further supported by the compliance narrative in Attachment 13 and Form 6A data.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics lists 15 board members, with 8 (53%) identified as health center patients. The board includes a mix of demographic backgrounds (e.g., 75% of patient board members are Hispanic, 25% Black/African American, 75% female), and non-patient members bring required expertise (finance, legal, community affairs, etc.). Only 3 of 7 non-patient members derive more than 10% of their income from the health care industry, below the 50% threshold. No board member is an employee or immediate family member of an employee.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The current board meets all HRSA composition requirements: patient majority, demographic representation, expertise, and income limits. This is confirmed by Form 6A and the compliance narrative.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.' Also, funding request is only for CHC-330(e) (see Summary Page and Form 1A).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "La Clinica is applying for/receiving only 330(e) funding (Community Health Center), not 330(g), (h), or (i), and is not requesting a waiver of patient majority board composition. Therefore, this requirement is not applicable.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

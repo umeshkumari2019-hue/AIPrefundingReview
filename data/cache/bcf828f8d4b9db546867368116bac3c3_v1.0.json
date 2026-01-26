@@ -1,0 +1,262 @@
+{
+  "fileHash": "bcf828f8d4b9db546867368116bac3c3",
+  "manualVersion": "v1.0",
+  "timestamp": "2026-01-23T16:46:13.454Z",
+  "applicationName": "INDIAN HEALTH BOARD OF MINNEAPOLIS, INC._Application-242696.pdf",
+  "extractedContent": "Application Number: 242696\nFilename: INDIAN HEALTH BOARD OF MINNEAPOLIS, INC._Application-242696.pdf\nProcessed: 2026-01-23T05:46:11.380Z",
+  "results": {
+    "Needs Assessment": {
+      "compliantItems": [
+        {
+          "element": "Element b - Update of Needs Assessment",
+          "requirement": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center completes or updates a needs assessment of the current or proposed population at least once every three years, for the purposes of informing and improving the delivery of health center services. The needs assessment utilizes the most recently available data for the service area and, if applicable, special populations and addresses the following:",
+          "evidence": "In the Project Narrative, under 'Criterion 1: Need' and specifically section '5. Needs assessment process and scope updates', the application states: 'IHB conducts a yearly basic needs review and deeper assessments for strategic planning and site changes. Methods include talking circles and listening sessions, staff input, partner feedback, and analysis of UDS trends (patients, payer mix, visits, screenings, and missed-care patterns).' The application further details the use of the most recent UDS data (2024) and describes how findings from the needs assessment are used to inform service delivery (e.g., adding evening vaccine blocks, expanding recovery navigation, embedding nutrition referrals, etc.). The application also references annual and three-year review cycles, and includes data on population health needs, payer mix, language, and social drivers, as well as special populations (e.g., homeless, school-based, veterans).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides clear evidence that the needs assessment is updated at least annually, with deeper reviews for strategic planning and site changes, and uses the most recent available data (2024 UDS). The process includes input from patients, staff, and partners, and addresses all required populations and service area characteristics. The results are used to inform and improve service delivery, demonstrating compliance with the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Sliding Fee Discount Program": {
+      "compliantItems": [
+        {
+          "element": "Element b - Sliding Fee Discount Program Policies",
+          "requirement": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has board-approved policy(ies) for its sliding fee discount program that apply uniformly to all patients and address the following areas:",
+          "evidence": "Attachment 13: Health Center Program Compliance states: 'Indian Health Board (IHB) offers a \"Flat fee\" sliding fee discounts to all eligible patients. Our policy defines income and family size, aligns with FPGs and includes annual assessment of income and family size.' The policy is board-approved per the bylaws (Attachment 2), which give the board authority over the SFDP. The application narrative further details that all patients are screened for SFDP eligibility annually and at registration, regardless of insurance, and that the discount is applied uniformly to all patients based on income and family size. Attachment 10 (Sliding Fee Discount Schedule) is referenced as supporting documentation.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides explicit evidence of a board-approved sliding fee discount policy that applies uniformly to all patients, defines income and family size, and includes annual assessment. The policy is described in both the narrative and compliance attachment, and the board’s authority is documented in the bylaws. The schedule is attached and referenced. There is no indication of exceptions or non-uniform application.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Sliding Fee for Column I Services",
+          "requirement": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "For services provided directly by the health center (Form 5A: Services Provided, Column I), the health center's SFDS(s) is structured consistent with its policy and provides discounts as follows:",
+          "evidence": "Form 5A: Services Provided shows that required services (e.g., General Primary Medical Care, Diagnostic Laboratory, Screenings, Immunizations, Well Child Services, Preventive Dental, Pharmaceutical Services, Case Management, Eligibility Assistance, Health Education, Outreach, Transportation, Translation) are provided directly (Column I). The application narrative and Attachment 13 confirm that the sliding fee discount schedule applies to all in-scope services provided directly by IHB (Form 5A, Column I), and staff apply the discount at checkout. Attachment 10 details the discount schedule, including nominal charges for patients at or below 100% FPG and increasing flat fees up to 200% FPG, with full fee above 200%. The narrative confirms that 'discounts apply to in-scope services provided directly (Form 5A, Column I).'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The evidence shows that the sliding fee discount schedule is structured per policy and is applied to all direct services listed in Form 5A, Column I. The discount schedule is consistent with policy, and the application narrative confirms its application to these services. There is no evidence of exclusion or non-compliance for direct services.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element e - Incorporation of Current Federal Poverty Guidelines",
+          "requirement": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's SFDS(s) has incorporated the most recent FPG.",
+          "evidence": "Attachment 10 (IHB sliding fee schedule 2025) includes both annual and monthly income tables for household sizes, which match the 2024 Federal Poverty Guidelines for the 48 contiguous states (see tables in Attachment 10 and the explicit inclusion of the 2024 Poverty Guidelines). The narrative in Attachment 13 states, 'Our policy defines income and family size, aligns with FPGs and includes annual assessment of income and family size.' The schedule is refreshed annually to the new FPG as part of the annual review process.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The sliding fee schedule explicitly incorporates the most recent Federal Poverty Guidelines (2024), as shown in the attached tables and confirmed in the compliance narrative. The process for annual update is described, and the income thresholds match the current FPG. This meets the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Key Management Staff": {
+      "compliantItems": [
+        {
+          "element": "Element b - Documentation of Key Management Staff Positions",
+          "requirement": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documented the training and experience qualifications, as well as the duties or functions, for each key management staff position (for example, in position descriptions).",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff contains detailed position descriptions for CEO, COO, Finance Director, Medical Director, and other key staff, including qualifications, major functions, and core areas. Attachment 5: Biographical Sketches for Key Management Staff provides education, training, and experience for each key staff member. The Project Narrative (Criterion 4, Section 2a) also references these attachments and summarizes the management structure and qualifications. Form 2 - Staffing Profile lists all key management positions as direct hires (not contractors).",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides both position descriptions (duties/functions and qualifications) and biographical sketches (training/experience) for all key management staff, as required. The documentation is specific, complete, and cross-referenced in the narrative and attachments, demonstrating compliance with the element.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element d - CEO Responsibilities",
+          "requirement": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's Project Director/CEO is directly employed by the health center, reports to the health center's governing board and is responsible for overseeing other key management staff in carrying out the day-to-day activities necessary to fulfill the HRSA-approved scope of project.",
+          "evidence": "Attachment 4: Position Descriptions for Key Management Staff (CEO) states the CEO 'reports to the board of directors' and 'oversees direct reports in strategizing in achieving the goals and objectives outlined by the board of directors.' The Bylaws (Attachment 2, Article III, Section 1) specify 'The Board of Directors shall hire/discharge/evaluate the CEO of the Corporation.' The Project Narrative (Criterion 4, Section 2a) states 'The CEO leads the Health Center Program project and is accountable to the governing board for scope, budget, and performance.' Form 2 - Staffing Profile lists the CEO as a direct hire (0.80 FTE, not contract). The CEO's biographical sketch (Attachment 5) and Form 12 - Organization Contacts confirm Dr. Patrick Rock is the CEO and direct employee.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly demonstrates that the CEO is a direct employee, reports to the governing board (which has hiring/firing authority), and oversees other key management staff in day-to-day operations. The evidence is consistent across the position description, bylaws, staffing profile, and narrative, meeting all aspects of the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Contracts and Subawards": {
+      "compliantItems": [],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Collaborative Relationships": {
+      "compliantItems": [
+        {
+          "element": "Element a - Coordination and Integration of Activities",
+          "requirement": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to collaborate with other providers or programs in the service area, including local hospitals, specialty providers, and social service organizations (including those that serve special populations), to provide access to services not available through the health center in order to support:",
+          "evidence": "Criterion 3: Collaboration details partnerships with Hennepin Healthcare (hospital, specialty, imaging, inpatient, labor/delivery), Native American Community Clinic, CUHCC, shelters, recovery housing, mutual-help groups, county public health programs, and social service organizations. Attachment 7: Summary of Contracts and Agreements lists contracts with Hennepin Healthcare (specialty referrals, X-ray, mammograms, inpatient care, labor/delivery), Quest Labs (reference labs), Walgreens (340B pharmacy), and Propio (interpreter services). Attachment 9: Collaboration Documentation contains letters of support from NACC, CUHCC, Minnesota Department of Health, FUHN, and MNACHC. Project Narrative describes coordination of specialty, inpatient, and advanced imaging through contracts/referral agreements and routine sharing of patients with shelters, recovery housing, mutual help groups, and county programs.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides detailed documentation of collaborative relationships with hospitals, specialty providers, and social service organizations, including contracts, referral agreements, and letters of support. These relationships ensure access to services not available on-site and support care for special populations. The evidence is robust and directly responsive to the requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Collaboration with Other Primary Care Providers",
+          "requirement": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center documents its efforts to coordinate and integrate its activities with other federally-funded, as well as State and local, health services delivery projects and programs serving similar patient populations in the service area (at a minimum, this would include establishing and maintaining relationships with other health centers in the service area).",
+          "evidence": "Criterion 3: Collaboration (Section 2a) describes structured, bidirectional coordination with other HRSA-supported health centers (Native American Community Clinic, CUHCC, OCHIN/Epic FQHC cohort), including coordinated referrals, closed-loop confirmation, shared follow-up expectations, and collaborative workgroups. Letters of support from NACC, CUHCC, MNACHC, and FUHN in Attachment 9 confirm active relationships. The Project Narrative highlights participation in MNACHC workgroups and OCHIN HCCN, and describes collaborative efforts on registries, recall workflows, depression follow-through, and best practice adoption. Attachment 13: Health Center Program Compliance references these collaborations and includes supporting documentation.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application demonstrates ongoing, structured collaboration with other federally-funded, state, and local health centers and programs serving similar populations. There is clear evidence of established and maintained relationships with other health centers in the service area, as well as participation in regional networks and associations. The documentation meets and exceeds the minimum requirement.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Billing and Collections": {
+      "compliantItems": [
+        {
+          "element": "Element c - Participation in Insurance Programs",
+          "requirement": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center participates in Medicaid, CHIP, Medicare, and, as appropriate, other public or private assistance programs or health insurance.",
+          "evidence": "Attachment 13: Health Center Program Compliance, Section 5 states: 'IHB participates in Medicare, Medicaid, Children's Health Insurance Program (CHIP) and is contracted with other commercial insurance carriers.' Form 3: Income Analysis shows patient counts and revenue for Medicaid, Medicare, and Private insurance. Project Narrative references insurance navigators and enabling services for Medicaid, CHIP, and other coverage. Form 5A and Form 1A patient projections include Medicaid, Medicare, and Private insurance patients.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides direct statements of participation in Medicaid, CHIP, Medicare, and commercial insurance, with supporting documentation in Form 3 (payer mix), Attachment 13, and the Project Narrative. Patient projections and billing revenue confirm active participation. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element h - Policies or Procedures for Waiving or Reducing Fees",
+          "requirement": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has and utilizes board-approved policies, as well as operating procedures, that include the specific circumstances when the health center will waive or reduce fees or payments required by the center due to any patient's inability to pay.",
+          "evidence": "Attachment 10: Sliding Fee Discount Schedule 2025 shows a board-approved sliding fee schedule with nominal fees for patients at or below 100% FPG and increasing flat fees up to 200% FPG. The schedule states: 'No patient will be declined service because of inability or refusal to pay, race, color, national origin, disability or religion.' Project Narrative (Criterion 2, Section 5a and 5c) describes procedures for screening all patients for eligibility, applying discounts, and waiving nominal charges when patients cannot pay. Attachment 13: Health Center Program Compliance reiterates use of the board-approved sliding fee schedule and policy for waiving fees due to inability to pay. Form 1C lists 'Billing and Collections policies/procedures, including those regarding waivers or fee reductions and refusal to pay' as on file.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides evidence of a board-approved sliding fee schedule, clear operating procedures for waiving or reducing fees, and explicit statements that care is not denied due to inability to pay. The sliding fee schedule and policy are referenced in multiple locations, and the procedures for waiving fees are described in both the narrative and compliance attachment. Therefore, this element is COMPLIANT.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Budget": {
+      "compliantItems": [
+        {
+          "element": "Element a - Budgeting for Scope of Project",
+          "requirement": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center develops and submits to HRSA (for new or continued funding or designation from HRSA) an annual budget, also referred to as a 'total budget,' that reflects projected costs and revenues necessary to support the health center's proposed or HRSA-approved scope of project.",
+          "evidence": "The application includes a complete SF-424A: Budget Information - Non-Construction Programs (see Table 4, Table 5, and Budget Justification), which details a total budget of $17,132,126.00. The budget narrative and justification align with the scope of project as described in the Project Narrative and Forms 5A/5B, covering all required and additional services, staffing, and operational costs. The budget is consistent across all forms (SF-424A, Budget Narrative, Form 3: Income Analysis) and supports the projected 4,399 unduplicated patients and associated services. The narrative explicitly states: 'IHB's SF-424A request equals the SAAT Total Funding for HRSA-26-004. SF-424A Section B totals match Budget Narrative object-class totals. Personnel and fringe reconcile to Form 2: Staffing Profile and the Federally Supported Personnel Justification Table. Assumptions in Form 3: Income Analysis align with the payer/volume used to build Personnel and Supplies. Form 5A/5B service delivery methods (direct/contract/referral) match how costs are placed in Personnel vs. Contractual.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application provides a detailed, annual total budget that is consistent across required forms and narratives, and it is clearly aligned with the HRSA-approved scope of project. The budget includes all projected costs and revenues necessary to support the health center’s operations and services as described in the scope of project. This meets the requirement for Element a.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Revenue Sources",
+          "requirement": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "In addition to the Health Center Program award, the health center's annual budget includes all other projected revenue sources that will support the Health Center Program project, specifically:",
+          "evidence": "The SF-424A, Budget Narrative, and Form 3: Income Analysis all include detailed breakdowns of revenue sources. Table 4 and Table 6 show the following revenue sources: Federal ($1,862,074.00), State ($565,180.00), Other ($7,272,895.00), Program Income ($7,431,977.00), totaling $17,132,126.00. Form 3: Income Analysis further breaks down program income by payer (Medicaid, Medicare, Private, Self Pay) and other federal, state, local, private grants/contracts, contributions, and other sources. The narrative also states: 'PROGRAM INCOME (fees, third party reimbursements, and payments generated from the 7,431,977 7,431,977 7,729,256 8,193,011), STATE FUNDS 565,180 565,180 565,180 565,180, OTHER FEDERAL FUNDING (break out by source - e.g., HUD, CDC) 1,862,074 7,017,995 8,880,069 8,968,870 9,058,558, OTHER SUPPORT 254,900 254,900 280,390 294,410.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The application clearly identifies and quantifies all projected revenue sources that will support the Health Center Program project, including but not limited to the HRSA award, state funds, program income from patient services, and other federal and private sources. The revenue sources are consistently presented across all required budget forms and narratives, satisfying the requirement for Element b.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": []
+    },
+    "Board Authority": {
+      "compliantItems": [
+        {
+          "element": "Element a - Maintenance of Board Authority Over Health Center Project",
+          "requirement": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center's organizational structure, articles of incorporation, bylaws, and other relevant documents ensure the health center governing board maintains the authority for oversight of the Health Center Program project, specifically:",
+          "evidence": "The application includes the Amended and Restated Bylaws (Attachment 2: Bylaws) which state: 'Section 1. General Powers. The Board of Directors shall manage and direct the business and affairs of the corporation.' The bylaws also specify that the Board hires/discharges/evaluates the CEO (Section 1), approves budgets, and manages the corporation. The Project Narrative (Criterion 4, 1a) states, 'Governance and authorities are exercised by IHB's single governing board as described in Attachment 2: Bylaws and reflected in Attachment 3: Project Organizational Chart.' Attachment 13 (Health Center Program Requirements Compliance) states, 'The governing board of a health center operated by Indian tribes, tribal groups, or Indian organizations under the Indian Self-Determination Act or Urban Indian Organizations under the Indian Health Care Improvement Act is exempt from the specific board authority requirements discussed in this chapter. Section 330(k)(3)(H) of the PHS Act.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The Bylaws and supporting narrative demonstrate that the Board maintains full authority over the health center project, including oversight, CEO selection/evaluation, and management of the organization. The organizational chart and position descriptions confirm the CEO reports to the Board. There is no evidence of a parent, affiliate, or co-applicant board that would dilute this authority. The exemption for Urban Indian Organizations is noted, but the Board retains all core authorities as required.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element b - Required Authorities and Responsibilities",
+          "requirement": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "The health center's articles of incorporation, bylaws, or other relevant documents outline the following required authorities and responsibilities of the governing board:",
+          "evidence": "Attachment 13 (Health Center Program Requirements Compliance) and the Project Narrative (Criterion 6, Governance) both state: 'The governing board of a health center operated by Indian tribes, tribal groups, or Indian organizations under the Indian Self-Determination Act or Urban Indian Organizations under the Indian Health Care Improvement Act is exempt from the specific board authority requirements discussed in this chapter. Section 330(k)(3)(H) of the PHS Act.' The application is for an Urban Indian Organization, as confirmed on Form 1A and throughout the application.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "Per Section 330(k)(3)(H) of the PHS Act, Urban Indian Organizations are exempt from the specific board authority requirements outlined in this element. The application clearly identifies the applicant as an Urban Indian Organization and cites the relevant statutory exemption. Therefore, this element is NOT APPLICABLE.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    },
+    "Board Composition": {
+      "compliantItems": [
+        {
+          "element": "Element a - Board Member Selection and Removal Process",
+          "requirement": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that specify the process for ongoing selection and removal of board members. This board member selection and removal process does not permit any other entity, committee or individual (other than the board) to select either the board chair or the majority of health center board members, including a majority of the non-patient board members.",
+          "evidence": "Attachment 2: Bylaws (2024 IHB BOD Bylaws signed.pdf), Article III, Section 2: 'The directors shall be nominated and elected by a majority of directors present at a duly held meeting of the Board of Directors.' Section 4: 'A Director may be removed from the Board of Directors with or without cause by the affirmative vote of not less than two-thirds of the total number of Directors of the corporation.' Section 9: 'Special meetings of the Board of Directors may be called by the Chief Executive Officer, The Chair of the Board or by any 3 or more Directors.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws clearly state that board members, including the chair, are selected and removed by the board itself, not by any outside entity, committee, or individual. There is no evidence of any provision allowing another entity to select the board chair or majority of board members. The process for selection, removal, and filling vacancies is managed internally by the board, satisfying HRSA requirements.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element b - Required Board Composition",
+          "requirement": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has bylaws or other relevant documents that require the board to be composed as follows:",
+          "evidence": "Attachment 2: Bylaws (2024 IHB BOD Bylaws signed.pdf), Article III, Section 2: 'The Board of Directors shall consist of not less than 7 nor more than 15 persons of whom at least 51 percent are American Indians or Alaska Natives.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The bylaws specify both the minimum and maximum number of directors and require that at least 51% are American Indian or Alaska Native, which is consistent with HRSA requirements for Urban Indian Organizations. There is no evidence of non-compliance with required board composition.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        },
+        {
+          "element": "Element c - Current Board Composition",
+          "requirement": "The health center has documentation that the board is composed of:",
+          "status": "COMPLIANT",
+          "whatWasChecked": "The health center has documentation that the board is composed of:",
+          "evidence": "Form 6A - Current Board Member Characteristics lists 10 board members, with columns for area of expertise, health industry income, health center patient status, and live/work in service area. Several members are identified as American Indian, and at least 51% are American Indian or Alaska Native per bylaws and Form 6A. The board includes expertise in law, pharmacy, finance, community development, psychology, nursing, and public health.",
+          "evidenceLocation": "Not specified",
+          "reasoning": "The board composition matches the requirements set in the bylaws and HRSA standards for Urban Indian Organizations. The board is diverse in expertise and includes members who are patients and/or live/work in the service area. There is no evidence of non-compliance.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ],
+      "nonCompliantItems": [],
+      "notApplicableItems": [
+        {
+          "element": "Element e - Waiver Requests",
+          "requirement": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "status": "NOT_APPLICABLE",
+          "whatWasChecked": "In cases where a health center receives an award/designation under section 330(g), 330(h) and/or 330(i), does not receive an award/designation under section 330(e), and requests a waiver of the patient majority board composition requirements, the health center presents to HRSA for review and approval:",
+          "evidence": "Form 6B - Request for Waiver of Board Member Requirements: 'This form is not applicable to you, since you are currently receiving or applying to receive Community Health Center (CHC) funding and/or you have selected 'Tribal' or 'Urban Indian' as the Business Entity in Form 1A.'",
+          "evidenceLocation": "Not specified",
+          "reasoning": "IHB is applying for and receives funding under section 330(e) as a Community Health Center and is designated as an Urban Indian Organization. The waiver for patient majority board composition is not applicable to Urban Indian Organizations under HRSA regulations.",
+          "sectionsReferenced": "Not specified",
+          "contentTypes": "Not specified"
+        }
+      ]
+    }
+  }
+}

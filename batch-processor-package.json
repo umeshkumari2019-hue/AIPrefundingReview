@@ -1,0 +1,27 @@
+{
+  "name": "hrsa-batch-processor",
+  "version": "1.0.0",
+  "description": "HRSA Pre-Funding Review Batch Processing Utility",
+  "main": "batch-processor.js",
+  "bin": {
+    "hrsa-batch": "./batch-processor.js"
+  },
+  "scripts": {
+    "start": "node batch-processor.js",
+    "build:exe": "pkg batch-processor.js --targets node18-win-x64 --output dist/hrsa-batch-processor.exe"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "docx": "^8.5.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "assets": [
+      "compliance-rules.json"
+    ],
+    "outputPath": "dist"
+  }
+}

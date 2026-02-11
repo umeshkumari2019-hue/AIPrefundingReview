@@ -286,7 +286,7 @@ function App() {
     }
   }
 
-  // Extract page number from evidence location
+  // Extract page number from evidence location (returns first page found)
   const extractPageNumber = (evidenceLocation) => {
     if (!evidenceLocation) return null
     
@@ -304,18 +304,79 @@ function App() {
       }
     }
     
+    // Try bare number
+    const bareNum = evidenceLocation.match(/(\d+)/)
+    if (bareNum) return parseInt(bareNum[1], 10)
+    
     return null
+  }
+
+  // Parse all page numbers from evidence location string
+  // Handles: "Page 133, 151", "Pages 131-135", "Page 45, 93, 102", "Pages 10-12, 45"
+  const parsePageNumbers = (evidenceLocation) => {
+    if (!evidenceLocation) return []
+    
+    const pages = []
+    
+    // Remove "Page" / "Pages" / "p." / "pg" prefix
+    const cleaned = evidenceLocation.replace(/pages?\s*/gi, '').replace(/p\.?\s*/gi, '').replace(/pg\.?\s*/gi, '').trim()
+    
+    // Split by comma or "and"
+    const parts = cleaned.split(/[,&]|\band\b/).map(p => p.trim()).filter(p => p.length > 0)
+    
+    for (const part of parts) {
+      // Check for range like "131-135"
+      const rangeMatch = part.match(/(\d+)\s*[-–—]\s*(\d+)/)
+      if (rangeMatch) {
+        const start = parseInt(rangeMatch[1], 10)
+        const end = parseInt(rangeMatch[2], 10)
+        if (start <= end && end - start < 50) {
+          for (let i = start; i <= end; i++) {
+            pages.push(i)
+          }
+        }
+        continue
+      }
+      
+      // Single number
+      const numMatch = part.match(/(\d+)/)
+      if (numMatch) {
+        pages.push(parseInt(numMatch[1], 10))
+      }
+    }
+    
+    // Remove duplicates and sort
+    return [...new Set(pages)].sort((a, b) => a - b)
   }
 
   // Navigate to evidence in PDF
   const navigateToEvidence = (evidenceLocation, evidenceText) => {
+    if (!pdfFile) {
+      // No PDF loaded - prompt user to upload
+      document.getElementById('pdf-reupload-input')?.click()
+      return
+    }
     const pageNumber = extractPageNumber(evidenceLocation)
     if (pageNumber) {
-      setShowPDFViewer(true)
-      setHighlightPDFPage(pageNumber)
-      setHighlightText(evidenceText)
+      // Reset first to force re-trigger if same page is clicked again
+      setHighlightPDFPage(null)
+      setHighlightText(null)
+      setTimeout(() => {
+        setShowPDFViewer(true)
+        setHighlightPDFPage(pageNumber)
+        setHighlightText(evidenceText)
+      }, 50)
     } else {
       alert('Could not extract page number from evidence location')
+    }
+  }
+
+  // Handle PDF re-upload for cached applications
+  const handlePdfReupload = (e) => {
+    const file = e.target.files[0]
+    if (file && file.type === 'application/pdf') {
+      setPdfFile(file)
+      setApplicationFile(file)
     }
   }
 
@@ -2866,6 +2927,45 @@ Provide a clear, well-formatted answer based on the compliance data above.`
 
         {activeTab === 'results' && results && (
           <div className="results" style={{ display: 'flex', gap: '20px' }}>
+            {/* Hidden PDF re-upload input for cached applications */}
+            <input
+              id="pdf-reupload-input"
+              type="file"
+              accept=".pdf"
+              style={{ display: 'none' }}
+              onChange={handlePdfReupload}
+            />
+            
+            {/* PDF Upload Banner - shown when no PDF is loaded */}
+            {!pdfFile && (
+              <div 
+                onClick={() => document.getElementById('pdf-reupload-input')?.click()}
+                style={{
+                  position: 'fixed',
+                  bottom: '20px',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  padding: '12px 24px',
+                  background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+                  color: 'white',
+                  borderRadius: '12px',
+                  cursor: 'pointer',
+                  boxShadow: '0 4px 20px rgba(59, 130, 246, 0.5)',
+                  zIndex: 900,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px',
+                  fontSize: '0.95rem',
+                  fontWeight: '600',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 6px 30px rgba(59, 130, 246, 0.7)'}
+                onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 4px 20px rgba(59, 130, 246, 0.5)'}
+              >
+                📄 Upload Application PDF to enable page viewer
+              </div>
+            )}
+
             {/* Results Panel */}
             <div style={{ 
               flex: showPDFViewer ? '1' : '1', 
@@ -3513,36 +3613,28 @@ Provide a clear, well-formatted answer based on the compliance data above.`
                             boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
                             animation: 'slideDown 0.3s ease-out'
                           }}>
-                            <div style={{ marginBottom: '20px' }}>
-                              <strong style={{ color: '#3b82f6', display: 'block', marginBottom: '12px', fontSize: '1rem' }}>
-                                ✓ Items to Check:
-                              </strong>
-                              <div style={{ 
-                                padding: '15px', 
-                                background: '#EFF6FB', 
-                                borderRadius: '6px',
-                                borderLeft: '4px solid #3b82f6'
-                              }}>
-                                <ul style={{ margin: '0', paddingLeft: '20px', lineHeight: '1.8' }}>
-                                  {(() => {
-                                    // Parse whatWasChecked into bullet points
-                                    const text = validationResult.whatWasChecked
-                                    // Split by common patterns: (1), (2), (3) or numbered lists
-                                    const items = text.split(/\(?\d+\)|\band\s+\(?\d+\)|,\s+and\s+/).filter(item => item.trim().length > 10)
-                                    
-                                    if (items.length > 1) {
-                                      return items.map((item, i) => (
-                                        <li key={i} style={{ fontSize: '0.9rem', color: '#1e3a5f', marginBottom: '6px' }}>
-                                          {item.trim().replace(/^(whether|that|if)\s+/i, '')}
-                                        </li>
-                                      ))
-                                    } else {
-                                      return <li style={{ fontSize: '0.9rem', color: '#1e3a5f' }}>{text}</li>
-                                    }
-                                  })()}
-                                </ul>
+                            {/* Items to Check from extracted rules */}
+                            {element.applicationItems && element.applicationItems.length > 0 && (
+                              <div style={{ marginBottom: '20px' }}>
+                                <strong style={{ color: '#3b82f6', display: 'block', marginBottom: '12px', fontSize: '1rem' }}>
+                                  ✓ Items to Check:
+                                </strong>
+                                <div style={{ 
+                                  padding: '15px', 
+                                  background: '#EFF6FB', 
+                                  borderRadius: '6px',
+                                  borderLeft: '4px solid #3b82f6'
+                                }}>
+                                  <ul style={{ margin: '0', paddingLeft: '20px', lineHeight: '1.8' }}>
+                                    {element.applicationItems.map((item, i) => (
+                                      <li key={i} style={{ fontSize: '0.9rem', color: '#1e3a5f', marginBottom: '6px' }}>
+                                        {item}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
+                            )}
                             
                             <div style={{ marginBottom: '20px' }}>
                               <div style={{ marginBottom: '10px' }}>
@@ -3642,26 +3734,54 @@ Provide a clear, well-formatted answer based on the compliance data above.`
                                         </div>
                                       )}
                                       
-                                      {/* Evidence Location - Page Numbers */}
+                                      {/* Evidence Location - Page Numbers (Individually Clickable) */}
                                       {validationResult.evidenceLocation && validationResult.evidenceLocation !== 'Not found' && (
                                         <div style={{ 
-                                          display: 'flex', 
-                                          alignItems: 'center', 
-                                          gap: '8px',
                                           marginBottom: '8px',
                                           padding: '8px 10px',
                                           background: '#EFF6FB',
                                           borderRadius: '4px',
                                           border: '1px solid #D9E8F6'
                                         }}>
-                                          <span style={{ fontSize: '1rem', flexShrink: 0 }}>📄</span>
-                                          <div>
-                                            <div style={{ fontSize: '0.75rem', color: '#94a3b8', marginBottom: '2px' }}>
-                                              Page Number(s):
-                                            </div>
-                                            <div style={{ fontSize: '0.9rem', color: '#0B4778', fontWeight: '600' }}>
-                                              {validationResult.evidenceLocation}
-                                            </div>
+                                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+                                            <span style={{ fontSize: '1rem' }}>📄</span>
+                                            <span style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: '600' }}>
+                                              Page Number(s) - Click to view:
+                                            </span>
+                                          </div>
+                                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                                            {parsePageNumbers(validationResult.evidenceLocation).map((pageNum) => (
+                                              <span
+                                                key={pageNum}
+                                                onClick={() => navigateToEvidence(`Page ${pageNum}`, validationResult.evidence)}
+                                                style={{
+                                                  fontSize: '0.85rem',
+                                                  color: '#FFFFFF',
+                                                  background: '#3b82f6',
+                                                  padding: '4px 12px',
+                                                  borderRadius: '4px',
+                                                  fontWeight: '600',
+                                                  cursor: 'pointer',
+                                                  transition: 'all 0.2s ease',
+                                                  display: 'inline-flex',
+                                                  alignItems: 'center',
+                                                  gap: '4px'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                  e.currentTarget.style.background = '#2563eb'
+                                                  e.currentTarget.style.boxShadow = '0 2px 8px rgba(59, 130, 246, 0.5)'
+                                                  e.currentTarget.style.transform = 'translateY(-1px)'
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                  e.currentTarget.style.background = '#3b82f6'
+                                                  e.currentTarget.style.boxShadow = 'none'
+                                                  e.currentTarget.style.transform = 'none'
+                                                }}
+                                                title={`View Page ${pageNum} in PDF`}
+                                              >
+                                                🔍 Page {pageNum}
+                                              </span>
+                                            ))}
                                           </div>
                                         </div>
                                       )}
@@ -3688,16 +3808,31 @@ Provide a clear, well-formatted answer based on the compliance data above.`
                                             gap: '6px'
                                           }}>
                                             {validationResult.evidenceReferences.map((ref, idx) => (
-                                              <span key={idx} style={{ 
-                                                fontSize: '0.85rem', 
-                                                color: '#f1f5f9',
-                                                background: '#3b82f6',
-                                                padding: '4px 10px',
-                                                borderRadius: '4px',
-                                                fontWeight: '600',
-                                                display: 'inline-block'
-                                              }}>
-                                                {ref}
+                                              <span 
+                                                key={idx} 
+                                                onClick={() => navigateToEvidence(ref, validationResult.evidence)}
+                                                style={{ 
+                                                  fontSize: '0.85rem', 
+                                                  color: '#f1f5f9',
+                                                  background: '#3b82f6',
+                                                  padding: '4px 10px',
+                                                  borderRadius: '4px',
+                                                  fontWeight: '600',
+                                                  display: 'inline-block',
+                                                  cursor: 'pointer',
+                                                  transition: 'all 0.2s ease'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                  e.currentTarget.style.background = '#2563eb'
+                                                  e.currentTarget.style.boxShadow = '0 2px 8px rgba(59, 130, 246, 0.5)'
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                  e.currentTarget.style.background = '#3b82f6'
+                                                  e.currentTarget.style.boxShadow = 'none'
+                                                }}
+                                                title="Click to view in PDF"
+                                              >
+                                                🔍 {ref}
                                               </span>
                                             ))}
                                           </div>
@@ -3973,14 +4108,66 @@ Provide a clear, well-formatted answer based on the compliance data above.`
             })}
             </div>
             
-            {/* PDF Viewer Panel */}
-            {showPDFViewer && (
-              <div style={{ 
-                flex: '1', 
-                minWidth: '400px',
-                borderLeft: '2px solid #D9E8F6',
-                paddingLeft: '20px'
+            {/* PDF Viewer Drawer - Slides in from right like Chat */}
+            <div style={{
+              position: 'fixed',
+              top: '0',
+              right: showPDFViewer ? '0' : '-600px',
+              width: '600px',
+              height: '100vh',
+              background: '#0f172a',
+              borderLeft: '2px solid #3b82f6',
+              boxShadow: '-4px 0 20px rgba(0, 0, 0, 0.5)',
+              transition: 'right 0.3s ease-in-out',
+              zIndex: 999,
+              display: 'flex',
+              flexDirection: 'column'
+            }}>
+              {/* PDF Viewer Header */}
+              <div style={{
+                padding: '15px 20px',
+                background: '#FFFFFF',
+                borderBottom: '2px solid #D9E8F6',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
               }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div style={{
+                    width: '40px',
+                    height: '40px',
+                    borderRadius: '50%',
+                    background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '1.3rem'
+                  }}>📄</div>
+                  <div>
+                    <h3 style={{ margin: 0, color: '#0B4778', fontSize: '1.1rem', fontWeight: '600' }}>PDF Viewer</h3>
+                    <p style={{ margin: 0, color: '#64748b', fontSize: '0.8rem' }}>
+                      {highlightPDFPage ? `Viewing Page ${highlightPDFPage}` : 'Application Document'}
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setShowPDFViewer(false)}
+                  style={{
+                    background: 'transparent',
+                    border: 'none',
+                    color: '#94a3b8',
+                    fontSize: '1.5rem',
+                    cursor: 'pointer',
+                    padding: '0',
+                    lineHeight: '1'
+                  }}
+                >
+                  ✕
+                </button>
+              </div>
+              
+              {/* PDF Content */}
+              <div style={{ flex: 1, overflow: 'hidden' }}>
                 <PDFViewer 
                   pdfFile={pdfFile} 
                   highlightPage={highlightPDFPage}
@@ -3988,7 +4175,7 @@ Provide a clear, well-formatted answer based on the compliance data above.`
                   onLoadSuccess={(numPages) => console.log(`PDF loaded with ${numPages} pages`)}
                 />
               </div>
-            )}
+            </div>
             
             {/* AI Chat Assistant - Right Drawer */}
             <div style={{

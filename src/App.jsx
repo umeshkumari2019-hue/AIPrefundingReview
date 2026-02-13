@@ -121,6 +121,10 @@ function App() {
   const [highlightText, setHighlightText] = useState(null)
   const [pdfFile, setPdfFile] = useState(null)
   const [progressLog, setProgressLog] = useState([])
+  const [manualYear, setManualYear] = useState(new Date().getFullYear().toString()) // Year for manual upload dropdown
+  const [availableRuleYears, setAvailableRuleYears] = useState([]) // Years that have saved rules
+  const [activeRuleYear, setActiveRuleYear] = useState('') // Which year's rules are currently loaded
+  const [detectedRuleYear, setDetectedRuleYear] = useState('') // Year detected from application announcement number
 
   // Check for stored authentication on mount
   useEffect(() => {
@@ -141,6 +145,7 @@ function App() {
     if (isAuthenticated) {
       loadSavedRules()
       loadCachedApplications()
+      loadAvailableRuleYears()
     }
   }, [isAuthenticated])
 
@@ -401,13 +406,33 @@ function App() {
     }
   }
 
-  const loadSavedRules = async () => {
+  const loadAvailableRuleYears = async () => {
     try {
-      const response = await axios.get(`${BACKEND_URL}/api/load-rules`)
+      const response = await axios.get(`${BACKEND_URL}/api/rule-years`)
+      if (response.data.success) {
+        setAvailableRuleYears(response.data.years)
+        console.log('Available rule years:', response.data.years.map(y => y.fullYear).join(', '))
+      }
+    } catch (error) {
+      console.log('Could not load available rule years')
+    }
+  }
+
+  const loadSavedRules = async (year = null) => {
+    try {
+      const url = year 
+        ? `${BACKEND_URL}/api/load-rules/${year}` 
+        : `${BACKEND_URL}/api/load-rules`
+      const response = await axios.get(url)
       if (response.data.success) {
         setManualRules(response.data.rules)
-        setStatus('✅ Loaded saved compliance rules from file')
-        console.log('Loaded rules from file:', response.data.rules.length, 'chapters')
+        if (year) {
+          setActiveRuleYear(year)
+          setStatus(`✅ Loaded compliance rules for 20${year}`)
+        } else {
+          setStatus('✅ Loaded saved compliance rules from file')
+        }
+        console.log('Loaded rules from file:', response.data.rules.length, 'chapters', year ? `(year: 20${year})` : '')
       }
     } catch (error) {
       console.log('No saved rules found or backend not running')
@@ -493,10 +518,19 @@ function App() {
     }
   }
 
-  const saveRulesToFile = async (rules) => {
+  const saveRulesToFile = async (rules, year = null) => {
     try {
-      const response = await axios.post(`${BACKEND_URL}/api/save-rules`, { rules })
-      if (response.data.success) {
+      // Always save to default location for backward compatibility
+      await axios.post(`${BACKEND_URL}/api/save-rules`, { rules })
+      
+      // Also save to year-specific folder if year is provided
+      if (year) {
+        const shortYear = year.toString().slice(-2) // "2026" -> "26"
+        await axios.post(`${BACKEND_URL}/api/save-rules/${shortYear}`, { rules })
+        console.log(`Saved rules to file: ${rules.length} chapters (year: ${year}, folder: ${shortYear})`)
+        // Refresh available years list
+        await loadAvailableRuleYears()
+      } else {
         console.log('Saved rules to file:', rules.length, 'chapters')
       }
     } catch (error) {
@@ -1482,6 +1516,7 @@ CRITICAL: Return exactly ${totalRequirements} validation objects.`
             whatWasChecked: validation.whatWasChecked || 'Not specified',
             evidence: validation.evidence || 'Not found',
             evidenceLocation: validation.evidenceLocation || 'Not found',
+            evidenceSection: validation.evidenceSection || 'Not found',
             reasoning: validation.reasoning || 'No reasoning provided',
             sectionsReferenced: 'Not specified',
             contentTypes: 'Not specified'
@@ -1908,10 +1943,11 @@ Return JSON: {
 
   // Handle manual upload
   const handleManualUpload = async () => {
-    if (!manualFile) return
+    if (!manualFile || !manualYear) return
 
     setProcessing(true)
-    setStatus('Extracting text from compliance manual...')
+    const shortYear = manualYear.toString().slice(-2)
+    setStatus(`Extracting text from compliance manual for year ${manualYear}...`)
 
     try {
       const content = await extractTextFromPDF(manualFile)
@@ -1919,18 +1955,28 @@ Return JSON: {
       
       const rules = await extractComplianceRules(content)
       setManualRules(rules)
+      setActiveRuleYear(shortYear)
       
-      // Save to file via backend
-      setStatus('Saving rules to file...')
-      await saveRulesToFile(rules)
+      // Save to file via backend (both default and year-specific folder)
+      setStatus(`Saving rules to data/${shortYear}/...`)
+      await saveRulesToFile(rules, manualYear)
       
-      setStatus(`✅ Success! Extracted ${rules.length} compliance requirements. Rules saved to data/compliance-rules.json`)
+      setStatus(`✅ Success! Extracted ${rules.length} compliance requirements for ${manualYear}. Rules saved to data/${shortYear}/compliance-rules.json`)
       setActiveTab('analyze')
     } catch (error) {
       setStatus(`❌ Error: ${error.message}`)
     } finally {
       setProcessing(false)
     }
+  }
+
+  // Extract HRSA announcement number from application content (e.g., HRSA-26-004 -> "26")
+  const extractAnnouncementYear = (content) => {
+    const match = content.match(/HRSA[-\s](\d{2})[-\s]\d{3}/i)
+    if (match) {
+      return match[1]
+    }
+    return null
   }
 
   // Handle application analysis
@@ -1978,8 +2024,59 @@ Return JSON: {
       const extractionTime = ((Date.now() - extractionStartTime) / 1000).toFixed(1)
       console.log(`📄 Text extraction took ${extractionTime}s`)
       
-      setProgressLog(prev => [...prev, `✅ Text extraction complete (${extractionTime}s)`])
+      // Save extracted text to file for review
+      try {
+        const sanitizedName = (applicationName || applicationFile.name).replace(/[^a-zA-Z0-9.-]/g, '_')
+        await axios.post(`${BACKEND_URL}/api/save-extracted-text`, {
+          filename: sanitizedName,
+          content: content
+        })
+        setProgressLog(prev => [...prev, `✅ Text extraction complete (${extractionTime}s) — saved to data/extracted-text/`])
+      } catch (err) {
+        console.error('Could not save extracted text:', err)
+        setProgressLog(prev => [...prev, `✅ Text extraction complete (${extractionTime}s)`])
+      }
+
+      // Extract announcement number to determine which year's rules to use
+      const announcementYear = extractAnnouncementYear(content)
+      let rulesToUse = manualRules
+      let ruleYearLabel = activeRuleYear ? `20${activeRuleYear}` : 'default'
       
+      if (announcementYear) {
+        setDetectedRuleYear(announcementYear)
+        setProgressLog(prev => [...prev, `🔍 Detected Funding Opportunity: HRSA-${announcementYear}-XXX`])
+        
+        const yearRulesAvailable = availableRuleYears.find(y => y.year === announcementYear)
+        
+        if (yearRulesAvailable) {
+          if (activeRuleYear !== announcementYear) {
+            setProgressLog(prev => [...prev, `📂 Loading rules for year 20${announcementYear}...`])
+            try {
+              const response = await axios.get(`${BACKEND_URL}/api/load-rules/${announcementYear}`)
+              if (response.data.success) {
+                rulesToUse = response.data.rules
+                setManualRules(rulesToUse)
+                setActiveRuleYear(announcementYear)
+                ruleYearLabel = `20${announcementYear}`
+                setProgressLog(prev => [...prev, `✅ Loaded ${rulesToUse.length} chapters from 20${announcementYear} rules`])
+              }
+            } catch (err) {
+              console.error('Error loading year-specific rules:', err)
+              setProgressLog(prev => [...prev, `⚠️ Could not load 20${announcementYear} rules, using currently loaded rules`])
+            }
+          } else {
+            ruleYearLabel = `20${announcementYear}`
+            setProgressLog(prev => [...prev, `✅ Already using 20${announcementYear} rules`])
+          }
+        } else {
+          setProgressLog(prev => [...prev, `⚠️ No rules found for year 20${announcementYear} — using currently loaded rules (${ruleYearLabel})`])
+        }
+      } else {
+        setProgressLog(prev => [...prev, `ℹ️ No HRSA announcement number detected — using currently loaded rules (${ruleYearLabel})`])
+      }
+
+      setProgressLog(prev => [...prev, `📋 Validating against ${ruleYearLabel} compliance rules`])
+
       const analysisStartTime = Date.now()
       
       // Process ALL sections in ONE API call (MAXIMUM OPTIMIZATION)
@@ -1988,7 +2085,7 @@ Return JSON: {
       let sectionResults = {}
       try {
         sectionResults = await retryWithBackoff(
-          () => validateComplianceAll(manualRules, content, (progressMsg, append = false) => {
+          () => validateComplianceAll(rulesToUse, content, (progressMsg, append = false) => {
             if (append) {
               setProgressLog(prev => [...prev, progressMsg])
             } else {
@@ -2010,7 +2107,7 @@ Return JSON: {
           
           try {
             const result = await retryWithBackoff(
-              () => validateComplianceBatch(section, manualRules, content),
+              () => validateComplianceBatch(section, rulesToUse, content),
               section
             )
             sectionResults[section] = result
@@ -2673,6 +2770,72 @@ Provide a clear, well-formatted answer based on the compliance data above.`
             {!manualRules ? (
               <>
                 <h2 style={{ color: '#990000' }}>Upload Guiding Principles Document</h2>
+                
+                {/* Year Selection Dropdown */}
+                <div style={{ marginBottom: '20px' }}>
+                  <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600', color: '#0B4778', fontSize: '1rem' }}>
+                    Select Guidance Year
+                  </label>
+                  <select
+                    value={manualYear}
+                    onChange={(e) => setManualYear(e.target.value)}
+                    style={{
+                      width: '100%',
+                      padding: '12px 16px',
+                      fontSize: '1rem',
+                      border: '2px solid #D9E8F6',
+                      borderRadius: '8px',
+                      background: 'white',
+                      color: '#0B4778',
+                      fontWeight: '600',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {Array.from({ length: new Date().getFullYear() - 2020 }, (_, i) => 2021 + i).map(year => (
+                      <option key={year} value={year}>{year}</option>
+                    ))}
+                  </select>
+                  <p style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '6px' }}>
+                    Rules will be saved to folder: <strong>data/{manualYear.toString().slice(-2)}/</strong>
+                  </p>
+                </div>
+
+                {/* Show existing rule years if any */}
+                {availableRuleYears.length > 0 && (
+                  <div style={{ 
+                    marginBottom: '20px', 
+                    padding: '15px', 
+                    background: '#EFF6FB', 
+                    borderRadius: '8px', 
+                    border: '1px solid #D9E8F6' 
+                  }}>
+                    <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#0B4778', marginBottom: '10px' }}>
+                      📂 Existing Rule Sets (click to load):
+                    </div>
+                    <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                      {availableRuleYears.map(y => (
+                        <button
+                          key={y.year}
+                          onClick={() => loadSavedRules(y.year)}
+                          style={{
+                            padding: '8px 16px',
+                            background: activeRuleYear === y.year ? '#0B4778' : 'white',
+                            color: activeRuleYear === y.year ? 'white' : '#0B4778',
+                            border: '2px solid #0B4778',
+                            borderRadius: '6px',
+                            cursor: 'pointer',
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            transition: 'all 0.2s'
+                          }}
+                        >
+                          {y.fullYear} ({y.chaptersCount} chapters)
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 <div 
                   className="upload-section"
                   onDragOver={handleDragOver}
@@ -2682,7 +2845,7 @@ Provide a clear, well-formatted answer based on the compliance data above.`
                 >
                   <div className="upload-icon">📄</div>
                   <h3>{manualFile ? manualFile.name : 'Drop PDF here or click to upload'}</h3>
-                  <p>Guiding Principles Document PDF</p>
+                  <p>Guiding Principles Document PDF for {manualYear}</p>
                   <input 
                     id="manual-input"
                     type="file" 
@@ -2693,21 +2856,25 @@ Provide a clear, well-formatted answer based on the compliance data above.`
                 <button 
                   className="btn" 
                   onClick={handleManualUpload}
-                  disabled={!manualFile || processing}
+                  disabled={!manualFile || !manualYear || processing}
                 >
-                  {processing ? 'Processing...' : 'Extract Compliance Rules'}
+                  {processing ? 'Processing...' : `Extract Compliance Rules (${manualYear})`}
                 </button>
               </>
             ) : (
               <>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                  <h2 style={{ color: '#0B4778' }}>✅ Compliance Rules Loaded ({manualRules.length} Chapters)</h2>
+                  <h2 style={{ color: '#0B4778' }}>
+                    ✅ Compliance Rules Loaded ({manualRules.length} Chapters)
+                    {activeRuleYear && <span style={{ fontSize: '0.9rem', color: '#3b82f6', marginLeft: '10px' }}>— Year: 20{activeRuleYear}</span>}
+                  </h2>
                   <button 
                     className="btn" 
                     onClick={() => {
                       setManualRules(null)
                       setManualFile(null)
                       setResults(null)
+                      setActiveRuleYear('')
                       setStatus('Upload a new guiding principles document to extract rules (previous rules will be overwritten)')
                     }}
                     style={{
@@ -2720,6 +2887,42 @@ Provide a clear, well-formatted answer based on the compliance data above.`
                     📤 Upload New Guiding Principles Document
                   </button>
                 </div>
+
+                {/* Year selector for switching between loaded rule sets */}
+                {availableRuleYears.length > 0 && (
+                  <div style={{ 
+                    marginBottom: '20px', 
+                    padding: '15px', 
+                    background: '#EFF6FB', 
+                    borderRadius: '8px', 
+                    border: '1px solid #D9E8F6' 
+                  }}>
+                    <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#0B4778', marginBottom: '10px' }}>
+                      📂 Available Rule Sets (click to switch):
+                    </div>
+                    <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                      {availableRuleYears.map(y => (
+                        <button
+                          key={y.year}
+                          onClick={() => loadSavedRules(y.year)}
+                          style={{
+                            padding: '8px 16px',
+                            background: activeRuleYear === y.year ? '#0B4778' : 'white',
+                            color: activeRuleYear === y.year ? 'white' : '#0B4778',
+                            border: '2px solid #0B4778',
+                            borderRadius: '6px',
+                            cursor: 'pointer',
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            transition: 'all 0.2s'
+                          }}
+                        >
+                          {y.fullYear} ({y.chaptersCount} chapters)
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </>
             )}
 
@@ -2973,7 +3176,23 @@ Provide a clear, well-formatted answer based on the compliance data above.`
               paddingRight: '10px'
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
-                <h2 style={{ margin: 0, color: '#990000' }}>📊 Review Results: {applicationName}</h2>
+                <h2 style={{ margin: 0, color: '#990000' }}>
+                  📊 Review Results: {applicationName}
+                  {activeRuleYear && (
+                    <span style={{ 
+                      marginLeft: '12px', 
+                      fontSize: '0.8rem', 
+                      background: '#0B4778', 
+                      color: 'white', 
+                      padding: '4px 12px', 
+                      borderRadius: '20px', 
+                      verticalAlign: 'middle',
+                      fontWeight: '600'
+                    }}>
+                      Rules: 20{activeRuleYear}
+                    </span>
+                  )}
+                </h2>
                 <div style={{ display: 'flex', gap: '10px' }}>
                   <button
                 onClick={exportResultsToWord}

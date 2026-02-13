@@ -124,6 +124,62 @@ function extractApplicationNumber(filename) {
   return match ? match[1] : null;
 }
 
+// Extract HRSA announcement year from application content (e.g., HRSA-26-004 -> "26")
+function extractAnnouncementYear(content) {
+  const match = content.match(/HRSA[-\s](\d{2})[-\s]\d{3}/i);
+  return match ? match[1] : null;
+}
+
+// Scan data directory for available rule years (folders like data/21, data/26, etc.)
+function scanAvailableRuleYears(logger) {
+  const dataDir = path.join(__dirname, 'data');
+  const years = {};
+
+  if (!fs.existsSync(dataDir)) {
+    logger.warning('Data directory not found');
+    return years;
+  }
+
+  const entries = fs.readdirSync(dataDir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (entry.isDirectory() && /^\d{2}$/.test(entry.name)) {
+      const rulesFile = path.join(dataDir, entry.name, 'compliance-rules.json');
+      if (fs.existsSync(rulesFile)) {
+        try {
+          const rules = JSON.parse(fs.readFileSync(rulesFile, 'utf-8'));
+          years[entry.name] = {
+            year: entry.name,
+            fullYear: `20${entry.name}`,
+            chaptersCount: rules.length,
+            rulesPath: rulesFile,
+            rules: rules
+          };
+          logger.log(`  📂 Found rules for 20${entry.name}: ${rules.length} chapters`);
+        } catch (err) {
+          logger.warning(`  ⚠️ Could not parse rules in data/${entry.name}/: ${err.message}`);
+        }
+      }
+    }
+  }
+
+  return years;
+}
+
+// Load rules for a specific year, with fallback to default
+function loadRulesForYear(yearCode, availableYears, defaultRules, logger) {
+  if (yearCode && availableYears[yearCode]) {
+    const yearData = availableYears[yearCode];
+    logger.success(`📋 Using 20${yearCode} rules (${yearData.chaptersCount} chapters) from data/${yearCode}/`);
+    return { rules: yearData.rules, yearLabel: `20${yearCode}` };
+  }
+
+  if (yearCode) {
+    logger.warning(`⚠️ No rules found for year 20${yearCode}, falling back to default rules`);
+  }
+
+  return { rules: defaultRules, yearLabel: 'default' };
+}
+
 // Extract text from PDF using Azure Document Intelligence
 async function extractTextFromPDF(pdfBuffer, filename, logger) {
   try {
@@ -425,7 +481,7 @@ CRITICAL: Return exactly ${totalRequirements} validation objects across all sect
 }
 
 // Analyze single application
-async function analyzeApplication(pdfPath, manualRules, logger) {
+async function analyzeApplication(pdfPath, defaultRules, availableYears, logger) {
   const filename = path.basename(pdfPath);
   const applicationNumber = extractApplicationNumber(filename);
   
@@ -442,6 +498,32 @@ async function analyzeApplication(pdfPath, manualRules, logger) {
     const extractionTime = ((Date.now() - extractionStartTime) / 1000).toFixed(1);
     logger.log(`Extracted ${extractedText.length} characters from PDF (took ${extractionTime}s)`);
     
+    // Save extracted text to file for review
+    const outputFolder = path.dirname(pdfPath);
+    const extractedTextDir = path.join(outputFolder, 'Analysis_Results', 'extracted-text');
+    if (!fs.existsSync(extractedTextDir)) {
+      fs.mkdirSync(extractedTextDir, { recursive: true });
+    }
+    const textFilename = filename.replace('.pdf', '_extracted.txt');
+    await fs.promises.writeFile(path.join(extractedTextDir, textFilename), extractedText, 'utf-8');
+    logger.log(`📝 Saved extracted text to: extracted-text/${textFilename}`);
+    
+    // Extract announcement year from application content
+    const announcementYear = extractAnnouncementYear(extractedText);
+    let ruleYearLabel = 'default';
+    let rulesToUse = defaultRules;
+    
+    if (announcementYear) {
+      logger.log(`🔍 Detected Funding Opportunity: HRSA-${announcementYear}-XXX`);
+      const yearResult = loadRulesForYear(announcementYear, availableYears, defaultRules, logger);
+      rulesToUse = yearResult.rules;
+      ruleYearLabel = yearResult.yearLabel;
+    } else {
+      logger.warning(`ℹ️ No HRSA announcement number detected — using default rules`);
+    }
+    
+    logger.log(`📋 Validating against ${ruleYearLabel} compliance rules (${rulesToUse.length} chapters)`);
+    
     const compressedText = compressApplicationText(extractedText);
     const compressionRatio = ((1 - compressedText.length / extractedText.length) * 100).toFixed(1);
     logger.log(`Compressed text: ${extractedText.length} → ${compressedText.length} chars (${compressionRatio}% reduction)`);
@@ -451,7 +533,7 @@ async function analyzeApplication(pdfPath, manualRules, logger) {
     
     // Validate ALL sections in ONE API call
     const analysisStartTime = Date.now();
-    const results = await validateAllSections(compressedText, manualRules, logger);
+    const results = await validateAllSections(compressedText, rulesToUse, logger);
     const analysisTime = ((Date.now() - analysisStartTime) / 1000).toFixed(1);
     
     const totalTime = ((Date.now() - startTime) / 1000).toFixed(1);
@@ -461,6 +543,8 @@ async function analyzeApplication(pdfPath, manualRules, logger) {
       applicationNumber,
       filename,
       timestamp: new Date().toISOString(),
+      ruleYear: ruleYearLabel,
+      announcementYear: announcementYear || null,
       results
     };
     
@@ -489,9 +573,25 @@ async function generateWordDocument(analysisResult, outputPath, logger) {
         text: `Application: ${analysisResult.applicationNumber || analysisResult.filename}`,
         heading: HeadingLevel.HEADING_2,
         alignment: AlignmentType.CENTER,
-        spacing: { after: 400 }
+        spacing: { after: 200 }
       })
     );
+    
+    if (analysisResult.ruleYear) {
+      sections.push(
+        new Paragraph({
+          children: [
+            new TextRun({ text: `Validated Against: `, bold: true }),
+            new TextRun({ text: `${analysisResult.ruleYear} Compliance Rules` }),
+            ...(analysisResult.announcementYear ? [
+              new TextRun({ text: `  |  Announcement: HRSA-${analysisResult.announcementYear}-XXX`, italics: true })
+            ] : [])
+          ],
+          alignment: AlignmentType.CENTER,
+          spacing: { after: 400 }
+        })
+      );
+    }
     
     let totalCompliant = 0;
     let totalNonCompliant = 0;
@@ -721,11 +821,33 @@ async function main() {
   logger.log(`Input Folder: ${inputFolder}`);
   logger.log(`Output Folder: ${outputFolder}`);
   
-  // Load compliance rules
-  logger.log('Loading guiding principles document rules...');
+  // Scan for year-specific rule sets
+  logger.log('📂 Scanning for year-specific rule sets...');
+  const availableYears = scanAvailableRuleYears(logger);
+  const yearKeys = Object.keys(availableYears);
+  
+  if (yearKeys.length > 0) {
+    logger.success(`Found ${yearKeys.length} year-specific rule set(s): ${yearKeys.map(y => `20${y}`).join(', ')}`);
+    logger.log('  Rules will be auto-selected based on HRSA-XX-XXX announcement number in each application');
+  } else {
+    logger.warning('No year-specific rule sets found in data/{YY}/ folders');
+  }
+  
+  // Load default compliance rules as fallback
+  logger.log('Loading default guiding principles document rules...');
   const rulesPath = path.join(__dirname, 'data', 'compliance-rules.json');
-  const manualRules = JSON.parse(fs.readFileSync(rulesPath, 'utf-8'));
-  logger.success(`Loaded ${manualRules.length} chapters from guiding principles document`);
+  let defaultRules = [];
+  try {
+    defaultRules = JSON.parse(fs.readFileSync(rulesPath, 'utf-8'));
+    logger.success(`Loaded ${defaultRules.length} chapters from default rules (fallback)`);
+  } catch (err) {
+    if (yearKeys.length === 0) {
+      logger.error('No default rules found and no year-specific rules available. Cannot proceed.');
+      rl.close();
+      return;
+    }
+    logger.warning('No default compliance-rules.json found, will rely on year-specific rules only');
+  }
   
   // Find all PDF files
   const allFiles = fs.readdirSync(inputFolder);
@@ -771,7 +893,7 @@ async function main() {
     logger.log('==================================================');
     
     try {
-      const result = await analyzeApplication(pdfPath, manualRules, logger);
+      const result = await analyzeApplication(pdfPath, defaultRules, availableYears, logger);
       batchResults.push(result);
       
       // Generate Word document

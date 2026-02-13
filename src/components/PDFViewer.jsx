@@ -3,8 +3,10 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/Page/AnnotationLayer.css'
 import 'react-pdf/dist/Page/TextLayer.css'
 
-// Configure PDF.js worker - use local file from public directory
-pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs'
+// Configure PDF.js worker - use CDN for reliable loading across all environments
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
+console.log('[PDFViewer] Worker src:', pdfjs.GlobalWorkerOptions.workerSrc)
+console.log('[PDFViewer] pdfjs version:', pdfjs.version)
 
 // Add CSS animation for pulse effect
 const style = document.createElement('style')
@@ -29,17 +31,24 @@ export default function PDFViewer({ pdfFile, highlightPage, highlightText, onLoa
 
   // Convert File object to URL for PDF.js
   useEffect(() => {
+    console.log('[PDFViewer] pdfFile changed:', pdfFile)
+    console.log('[PDFViewer] pdfFile type:', typeof pdfFile, pdfFile instanceof File ? 'File' : pdfFile instanceof Blob ? 'Blob' : 'other')
     if (pdfFile instanceof File) {
+      console.log('[PDFViewer] File name:', pdfFile.name, 'size:', pdfFile.size, 'type:', pdfFile.type)
       const url = URL.createObjectURL(pdfFile)
+      console.log('[PDFViewer] Created blob URL:', url)
       setFileUrl(url)
       
       // Cleanup URL when component unmounts or file changes
       return () => {
+        console.log('[PDFViewer] Revoking blob URL:', url)
         URL.revokeObjectURL(url)
       }
     } else if (typeof pdfFile === 'string') {
+      console.log('[PDFViewer] Using string URL:', pdfFile)
       setFileUrl(pdfFile)
     } else {
+      console.log('[PDFViewer] No valid pdfFile, setting fileUrl to null')
       setFileUrl(null)
     }
   }, [pdfFile])
@@ -198,10 +207,16 @@ export default function PDFViewer({ pdfFile, highlightPage, highlightText, onLoa
   }
 
   function onDocumentLoadSuccess({ numPages }) {
+    console.log('[PDFViewer] Document loaded successfully, numPages:', numPages)
     setNumPages(numPages)
     if (onLoadSuccess) {
       onLoadSuccess(numPages)
     }
+  }
+
+  function onDocumentLoadError(error) {
+    console.error('[PDFViewer] Document load ERROR:', error)
+    console.error('[PDFViewer] fileUrl was:', fileUrl)
   }
 
   const scrollToPage = (page) => {
@@ -419,6 +434,7 @@ export default function PDFViewer({ pdfFile, highlightPage, highlightText, onLoa
         <Document
           file={fileUrl}
           onLoadSuccess={onDocumentLoadSuccess}
+          onLoadError={onDocumentLoadError}
           loading={
             <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8' }}>
               <div style={{ fontSize: '2rem', marginBottom: '10px' }}>⏳</div>

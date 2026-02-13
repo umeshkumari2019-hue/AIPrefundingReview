@@ -66,7 +66,7 @@ app.post('/api/save-rules', async (req, res) => {
   }
 })
 
-// Load compliance rules
+// Load compliance rules (default - backward compatible)
 app.get('/api/load-rules', async (req, res) => {
   try {
     const data = await fs.readFile(RULES_FILE, 'utf-8')
@@ -81,6 +81,112 @@ app.get('/api/load-rules', async (req, res) => {
       console.error('Error loading rules:', error)
       res.status(500).json({ success: false, error: error.message })
     }
+  }
+})
+
+// Save compliance rules for a specific year (e.g., /api/save-rules/26)
+app.post('/api/save-rules/:year', async (req, res) => {
+  try {
+    const { year } = req.params
+    const yearDir = path.join(DATA_DIR, year)
+    await fs.mkdir(yearDir, { recursive: true })
+    
+    const rulesFile = path.join(yearDir, 'compliance-rules.json')
+    const rules = req.body.rules
+    await fs.writeFile(rulesFile, JSON.stringify(rules, null, 2))
+    console.log(`✅ Saved ${rules.length} compliance rules to ${rulesFile}`)
+    res.json({ success: true, message: `Rules saved for year ${year}`, year })
+  } catch (error) {
+    console.error('Error saving rules:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+// Load compliance rules for a specific year (e.g., /api/load-rules/26)
+app.get('/api/load-rules/:year', async (req, res) => {
+  try {
+    const { year } = req.params
+    const rulesFile = path.join(DATA_DIR, year, 'compliance-rules.json')
+    const data = await fs.readFile(rulesFile, 'utf-8')
+    const rules = JSON.parse(data)
+    console.log(`✅ Loaded ${rules.length} compliance rules for year ${year}`)
+    res.json({ success: true, rules, year })
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.log(`No saved rules found for year ${req.params.year}`)
+      res.json({ success: false, message: `No rules found for year ${req.params.year}` })
+    } else {
+      console.error('Error loading rules:', error)
+      res.status(500).json({ success: false, error: error.message })
+    }
+  }
+})
+
+// List all available rule years
+app.get('/api/rule-years', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const entries = await fs.readdir(DATA_DIR, { withFileTypes: true })
+    const years = []
+    
+    for (const entry of entries) {
+      if (entry.isDirectory() && /^\d{2}$/.test(entry.name)) {
+        // Check if this folder has a compliance-rules.json
+        const rulesFile = path.join(DATA_DIR, entry.name, 'compliance-rules.json')
+        try {
+          await fs.access(rulesFile)
+          const data = await fs.readFile(rulesFile, 'utf-8')
+          const rules = JSON.parse(data)
+          years.push({
+            year: entry.name,
+            fullYear: `20${entry.name}`,
+            chaptersCount: rules.length
+          })
+        } catch {
+          // Folder exists but no rules file
+        }
+      }
+    }
+    
+    years.sort((a, b) => parseInt(a.year) - parseInt(b.year))
+    console.log(`✅ Found rules for ${years.length} years: ${years.map(y => y.fullYear).join(', ')}`)
+    res.json({ success: true, years })
+  } catch (error) {
+    console.error('Error listing rule years:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+// Save extracted application text for review
+app.post('/api/save-extracted-text', async (req, res) => {
+  try {
+    await ensureDataDir()
+    const { filename, content } = req.body
+    
+    if (!content) {
+      return res.status(400).json({ success: false, error: 'Missing content' })
+    }
+    
+    const extractedDir = path.join(DATA_DIR, 'extracted-text')
+    await fs.mkdir(extractedDir, { recursive: true })
+    
+    const sanitizedFilename = (filename || 'application').replace(/[^a-zA-Z0-9.-]/g, '_')
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
+    const outputFilename = `${sanitizedFilename}_${timestamp}.txt`
+    const outputPath = path.join(extractedDir, outputFilename)
+    
+    await fs.writeFile(outputPath, content, 'utf-8')
+    console.log(`✅ Saved extracted text: ${outputFilename} (${content.length} chars)`)
+    
+    res.json({ 
+      success: true, 
+      message: 'Extracted text saved',
+      filepath: outputPath,
+      filename: outputFilename
+    })
+  } catch (error) {
+    console.error('Error saving extracted text:', error)
+    res.status(500).json({ success: false, error: error.message })
   }
 })
 

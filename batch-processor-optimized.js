@@ -13,6 +13,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import axios from 'axios';
+import crypto from 'crypto';
 import { Document, Paragraph, TextRun, HeadingLevel, AlignmentType, Packer } from 'docx';
 import readline from 'readline';
 import dotenv from 'dotenv';
@@ -42,7 +43,6 @@ const CONFIG = {
 };
 
 const SECTIONS = [
-  'Needs Assessment',
   'Sliding Fee Discount Program',
   'Key Management Staff',
   'Contracts and Subawards',
@@ -236,27 +236,55 @@ async function extractTextFromPDF(pdfBuffer, filename, logger) {
     
     let contentWithPages = '';
     
+    // Step 1: Extract footer page numbers from each page (matching UI logic)
+    const footerPageMap = {};
+    
+    pages.forEach((page, index) => {
+      const azurePageNum = page.pageNumber || (index + 1);
+      const lines = page.lines || [];
+      
+      lines.forEach(line => {
+        const pageMatch = line.content.match(/Page Number:\s*(\d+)/i);
+        if (pageMatch) {
+          footerPageMap[azurePageNum] = pageMatch[1];
+        }
+      });
+      
+      if (!footerPageMap[azurePageNum]) {
+        footerPageMap[azurePageNum] = azurePageNum.toString();
+      }
+    });
+    
     if (paragraphs.length > 0) {
       const pageContent = {};
       
       paragraphs.forEach(para => {
-        const pageNum = para.boundingRegions?.[0]?.pageNumber || 1;
-        if (!pageContent[pageNum]) pageContent[pageNum] = [];
+        const azurePageNum = para.boundingRegions?.[0]?.pageNumber || 1;
+        const footerPageNum = footerPageMap[azurePageNum] || azurePageNum;
+        
+        if (!pageContent[footerPageNum]) pageContent[footerPageNum] = [];
+        
+        // Skip footer lines themselves
+        if (para.content.match(/Page Number:\s*\d+/i) || para.content.match(/Tracking Number/i)) {
+          return;
+        }
         
         let contentType = '[TEXT]';
         if (para.role === 'title' || para.role === 'sectionHeading') {
           contentType = '[HEADING]';
         }
         
-        pageContent[pageNum].push({
+        pageContent[footerPageNum].push({
           type: contentType,
           content: para.content
         });
       });
       
       tables.forEach((table, tableIndex) => {
-        const pageNum = table.boundingRegions?.[0]?.pageNumber || 1;
-        if (!pageContent[pageNum]) pageContent[pageNum] = [];
+        const azurePageNum = table.boundingRegions?.[0]?.pageNumber || 1;
+        const footerPageNum = footerPageMap[azurePageNum] || azurePageNum;
+        
+        if (!pageContent[footerPageNum]) pageContent[footerPageNum] = [];
         
         const rows = table.cells || [];
         const tableData = {};
@@ -272,7 +300,7 @@ async function extractTextFromPDF(pdfBuffer, filename, logger) {
           tableText += tableData[rowIdx].join(' | ') + '\n';
         });
         
-        pageContent[pageNum].push({
+        pageContent[footerPageNum].push({
           type: '[TABLE]',
           content: tableText
         });
@@ -280,7 +308,7 @@ async function extractTextFromPDF(pdfBuffer, filename, logger) {
       
       const sortedPages = Object.keys(pageContent).sort((a, b) => parseInt(a) - parseInt(b));
       sortedPages.forEach(pageNum => {
-        contentWithPages += `\n\n========== PAGE ${pageNum} ==========\n\n`;
+        contentWithPages += `\n\n========== PAGE ${pageNum} (from PDF footer) ==========\n\n`;
         pageContent[pageNum].forEach(item => {
           contentWithPages += `${item.type} ${item.content}\n\n`;
         });
@@ -296,113 +324,127 @@ async function extractTextFromPDF(pdfBuffer, filename, logger) {
   }
 }
 
-// Validate ALL sections in ONE API call (like the UI)
+// Validate ALL sections in ONE API call (matching UI logic exactly)
 async function validateAllSections(applicationText, manualRules, logger) {
   try {
     logger.log(`🚀 Processing ALL ${SECTIONS.length} sections in ONE API call...`);
     
-    // Build comprehensive prompt with ALL sections
-    const allSectionsPrompt = manualRules.map((chapter, chapterIndex) => {
-      const elementsPrompt = chapter.elements.map((element, elementIndex) => `
-REQUIREMENT ${chapterIndex + 1}.${elementIndex + 1}:
-- Element: ${element.element || 'Compliance Requirement'}
-- Requirement: ${element.requirementText}
-${element.requirementDetails && element.requirementDetails.length > 0 ? `- Must Address: ${element.requirementDetails.join('; ')}` : ''}
-${element.applicationSection ? `- Review Section: ${element.applicationSection}` : ''}
-${element.applicationItems && element.applicationItems.length > 0 ? `- Check Items: ${element.applicationItems.join('; ')}` : ''}
-${element.footnotes ? `- Notes: ${element.footnotes}` : ''}
+    // Build prompt with ALL chapters and ALL elements (matching UI format)
+    const allChaptersPrompt = [];
+    
+    for (let sectionIndex = 0; sectionIndex < SECTIONS.length; sectionIndex++) {
+      const section = SECTIONS[sectionIndex];
+      
+      const chapter = manualRules.find(r => {
+        if (r.section === section) return true;
+        if (section.includes(r.section) || r.section.includes(section)) return true;
+        return false;
+      });
+      
+      if (!chapter || !chapter.elements) {
+        allChaptersPrompt.push(`\n[SECTION ${sectionIndex + 1}: ${section} - NO RULES FOUND]\n`);
+        continue;
+      }
+
+      const elementsPrompt = chapter.elements.map((element, elemIndex) => `
+REQUIREMENT #${sectionIndex + 1}.${elemIndex + 1}
+SECTION: ${section}
+ELEMENT: ${element.element || 'Compliance Requirement'}
+REQUIREMENT: ${element.requirementText}
+${element.requirementDetails && element.requirementDetails.length > 0 ? `MUST ADDRESS: ${element.requirementDetails.join('; ')}` : ''}
+${element.footnotes ? `NOTES: ${element.footnotes}` : ''}
 `).join('\n');
 
-      return `
+      allChaptersPrompt.push(`
 ═══════════════════════════════════════════════════════════════
-CHAPTER ${chapterIndex + 1}: ${chapter.chapter || chapter.section}
+SECTION ${sectionIndex + 1}: ${section}
+═══════════════════════════════════════════════════════════════
+CHAPTER: ${chapter.chapter || chapter.section}
 AUTHORITY: ${chapter.authority || 'N/A'}
-═══════════════════════════════════════════════════════════════
+ELEMENTS TO VALIDATE: ${chapter.elements.length}
 
 ${elementsPrompt}
-`;
-    }).join('\n');
+`);
+    }
+    
+    const allChaptersPromptText = allChaptersPrompt.join('\n');
 
-    // Count total requirements
-    const totalRequirements = manualRules.reduce((sum, chapter) => sum + chapter.elements.length, 0);
+    const totalRequirements = SECTIONS.reduce((sum, section) => {
+      const chapter = manualRules.find(r => r.section === section || section.includes(r.section) || r.section.includes(section));
+      return sum + (chapter?.elements?.length || 0);
+    }, 0);
 
     const openaiEndpoint = `${CONFIG.AZURE_OPENAI_ENDPOINT}/openai/deployments/${CONFIG.AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=2024-02-15-preview`;
     logger.log(`📡 Azure OpenAI Endpoint: ${openaiEndpoint}`);
     logger.log(`🤖 Using Deployment: ${CONFIG.AZURE_OPENAI_DEPLOYMENT}`);
     
-    const prompt = `You are validating HRSA compliance requirements for a health center application.
+    const prompt = `You are validating HRSA compliance for a health center application.
 
-You must validate ${totalRequirements} requirements across ${SECTIONS.length} chapters below.
+You will validate ${totalRequirements} requirements across ${SECTIONS.length} sections in ONE analysis.
 
-${allSectionsPrompt}
+${allChaptersPromptText}
 
 ═══════════════════════════════════════════════════════════════
 VALIDATION INSTRUCTIONS
 ═══════════════════════════════════════════════════════════════
 
 ⚠️ CRITICAL - NO HALLUCINATION:
-- ONLY use information EXPLICITLY written in the application
-- NEVER make up, assume, infer, or guess information
-- If you cannot find explicit evidence, mark as NON_COMPLIANT
+- ONLY use information EXPLICITLY in the application
+- NEVER assume, infer, or guess
+- If no explicit evidence found, mark NON_COMPLIANT
+- Same application = same result
 
 VALIDATION STEPS:
-1. For EACH requirement, search the ENTIRE application systematically
-2. Check for N/A conditions FIRST (only if explicit NOTE says "Select 'N/A' if...")
-3. Find direct quotes that prove compliance
-4. Validate ALL "Must Address" items if listed
+1. For EACH requirement, search ENTIRE application
+2. Check N/A conditions FIRST (only if NOTE says "Select 'N/A' if...")
+3. Find direct quotes proving compliance
+4. Validate ALL "Must Address" items
 5. Document findings concisely
 
 STATUS RULES:
-- COMPLIANT: Clear, explicit proof found that fully satisfies requirement
-- NON_COMPLIANT: No evidence found, or evidence is incomplete/unclear
-- NOT_APPLICABLE: Only if explicit NOTE says "N/A if..." AND condition is met
+- COMPLIANT: Clear explicit proof found
+- NON_COMPLIANT: No evidence or incomplete
+- NOT_APPLICABLE: Only if NOTE says "N/A if..." AND condition met
 
-EVIDENCE REQUIREMENTS:
-- Quote 1-3 KEY sentences maximum in "quotation marks"
-- Include exact page numbers or section references
-- Be specific about location (e.g., "Page 15, Budget Narrative section")
+EVIDENCE:
+- Quote 1-3 KEY sentences in "quotation marks"
+- Include page numbers
+- 3-4 sentence reasoning
 
-═══════════════════════════════════════════════════════════════
-APPLICATION CONTENT TO VALIDATE
-═══════════════════════════════════════════════════════════════
-
+APPLICATION CONTENT:
 ${applicationText}
 
 ═══════════════════════════════════════════════════════════════
-RESPONSE FORMAT (JSON)
+RESPONSE FORMAT
 ═══════════════════════════════════════════════════════════════
 
-Return a JSON object with results for ALL ${SECTIONS.length} sections:
+Return JSON with validations array containing ${totalRequirements} results:
 
 {
-  "Needs Assessment": {
-    "validations": [
-      {
-        "element": "requirement name",
-        "status": "COMPLIANT|NON_COMPLIANT|NOT_APPLICABLE",
-        "whatWasChecked": "what you looked for",
-        "evidence": "direct quote from application",
-        "evidenceLocation": "Page X, Section Y",
-        "evidenceSection": "section name where found",
-        "reasoning": "brief explanation"
-      }
-    ]
-  },
-  "Sliding Fee Discount Program": { "validations": [...] },
-  ... (all ${SECTIONS.length} sections)
+  "validations": [
+    {
+      "section": "Section name",
+      "requirementNumber": "1.1",
+      "element": "Element name",
+      "status": "COMPLIANT|NON_COMPLIANT|NOT_APPLICABLE",
+      "evidence": "Direct quotes or 'Not found'",
+      "evidenceLocation": "Page X or 'Not found'",
+      "evidenceSection": "REQUIRED: Specific document/attachment/section name where evidence was found (e.g., 'Attachment D: Sliding Fee Schedule', 'Project Narrative - Section 3', 'Form 5A'). Use 'Not found' only if no evidence exists.",
+      "reasoning": "3-4 sentences"
+    }
+    // ... ${totalRequirements} total validations
+  ]
 }
 
-CRITICAL: Return exactly ${totalRequirements} validation objects across all sections.`;
+CRITICAL: Return exactly ${totalRequirements} validation objects.`;
 
     const response = await axios.post(
       openaiEndpoint,
       {
-        messages: [
-          { role: 'system', content: 'You are a compliance analyst for HRSA health center applications. You validate all requirements comprehensively in one analysis.' },
-          { role: 'user', content: prompt }
-        ],
-        temperature: 0.3,
-        max_tokens: 16000 // Increased for all sections
+        messages: [{ role: 'user', content: prompt }],
+        response_format: { type: 'json_object' },
+        temperature: 0.1,
+        max_tokens: 16000
       },
       {
         headers: {
@@ -412,68 +454,67 @@ CRITICAL: Return exactly ${totalRequirements} validation objects across all sect
       }
     );
     
-    let content = response.data.choices[0].message.content;
+    const content = response.data.choices[0].message.content;
+    const result = JSON.parse(content);
     
-    // Remove markdown code blocks if present
-    if (content.includes('```json')) {
-      content = content.replace(/```json\s*/g, '').replace(/```\s*/g, '');
-    } else if (content.includes('```')) {
-      content = content.replace(/```\s*/g, '');
-    }
-    
-    const allResults = JSON.parse(content.trim());
-    
-    // Process results for each section
-    const results = {};
+    // Organize results by section (matching UI parsing logic)
+    const sectionResults = {};
+    SECTIONS.forEach(section => {
+      sectionResults[section] = { compliantItems: [], nonCompliantItems: [], notApplicableItems: [] };
+    });
+
     let totalValidations = 0;
     let totalCompliant = 0;
     let totalNonCompliant = 0;
     let totalNA = 0;
-    
-    SECTIONS.forEach(section => {
-      const sectionResult = allResults[section];
-      if (!sectionResult || !sectionResult.validations) {
-        logger.warning(`No results found for section: ${section}`);
-        results[section] = { compliantItems: [], nonCompliantItems: [], notApplicableItems: [] };
-        return;
-      }
-      
-      const compliantItems = [];
-      const nonCompliantItems = [];
-      const notApplicableItems = [];
-      
-      sectionResult.validations.forEach(validation => {
+
+    if (result.validations && Array.isArray(result.validations)) {
+      result.validations.forEach(validation => {
+        const section = validation.section || 'Unknown';
+        
+        if (!sectionResults[section]) {
+          sectionResults[section] = { compliantItems: [], nonCompliantItems: [], notApplicableItems: [] };
+        }
+
+        // Find the original element to get the requirementText
+        const chapter = manualRules.find(r => r.section === section || section.includes(r.section) || r.section.includes(section));
+        const element = chapter?.elements?.find(e => e.element === validation.element);
+
         const item = {
           element: validation.element || 'Unknown',
-          requirement: validation.requirement || 'Unknown',
+          requirement: element?.requirementText || validation.element || 'Not specified',
           status: validation.status,
           whatWasChecked: validation.whatWasChecked || 'Not specified',
           evidence: validation.evidence || 'Not found',
           evidenceLocation: validation.evidenceLocation || 'Not found',
           evidenceSection: validation.evidenceSection || 'Not found',
-          reasoning: validation.reasoning || 'No reasoning provided'
+          reasoning: validation.reasoning || 'No reasoning provided',
+          sectionsReferenced: 'Not specified',
+          contentTypes: 'Not specified'
         };
-        
+
         if (validation.status === 'COMPLIANT') {
-          compliantItems.push(item);
+          sectionResults[section].compliantItems.push(item);
           totalCompliant++;
         } else if (validation.status === 'NOT_APPLICABLE') {
-          notApplicableItems.push(item);
+          sectionResults[section].notApplicableItems.push(item);
           totalNA++;
         } else {
-          nonCompliantItems.push(item);
+          sectionResults[section].nonCompliantItems.push(item);
           totalNonCompliant++;
         }
         totalValidations++;
       });
-      
-      results[section] = { compliantItems, nonCompliantItems, notApplicableItems };
-      logger.log(`  ✓ ${section}: ${compliantItems.length} compliant, ${nonCompliantItems.length} non-compliant, ${notApplicableItems.length} N/A`);
+    }
+
+    SECTIONS.forEach(section => {
+      const r = sectionResults[section];
+      logger.log(`  ✓ ${section}: ${r.compliantItems.length} compliant, ${r.nonCompliantItems.length} non-compliant, ${r.notApplicableItems.length} N/A`);
     });
     
     logger.success(`✅ Processed ${totalValidations} validations: ${totalCompliant} compliant, ${totalNonCompliant} non-compliant, ${totalNA} N/A`);
     
-    return results;
+    return sectionResults;
   } catch (error) {
     logger.error(`Azure OpenAI error: ${error.message}`);
     throw error;
@@ -524,20 +565,36 @@ async function analyzeApplication(pdfPath, defaultRules, availableYears, logger)
     
     logger.log(`📋 Validating against ${ruleYearLabel} compliance rules (${rulesToUse.length} chapters)`);
     
-    const compressedText = compressApplicationText(extractedText);
-    const compressionRatio = ((1 - compressedText.length / extractedText.length) * 100).toFixed(1);
-    logger.log(`Compressed text: ${extractedText.length} → ${compressedText.length} chars (${compressionRatio}% reduction)`);
+    const estimatedTokens = Math.ceil(extractedText.length / 4);
+    logger.log(`Text length: ${extractedText.length} chars, estimated tokens: ~${estimatedTokens}`);
     
-    const estimatedTokens = Math.ceil(compressedText.length / 4);
-    logger.log(`Estimated tokens: ~${estimatedTokens}`);
-    
-    // Validate ALL sections in ONE API call
+    // Validate ALL sections in ONE API call (sending full text, matching UI)
     const analysisStartTime = Date.now();
-    const results = await validateAllSections(compressedText, rulesToUse, logger);
+    const results = await validateAllSections(extractedText, rulesToUse, logger);
     const analysisTime = ((Date.now() - analysisStartTime) / 1000).toFixed(1);
     
     const totalTime = ((Date.now() - startTime) / 1000).toFixed(1);
     logger.log(`⏱️  Analysis completed in ${analysisTime}s (Total: ${totalTime}s)`);
+    
+    // Save to backend cache (matching UI cache format)
+    try {
+      const base64Content = pdfBuffer.toString('base64');
+      const fileHash = crypto.createHash('md5').update(base64Content).digest('hex');
+      const manualVersion = 'v1.0';
+      
+      await axios.post(`${CONFIG.BACKEND_URL}/api/cache/save`, {
+        fileHash,
+        manualVersion,
+        data: {
+          applicationName: filename,
+          extractedContent: extractedText,
+          results
+        }
+      });
+      logger.success(`💾 Saved to backend cache (hash: ${fileHash.substring(0, 8)}...)`);
+    } catch (cacheError) {
+      logger.warning(`⚠️ Could not save to backend cache: ${cacheError.message}`);
+    }
     
     return {
       applicationNumber,

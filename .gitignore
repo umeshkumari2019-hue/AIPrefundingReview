@@ -45,8 +45,8 @@ Thumbs.db
 *.temp
 debug-*.js
 check-*.js
-compare-*.js
-convert-*.js
+
+
 copy-*.js
 find-*.js
 import-*.js
